@@ -14,7 +14,7 @@
  *   node scripts/generate-illustration.mjs --verse 4 --regenerate
  *   node scripts/generate-illustration.mjs --batch 11-20 --dry-run
  *
- * API key is read from /root/claudecode/mutual-fund-dost/.env.local
+ * API key is read from $GEMINI_API_KEY, else hdfc/apps/mutual-fund-dost/.env.local
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
@@ -28,7 +28,12 @@ const PROJECT_ROOT = join(__dirname, '..');
 // Config
 // ---------------------------------------------------------------------------
 
-const API_KEY_FILE = '/root/claudecode/mutual-fund-dost/.env.local';
+// The mutual-fund-dost project moved under hdfc/apps/; try known locations in order.
+const API_KEY_FILES = [
+  '/root/claudecode/hdfc/apps/mutual-fund-dost/.env.local',
+  '/home/claude/claudecode/hdfc/apps/mutual-fund-dost/.env.local',
+  '/root/claudecode/mutual-fund-dost/.env.local',
+];
 const CHAPTERS_DIR = join(PROJECT_ROOT, 'content', 'chapters');
 const GUIDELINES_FILE = join(PROJECT_ROOT, 'docs', 'illustration-guidelines.md');
 
@@ -46,13 +51,17 @@ const IMAGE_MODELS = [
 // ---------------------------------------------------------------------------
 
 function readApiKey() {
-  if (!existsSync(API_KEY_FILE)) {
-    throw new Error(`API key file not found: ${API_KEY_FILE}`);
+  if (process.env.GEMINI_API_KEY) {
+    return process.env.GEMINI_API_KEY.trim();
   }
-  const contents = readFileSync(API_KEY_FILE, 'utf-8');
+  const file = API_KEY_FILES.find((p) => existsSync(p));
+  if (!file) {
+    throw new Error(`API key file not found in any known location: ${API_KEY_FILES.join(', ')}`);
+  }
+  const contents = readFileSync(file, 'utf-8');
   const match = contents.match(/^GEMINI_API_KEY=(.+)$/m);
   if (!match) {
-    throw new Error('GEMINI_API_KEY not found in .env.local');
+    throw new Error(`GEMINI_API_KEY not found in ${file}`);
   }
   return match[1].trim();
 }

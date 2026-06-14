@@ -1,14 +1,27 @@
 # Gita for Kids — Handover
 
-## Current Status: 5 Chapters Complete (202/700 verses)
+## Current Status: 6 Chapters Complete (244/700 verses)
 
-The site is deployed at https://gita-for-kids.vercel.app. Five chapters and back matter are active:
+The site is deployed at https://gita-for-kids.vercel.app. Six chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
+- **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses (Warli), text complete — **illustrations not yet generated**
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
+
+## What Was Done This Session (2026-06-14)
+
+### Chapter 4 authored + Word-by-Word UI redesign + Ch1 translation fixes
+- **Chapter 4 (Jnana Karma Sannyasa Yoga), all 42 verses written** by 6 parallel agents against a shared authoring spec (Sanskrit, IAST transliteration, fully-glossed dhatu breakdown, child-friendly meaning, 300–500 word story, reflection). Status flipped `coming_soon` → `active`. Full build passes (257 pages). **TODO: generate 42 Warli illustrations** via `node scripts/generate-illustration.mjs --chapter 4 --batch 1-42`.
+- **Word-by-Word (DhatuBreakdown) UI redesigned** — was a collapsed `<details>` accordion, now an always-visible card grid (`src/components/DhatuBreakdown.astro`). Each root renders as a chip with its English gloss split out from the root. Visible by default, no click required.
+- **Chapter 1 translation audit (read-only agent) → 4 fixes applied:**
+  - v47 `meaning`: removed false "I will not fight" quote (that line is BG 2.9; it contradicted the verse's own `tasthau` = "he remained" gloss)
+  - v13 `transliteration`: `paṇavānakagomukhaḥ` → `paṇavānakagomukhāḥ` (plural long-ā, matches Devanagari)
+  - v24 dhatu: `īśa (conqueror)` → `īśa (lord, master)` (morpheme is "lord"; "conqueror of sleep" kept as whole-word meaning)
+  - v2 dhatu: added missing words `राजा` (the king) and `तदा` (then)
+  - Audit also flagged low-severity systemic items NOT yet actioned: unglossed `च` conjunctions across several verses; Devanagari `word` citation/pausa forms differing from inflected sandhi in the `sanskrit` line (editorial convention — needs a decision).
 
 ## What Was Done This Session (2026-04-04)
 
@@ -70,7 +83,9 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 ## Next Steps
 
 ### Chapter Order
-1. **Chapter 4 — Jnana Karma Sannyasa Yoga** (Warli art style)
+1. ~~Chapter 4 — Jnana Karma Sannyasa Yoga (Warli)~~ — text done ✓ (illustrations pending)
+2. **Generate Chapter 4 illustrations** (Warli) — `node scripts/generate-illustration.mjs --chapter 4 --batch 1-42`
+3. Next text chapter: **Chapter 5 — Karma Sannyasa Yoga** (Kalamkari) or **Chapter 6 — Dhyana Yoga** (Madhubani)
 
 ### Front & Back Matter
 1. ~~Characters page + Pronunciation guide~~ — done ✓
@@ -83,4 +98,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-04-04
+Last reviewed: 2026-06-14

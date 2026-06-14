@@ -1,0 +1,86 @@
+chapter: 4
+verse: 17
+speaker: krishna
+
+sanskrit: "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः। अकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः॥"
+
+transliteration: "karmaṇo hyapi boddhavyaṁ boddhavyaṁ ca vikarmaṇaḥ | akarmaṇaśca boddhavyaṁ gahanā karmaṇo gatiḥ ||"
+
+dhatu_breakdown:
+  - word: "कर्मणः"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "of action, about right action"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also"
+  - word: "बोद्धव्यम्"
+    parts: ["budh (to know, to understand)", "tavya (ought to be — must-do ending)"]
+    meaning: "must be understood, ought to be known"
+  - word: "विकर्मणः"
+    parts: ["vi (wrong, apart)", "kṛ (to do, to act)"]
+    meaning: "of wrong action, of forbidden doing"
+  - word: "अकर्मणः"
+    parts: ["a (not, non-)", "kṛ (to do, to act)"]
+    meaning: "of inaction, of not-doing"
+  - word: "गहना"
+    parts: ["gahana (deep, dense, hard to fathom)"]
+    meaning: "deep, mysterious, hard to fathom"
+  - word: "गतिः"
+    parts: ["gam (to go, to move)"]
+    meaning: "the way, the course, the path"
+
+meaning: >
+  Krishna says there are really three things you must understand: what good
+  action is, what wrong action is, and what inaction (not-doing) is. None of
+  them is as simple as it looks. The truth about action runs deep and
+  mysterious — like a forest so thick you cannot see all the way through it.
+
+story:
+  title: "The Three Paths in the Forest"
+  source: "original"
+  body: |
+    "Let me show you why this is hard," Krishna said. "Imagine standing at
+    the edge of a great forest, where three paths begin, side by side."
+
+    Arjuna closed his eyes and let the picture form. He could almost smell
+    the damp leaves.
+
+    "The first path," Krishna said, "is *right action*. It is good work,
+    work that should be done — feeding the hungry, protecting the helpless,
+    standing your ground when standing is your duty. You must learn to know
+    this path, to recognize it even when it is overgrown and hard to find."
+
+    "The second path," he continued, "is *wrong action*. It is work that
+    should *not* be done — cruelty, greed, harming the innocent, taking
+    what is not yours. This path can look pleasant at its mouth, sweet and
+    easy, but it leads into a swamp. You must learn to know it too, so that
+    you never wander down it by mistake."
+
+    The mist curled at their feet like pale roots.
+
+    "And the third path," Krishna said, and his voice dropped, "is the
+    strangest of all. It is *inaction* — not-doing. The choice to hold
+    still. And here is the trick, Arjuna: sometimes holding still is the
+    wisest thing in the world, and sometimes holding still is a hiding
+    place for a coward. You must learn to tell them apart."
+
+    Arjuna opened his eyes. "Three paths," he murmured. "And each one
+    deeper and more tangled than it looks."
+
+    "Yes," said Krishna. "The course of action is *gahana* — deep, dense,
+    mysterious, like a forest where the trees grow so close that even the
+    sun loses its way among the branches. People who think it is simple
+    are usually the ones who get lost."
+
+    He gathered the reins a little tighter.
+
+    "So do not be ashamed that this puzzles you. The wisest pilgrims walk
+    slowly here, watching their feet, learning each path before they choose.
+    To know good doing, wrong doing, and still not-doing — that is the
+    beginning of real freedom. The forest is deep. We will walk it
+    carefully, you and I."
+
+reflection: "Sometimes doing nothing is the kind, wise choice, and sometimes it just means hiding. How do you tell the difference for yourself?"

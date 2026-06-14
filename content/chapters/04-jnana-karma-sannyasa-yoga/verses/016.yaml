@@ -1,0 +1,97 @@
+chapter: 4
+verse: 16
+speaker: krishna
+
+sanskrit: "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः। तत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्॥"
+
+transliteration: "kiṁ karma kimakarmeti kavayo'pyatra mohitāḥ | tatte karma pravakṣyāmi yajjñātvā mokṣyase'śubhāt ||"
+
+dhatu_breakdown:
+  - word: "किम्"
+    parts: ["kim (what?)"]
+    meaning: "what?"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "action, doing"
+  - word: "अकर्म"
+    parts: ["a (not, non-)", "kṛ (to do, to act)"]
+    meaning: "inaction, not-doing"
+  - word: "इति"
+    parts: ["iti (thus — marks a quoted thought)"]
+    meaning: "thus (about this question)"
+  - word: "कवयः"
+    parts: ["kavi (wise one, poet, seer)"]
+    meaning: "the wise, the seers"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even"
+  - word: "मोहिताः"
+    parts: ["muh (to be confused, to be bewildered)"]
+    meaning: "are bewildered, are confused"
+  - word: "प्रवक्ष्यामि"
+    parts: ["pra (forth, fully)", "vac (to speak)"]
+    meaning: "I shall fully explain, I shall declare"
+  - word: "ज्ञात्वा"
+    parts: ["jñā (to know)", "tvā (having done — gerund ending)"]
+    meaning: "having known, having understood"
+  - word: "मोक्ष्यसे"
+    parts: ["muc (to free, to release)"]
+    meaning: "you shall be freed, you will be released"
+  - word: "अशुभात्"
+    parts: ["a (not, un-)", "śubha (good, auspicious)"]
+    meaning: "from evil, from misfortune (from the not-good)"
+
+meaning: >
+  Krishna admits this is a tricky puzzle: even very wise people get muddled
+  about what counts as "doing something" and what counts as "doing nothing."
+  So he promises Arjuna: "I will explain this carefully to you. Once you
+  truly understand it, it will set you free from all that is harmful."
+
+story:
+  title: "The Riddle Even the Wise Couldn't Solve"
+  source: "original"
+  body: |
+    "There is a riddle," Krishna said, and a small smile touched the corner
+    of his mouth, "that has tangled the minds of the cleverest people who
+    ever lived. Poets. Sages. Men who could recite a thousand verses without
+    a single mistake. Even they scratched their heads at this one."
+
+    Arjuna leaned forward despite himself. He had always liked a riddle.
+
+    "Here it is," said Krishna. "What is *doing*? And what is *not-doing*?
+    What is action, and what is the empty stillness where no action lives?"
+
+    Arjuna frowned. "That seems easy. Lifting my bow is doing. Sitting still
+    is not-doing. Where is the riddle in that?"
+
+    Krishna shook his head gently.
+
+    "Is it so simple? Picture a man sitting under a tree, his body perfectly
+    still, not lifting a finger. But inside his mind a storm is raging — he
+    is plotting, scheming, burning with a hundred wants. His body does
+    nothing, yet is he truly resting? Or is he working harder than any
+    soldier on this field?"
+
+    Arjuna opened his mouth, then closed it.
+
+    "And picture another," Krishna went on. "A woman whose hands never stop —
+    drawing water, grinding grain, carrying loads from dawn to dusk. Her body
+    moves all day long. Yet her heart is quiet as a sleeping lake; she wants
+    nothing for herself, grabs at nothing. Her hands are busy, but somewhere
+    deep inside, she is utterly at rest."
+
+    The wind shifted. The mist began, very slowly, to lift.
+
+    "So you see," Krishna said, "the wise ones were not foolish to be
+    puzzled. Doing and not-doing are not what they seem on the surface. The
+    true answer hides deeper, beneath the moving hands and the still ones."
+
+    He laid a hand briefly on Arjuna's shoulder.
+
+    "But do not worry. I will untangle this knot for you. I will tell you
+    plainly what action is and what inaction is. And when you finally
+    understand it — really understand it, all the way down — you will be
+    freed from everything that harms you. The riddle that stumped the sages
+    will set you loose like a bird from a cage."
+
+reflection: "Can you think of a time when you were sitting perfectly still but your mind was racing and busy? Were you really resting?"

@@ -19,12 +19,18 @@ dhatu_breakdown:
   - word: "दुर्योधनः"
     parts: ["dur (difficult)", "yodhana (to fight against)"]
     meaning: "Duryodhana — one who is hard to fight"
+  - word: "तदा"
+    parts: ["tadā (then, at that time)"]
+    meaning: "then, at that moment"
   - word: "आचार्यम्"
     parts: ["ā (towards)", "car (to move, conduct)"]
     meaning: "the teacher (Dronacharya)"
   - word: "उपसङ्गम्य"
     parts: ["upa (near)", "sam (together)", "gam (to go)"]
     meaning: "having approached"
+  - word: "राजा"
+    parts: ["rāj (to rule, to shine)"]
+    meaning: "the king (Duryodhana)"
   - word: "वचनम्"
     parts: ["vac (to speak)"]
     meaning: "words, speech"

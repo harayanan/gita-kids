@@ -1,0 +1,94 @@
+chapter: 5
+verse: 4
+speaker: krishna
+
+sanskrit: "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः। एकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्॥"
+
+transliteration: "sāṅkhyayogau pṛthagbālāḥ pravadanti na paṇḍitāḥ | ekamapyāsthitaḥ samyagubhayorvindate phalam ||"
+
+dhatu_breakdown:
+  - word: "सांख्ययोगौ"
+    parts: ["saṅkhyā (number, reasoning, knowledge)", "yuj (to yoke, to join)"]
+    meaning: "the path of knowledge and the path of action"
+  - word: "पृथक्"
+    parts: ["pṛth (to separate, to spread apart)"]
+    meaning: "separate, different from each other"
+  - word: "बालाः"
+    parts: ["bāla (child, immature one)"]
+    meaning: "childish people, the unwise"
+  - word: "प्रवदन्ति"
+    parts: ["pra (forth)", "vad (to speak, to say)"]
+    meaning: "they declare, they say"
+  - word: "पण्डिताः"
+    parts: ["paṇḍ (to be learned, to be wise)"]
+    meaning: "the wise, the learned"
+  - word: "एकम्"
+    parts: ["eka (one)"]
+    meaning: "one, a single one"
+  - word: "आस्थितः"
+    parts: ["ā (toward, fully)", "sthā (to stand, to be established)"]
+    meaning: "firmly established, settled in"
+  - word: "सम्यक्"
+    parts: ["sam (well, completely)", "añc (to go, to reach)"]
+    meaning: "properly, rightly, fully"
+  - word: "उभयोः"
+    parts: ["ubha (both)"]
+    meaning: "of both, of the two paths"
+  - word: "विन्दते"
+    parts: ["vid (to find, to obtain)"]
+    meaning: "he finds, he gains"
+  - word: "फलम्"
+    parts: ["phal (to bear fruit, to ripen)"]
+    meaning: "the fruit, the reward"
+
+meaning: >
+  Krishna says: "Only childish, unwise people think that the path of knowledge
+  and the path of action are two completely separate things, leading to different
+  places. The truly wise know better. Whoever follows even one of these paths
+  properly, all the way, gains the reward of both."
+
+story:
+  title: "The Same Hilltop"
+  source: "original"
+  body: |
+    "There were once two friends who lived in a valley," Krishna began, "and
+    above the valley rose a single tall hill with one flat stone at the very
+    top, where you could see the whole sky."
+
+    Arjuna nodded for him to go on.
+
+    "One friend, named Veda, loved to think. He studied the slopes, drew maps,
+    learned the names of every stone and every turn. The other, named Tila,
+    loved to walk. He cared little for maps; he simply put one foot in front
+    of the other, day after day, climbing."
+
+    The white horses dipped their heads to crop at the dry grass.
+
+    "Now the village children watched them and began to argue. 'Veda's way is
+    the true way,' said some, 'for he understands the mountain.' 'No, Tila's
+    way is the true way,' said others, 'for he is actually climbing.' They
+    quarreled in the dust and grew quite hot about it."
+
+    "And who reached the top?" Arjuna asked.
+
+    Krishna's eyes glinted. "Both did. Veda's careful studying carried his feet
+    upward; understanding became climbing without his even noticing. And Tila's
+    faithful walking taught him the mountain step by step until he understood
+    it as well as any map. By the time each one reached the flat stone at the
+    summit, he had become the other. They embraced, and they laughed at the
+    children far below who were still arguing."
+
+    He let the words settle.
+
+    "Knowing and doing are not two hills, Arjuna. They are two paths up the
+    same one. Only a child thinks you must choose between understanding and
+    acting, as though they led to different skies. Follow either path with your
+    whole heart, all the way to the top, and you arrive where the other path
+    arrives too."
+
+    Far across the field, the first ranks began to shift and dress their lines.
+
+    "So do not waste this morning wondering which is the 'real' way," Krishna
+    said softly. "Begin to climb. The summit is the same."
+
+reflection: "Have you ever learned something by doing it, even though you never read about it first? Or understood something better once you finally tried it?"
