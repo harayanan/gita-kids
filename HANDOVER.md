@@ -1,19 +1,24 @@
 # Gita for Kids — Handover
 
-## Current Status: 6 Chapters Complete (244/700 verses)
+## Current Status: 7 Chapters Active (273/700 verses)
 
-The site is deployed at https://gita-for-kids.vercel.app. Six chapters and back matter are active:
+The site is deployed at https://gita-for-kids.vercel.app. Seven chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
-- **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses (Warli), text complete — **illustrations not yet generated**
+- **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses, 42/42 illustrations (Warli), complete
+- **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses (Kalamkari), text complete — **illustrations not yet generated**
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
 
 ## What Was Done This Session (2026-06-14)
 
-### Chapter 4 authored + Word-by-Word UI redesign + Ch1 translation fixes
+**Deployed to production 2026-06-14** (commit `b888381`) → https://gita-for-kids.vercel.app — Ch4 index/verses, Ch5 verses, and Ch4 illustrations all verified live (HTTP 200).
+
+### Chapter 4 authored + Chapter 5 authored + Word-by-Word UI redesign + Ch1 translation fixes
+- **Chapter 5 (Karma Sannyasa Yoga), all 29 verses written** (Kalamkari) by 4 parallel agents; verse 1 = arjuna, 2–29 = krishna. Status `active`. **TODO: generate 29 Kalamkari illustrations.**
+- **Chapter 4 illustrations generated** — all 42 Warli images via the fixed `generate-illustration.mjs` (note: still JPEG-data-as-.png, the known print-pipeline caveat).
 - **Chapter 4 (Jnana Karma Sannyasa Yoga), all 42 verses written** by 6 parallel agents against a shared authoring spec (Sanskrit, IAST transliteration, fully-glossed dhatu breakdown, child-friendly meaning, 300–500 word story, reflection). Status flipped `coming_soon` → `active`. Full build passes (257 pages). **TODO: generate 42 Warli illustrations** via `node scripts/generate-illustration.mjs --chapter 4 --batch 1-42`.
 - **Word-by-Word (DhatuBreakdown) UI redesigned** — was a collapsed `<details>` accordion, now an always-visible card grid (`src/components/DhatuBreakdown.astro`). Each root renders as a chip with its English gloss split out from the root. Visible by default, no click required.
 - **Chapter 1 translation audit (read-only agent) → 4 fixes applied:**
