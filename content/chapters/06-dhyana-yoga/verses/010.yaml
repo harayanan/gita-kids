@@ -1,0 +1,87 @@
+chapter: 6
+verse: 10
+speaker: krishna
+
+sanskrit: "योगी युञ्जीत सततमात्मानं रहसि स्थितः। एकाकी यतचित्तात्मा निराशीरपरिग्रहः॥"
+
+transliteration: "yogī yuñjīta satatamātmānaṁ rahasi sthitaḥ | ekākī yatacittātmā nirāśīraparigrahaḥ ||"
+
+dhatu_breakdown:
+  - word: "योगी"
+    parts: ["yuj (to yoke, to join)"]
+    meaning: "the yogi, one who seeks union"
+  - word: "युञ्जीत"
+    parts: ["yuj (to yoke, to join)"]
+    meaning: "let him join, let him practise union"
+  - word: "सततम्"
+    parts: ["satata (constant, continuous)"]
+    meaning: "constantly, always"
+  - word: "आत्मानम्"
+    parts: ["ātman (self)"]
+    meaning: "the self, his own mind"
+  - word: "रहसि"
+    parts: ["rahas (solitude, a secret place)"]
+    meaning: "in solitude, in a quiet place"
+  - word: "स्थितः"
+    parts: ["sthā (to stand, to stay)"]
+    meaning: "remaining, staying"
+  - word: "एकाकी"
+    parts: ["eka (one)", "ekākin (alone)"]
+    meaning: "alone, by himself"
+  - word: "यतचित्तात्मा"
+    parts: ["yam (to restrain, to control)", "citta (mind)", "ātman (self)"]
+    meaning: "with mind and self controlled"
+  - word: "निराशीः"
+    parts: ["nis (without)", "āśis (desire, craving)"]
+    meaning: "free of craving, expecting nothing"
+  - word: "अपरिग्रहः"
+    parts: ["a (not)", "pari (around)", "grah (to grasp, to hoard)"]
+    meaning: "without possessions, not hoarding"
+
+meaning: >
+  Krishna explains how meditation begins. The yogi should practise steadily,
+  every day, in a quiet place all by himself, keeping his mind and his thoughts
+  gathered in. He should let go of wanting things and of piling up possessions,
+  so that nothing tugs at his attention. With a calm, simple, settled life, the
+  mind has room to grow still.
+
+story:
+  title: "The Quiet Cave"
+  source: "puranas"
+  body: |
+    Young Devadatta had lived all his life in a busy forest ashram. From
+    before dawn the place hummed: students sweeping the yard, milk pails
+    clanking, the older boys reciting verses, cows lowing at the gate.
+    He loved it. But whenever he sat to meditate, the noise crept in
+    behind his closed eyes — a half-heard joke, the smell of cooking
+    rice, the worry that he had left a chore undone.
+
+    One evening he knelt before his teacher. "Master, I try to steady my
+    mind, but it runs out the door after every sound. What am I doing
+    wrong?"
+
+    The old sage smiled and pointed up the hillside, where a single cave
+    sat above the treeline. "Nothing wrong. You have only chosen a noisy
+    riverbank to learn to float. Go up there. Take a water pot, a mat,
+    and nothing else. No spare robe to fuss over, no basket of fruit to
+    guard. Sit alone. Practise a little each day, at the same hour, the
+    way you would water a young plant."
+
+    So Devadatta climbed to the cave. The first day was the hardest —
+    without the ashram's clamour, his own thoughts grew suddenly loud,
+    as if they had been shouting all along and he had only just heard
+    them. He did not chase them. He simply sat, came back to his breath,
+    and sat again the next day, and the next.
+
+    He owned almost nothing now, and strangely he missed nothing. With
+    no things to mind and no one to impress, his wanting quietened first,
+    and then his thoughts. By the time the moon had grown round and thin
+    and round again, he could sit through a whole dawn with a mind as
+    still as the pool outside the cave.
+
+    When at last he came down the hill, his teacher saw it in his face.
+    "You have not become someone new," the sage said. "You have only
+    stopped scattering yourself. That steady, daily sitting — alone,
+    wanting nothing, holding nothing — is where every yogi begins."
+
+reflection: "Where in your home is the quietest spot, and what happens in your mind when you sit there with nothing to do but breathe?"

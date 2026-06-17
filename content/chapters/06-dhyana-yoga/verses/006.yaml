@@ -1,0 +1,109 @@
+chapter: 6
+verse: 6
+speaker: krishna
+
+sanskrit: "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः। अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्॥"
+
+transliteration: "bandhurātmātmanastasya yenātmaivātmanā jitaḥ | anātmanastu śatrutve vartetātmaiva śatruvat ||"
+
+dhatu_breakdown:
+  - word: "बन्धुः"
+    parts: ["bandh (to bind, to befriend)"]
+    meaning: "friend"
+  - word: "आत्मा"
+    parts: ["ātman (self)"]
+    meaning: "the self"
+  - word: "आत्मनः"
+    parts: ["ātman (self)"]
+    meaning: "of oneself"
+  - word: "तस्य"
+    parts: ["tad (that, his)"]
+    meaning: "for that person"
+  - word: "येन"
+    parts: ["yad (by whom, by which)"]
+    meaning: "by whom"
+  - word: "आत्मा"
+    parts: ["ātman (self)"]
+    meaning: "the self"
+  - word: "एव"
+    parts: ["eva (indeed, very)"]
+    meaning: "indeed"
+  - word: "आत्मना"
+    parts: ["ātman (self)"]
+    meaning: "by oneself"
+  - word: "जितः"
+    parts: ["ji (to conquer, to win)"]
+    meaning: "conquered, mastered"
+  - word: "अनात्मनः"
+    parts: ["an (not)", "ātman (self)"]
+    meaning: "of one who has not mastered himself"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
+  - word: "शत्रुत्वे"
+    parts: ["śatru (enemy)"]
+    meaning: "in enmity, in the state of an enemy"
+  - word: "वर्तेत"
+    parts: ["vṛt (to turn, to behave, to remain)"]
+    meaning: "would act, would behave"
+  - word: "आत्मा"
+    parts: ["ātman (self)"]
+    meaning: "the self"
+  - word: "एव"
+    parts: ["eva (indeed, very)"]
+    meaning: "indeed, the very self"
+  - word: "शत्रुवत्"
+    parts: ["śatru (enemy)", "vat (like, as)"]
+    meaning: "like an enemy"
+
+meaning: >
+  Krishna explains the riddle from the verse before. For the person who has
+  mastered themselves — who rules their own mind instead of being ruled by it —
+  the self becomes a loyal friend. But for the person who has not, that same
+  self turns against them and acts just like an enemy. Whether your self is
+  friend or foe depends entirely on whether you have learned to govern it.
+
+story:
+  title: "Two Brothers on the Road"
+  source: "puranas"
+  body: |
+    Two brothers set out one morning to walk to the next village along a dusty
+    road lined with tamarind trees. They had the same parents, the same home,
+    the same lessons growing up — yet inside they were as different as fire and
+    water.
+
+    The elder brother, Aruna, had spent years learning to watch his own anger.
+    Whenever it rose in him, hot and fast, he had practised pausing, breathing,
+    letting it cool before he spoke. It had not been easy. But now his temper
+    obeyed him the way a trained horse obeys the rein.
+
+    The younger brother, Vyala, had never bothered. When anger flared, he let it
+    run wherever it liked. His temper rode him, not the other way around.
+
+    Halfway along the road, a careless farmer leading an ox swung wide and the
+    ox's muddy flank knocked hard against both brothers, splattering their clean
+    clothes and nearly toppling them into the ditch. The same insult, the same
+    shove, struck them both in the same instant.
+
+    Vyala exploded. He shouted, he cursed, he grabbed a stone. His face went red,
+    his heart hammered, his whole morning was ruined in a breath. By the time the
+    frightened farmer hurried his ox away, Vyala was shaking, his thoughts a
+    storm of grievance. His own mind had turned on him like an enemy, robbing him
+    of his peace far more thoroughly than the mud ever could.
+
+    Aruna felt the same first spark of anger — he was not made of stone. But he
+    knew the spark, and he had a friend inside who knew what to do with it. He
+    drew one slow breath. He let the heat pass through him and out. "It is only
+    mud," he said quietly, "and the man is already sorry." He brushed off his
+    clothes, helped his trembling brother to his feet, and walked on with his
+    morning still whole and his heart still calm.
+
+    That evening, washing the dried mud from his shirt, Vyala asked, "How is it
+    the same shove left you peaceful and me wretched?"
+
+    Aruna smiled. "The shove was the same. The difference was inside us. I have
+    spent years making my own mind my friend. You have left yours a wild thing
+    — and a wild mind, brother, is the cruellest enemy a man can carry, because
+    it never leaves his side."
+
+reflection: "Have you ever noticed two people react completely differently to the same thing? What do you think makes one person's mind a friend and another's an enemy?"
