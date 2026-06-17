@@ -1,20 +1,27 @@
 # Gita for Kids — Handover
 
-## Current Status: 7 Chapters Active (273/700 verses), all illustrated
+## Current Status: 8 Chapters Active (320/700 verses), all illustrated
 
-The site is deployed at https://gita-for-kids.vercel.app. Seven chapters and back matter are active:
+The site is deployed at https://gita-for-kids.vercel.app. Eight chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
 - **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses, 42/42 illustrations (Warli), complete
 - **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses, 29/29 illustrations (Kalamkari), complete
+- **Chapter 6** (Dhyana Yoga): 47/47 verses, 47/47 illustrations (Madhubani), complete
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
 
 ## What Was Done This Session (2026-06-17)
 
-**Deployed to production 2026-06-17** (commit `9ce1964`) → https://gita-for-kids.vercel.app — Ch5 verse pages and all 29 Kalamkari illustrations verified live (HTTP 200).
+**Deployed to production 2026-06-17** — Ch5 (commit `9ce1964`) and Ch6 text+illustrations, all verified live (HTTP 200).
+
+### Chapter 6 (Dhyana Yoga) authored + illustrated — NEW, complete
+- **All 47 verses written** (Madhubani) by 6 parallel agents against a shared outline spec (`docs/chapter-06-outline.md`). Speaker map: 33,34,37,38,39 = arjuna, rest = krishna. Status flipped `coming_soon` → `active`.
+- **Sanskrit audited clean** by two independent read-only agents: 0 critical, 0 high across all 47 verses (canonical Devanagari + IAST char-for-char). 2 low-priority dhatu etymology fixes applied (6.22 `yam`→`yad`, 6.23 viyoga notation).
+- **All 47 Madhubani illustrations generated** via `node scripts/generate-illustration.mjs --chapter 6 --batch 1-47` — zero failures. Spot-checked v19 (windless-lamp simile), v34 (Arjuna's restless-wind mind), v47 (devoted yogi) — correct Madhubani style and consistent character designs. Same JPEG-data-as-.png caveat.
+- Build passes (335 pages); all 47 verse pages reference and ship their images.
 
 ### Chapter 5 illustrations generated (Kalamkari)
 - Generated all 29 Chapter 5 (Karma Sannyasa Yoga) illustrations via `node scripts/generate-illustration.mjs --chapter 5 --batch 1-29`. Verse 12 hit a transient 503 mid-batch and was regenerated individually. All 29 verified present (1376×768, JPEG-data-as-.png — the known print-pipeline caveat).
@@ -92,7 +99,7 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - ~~Front matter pages~~ → Characters + Pronunciation guide created ✓
 
 ### Still Pending (for print publication)
-1. **203 images are JPEG data saved as .png** — browsers handle it, print pipelines will not. Need format conversion or true PNG regeneration.
+1. **All images are JPEG data saved as .png** (~320 now) — browsers handle it, print pipelines will not. Need format conversion or true PNG regeneration.
 2. **Images web-resolution only** (1376×768) — print requires 2816×1536 minimum. Requires higher-res regeneration (Gemini API may not support this natively).
 
 ## Next Steps
@@ -100,7 +107,8 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 ### Chapter Order
 1. ~~Chapter 4 — Jnana Karma Sannyasa Yoga (Warli)~~ — text + illustrations done ✓
 2. ~~Chapter 5 — Karma Sannyasa Yoga (Kalamkari)~~ — text + illustrations done ✓
-3. Next text chapter: **Chapter 6 — Dhyana Yoga** (Madhubani) — `status: coming_soon`, needs verses authored then illustrated
+3. ~~Chapter 6 — Dhyana Yoga (Madhubani)~~ — text + illustrations done ✓
+4. Next text chapter: **Chapter 7 — Jnana Vijnana Yoga** (Pichwai, 30 verses) — `status: coming_soon`, needs an outline (`docs/chapter-07-outline.md`), then verses authored and illustrated. Follow the Ch6 process: write spec → 6 parallel authoring agents → Sanskrit audit agents → generate illustrations.
 
 ### Front & Back Matter
 1. ~~Characters page + Pronunciation guide~~ — done ✓
@@ -110,7 +118,7 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - CLAUDE.md: project architecture and dev commands
 - Illustration guidelines: `docs/illustration-guidelines.md`
 - Alt text data: `src/data/illustration-alt-text.yaml`
-- Chapter outlines: `docs/chapter-{02,03,12,15}-outline.md`
+- Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
 Last reviewed: 2026-06-17
