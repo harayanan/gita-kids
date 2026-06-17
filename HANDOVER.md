@@ -1,16 +1,24 @@
 # Gita for Kids — Handover
 
-## Current Status: 7 Chapters Active (273/700 verses)
+## Current Status: 7 Chapters Active (273/700 verses), all illustrated
 
 The site is deployed at https://gita-for-kids.vercel.app. Seven chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
 - **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses, 42/42 illustrations (Warli), complete
-- **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses (Kalamkari), text complete — **illustrations not yet generated**
+- **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses, 29/29 illustrations (Kalamkari), complete
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
+
+## What Was Done This Session (2026-06-17)
+
+### Chapter 5 illustrations generated (Kalamkari)
+- Generated all 29 Chapter 5 (Karma Sannyasa Yoga) illustrations via `node scripts/generate-illustration.mjs --chapter 5 --batch 1-29`. Verse 12 hit a transient 503 mid-batch and was regenerated individually. All 29 verified present (1376×768, JPEG-data-as-.png — the known print-pipeline caveat).
+- Spot-checked v1/v12/v29 visually: correct Kalamkari style (dense floral borders, flat profile figures, 6-color palette, consistent Krishna/Arjuna character designs).
+- Build passes (287 pages); all 29 Ch5 verse pages reference and ship their images.
+- Chapter 5 is now fully complete (text + illustrations). **All 7 active chapters are now fully illustrated.**
 
 ## What Was Done This Session (2026-06-14)
 
@@ -88,9 +96,9 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 ## Next Steps
 
 ### Chapter Order
-1. ~~Chapter 4 — Jnana Karma Sannyasa Yoga (Warli)~~ — text done ✓ (illustrations pending)
-2. **Generate Chapter 4 illustrations** (Warli) — `node scripts/generate-illustration.mjs --chapter 4 --batch 1-42`
-3. Next text chapter: **Chapter 5 — Karma Sannyasa Yoga** (Kalamkari) or **Chapter 6 — Dhyana Yoga** (Madhubani)
+1. ~~Chapter 4 — Jnana Karma Sannyasa Yoga (Warli)~~ — text + illustrations done ✓
+2. ~~Chapter 5 — Karma Sannyasa Yoga (Kalamkari)~~ — text + illustrations done ✓
+3. Next text chapter: **Chapter 6 — Dhyana Yoga** (Madhubani) — `status: coming_soon`, needs verses authored then illustrated
 
 ### Front & Back Matter
 1. ~~Characters page + Pronunciation guide~~ — done ✓
@@ -103,4 +111,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-14
+Last reviewed: 2026-06-17
