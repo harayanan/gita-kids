@@ -14,6 +14,8 @@ The site is deployed at https://gita-for-kids.vercel.app. Seven chapters and bac
 
 ## What Was Done This Session (2026-06-17)
 
+**Deployed to production 2026-06-17** (commit `9ce1964`) → https://gita-for-kids.vercel.app — Ch5 verse pages and all 29 Kalamkari illustrations verified live (HTTP 200).
+
 ### Chapter 5 illustrations generated (Kalamkari)
 - Generated all 29 Chapter 5 (Karma Sannyasa Yoga) illustrations via `node scripts/generate-illustration.mjs --chapter 5 --batch 1-29`. Verse 12 hit a transient 503 mid-batch and was regenerated individually. All 29 verified present (1376×768, JPEG-data-as-.png — the known print-pipeline caveat).
 - Spot-checked v1/v12/v29 visually: correct Kalamkari style (dense floral borders, flat profile figures, 6-color palette, consistent Krishna/Arjuna character designs).
