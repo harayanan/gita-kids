@@ -2,7 +2,7 @@
 
 ## Current Status: 10 Chapters Active (397/700 verses), all illustrated
 
-The site is deployed at https://gitakds.com. Ten chapters and back matter are active:
+The site is deployed at https://gitakids.com. Ten chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
@@ -33,7 +33,7 @@ Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Cha
 - Build passes (414 pages). All 77 new verse pages reference and ship their images; dist contains 42 + 35 PNGs.
 
 ### Pending (next session): Rebrand to "Gita Kids"
-User bought **gitakds.com** (canonical) and **gitakids.org** (redirect). Rename "Gita for Kids" → "Gita Kids" across the site; slug `gita-for-kids` → `gita-kids`; rename project folder, GitHub repo (`harayanan/gita-for-kids` → `gita-kids`, gh authed), and Vercel project (authed); update `astro.config` site to `https://gitakds.com`; attach both domains in Vercel; rebuild + verify. See memory `rebrand-to-gita-kids`.
+User bought **gitakids.com** (canonical) and **gitakids.org** (redirect). Rename "Gita for Kids" → "Gita Kids" across the site; slug `gita-for-kids` → `gita-kids`; rename project folder, GitHub repo (`harayanan/gita-for-kids` → `gita-kids`, gh authed), and Vercel project (authed); update `astro.config` site to `https://gitakids.com`; attach both domains in Vercel; rebuild + verify. See memory `rebrand-to-gita-kids`.
 
 ## What Was Done This Session (2026-06-17)
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-An illustrated, interactive children's book (ages 8-12) of the Bhagavad Gita, built as an Astro static site. Each verse gets a YAML content file, a Madhubani folk art illustration, and a kid-friendly retelling. Deployed at https://gitakds.com.
+An illustrated, interactive children's book (ages 8-12) of the Bhagavad Gita, built as an Astro static site. Each verse gets a YAML content file, a Madhubani folk art illustration, and a kid-friendly retelling. Deployed at https://gitakids.com.
 
 ## Commands
 
