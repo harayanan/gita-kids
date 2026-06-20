@@ -167,4 +167,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-17
+Last reviewed: 2026-06-20
