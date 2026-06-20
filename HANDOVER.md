@@ -17,7 +17,13 @@ The site is deployed at https://gitakids.com. Ten chapters and back matter are a
 
 ## What Was Done This Session (2026-06-20)
 
-Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**.
+Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**. Then rebranded to **Gita Kids** (see below) and ran a **word-by-word completeness pass**.
+
+### Word-by-word (`dhatu_breakdown`) completeness pass — all chapters
+The dhatu breakdowns were missing many words systemically — especially particles (च, तु, हि, एव, अपि, इति, न), pronouns (माम्, मे, यः, ये, तम्…), and sandhi-merged words (even the Ch12 reference verse omitted एवं/ये/त्वां/च/अपि/तेषां/के). Fixed via 17 Sanskrit-literate agents (one pilot on Ch12, then 16 across the rest):
+- **2,976 word entries added across 242 verse files; pure additions (0 deletions)** — existing entries and all other fields (sanskrit, transliteration, meaning, story, reflection) untouched.
+- Chapters **6, 13, and most of 10** were already complete (authored with full coverage); chapters 1–5, 12, 15 received the bulk of additions.
+- Verified: all 397 verse YAMLs valid, all 9 fields present, every dhatu entry well-formed; heuristic gap-scan dropped 761→292 with the residual confirmed (by direct inspection) to be sandhi/anusvara false positives, not real gaps. Build passes; new chips render on verse pages.
 
 ### Chapter 10 (Vibhuti Yoga) authored + illustrated — NEW, complete
 - **All 42 verses written** (Kalamkari) by 6 parallel agents against a shared outline spec (`docs/chapter-10-outline.md`). Speaker map: 12–18 = arjuna (Arjuna's hymn of praise + request), rest = krishna. Status flipped `coming_soon` → `active`.
