@@ -1,0 +1,97 @@
+chapter: 17
+verse: 18
+speaker: krishna
+
+sanskrit: "सत्कारमानपूजार्थं तपो दम्भेन चैव यत्। क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम्॥"
+
+transliteration: "satkāramānapūjārthaṁ tapo dambhena caiva yat | kriyate tad iha proktaṁ rājasaṁ calam adhruvam ||"
+
+dhatu_breakdown:
+  - word: "सत्कारमानपूजार्थम्"
+    parts: ["sat (good, real)", "kṛ (to do, to honour)", "man (to think well of, to esteem)", "pūj (to worship, to revere)", "arth (purpose, for the sake of)"]
+    meaning: "for the sake of respect, honour, and being worshipped"
+  - word: "तपः"
+    parts: ["tap (to glow, to make effort)"]
+    meaning: "tapas, discipline"
+  - word: "दम्भेन"
+    parts: ["dambh (to deceive, to show off)"]
+    meaning: "with showing off, out of pretence"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (indeed, just)"]
+    meaning: "indeed, just"
+  - word: "यत्"
+    parts: ["yad (which)"]
+    meaning: "which, that which"
+  - word: "क्रियते"
+    parts: ["kṛ (to do, to make)"]
+    meaning: "is done, is performed"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this world"
+  - word: "प्रोक्तम्"
+    parts: ["pra (forth)", "vac (to speak)"]
+    meaning: "is declared, is called"
+  - word: "राजसम्"
+    parts: ["rajas (restlessness, passion)", "a (made of)"]
+    meaning: "rajasic, belonging to restless passion"
+  - word: "चलम्"
+    parts: ["cal (to move, to shake)"]
+    meaning: "shaky, wobbling, unsteady"
+  - word: "अध्रुवम्"
+    parts: ["a (not)", "dhruva (fixed, steady, lasting)"]
+    meaning: "not lasting, short-lived"
+
+meaning: >
+  Krishna says: "But discipline that is done only to be respected, to look
+  important, or to be praised — done as a show for others — is called rajasic,
+  the kind that comes from restless wanting. Such discipline is shaky and never
+  lasts, because the moment the praise stops, so does the effort."
+
+story:
+  title: "The Sage Who Counted His Watchers"
+  source: "puranic"
+  body: |
+    There were once two seekers who went to the forest to practise great
+    discipline. Their names were Vamadeva and Pundarika.
+
+    Vamadeva sat himself down at a busy crossing of forest paths, where traders
+    and pilgrims passed all day. He fasted, he held his arms up, he sat very
+    straight — but only when someone was looking. Each time a crowd gathered, his
+    back grew straighter and his face grew more solemn. "See the great holy man,"
+    people whispered, and Vamadeva drank in every word.
+
+    When the paths emptied, though, something odd happened. Vamadeva's arms came
+    down. He nibbled food from a hidden pouch. He fidgeted and yawned and watched
+    the path, waiting for the next audience. His discipline came and went like a
+    flag in a gusty wind — up when watched, down when alone.
+
+    Pundarika, meanwhile, had walked deep into the quiet forest where no path ran
+    at all. No one ever passed. No one ever praised him. He simply kept his small
+    practice, the same whether the sun rose or set, the same whether anyone came
+    or not.
+
+    Months later a wandering teacher visited both.
+
+    At the crossing, he found Vamadeva exhausted and cross. The crowds had thinned
+    that week, and without their eyes on him, his great discipline had crumbled to
+    almost nothing. "I have practised so hard," Vamadeva complained, "yet I feel
+    no peace."
+
+    "You did not practise for the practice," the teacher said gently. "You
+    practised for the watching eyes. So the moment the eyes left, your effort
+    fell down. Discipline built on praise is like a tower built on the wind —
+    tall for a moment, then gone."
+
+    Then he walked into the deep forest and found Pundarika, calm and steady,
+    practising for no audience at all.
+
+    "And here," said the teacher, "is discipline that stands. Not because it is
+    grand, but because it does not need anyone to be watching."
+
+reflection: "Vamadeva sat straight only when people watched. Have you ever worked hard at something mostly so others would notice? What happens to that effort when nobody is looking?"

@@ -1,0 +1,102 @@
+chapter: 17
+verse: 21
+speaker: krishna
+
+sanskrit: "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः। दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम्॥"
+
+transliteration: "yattu pratyupakārārthaṁ phalamuddiśya vā punaḥ | dīyate ca parikliṣṭaṁ taddānaṁ rājasaṁ smṛtam ||"
+
+dhatu_breakdown:
+  - word: "यत्"
+    parts: ["yad (which, that which)"]
+    meaning: "which, that which"
+  - word: "तु"
+    parts: ["tu (but, however)"]
+    meaning: "but, on the other hand"
+  - word: "प्रत्युपकारार्थम्"
+    parts: ["prati (back, in return)", "upa (towards)", "kṛ (to do, to help)", "artha (purpose, for the sake of)"]
+    meaning: "for the sake of getting a favour back in return"
+  - word: "फलम्"
+    parts: ["phal (to bear fruit)", "a (noun)"]
+    meaning: "fruit, reward, result"
+  - word: "उद्दिश्य"
+    parts: ["ut (up, out)", "diś (to point at, to aim)", "ya (gerund, having)"]
+    meaning: "aiming at, with an eye on"
+  - word: "वा"
+    parts: ["vā (or)"]
+    meaning: "or"
+  - word: "पुनः"
+    parts: ["punar (again)"]
+    meaning: "again, moreover"
+  - word: "दीयते"
+    parts: ["dā (to give)", "yate (passive, is given)"]
+    meaning: "is given"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "परिक्लिष्टम्"
+    parts: ["pari (all around, completely)", "kliś (to be pained, to be troubled)", "ta (past participle)"]
+    meaning: "grudgingly, with reluctance and inner pain"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that"
+  - word: "दानम्"
+    parts: ["dā (to give)", "ana (the act of)"]
+    meaning: "the gift, the act of giving"
+  - word: "राजसम्"
+    parts: ["rajas (passion, restless energy)", "a (made of, belonging to)"]
+    meaning: "rajasic, born of restless wanting"
+  - word: "स्मृतम्"
+    parts: ["smṛ (to remember, to declare)", "ta (past participle)"]
+    meaning: "is remembered as, is held to be"
+
+meaning: >
+  Krishna says: "But sometimes a gift is given hoping to get a favour back, or
+  with one eye on a reward, or given grudgingly — as if it hurts a little to let
+  it go. That kind of giving is the restless, middle kind. It is still giving,
+  but the heart behind it is busy wanting something for itself."
+
+story:
+  title: "The Merchant's Reluctant Gift"
+  source: "panchatantra"
+  body: |
+    In a busy trading town lived a rich merchant named Dhanapal, whose
+    storerooms overflowed with grain, cloth, and gold. He was known across the
+    bazaar for his wealth — and, quietly, for how tightly he held it.
+
+    One festival day, a respected teacher came to the town to build a school for
+    poor children. He went from house to house asking for help. Word spread fast,
+    and soon everyone was watching to see how much each big family would give.
+
+    When the teacher reached Dhanapal's grand doorway, a small crowd had already
+    gathered. Dhanapal felt their eyes on him. He could not say no — not in front
+    of all these people, not with the other merchants watching to compare. So he
+    called for a bag of coins.
+
+    But as the servant brought it, Dhanapal's fingers tightened. He counted the
+    coins twice. He pulled a few back out. He sighed loudly, the way a person
+    sighs when something is being pulled from them against their will.
+
+    "Here," he said at last, pressing the bag into the teacher's hands. Then,
+    leaning close, he added in a low voice, "Remember this when my caravans pass
+    through your district. A good word from a man like you opens many gates. We
+    help each other, yes?"
+
+    The teacher looked at the heavy bag and then at the merchant's face. The gift
+    was real. The school would be built a little sooner because of it. But the
+    teacher had seen pure giving before, and he knew this was not it. This gift
+    came wrapped in three strings: it was given for show, given hoping for a
+    favour in return, and given with a wince, as if each coin were a tooth being
+    pulled.
+
+    "Thank you," the teacher said kindly. "Your coins will help the children."
+
+    As he walked away, a young student asked him, "Was that not a generous gift,
+    guruji? So much gold!"
+
+    "It was a real gift," the teacher said, "and it will do real good. But notice
+    how it was given — for praise, for a return favour, and grudgingly. Such
+    giving is restless. It keeps one hand reaching out even while the other hand
+    gives. The purest giving lets go completely, and asks for nothing back."
+
+reflection: "Have you ever given something while secretly hoping to get a favour back, or felt a little reluctant as you handed it over? What might it take to give with a fully open hand?"
