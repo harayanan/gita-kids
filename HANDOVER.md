@@ -32,8 +32,17 @@ Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Cha
 ### Build & verification
 - Build passes (414 pages). All 77 new verse pages reference and ship their images; dist contains 42 + 35 PNGs.
 
-### Pending (next session): Rebrand to "Gita Kids"
-User bought **gitakids.com** (canonical) and **gitakids.org** (redirect). Rename "Gita for Kids" → "Gita Kids" across the site; slug `gita-for-kids` → `gita-kids`; rename project folder, GitHub repo (`harayanan/gita-for-kids` → `gita-kids`, gh authed), and Vercel project (authed); update `astro.config` site to `https://gitakids.com`; attach both domains in Vercel; rebuild + verify. See memory `rebrand-to-gita-kids`.
+### Rebrand "Gita for Kids" → "Gita Kids" — DONE (this session)
+Canonical domain **https://gitakids.com** (user's message said "gitakds.com" — typo; Vercel account owns `gitakids.com` + `gitakids.org`, so corrected to `gitakids.com`).
+- **Display name** "Gita for Kids" → "Gita Kids" across all layouts/pages (titles, footer, og:title). Verified live: home `<title>` = "Gita Kids — Learn the Bhagavad Gita".
+- **Slug/package** `gita-for-kids` → `gita-kids` (package.json + lock); `astro.config` site → `https://gitakids.com`; CLAUDE.md/HANDOVER URLs updated. (Dated archival plan docs under `docs/plans/`, `docs/superpowers/plans/` left as historical snapshots.)
+- **Project folder** renamed `…/for-shakti/gita-for-kids` → `…/for-shakti/gita-kids`. A compatibility symlink `gita-for-kids → gita-kids` was left in `for-shakti/` so the live session (anchored to the old path) keeps working — **safe to delete**; update your Claude Code working-dir to the new path. Added git `safe.directory` for the new path.
+- **GitHub repo** renamed `harayanan/gita-for-kids` → `harayanan/gita-kids` (`gh repo rename`); local remote updated; GitHub auto-redirects the old URL.
+- **Deployed + verified live**: push to `main` auto-deployed to production (Vercel Git integration survived the GitHub rename — keys off repo ID). Home, Ch10/Ch13 indexes, verse pages, and images all HTTP 200.
+
+#### Vercel items still needing YOU (CLI 50.10.1 can't do these)
+1. **Project name** is still `gita-for-kids` in Vercel (CLI has no `project rename`). Rename in dashboard: Project → Settings → General → Project Name → `gita-kids`. This also changes the default URL to `gita-kids.vercel.app`. `.vercel/project.json` uses the stable projectId, so deploys keep working regardless.
+2. **Custom domains**: `gitakids.com` + `gitakids.org` are on the Vercel account but **nameservers are still "Third Party"** (DNS not pointed at Vercel). To go live on the real domains: in the registrar, point DNS to Vercel (switch nameservers to Vercel's, or add the A/CNAME records Vercel shows); in Vercel, add both domains to the project and set `gitakids.org` → `gitakids.com` (301 redirect), with `gitakids.com` primary. Until then, production serves at `gita-for-kids.vercel.app`.
 
 ## What Was Done This Session (2026-06-17)
 
