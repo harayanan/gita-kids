@@ -1,23 +1,32 @@
 # Gita Kids — Handover
 
-## Current Status: 10 Chapters Active (397/700 verses), all illustrated
+## Current Status: 11 Chapters Active (427/700 verses), all illustrated
 
-The site is deployed at https://gitakids.com. Ten chapters and back matter are active:
+The site is deployed at https://gitakids.com. Eleven chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
 - **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses, 42/42 illustrations (Warli), complete
 - **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses, 29/29 illustrations (Kalamkari), complete
 - **Chapter 6** (Dhyana Yoga): 47/47 verses, 47/47 illustrations (Madhubani), complete
+- **Chapter 7** (Jnana Vijnana Yoga): 30/30 verses, 30/30 illustrations (Pichwai), complete
 - **Chapter 10** (Vibhuti Yoga): 42/42 verses, 42/42 illustrations (Kalamkari), complete
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
 - **Chapter 13** (Kshetra-Kshetrajna Vibhaga Yoga): 35/35 verses, 35/35 illustrations (Pattachitra), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
 
+Remaining coming_soon: **8** (Pattachitra), **9** (Warli), **11** (Madhubani), **14** (Warli), **16** (Madhubani), **17** (Pichwai), **18** (Pattachitra).
+
 ## What Was Done This Session (2026-06-20)
 
-Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**. Then rebranded to **Gita Kids** (see below) and ran a **word-by-word completeness pass**.
+Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**. Then rebranded to **Gita Kids** (see below), ran a **word-by-word completeness pass**, and authored + illustrated **Chapter 7**.
+
+### Chapter 7 (Jnana Vijnana Yoga) authored + illustrated — NEW, complete
+- **All 30 verses written** (Pichwai, all speaker=krishna) by 5 parallel agents per `docs/chapter-07-outline.md`. dhatu_breakdown authored COMPLETE (every particle/pronoun) from the start — no later completeness pass needed.
+- **Sanskrit audited clean**: 0 critical, 0 high (1 optional stylistic gloss note on प्रणवः). dhatu completeness verified.
+- **30 Pichwai illustrations generated**, zero failures. Spot-checked v8 (taste-in-water / sun+moon / Om) — correct Nathdwara Pichwai (dark ground, jewel tones, consistent Krishna). Live & verified (pages + images HTTP 200 on gitakids.com).
+- **LESSON:** illustrations live in `public/illustrations/<slug>/`, NOT under `content/chapters/`. Must `git add` BOTH when shipping a chapter — the first Ch7 commit staged only `content/`, so images 404'd in prod until a follow-up commit added `public/illustrations/07-*`. For future chapters, stage both paths.
 
 ### Word-by-word (`dhatu_breakdown`) completeness pass — all chapters
 The dhatu breakdowns were missing many words systemically — especially particles (च, तु, हि, एव, अपि, इति, न), pronouns (माम्, मे, यः, ये, तम्…), and sandhi-merged words (even the Ch12 reference verse omitted एवं/ये/त्वां/च/अपि/तेषां/के). Fixed via 17 Sanskrit-literate agents (one pilot on Ch12, then 16 across the rest):
