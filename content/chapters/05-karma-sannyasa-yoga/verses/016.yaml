@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "ज्ञानेन"
     parts: ["jñā (to know)"]
     meaning: "by knowledge, through knowing"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
+  - word: "तत्"
+    parts: ["tat (that)"]
+    meaning: "that"
   - word: "अज्ञानम्"
     parts: ["a (not)", "jñā (to know)"]
     meaning: "ignorance, not-knowing"

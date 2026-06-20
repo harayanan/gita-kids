@@ -34,6 +34,12 @@ dhatu_breakdown:
   - word: "देही"
     parts: ["deha (body)"]
     meaning: "the dweller in the body, the embodied one"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, neither"
+  - word: "एव"
+    parts: ["eva (indeed, at all)"]
+    meaning: "indeed, at all"
   - word: "कुर्वन्"
     parts: ["kṛ (to do, to act)"]
     meaning: "acting, doing"

@@ -7,21 +7,36 @@ sanskrit: "नास्ति बुद्धिरयुक्तस्य न 
 transliteration: "nāsti buddhirayuktasya na cāyuktasya bhāvanā | na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, no"
+  - word: "अस्ति"
+    parts: ["as (to be, to exist)"]
+    meaning: "there is, exists"
   - word: "बुद्धिः"
     parts: ["budh (to awaken, to understand)"]
     meaning: "intellect, wisdom, discernment"
   - word: "अयुक्तस्य"
     parts: ["a (not)", "yuj (to yoke, to discipline)"]
     meaning: "of the undisciplined one, the unsteady person"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "भावना"
     parts: ["bhū (to become, to be)", "ana (continuous action)"]
     meaning: "right feeling, contemplation, meditation"
+  - word: "अभावयतः"
+    parts: ["a (not)", "bhū (to be, to cultivate)"]
+    meaning: "of the unmeditative one, of one who does not cultivate contemplation"
   - word: "शान्तिः"
     parts: ["śam (to be calm, to be at peace)"]
     meaning: "peace, tranquility"
   - word: "अशान्तस्य"
     parts: ["a (not)", "śam (to be calm)"]
     meaning: "of the peaceless one"
+  - word: "कुतः"
+    parts: ["kutas (from where, how)"]
+    meaning: "from where, how can there be"
   - word: "सुखम्"
     parts: ["su (good)", "kha (space, axle-hole)"]
     meaning: "happiness, comfort, ease"

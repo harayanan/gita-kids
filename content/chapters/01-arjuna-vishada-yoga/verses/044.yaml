@@ -25,6 +25,9 @@ dhatu_breakdown:
   - word: "वयम्"
     parts: ["vayam (we)"]
     meaning: "we"
+  - word: "यत्"
+    parts: ["yad (that, in that)"]
+    meaning: "that, inasmuch as"
   - word: "राज्यसुखलोभेन"
     parts: ["rājya (kingdom)", "sukha (pleasure, happiness)", "lobha (greed, from lubh — to desire)"]
     meaning: "out of greed for the pleasures of a kingdom"

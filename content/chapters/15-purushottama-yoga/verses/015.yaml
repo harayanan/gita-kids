@@ -7,12 +7,24 @@ sanskrit: "सर्वस्य चाहं हृदि सन्निवि
 transliteration: "sarvasya cāhaṁ hṛdi sanniviṣṭo mattaḥ smṛtirjñānamapohanaṁ ca | vedaiśca sarvairahameva vedyo vedāntakṛdvedavideva cāham ||"
 
 dhatu_breakdown:
+  - word: "सर्वस्य"
+    parts: ["sarva (all, everyone)"]
+    meaning: "of all, of every being"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "हृदि"
     parts: ["hṛd (heart)"]
     meaning: "in the heart"
   - word: "सन्निविष्टः"
     parts: ["sam (together, fully)", "ni (within, down)", "viś (to enter, to sit)"]
     meaning: "seated within, deeply established"
+  - word: "मत्तः"
+    parts: ["mad (from me)"]
+    meaning: "from Me"
   - word: "स्मृतिः"
     parts: ["smṛ (to remember)"]
     meaning: "memory, remembrance"
@@ -22,6 +34,15 @@ dhatu_breakdown:
   - word: "अपोहनम्"
     parts: ["apa (away)", "ūh (to push, to remove)"]
     meaning: "forgetfulness, the removal of knowledge"
+  - word: "वेदैः"
+    parts: ["veda (the Vedas)"]
+    meaning: "by the Vedas"
+  - word: "सर्वैः"
+    parts: ["sarva (all)"]
+    meaning: "by all"
+  - word: "एव"
+    parts: ["eva (alone, only)"]
+    meaning: "alone, indeed"
   - word: "वेद्यः"
     parts: ["vid (to know)", "ya (suffix: that which is to be)"]
     meaning: "that which is to be known"

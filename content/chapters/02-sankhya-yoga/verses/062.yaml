@@ -13,15 +13,30 @@ dhatu_breakdown:
   - word: "विषयान्"
     parts: ["vi (apart)", "ṣi (to bind)"]
     meaning: "sense objects, things that captivate"
+  - word: "पुंसः"
+    parts: ["puṁs (man, person)"]
+    meaning: "of a person, of a man"
   - word: "सङ्गः"
     parts: ["sam (together)", "anj (to anoint, to attach)"]
     meaning: "attachment, clinging"
+  - word: "तेषु"
+    parts: ["tad (that, those)"]
+    meaning: "in them, toward those (sense objects)"
   - word: "उपजायते"
     parts: ["upa (near, toward)", "jan (to be born)"]
     meaning: "is born, arises, springs up"
+  - word: "सङ्गात्"
+    parts: ["sam (together)", "anj (to anoint, to attach)"]
+    meaning: "from attachment"
+  - word: "सञ्जायते"
+    parts: ["sam (fully)", "jan (to be born)"]
+    meaning: "is fully born, arises"
   - word: "कामः"
     parts: ["kam (to desire, to long for)"]
     meaning: "desire, craving"
+  - word: "कामात्"
+    parts: ["kam (to desire, to long for)"]
+    meaning: "from desire"
   - word: "क्रोधः"
     parts: ["krudh (to be angry)"]
     meaning: "anger, wrath"

@@ -10,9 +10,15 @@ dhatu_breakdown:
   - word: "अभ्यासे"
     parts: ["abhi (toward)", "as (to practice)"]
     meaning: "in practice"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "even, also"
   - word: "असमर्थः"
     parts: ["a (not)", "sam (together)", "artha (fit, purposeful)"]
     meaning: "unable, incapable"
+  - word: "असि"
+    parts: ["as (to be)"]
+    meaning: "you are"
   - word: "मत्कर्मपरमः"
     parts: ["mat (My)", "karma (action)", "parama (supreme, devoted to)"]
     meaning: "devoted to performing actions for My sake"

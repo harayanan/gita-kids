@@ -13,18 +13,30 @@ dhatu_breakdown:
   - word: "नरकाय"
     parts: ["naraka (hell)", "āya (for, leading to)"]
     meaning: "leading to hell"
+  - word: "एव"
+    parts: ["eva (only, certainly)"]
+    meaning: "only, certainly"
   - word: "कुलघ्नानाम्"
     parts: ["kula (family)", "ghna (destroyer, from han — to kill)"]
     meaning: "of the destroyers of the family"
   - word: "कुलस्य"
     parts: ["kula (family, lineage)"]
     meaning: "of the family"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "पतन्ति"
     parts: ["pat (to fall)"]
     meaning: "they fall"
   - word: "पितरः"
     parts: ["pitṛ (father, ancestor)"]
     meaning: "the ancestors, the forefathers"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "एषाम्"
+    parts: ["idam (these, of these)"]
+    meaning: "of these (family destroyers)"
   - word: "लुप्तपिण्डोदकक्रियाः"
     parts: ["lupta (lost, ceased)", "piṇḍa (rice ball offering)", "udaka (water)", "kriyā (ritual, action)"]
     meaning: "deprived of the offerings of rice and water"

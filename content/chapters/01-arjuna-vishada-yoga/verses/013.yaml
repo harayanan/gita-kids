@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "शङ्खाः"
     parts: ["śaṅkha (conch shell)"]
     meaning: "conch shells"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "भेर्यः"
     parts: ["bherī (large kettledrum)"]
     meaning: "kettledrums"
@@ -22,15 +25,24 @@ dhatu_breakdown:
   - word: "सहसा"
     parts: ["sahasā (suddenly, all at once)"]
     meaning: "all at once, suddenly"
+  - word: "एव"
+    parts: ["eva (indeed, just)"]
+    meaning: "just then, at the very moment"
   - word: "अभ्यहन्यन्त"
     parts: ["abhi (towards)", "han (to strike)"]
     meaning: "were struck, were sounded"
+  - word: "सः"
+    parts: ["tad (that)"]
+    meaning: "that"
   - word: "तुमुलः"
     parts: ["tumula (tumultuous, uproarious)"]
     meaning: "tumultuous, tremendous"
   - word: "शब्दः"
     parts: ["śabda (sound)"]
     meaning: "sound, noise"
+  - word: "अभवत्"
+    parts: ["bhū (to be, become)", "a (past tense)"]
+    meaning: "became, arose"
 
 meaning: >
   After Bhishma's conch, suddenly all the other instruments burst out

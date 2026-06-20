@@ -25,9 +25,18 @@ dhatu_breakdown:
   - word: "सर्वारम्भपरित्यागी"
     parts: ["sarva (all)", "ārambha (undertaking, beginning)", "pari (around, fully)", "tyāga (giving up)"]
     meaning: "one who has renounced all selfish undertakings"
+  - word: "यः"
+    parts: ["yad (who)"]
+    meaning: "who, the one who"
   - word: "मद्भक्तः"
     parts: ["mat (my, of me)", "bhakta (devotee)"]
     meaning: "my devotee"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that one"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
   - word: "प्रियः"
     parts: ["prī (to love, to please)"]
     meaning: "dear, beloved"

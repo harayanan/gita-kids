@@ -7,6 +7,9 @@ sanskrit: "श्रीभगवानुवाच। बहूनि मे व
 transliteration: "śrībhagavānuvāca | bahūni me vyatītāni janmāni tava cārjuna | tānyahaṁ veda sarvāṇi na tvaṁ vettha parantapa ||"
 
 dhatu_breakdown:
+  - word: "श्रीभगवानुवाच"
+    parts: ["śrī (holy, blessed)", "bhagavān (the Lord, the blessed one)", "vac (to speak)"]
+    meaning: "the blessed Lord said"
   - word: "बहूनि"
     parts: ["bahu (many)"]
     meaning: "many"
@@ -22,6 +25,12 @@ dhatu_breakdown:
   - word: "तव"
     parts: ["tava (of you, your)"]
     meaning: "your"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and, also"
+  - word: "अर्जुन"
+    parts: ["arjuna (Arjuna)"]
+    meaning: "O Arjuna"
   - word: "तानि"
     parts: ["tāni (those, them)"]
     meaning: "all those"

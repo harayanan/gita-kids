@@ -23,6 +23,9 @@ dhatu_breakdown:
   - word: "उद्विजेत्"
     parts: ["ud (up, away)", "vij (to tremble, to be disturbed)"]
     meaning: "would be shaken, would be distressed"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "अप्रियम्"
     parts: ["a (not)", "prī (to please)"]
     meaning: "something unpleasant, something disliked"

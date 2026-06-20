@@ -7,6 +7,15 @@ sanskrit: "यो मामेवमसम्मूढो जानाति प
 transliteration: "yo māmevamasammūḍho jānāti puruṣottamam | sa sarvavidbhajati māṁ sarvabhāvena bhārata ||"
 
 dhatu_breakdown:
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "the one who"
+  - word: "माम्"
+    parts: ["mām (me)"]
+    meaning: "Me"
+  - word: "एवम्"
+    parts: ["evam (thus, in this way)"]
+    meaning: "thus, in this way"
   - word: "असम्मूढः"
     parts: ["a (not)", "sam (completely)", "muh (to be deluded, to be confused)"]
     meaning: "undeluded, with clear understanding"
@@ -16,6 +25,9 @@ dhatu_breakdown:
   - word: "पुरुषोत्तमम्"
     parts: ["puruṣa (person, being)", "uttama (supreme)"]
     meaning: "the Supreme Person"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that person"
   - word: "सर्ववित्"
     parts: ["sarva (all, everything)", "vid (to know)"]
     meaning: "the knower of all, one who knows everything that matters"

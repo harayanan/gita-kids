@@ -16,18 +16,27 @@ dhatu_breakdown:
   - word: "स्पर्शनम्"
     parts: ["spṛś (to touch, to feel)"]
     meaning: "the organ of touch, the skin"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "रसनम्"
     parts: ["ras (to taste, to relish)"]
     meaning: "the tongue, the organ of taste"
   - word: "घ्राणम्"
     parts: ["ghrā (to smell)"]
     meaning: "the nose, the organ of smell"
+  - word: "एव"
+    parts: ["eva (also, indeed)"]
+    meaning: "indeed, as well"
   - word: "अधिष्ठाय"
     parts: ["adhi (over, upon)", "sthā (to stand, to preside)"]
     meaning: "presiding over, seated upon"
   - word: "मनः"
     parts: ["man (to think, to contemplate)"]
     meaning: "the mind"
+  - word: "अयम्"
+    parts: ["idam (this)"]
+    meaning: "this one (the soul)"
   - word: "विषयान्"
     parts: ["viṣaya (sense-object, from viṣ — to pervade)"]
     meaning: "the objects of the senses"

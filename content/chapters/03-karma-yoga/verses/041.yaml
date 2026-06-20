@@ -7,6 +7,12 @@ sanskrit: "तस्मात्त्वमिन्द्रियाण्य
 transliteration: "tasmāttvamindriyāṇyādau niyamya bharatarṣabha | pāpmānaṁ prajahi hyenaṁ jñānavijñānanāśanam ||"
 
 dhatu_breakdown:
+  - word: "तस्मात्"
+    parts: ["tad (that — ablative: from that)"]
+    meaning: "therefore, for that reason"
+  - word: "त्वम्"
+    parts: ["tvam (you)"]
+    meaning: "you"
   - word: "इन्द्रियाणि"
     parts: ["indriya (sense organ, faculty of perception)"]
     meaning: "the senses"
@@ -16,12 +22,21 @@ dhatu_breakdown:
   - word: "नियम्य"
     parts: ["ni (firmly)", "yam (to restrain, to regulate)"]
     meaning: "having controlled, having restrained"
+  - word: "भरतर्षभ"
+    parts: ["bharata (Bharata)", "ṛṣabha (bull, best of)"]
+    meaning: "O best of the Bharatas (Arjuna)"
   - word: "पाप्मानम्"
     parts: ["pāpman (sin, evil, the sinful one)"]
     meaning: "the sinful destroyer"
   - word: "प्रजहि"
     parts: ["pra (forth, completely)", "hā (to abandon, to slay)"]
     meaning: "slay! destroy completely!"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "एनम्"
+    parts: ["enad (this — accusative: this one)"]
+    meaning: "this one, it"
   - word: "ज्ञानविज्ञाननाशनम्"
     parts: ["jñāna (knowledge, wisdom)", "vijñāna (realization, applied knowledge)", "nāśana (destroyer)"]
     meaning: "the destroyer of both knowledge and realization"

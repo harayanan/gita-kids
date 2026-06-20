@@ -7,6 +7,12 @@ sanskrit: "यदा ते मोहकलिलं बुद्धिर्व
 transliteration: "yadā te mohakalilaṁ buddhirvyatitariṣyati | tadā gantāsi nirvedaṁ śrotavyasya śrutasya ca ||"
 
 dhatu_breakdown:
+  - word: "यदा"
+    parts: ["yadā (when)"]
+    meaning: "when"
+  - word: "ते"
+    parts: ["tvad (you)"]
+    meaning: "your"
   - word: "मोहकलिलम्"
     parts: ["muh (to be confused, to be deluded)", "kalila (thicket, dense mass)"]
     meaning: "the thicket of delusion, the dense tangle of confusion"
@@ -16,6 +22,12 @@ dhatu_breakdown:
   - word: "व्यतितरिष्यति"
     parts: ["vi (across)", "ati (beyond)", "tṝ (to cross over)"]
     meaning: "shall cross beyond, will pass through completely"
+  - word: "तदा"
+    parts: ["tadā (then)"]
+    meaning: "then, at that time"
+  - word: "गन्तासि"
+    parts: ["gam (to go, to reach)"]
+    meaning: "you will go to, you will reach"
   - word: "निर्वेदम्"
     parts: ["nis (without, beyond)", "vid (to know)"]
     meaning: "indifference, dispassion — beyond the need to know more"
@@ -25,6 +37,9 @@ dhatu_breakdown:
   - word: "श्रुतस्य"
     parts: ["śru (to hear)"]
     meaning: "of what has already been heard"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
 
 meaning: >
   When your intellect crosses the dense thicket of delusion, you

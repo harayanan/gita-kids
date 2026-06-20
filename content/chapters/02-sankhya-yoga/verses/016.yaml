@@ -7,6 +7,9 @@ sanskrit: "नासतो विद्यते भावो नाभावो
 transliteration: "nāsato vidyate bhāvo nābhāvo vidyate sataḥ | ubhayorapi dṛṣṭo'ntastvanayostattvadarśibhiḥ ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, no"
   - word: "असतः"
     parts: ["a (not)", "sat (being, truth, from as — to be)"]
     meaning: "of the unreal, of the non-existent"
@@ -22,12 +25,24 @@ dhatu_breakdown:
   - word: "सतः"
     parts: ["sat (being, truth, from as — to be)"]
     meaning: "of the real, of the existent"
+  - word: "उभयोः"
+    parts: ["ubha (both)"]
+    meaning: "of both"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "दृष्टः"
     parts: ["dṛś (to see)"]
     meaning: "has been seen, has been perceived"
   - word: "अन्तः"
     parts: ["anta (end, conclusion)"]
     meaning: "the conclusion, the truth"
+  - word: "तु"
+    parts: ["tu (but, indeed)"]
+    meaning: "but, indeed"
+  - word: "अनयोः"
+    parts: ["idam (of these two)"]
+    meaning: "of these two"
   - word: "तत्त्वदर्शिभिः"
     parts: ["tattva (truth, essence)", "darśin (seer, from dṛś — to see)"]
     meaning: "by the seers of truth"

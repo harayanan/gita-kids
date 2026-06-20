@@ -22,9 +22,15 @@ dhatu_breakdown:
   - word: "योगम्"
     parts: ["yuj (to yoke, to join)"]
     meaning: "yoga, the path of selfless action"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "शंससि"
     parts: ["śaṁs (to praise, to commend)"]
     meaning: "you praise, you recommend"
+  - word: "यत्"
+    parts: ["yat (which)"]
+    meaning: "which, whichever"
   - word: "श्रेयः"
     parts: ["śri (to be excellent, to surpass)"]
     meaning: "better, more beneficial"
@@ -34,6 +40,12 @@ dhatu_breakdown:
   - word: "एकम्"
     parts: ["eka (one)"]
     meaning: "one, the single one"
+  - word: "तत्"
+    parts: ["tat (that)"]
+    meaning: "that one"
+  - word: "मे"
+    parts: ["me (to me)"]
+    meaning: "to me, for me"
   - word: "ब्रूहि"
     parts: ["brū (to speak, to tell)"]
     meaning: "tell, please say"

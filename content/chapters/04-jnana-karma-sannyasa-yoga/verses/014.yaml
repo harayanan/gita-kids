@@ -31,12 +31,18 @@ dhatu_breakdown:
   - word: "इति"
     parts: ["iti (thus, in this way)"]
     meaning: "thus, in this way"
+  - word: "यः"
+    parts: ["yaḥ (who, whoever)"]
+    meaning: "whoever, the one who"
   - word: "अभिजानाति"
     parts: ["abhi (toward, thoroughly)", "jñā (to know)"]
     meaning: "fully knows, clearly understands"
   - word: "कर्मभिः"
     parts: ["kṛ (to do, to act)"]
     meaning: "by actions, by deeds"
+  - word: "सः"
+    parts: ["saḥ (he, that one)"]
+    meaning: "he, that person"
   - word: "बध्यते"
     parts: ["bandh (to bind, to tie)"]
     meaning: "is bound, is tied up"

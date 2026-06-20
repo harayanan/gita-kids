@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "रागद्वेषवियुक्तैः"
     parts: ["rāga (attraction, from rañj — to color)", "dveṣa (aversion, from dviṣ — to hate)", "vi (free from)", "yukta (joined, from yuj)"]
     meaning: "free from attraction and aversion"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
   - word: "विषयान्"
     parts: ["vi (apart)", "ṣi (to bind)"]
     meaning: "sense objects"
@@ -22,6 +25,9 @@ dhatu_breakdown:
   - word: "आत्मवश्यैः"
     parts: ["ātma (self)", "vaśya (under control, from vaś)"]
     meaning: "with self-controlled senses"
+  - word: "विधेयात्मा"
+    parts: ["vi (apart)", "dhā (to place, to govern)", "ātman (self)"]
+    meaning: "one whose self is governed, the self-disciplined one"
   - word: "प्रसादम्"
     parts: ["pra (forth)", "sad (to sit, to settle)"]
     meaning: "serenity, clarity, grace, inner peace"

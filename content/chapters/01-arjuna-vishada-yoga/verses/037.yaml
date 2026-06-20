@@ -37,6 +37,9 @@ dhatu_breakdown:
   - word: "मित्रद्रोहे"
     parts: ["mitra (friend)", "druh (to be hostile)"]
     meaning: "in hostility to friends, in betrayal of friends"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "पातकम्"
     parts: ["pat (to fall)"]
     meaning: "sin, that which causes one to fall"

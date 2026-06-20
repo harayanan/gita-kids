@@ -7,15 +7,42 @@ sanskrit: "न रूपमस्येह तथोपलभ्यते ना
 transliteration: "na rūpamasyeha tathopalabhyate nānto na cādirna ca saṁpratiṣṭhā | aśvatthamenaṁ suvirūḍhamūlamasaṅgaśastreṇa dṛḍhena chittvā ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "रूपम्"
     parts: ["rūpa (form, appearance)"]
     meaning: "the true form"
+  - word: "अस्य"
+    parts: ["idam (of this)"]
+    meaning: "of this (tree)"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this world"
+  - word: "तथा"
+    parts: ["tathā (so, in that way)"]
+    meaning: "so, in that way"
   - word: "उपलभ्यते"
     parts: ["upa (near, towards)", "labh (to obtain, to perceive)"]
     meaning: "is perceived, can be grasped"
+  - word: "अन्तः"
+    parts: ["anta (end, limit)"]
+    meaning: "end, limit"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "आदिः"
+    parts: ["ādi (beginning, origin)"]
+    meaning: "beginning, origin"
   - word: "संप्रतिष्ठा"
     parts: ["sam (complete)", "prati (towards)", "sthā (to stand, to be established)"]
     meaning: "firm foundation, solid ground"
+  - word: "अश्वत्थम्"
+    parts: ["aśvattha (the sacred fig tree)"]
+    meaning: "the ashvattha tree"
+  - word: "एनम्"
+    parts: ["enad (this)"]
+    meaning: "this (tree)"
   - word: "सुविरूढमूलम्"
     parts: ["su (very)", "vi (strongly)", "rūḍha (grown, rooted)", "mūla (root)"]
     meaning: "with deeply grown, firmly established roots"

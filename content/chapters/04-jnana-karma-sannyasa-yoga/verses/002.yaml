@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "परम्पराप्राप्तम्"
     parts: ["param (further)", "para (beyond)", "pra (forth)", "āp (to reach, to obtain)"]
     meaning: "received through an unbroken chain, one after another"
+  - word: "इमम्"
+    parts: ["ima (this)"]
+    meaning: "this"
   - word: "राजर्षयः"
     parts: ["rāja (king)", "ṛṣi (seer, sage)"]
     meaning: "the royal sages, kings who were also wise seers"
@@ -25,6 +28,9 @@ dhatu_breakdown:
   - word: "कालेन"
     parts: ["kāl (to count, to reckon time)"]
     meaning: "by time, with the passing of time"
+  - word: "इह"
+    parts: ["iha (here)"]
+    meaning: "here, in this world"
   - word: "महता"
     parts: ["mah (to be great)"]
     meaning: "great, long"

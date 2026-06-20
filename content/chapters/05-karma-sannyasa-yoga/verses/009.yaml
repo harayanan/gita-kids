@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "निमिषन्"
     parts: ["ni (down)", "miṣ (to close the eyes)"]
     meaning: "closing the eyes, blinking"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "इन्द्रियाणि"
     parts: ["indriya (sense, sense-power)"]
     meaning: "the senses"
@@ -31,6 +34,9 @@ dhatu_breakdown:
   - word: "वर्तन्ते"
     parts: ["vṛt (to turn, to move, to act)"]
     meaning: "they move, they act"
+  - word: "इति"
+    parts: ["iti (thus)"]
+    meaning: "thus, in this way"
   - word: "धारयन्"
     parts: ["dhṛ (to hold, to bear)"]
     meaning: "holding firmly in mind, knowing"

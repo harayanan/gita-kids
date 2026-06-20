@@ -10,12 +10,18 @@ dhatu_breakdown:
   - word: "अवाच्यवादान्"
     parts: ["a (not)", "vac (to speak)", "vāda (speech, saying)"]
     meaning: "unspeakable words, things that should not be spoken"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "बहून्"
     parts: ["bahu (many, much)"]
     meaning: "many"
   - word: "वदिष्यन्ति"
     parts: ["vad (to speak, to say)"]
     meaning: "they will speak, they will say"
+  - word: "तव"
+    parts: ["tava (your)"]
+    meaning: "your"
   - word: "अहिताः"
     parts: ["a (not)", "dhā (to place, to be well-disposed)"]
     meaning: "enemies, ill-wishers, those not well-disposed"
@@ -25,9 +31,18 @@ dhatu_breakdown:
   - word: "सामर्थ्यम्"
     parts: ["sam (fully, well)", "artha (purpose, capability)"]
     meaning: "strength, capability, prowess"
+  - word: "ततः"
+    parts: ["tatas (than that)"]
+    meaning: "than that"
   - word: "दुःखतरम्"
     parts: ["duḥkha (suffering, pain)", "tara (more, comparative)"]
     meaning: "more painful, more grievous"
+  - word: "नु"
+    parts: ["nu (indeed, pray)"]
+    meaning: "indeed, pray (emphatic interrogative particle)"
+  - word: "किम्"
+    parts: ["kim (what)"]
+    meaning: "what?"
 
 meaning: >
   Your enemies will speak many unspeakable words, scorning your

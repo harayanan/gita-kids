@@ -10,9 +10,15 @@ dhatu_breakdown:
   - word: "कुतः"
     parts: ["ku (where, whence)"]
     meaning: "from where, whence"
+  - word: "त्वा"
+    parts: ["tvā (you, to you)"]
+    meaning: "to you, upon you"
   - word: "कश्मलम्"
     parts: ["kaśmala (faint-heartedness, dejection)"]
     meaning: "this weakness, this dejection"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "विषमे"
     parts: ["viṣama (difficult, critical)"]
     meaning: "at a critical moment, at an odd hour"
@@ -28,6 +34,9 @@ dhatu_breakdown:
   - word: "अकीर्तिकरम्"
     parts: ["a (not)", "kīrti (fame, honor)", "kara (making)"]
     meaning: "causing disgrace, bringing dishonor"
+  - word: "अर्जुन"
+    parts: ["arjuna (Arjuna)"]
+    meaning: "O Arjuna"
 
 meaning: >
   The Blessed Lord said: Where has this foul weakness come from, Arjuna — now,

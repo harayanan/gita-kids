@@ -16,6 +16,9 @@ dhatu_breakdown:
   - word: "काङ्क्षितम्"
     parts: ["kāṅkṣ (to desire)"]
     meaning: "is desired"
+  - word: "नः"
+    parts: ["asmad (by us, our)"]
+    meaning: "by us, our"
   - word: "राज्यम्"
     parts: ["rāj (to rule)"]
     meaning: "kingdom"
@@ -25,6 +28,9 @@ dhatu_breakdown:
   - word: "सुखानि"
     parts: ["sukha (happiness)"]
     meaning: "pleasures"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "ते इमे"
     parts: ["tad (those)", "idam (these)"]
     meaning: "those very people, these here"

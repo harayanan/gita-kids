@@ -10,18 +10,30 @@ dhatu_breakdown:
   - word: "अकीर्तिम्"
     parts: ["a (not)", "kṝt (to praise, to celebrate)"]
     meaning: "dishonor, infamy, loss of good name"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "भूतानि"
     parts: ["bhū (to be, to become)"]
     meaning: "beings, people"
   - word: "कथयिष्यन्ति"
     parts: ["kath (to tell, to narrate)"]
     meaning: "they will speak of, they will tell"
+  - word: "ते"
+    parts: ["te (your; they)"]
+    meaning: "your (genitive of tvam)"
   - word: "अव्ययाम्"
     parts: ["a (not)", "vi (apart)", "i (to go)"]
     meaning: "undying, everlasting, that which does not perish"
   - word: "सम्भावितस्य"
     parts: ["sam (fully, well)", "bhū (to be, to become)"]
     meaning: "of one who is esteemed, honored, well-regarded"
+  - word: "अकीर्तिः"
+    parts: ["a (not)", "kṝt (to praise, to celebrate)"]
+    meaning: "dishonor, infamy (nominative subject)"
   - word: "मरणात्"
     parts: ["mṛ (to die)"]
     meaning: "than death"

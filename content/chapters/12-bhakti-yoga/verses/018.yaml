@@ -13,9 +13,15 @@ dhatu_breakdown:
   - word: "शत्रौ"
     parts: ["śatru (enemy, foe)"]
     meaning: "toward an enemy"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "मित्रे"
     parts: ["mitra (friend)"]
     meaning: "toward a friend"
+  - word: "तथा"
+    parts: ["tathā (so, likewise)"]
+    meaning: "likewise, in the same way"
   - word: "मानापमानयोः"
     parts: ["māna (honour, respect)", "apamāna (dishonour, insult)"]
     meaning: "in honour and in dishonour"

@@ -10,12 +10,27 @@ dhatu_breakdown:
   - word: "यज्ञार्थात्"
     parts: ["yajña (sacrifice, offering)", "artha (for the sake of)"]
     meaning: "for the sake of sacrifice"
+  - word: "कर्मणः"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "than action, of action"
   - word: "अन्यत्र"
     parts: ["anya (other)", "tra (place)"]
     meaning: "otherwise, apart from this"
+  - word: "लोकः"
+    parts: ["loka (world)"]
+    meaning: "the world, mankind"
+  - word: "अयम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "कर्मबन्धनः"
     parts: ["karma (action)", "bandhana (bondage, binding)"]
     meaning: "bound by action, chained to results"
+  - word: "तदर्थम्"
+    parts: ["tad (that)", "artha (for the sake of)"]
+    meaning: "for the sake of that, for that purpose"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "action, work"
   - word: "कौन्तेय"
     parts: ["kunti (mother Kunti)", "eya (son of)"]
     meaning: "O son of Kunti — Arjuna"

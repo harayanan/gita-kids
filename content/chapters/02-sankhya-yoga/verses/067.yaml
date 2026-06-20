@@ -10,15 +10,27 @@ dhatu_breakdown:
   - word: "इन्द्रियाणाम्"
     parts: ["indriya (sense organ, from indra — lord)"]
     meaning: "of the senses"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "चरताम्"
     parts: ["car (to move, to roam)"]
     meaning: "that are roaming, that are wandering"
+  - word: "यत्"
+    parts: ["yad (which, that)"]
+    meaning: "which"
   - word: "मनः"
     parts: ["man (to think)"]
     meaning: "the mind"
   - word: "अनुविधीयते"
     parts: ["anu (following after)", "vi (apart)", "dhā (to place)"]
     meaning: "follows after, is led along, conforms to"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that, it"
+  - word: "अस्य"
+    parts: ["idam (this)"]
+    meaning: "of this one, his"
   - word: "हरति"
     parts: ["hṛ (to seize, to carry away)"]
     meaning: "carries away, steals"
@@ -31,6 +43,12 @@ dhatu_breakdown:
   - word: "नावम्"
     parts: ["nau (boat, ship)"]
     meaning: "a boat, a ship"
+  - word: "इव"
+    parts: ["iva (like, as)"]
+    meaning: "like, as"
+  - word: "अम्भसि"
+    parts: ["ambhas (water)"]
+    meaning: "on the water"
 
 meaning: >
   The mind that follows the wandering senses carries away wisdom, as wind

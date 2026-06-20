@@ -7,15 +7,27 @@ sanskrit: "ये मे मतमिदं नित्यमनुतिष्
 transliteration: "ye me matamidaṁ nityamanutiṣṭhanti mānavāḥ | śraddhāvanto'nasūyanto mucyante te'pi karmabhiḥ ||"
 
 dhatu_breakdown:
+  - word: "ये"
+    parts: ["yad (who — those who)"]
+    meaning: "those who, the ones who"
+  - word: "मे"
+    parts: ["mad (I — genitive: my)"]
+    meaning: "my, of mine"
   - word: "मतम्"
     parts: ["man (to think, to believe)"]
     meaning: "teaching, view, doctrine"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "नित्यम्"
     parts: ["nitya (always, constantly)"]
     meaning: "always, regularly"
   - word: "अनुतिष्ठन्ति"
     parts: ["anu (following, in accordance)", "sthā (to stand, to establish)"]
     meaning: "they follow, they practise"
+  - word: "मानवाः"
+    parts: ["manu (Manu)", "mānava (human, descendant of Manu)"]
+    meaning: "human beings, people"
   - word: "श्रद्धावन्तः"
     parts: ["śraddhā (faith, trust)", "vat (possessing)"]
     meaning: "full of faith"
@@ -25,6 +37,12 @@ dhatu_breakdown:
   - word: "मुच्यन्ते"
     parts: ["muc (to free, to release, to liberate)"]
     meaning: "they are freed, they are released"
+  - word: "ते"
+    parts: ["tad (that — they)"]
+    meaning: "they, those ones"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "कर्मभिः"
     parts: ["karman (action, deed, karma)"]
     meaning: "from the bondage of action"

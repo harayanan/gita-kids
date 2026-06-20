@@ -10,15 +10,27 @@ dhatu_breakdown:
   - word: "क्रोधात्"
     parts: ["krudh (to be angry)"]
     meaning: "from anger"
+  - word: "भवति"
+    parts: ["bhū (to be, to become)"]
+    meaning: "comes about, arises"
   - word: "सम्मोहः"
     parts: ["sam (completely)", "muh (to be confused, deluded)"]
     meaning: "complete delusion, bewilderment"
+  - word: "सम्मोहात्"
+    parts: ["sam (completely)", "muh (to be confused, deluded)"]
+    meaning: "from delusion"
   - word: "स्मृतिविभ्रमः"
     parts: ["smṛ (to remember)", "vi (apart)", "bhram (to wander)"]
     meaning: "confusion of memory, loss of what one knows"
+  - word: "स्मृतिभ्रंशात्"
+    parts: ["smṛ (to remember)", "bhraṁś (to fall away, to lose)"]
+    meaning: "from the loss of memory"
   - word: "बुद्धिनाशः"
     parts: ["budh (to awaken, to know)", "naś (to perish, destroy)"]
     meaning: "destruction of the intellect"
+  - word: "बुद्धिनाशात्"
+    parts: ["budh (to awaken, to know)", "naś (to perish, destroy)"]
+    meaning: "from the destruction of the intellect"
   - word: "प्रणश्यति"
     parts: ["pra (completely, forth)", "naś (to perish)"]
     meaning: "is completely ruined, perishes utterly"

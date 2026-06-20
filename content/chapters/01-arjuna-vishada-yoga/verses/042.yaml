@@ -28,6 +28,9 @@ dhatu_breakdown:
   - word: "कुलधर्माः"
     parts: ["kula (family)", "dharma (duty, sacred law)"]
     meaning: "the duties of the family"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "शाश्वताः"
     parts: ["śāśvata (eternal, from śaśvat — ever, always)"]
     meaning: "eternal, timeless"

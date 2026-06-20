@@ -11,6 +11,9 @@ dhatu_breakdown:
   - word: "इह"
     parts: ["iha (here)"]
     meaning: "here, in this very life"
+  - word: "एव"
+    parts: ["eva (indeed, even)"]
+    meaning: "indeed, right here"
   - word: "तैः"
     parts: ["tad (they, those)"]
     meaning: "by them"
@@ -35,6 +38,9 @@ dhatu_breakdown:
   - word: "निर्दोषम्"
     parts: ["nir (without)", "doṣa (fault, flaw)"]
     meaning: "without flaw, faultless"
+  - word: "हि"
+    parts: ["hi (indeed)"]
+    meaning: "indeed, for"
   - word: "समम्"
     parts: ["sama (equal, the same)"]
     meaning: "the same everywhere, even"

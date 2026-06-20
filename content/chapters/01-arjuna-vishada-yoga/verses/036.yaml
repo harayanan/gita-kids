@@ -22,12 +22,18 @@ dhatu_breakdown:
   - word: "हन्तुम्"
     parts: ["han (to kill)"]
     meaning: "to kill"
+  - word: "धार्तराष्ट्रान्"
+    parts: ["dhṛtarāṣṭra (Dhritarashtra)", "a (sons of)"]
+    meaning: "the sons of Dhritarashtra"
   - word: "स्वबान्धवान्"
     parts: ["sva (own)", "bāndhava (kinsman, relative)"]
     meaning: "our own kinsmen"
   - word: "स्वजनम्"
     parts: ["sva (own)", "jana (people)"]
     meaning: "our own people"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "कथम्"
     parts: ["katham (how)"]
     meaning: "how"
@@ -37,6 +43,9 @@ dhatu_breakdown:
   - word: "सुखिनः"
     parts: ["sukha (happiness)", "in (possessing)"]
     meaning: "happy, possessing happiness"
+  - word: "स्याम"
+    parts: ["as (to be)"]
+    meaning: "could we be, would we be"
   - word: "माधव"
     parts: ["madhu (ancestor Madhu)", "va (descended from)"]
     meaning: "O Madhava — Krishna, descendant of Madhu"

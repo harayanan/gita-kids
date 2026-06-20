@@ -25,12 +25,24 @@ dhatu_breakdown:
   - word: "अपि"
     parts: ["api (even, also)"]
     meaning: "even"
+  - word: "अत्र"
+    parts: ["atra (here, in this matter)"]
+    meaning: "here, about this"
   - word: "मोहिताः"
     parts: ["muh (to be confused, to be bewildered)"]
     meaning: "are bewildered, are confused"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that"
+  - word: "ते"
+    parts: ["te (to you)"]
+    meaning: "to you"
   - word: "प्रवक्ष्यामि"
     parts: ["pra (forth, fully)", "vac (to speak)"]
     meaning: "I shall fully explain, I shall declare"
+  - word: "यत्"
+    parts: ["yat (which, that which)"]
+    meaning: "which"
   - word: "ज्ञात्वा"
     parts: ["jñā (to know)", "tvā (having done — gerund ending)"]
     meaning: "having known, having understood"

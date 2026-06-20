@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "भीष्मः"
     parts: ["bhī (to fear)", "ṣma (intensifier)"]
     meaning: "Bhishma — the one of terrible vows"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "कर्णः"
     parts: ["karṇa (ear)"]
     meaning: "Karna — named for the golden earrings he was born with"
@@ -31,6 +34,12 @@ dhatu_breakdown:
   - word: "सौमदत्तिः"
     parts: ["somadatta (King Somadatta)", "i (son of)"]
     meaning: "Bhurishravas, son of Somadatta"
+  - word: "तथा"
+    parts: ["tathā (likewise, so)"]
+    meaning: "likewise, as well"
+  - word: "एव"
+    parts: ["eva (indeed, just)"]
+    meaning: "just so, indeed"
 
 meaning: >
   "On our side there is yourself, Drona, and the mighty Bhishma, Karna,

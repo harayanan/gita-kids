@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "यदृच्छया"
     parts: ["yad (which)", "ṛch (to go, to move towards)"]
     meaning: "by chance, of its own accord, unsought"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "उपपन्नम्"
     parts: ["upa (near, towards)", "pad (to go, to fall)"]
     meaning: "arrived, presented itself, come about"
@@ -25,9 +28,18 @@ dhatu_breakdown:
   - word: "क्षत्रियाः"
     parts: ["kṣatra (warrior power, rulership)"]
     meaning: "warriors, Kshatriyas"
+  - word: "पार्थ"
+    parts: ["pārtha (son of Pritha/Kunti)"]
+    meaning: "O Partha — an epithet for Arjuna"
   - word: "लभन्ते"
     parts: ["labh (to obtain, to get)"]
     meaning: "they obtain, they receive"
+  - word: "युद्धम्"
+    parts: ["yudh (to fight, to wage war)"]
+    meaning: "battle, war"
+  - word: "ईदृशम्"
+    parts: ["īdṛśa (such, of this kind)"]
+    meaning: "such, of this kind"
 
 meaning: >
   Happy are the warriors, O Partha, who find such a battle coming

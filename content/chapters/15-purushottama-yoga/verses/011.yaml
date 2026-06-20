@@ -13,6 +13,12 @@ dhatu_breakdown:
   - word: "योगिनः"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "yogis, those who practise union"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एनम्"
+    parts: ["enad (this, him)"]
+    meaning: "this one, the Self within"
   - word: "पश्यन्ति"
     parts: ["paś (to see, to perceive)"]
     meaning: "they see, they perceive"
@@ -22,9 +28,15 @@ dhatu_breakdown:
   - word: "अवस्थितम्"
     parts: ["ava (down, firmly)", "sthā (to stand, to be established)"]
     meaning: "established, situated"
+  - word: "अपि"
+    parts: ["api (even, though)"]
+    meaning: "even, though"
   - word: "अकृतात्मानः"
     parts: ["a (not)", "kṛta (refined, purified)", "ātman (self, mind)"]
     meaning: "those whose minds are unpurified"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "अचेतसः"
     parts: ["a (not)", "cetas (consciousness, awareness)"]
     meaning: "without awareness, lacking discernment"

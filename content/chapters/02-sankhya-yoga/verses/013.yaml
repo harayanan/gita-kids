@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "देहिनः"
     parts: ["dih (to anoint, to form a body)", "in (possessor)"]
     meaning: "of the embodied one, of the soul dwelling in the body"
+  - word: "अस्मिन्"
+    parts: ["idam (this)"]
+    meaning: "in this"
+  - word: "यथा"
+    parts: ["yathā (just as)"]
+    meaning: "just as"
   - word: "देहे"
     parts: ["dih (to anoint, to form a body)"]
     meaning: "in the body"
@@ -22,12 +28,21 @@ dhatu_breakdown:
   - word: "जरा"
     parts: ["jṝ (to grow old, to decay)"]
     meaning: "old age"
+  - word: "तथा"
+    parts: ["tathā (so, in the same way)"]
+    meaning: "so, in the same way"
   - word: "देहान्तरप्राप्तिः"
     parts: ["deha (body)", "antara (another)", "prāpti (attainment, from pra + āp, to reach)"]
     meaning: "the attaining of another body"
   - word: "धीरः"
     parts: ["dhī (to think, to hold firm)"]
     meaning: "the wise one, the steady-minded"
+  - word: "तत्र"
+    parts: ["tatra (there, in that)"]
+    meaning: "there, in that matter"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "मुह्यति"
     parts: ["muh (to be confused, to be deluded)"]
     meaning: "is deluded, is bewildered"

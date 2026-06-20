@@ -25,6 +25,9 @@ dhatu_breakdown:
   - word: "सर्वे"
     parts: ["sarva (all)"]
     meaning: "all of them"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even, also (all these too)"
   - word: "एते"
     parts: ["etad (this, these)"]
     meaning: "these (people)"

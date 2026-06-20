@@ -16,6 +16,9 @@ dhatu_breakdown:
   - word: "स्वजनम्"
     parts: ["sva (own)", "jana (people)"]
     meaning: "my own people, my kinsmen"
+  - word: "कृष्ण"
+    parts: ["kṛṣṇa (Krishna)"]
+    meaning: "O Krishna"
   - word: "युयुत्सुम्"
     parts: ["yudh (to fight)", "san (desiring)"]
     meaning: "eager to fight"
@@ -25,12 +28,18 @@ dhatu_breakdown:
   - word: "सीदन्ति"
     parts: ["sad (to sink, to fail)"]
     meaning: "they fail, they sink, they give way"
+  - word: "मम"
+    parts: ["mad (my)"]
+    meaning: "my"
   - word: "गात्राणि"
     parts: ["gātra (limb, body part)"]
     meaning: "my limbs"
   - word: "मुखम्"
     parts: ["mukha (mouth, face)"]
     meaning: "my mouth"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "परिशुष्यति"
     parts: ["pari (completely)", "śuṣ (to dry)"]
     meaning: "is drying up completely"

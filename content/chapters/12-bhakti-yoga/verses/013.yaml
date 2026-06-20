@@ -19,6 +19,12 @@ dhatu_breakdown:
   - word: "करुणः"
     parts: ["kṛ (to feel compassion)"]
     meaning: "compassionate, tender-hearted"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, verily"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "निर्ममः"
     parts: ["nir (without)", "mama (mine)"]
     meaning: "free from possessiveness, without 'mine'"

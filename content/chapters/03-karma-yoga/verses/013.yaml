@@ -19,9 +19,30 @@ dhatu_breakdown:
   - word: "मुच्यन्ते"
     parts: ["muc (to free, to release, to liberate)"]
     meaning: "are freed, are released"
+  - word: "सर्व"
+    parts: ["sarva (all, every)"]
+    meaning: "all, every"
   - word: "किल्बिषैः"
     parts: ["kilbiṣa (sin, fault, impurity)"]
     meaning: "from sins, from all faults"
+  - word: "भुञ्जते"
+    parts: ["bhuj (to eat, to consume)"]
+    meaning: "they eat, they consume"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those"
+  - word: "तु"
+    parts: ["tu (but, however)"]
+    meaning: "but, however"
+  - word: "अघम्"
+    parts: ["agha (sin, evil)"]
+    meaning: "sin, evil"
+  - word: "पापाः"
+    parts: ["pāpa (sinful, wicked)"]
+    meaning: "the sinful ones, the wicked"
+  - word: "ये"
+    parts: ["yad (who, those who)"]
+    meaning: "who, those who"
   - word: "पचन्ति"
     parts: ["pac (to cook, to ripen)"]
     meaning: "they cook"

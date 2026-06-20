@@ -22,12 +22,18 @@ dhatu_breakdown:
   - word: "पूर्वैः"
     parts: ["pūrva (former, ancient)"]
     meaning: "by the ancients, by those of old"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "मुमुक्षुभिः"
     parts: ["muc (to free, to release)"]
     meaning: "by seekers of freedom (those longing to be liberated)"
   - word: "कुरु"
     parts: ["kṛ (to do, to act)"]
     meaning: "do! perform! (a command)"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, exactly (emphasis)"
   - word: "तस्मात्"
     parts: ["tasmāt (therefore, for that reason)"]
     meaning: "therefore"

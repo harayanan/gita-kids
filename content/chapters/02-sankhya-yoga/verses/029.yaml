@@ -16,18 +16,39 @@ dhatu_breakdown:
   - word: "कश्चित्"
     parts: ["ka (who)", "cit (some, certain)"]
     meaning: "someone, a certain person"
+  - word: "एनम्"
+    parts: ["enam (this, him)"]
+    meaning: "this (soul)"
   - word: "वदति"
     parts: ["vad (to speak, to say)"]
     meaning: "speaks of, describes"
+  - word: "तथा"
+    parts: ["tathā (so, likewise)"]
+    meaning: "so, likewise, in that way"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, just so — an emphatic particle"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अन्यः"
+    parts: ["anya (other, another)"]
+    meaning: "another, someone else"
   - word: "शृणोति"
     parts: ["śru (to hear)"]
     meaning: "hears, listens to"
   - word: "श्रुत्वा"
     parts: ["śru (to hear)"]
     meaning: "having heard"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "even, also"
   - word: "वेद"
     parts: ["vid (to know, to understand)"]
     meaning: "knows, truly understands"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
 
 meaning: >
   Some see the soul as a wonder, some speak of it as a wonder, some hear

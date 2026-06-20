@@ -19,9 +19,18 @@ dhatu_breakdown:
   - word: "समबुद्धयः"
     parts: ["sama (equal)", "buddhi (intellect, understanding)"]
     meaning: "even-minded, with balanced understanding"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those ones"
   - word: "प्राप्नुवन्ति"
     parts: ["pra (forward)", "āp (to reach, to attain)"]
     meaning: "they reach, they attain"
+  - word: "माम्"
+    parts: ["mad (me)"]
+    meaning: "Me"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, verily"
   - word: "सर्वभूतहिते"
     parts: ["sarva (all)", "bhūta (beings)", "hita (welfare, good)"]
     meaning: "in the welfare of all beings"

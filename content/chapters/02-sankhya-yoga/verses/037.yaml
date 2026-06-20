@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "हतः"
     parts: ["han (to strike, to kill)"]
     meaning: "slain, killed"
+  - word: "वा"
+    parts: ["vā (or)"]
+    meaning: "or, either"
   - word: "प्राप्स्यसि"
     parts: ["pra (forth)", "āp (to obtain, to reach)"]
     meaning: "you will obtain, you will attain"
@@ -25,9 +28,18 @@ dhatu_breakdown:
   - word: "महीम्"
     parts: ["mah (great, the earth)"]
     meaning: "the earth, the kingdom"
+  - word: "तस्मात्"
+    parts: ["tasmāt (therefore)"]
+    meaning: "therefore"
   - word: "उत्तिष्ठ"
     parts: ["ud (up, upward)", "sthā (to stand)"]
     meaning: "stand up! arise!"
+  - word: "कौन्तेय"
+    parts: ["kaunteya (son of Kunti)"]
+    meaning: "O son of Kunti — an epithet for Arjuna"
+  - word: "युद्धाय"
+    parts: ["yudh (to fight, to wage war)"]
+    meaning: "for battle, to fight"
   - word: "कृतनिश्चयः"
     parts: ["kṛ (to do, to make)", "niś (fully)", "ci (to determine, to resolve)"]
     meaning: "having made a firm resolve, determined"

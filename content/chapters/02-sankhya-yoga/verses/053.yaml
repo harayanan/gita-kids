@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "श्रुतिविप्रतिपन्ना"
     parts: ["śruti (what is heard, scripture)", "vi-prati-pad (to go astray, to be confused)"]
     meaning: "bewildered by conflicting scriptures"
+  - word: "ते"
+    parts: ["tvad (you)"]
+    meaning: "your"
+  - word: "यदा"
+    parts: ["yadā (when)"]
+    meaning: "when"
   - word: "स्थास्यति"
     parts: ["sthā (to stand, to remain)"]
     meaning: "shall stand, will remain firm"
@@ -25,6 +31,9 @@ dhatu_breakdown:
   - word: "बुद्धिः"
     parts: ["budh (to know, to awaken)"]
     meaning: "intellect, understanding"
+  - word: "तदा"
+    parts: ["tadā (then)"]
+    meaning: "then, at that time"
   - word: "योगम्"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "yoga, union, the state of divine connection"

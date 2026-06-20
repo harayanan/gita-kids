@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "सर्वेषाम्"
     parts: ["sarva (all)"]
     meaning: "of all"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "महीक्षिताम्"
     parts: ["mahī (earth)", "kṣit (ruler)"]
     meaning: "rulers of the earth, kings"
@@ -34,6 +37,9 @@ dhatu_breakdown:
   - word: "कुरून्"
     parts: ["kuru (the Kuru clan)"]
     meaning: "the Kurus"
+  - word: "इति"
+    parts: ["iti (thus)"]
+    meaning: "thus — marking the end of the quoted words"
 
 meaning: >
   Krishna said, in the presence of Bhishma, Drona, and all the rulers of the

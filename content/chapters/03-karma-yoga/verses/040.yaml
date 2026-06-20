@@ -16,12 +16,27 @@ dhatu_breakdown:
   - word: "बुद्धिः"
     parts: ["budh (to know, to awaken)"]
     meaning: "the intellect, the power of judgement"
+  - word: "अस्य"
+    parts: ["idam (this — genitive: of this one)"]
+    meaning: "of this (desire), its"
   - word: "अधिष्ठानम्"
     parts: ["adhi (over, upon)", "sthā (to stand, to be situated)"]
     meaning: "seat, dwelling place, stronghold"
+  - word: "उच्यते"
+    parts: ["vac (to say, to speak — passive: is said)"]
+    meaning: "is said to be, is called"
+  - word: "एतैः"
+    parts: ["etad (this — instrumental plural: by these)"]
+    meaning: "by these (the senses, mind, intellect)"
   - word: "विमोहयति"
     parts: ["vi (thoroughly)", "muh (to be confused, to be deluded)"]
     meaning: "it thoroughly deludes, it bewilders"
+  - word: "एषः"
+    parts: ["etad (this)"]
+    meaning: "this (desire)"
+  - word: "ज्ञानम्"
+    parts: ["jñā (to know, to understand)"]
+    meaning: "knowledge, wisdom"
   - word: "आवृत्य"
     parts: ["ā (towards)", "vṛ (to cover, to veil)"]
     meaning: "having covered, having veiled"

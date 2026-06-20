@@ -7,6 +7,9 @@ sanskrit: "अच्छेद्योऽयमदाह्योऽयमक्
 transliteration: "acchedyo'yamadāhyo'yamakledyo'śoṣya eva ca | nityaḥ sarvagataḥ sthāṇuracalo'yaṁ sanātanaḥ ||"
 
 dhatu_breakdown:
+  - word: "अयम्"
+    parts: ["idam (this)"]
+    meaning: "this one (the soul)"
   - word: "अच्छेद्यः"
     parts: ["a (not)", "chid (to cut)"]
     meaning: "unbreakable, that which cannot be cut"
@@ -19,6 +22,15 @@ dhatu_breakdown:
   - word: "अशोष्यः"
     parts: ["a (not)", "śuṣ (to dry)"]
     meaning: "that which cannot be dried"
+  - word: "एव"
+    parts: ["eva (indeed, certainly)"]
+    meaning: "indeed, certainly"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "नित्यः"
+    parts: ["nitya (eternal, constant)"]
+    meaning: "eternal"
   - word: "सर्वगतः"
     parts: ["sarva (all, everywhere)", "gam (to go)"]
     meaning: "all-pervading, present everywhere"

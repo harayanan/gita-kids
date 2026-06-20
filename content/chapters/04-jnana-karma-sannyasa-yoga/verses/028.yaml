@@ -25,6 +25,9 @@ dhatu_breakdown:
   - word: "स्वाध्यायज्ञानयज्ञाः"
     parts: ["sva (one's own)", "adhi (over, upon)", "i (to go — root of adhyāya, study)", "jñā (to know — root of jñāna, knowledge)", "yaj (to offer, to sacrifice)"]
     meaning: "those whose sacrifice is the study of sacred wisdom and the pursuit of knowledge"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "यतयः"
     parts: ["yat (to strive, to make effort)"]
     meaning: "strivers, those who try hard on the path"

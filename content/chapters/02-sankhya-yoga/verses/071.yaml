@@ -13,6 +13,18 @@ dhatu_breakdown:
   - word: "कामान्"
     parts: ["kam (to desire)"]
     meaning: "desires, longings"
+  - word: "यः"
+    parts: ["yad (who, which)"]
+    meaning: "one who, whoever"
+  - word: "सर्वान्"
+    parts: ["sarva (all, every)"]
+    meaning: "all, every"
+  - word: "पुमान्"
+    parts: ["puṁs (man, person)"]
+    meaning: "a person, a man"
+  - word: "चरति"
+    parts: ["car (to move, to walk)"]
+    meaning: "moves about, lives, walks"
   - word: "निःस्पृहः"
     parts: ["niḥ (without)", "spṛh (to desire eagerly, to covet)"]
     meaning: "without craving, free from longing"
@@ -22,6 +34,9 @@ dhatu_breakdown:
   - word: "निरहङ्कारः"
     parts: ["niḥ (without)", "aham (I)", "kāra (maker, doer)"]
     meaning: "without ego, free from the sense of 'I am the doer'"
+  - word: "सः"
+    parts: ["tad (that, he)"]
+    meaning: "he, that one"
   - word: "शान्तिम्"
     parts: ["śam (to be at peace)"]
     meaning: "peace, deep inner tranquility"

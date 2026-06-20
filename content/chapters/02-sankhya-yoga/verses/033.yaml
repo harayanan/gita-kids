@@ -7,21 +7,42 @@ sanskrit: "अथ चेत्त्वमिमं धर्म्यं सङ
 transliteration: "atha cettvamidaṁ dharmyaṁ saṅgrāmaṁ na kariṣyasi | tataḥ svadharmaṁ kīrtiṁ ca hitvā pāpamavāpsyasi ||"
 
 dhatu_breakdown:
+  - word: "अथ"
+    parts: ["atha (now, but)"]
+    meaning: "now, but"
+  - word: "चेत्"
+    parts: ["cet (if)"]
+    meaning: "if"
+  - word: "त्वम्"
+    parts: ["tvam (you)"]
+    meaning: "you"
+  - word: "इमम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "धर्म्यम्"
     parts: ["dhṛ (to hold, to sustain)"]
     meaning: "righteous, in accordance with dharma"
   - word: "सङ्ग्रामम्"
     parts: ["sam (together)", "grāma (troops, forces)"]
     meaning: "battle, war — literally, a coming together of forces"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "करिष्यसि"
     parts: ["kṛ (to do, to perform)"]
     meaning: "you will do, you will undertake"
+  - word: "ततः"
+    parts: ["tatas (then, therefore)"]
+    meaning: "then, therefore"
   - word: "स्वधर्मम्"
     parts: ["sva (own)", "dhṛ (to hold, to sustain)"]
     meaning: "one's own duty, personal dharma"
   - word: "कीर्तिम्"
     parts: ["kṝt (to praise, to celebrate)"]
     meaning: "fame, honor, good name"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "हित्वा"
     parts: ["hā (to leave, to abandon)"]
     meaning: "having abandoned, having given up"

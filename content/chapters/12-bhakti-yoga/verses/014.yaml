@@ -25,9 +25,18 @@ dhatu_breakdown:
   - word: "मय्यर्पितमनोबुद्धिः"
     parts: ["mayi (in Me)", "arpita (offered, dedicated)", "manas (mind)", "buddhi (intellect)"]
     meaning: "whose mind and intellect are offered to Me"
+  - word: "यः"
+    parts: ["yad (who)"]
+    meaning: "who, the one who"
   - word: "मद्भक्तः"
     parts: ["mat (My)", "bhaj (to adore, to worship)"]
     meaning: "My devotee"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that one"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
   - word: "प्रियः"
     parts: ["prī (to love, to please)"]
     meaning: "dear, beloved"

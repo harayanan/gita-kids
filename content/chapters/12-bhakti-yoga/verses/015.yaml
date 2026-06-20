@@ -19,6 +19,12 @@ dhatu_breakdown:
   - word: "लोकात्"
     parts: ["lok (to see, to perceive)"]
     meaning: "from the world, by the world"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "यः"
+    parts: ["yad (who)"]
+    meaning: "who, the one who"
   - word: "हर्ष"
     parts: ["hṛṣ (to thrill, to rejoice)"]
     meaning: "excessive joy, elation"
@@ -34,6 +40,12 @@ dhatu_breakdown:
   - word: "मुक्तः"
     parts: ["muc (to free, to release)"]
     meaning: "freed, liberated"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that one"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
   - word: "प्रियः"
     parts: ["prī (to love, to please)"]
     meaning: "dear, beloved"

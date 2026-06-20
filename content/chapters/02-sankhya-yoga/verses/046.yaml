@@ -16,9 +16,18 @@ dhatu_breakdown:
   - word: "उदपाने"
     parts: ["ud (up)", "ap (water)", "āna (container)"]
     meaning: "in a well, a reservoir of water"
+  - word: "सर्वतः"
+    parts: ["sarva (all)", "tas (from, on all sides)"]
+    meaning: "on all sides, everywhere"
   - word: "सम्प्लुतोदके"
     parts: ["sam (completely)", "plu (to float, to flood)", "udaka (water)"]
     meaning: "when there is flooding water everywhere"
+  - word: "तावान्"
+    parts: ["tāvat (that much, to that extent)"]
+    meaning: "that much, to that extent"
+  - word: "सर्वेषु"
+    parts: ["sarva (all)"]
+    meaning: "in all"
   - word: "वेदेषु"
     parts: ["vid (to know)"]
     meaning: "in all the Vedas"

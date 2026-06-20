@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "दूरेण"
     parts: ["dūra (far, distant)"]
     meaning: "by far, by a great distance"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "अवरम्"
     parts: ["avara (inferior, lower)"]
     meaning: "inferior, of lesser quality"
@@ -19,6 +22,12 @@ dhatu_breakdown:
   - word: "बुद्धियोगात्"
     parts: ["budh (to know, to awaken)", "yuj (to yoke, to unite)"]
     meaning: "compared to the yoga of wisdom, compared to action done with equanimous intellect"
+  - word: "धनञ्जय"
+    parts: ["dhana (wealth)", "jaya (winner, conqueror)"]
+    meaning: "O Dhananjaya — winner of wealth, a name for Arjuna"
+  - word: "बुद्धौ"
+    parts: ["budh (to know, to awaken)"]
+    meaning: "in wisdom, in the equanimous intellect"
   - word: "शरणम्"
     parts: ["śaraṇa (refuge, shelter)"]
     meaning: "refuge, shelter, protection"

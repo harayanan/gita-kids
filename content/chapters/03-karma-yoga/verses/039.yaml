@@ -13,6 +13,12 @@ dhatu_breakdown:
   - word: "ज्ञानम्"
     parts: ["jñā (to know, to understand)"]
     meaning: "knowledge, wisdom"
+  - word: "एतेन"
+    parts: ["etad (this — instrumental: by this)"]
+    meaning: "by this"
+  - word: "ज्ञानिनः"
+    parts: ["jñā (to know — jñānin: the wise one)"]
+    meaning: "of the wise person, of the knower"
   - word: "नित्यवैरिणा"
     parts: ["nitya (eternal, constant)", "vairin (enemy)"]
     meaning: "by the eternal enemy"
@@ -28,6 +34,9 @@ dhatu_breakdown:
   - word: "अनलेन"
     parts: ["anala (fire, flame)"]
     meaning: "like fire"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
 
 meaning: >
   Krishna warns Arjuna that desire is the eternal enemy of the wise. Even

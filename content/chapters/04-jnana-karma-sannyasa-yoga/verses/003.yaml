@@ -40,12 +40,27 @@ dhatu_breakdown:
   - word: "असि"
     parts: ["as (to be)"]
     meaning: "you are"
+  - word: "मे"
+    parts: ["me (of mine, my)"]
+    meaning: "my, of mine"
   - word: "सखा"
     parts: ["sakhi (companion, friend)"]
     meaning: "friend, companion"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "इति"
+    parts: ["iti (thus)"]
+    meaning: "thus, in this way"
   - word: "रहस्यम्"
     parts: ["rah (to be secret, to be apart)"]
     meaning: "secret, hidden treasure"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "एतत्"
+    parts: ["etat (this)"]
+    meaning: "this"
   - word: "उत्तमम्"
     parts: ["ud (up, high)", "tama (most)"]
     meaning: "highest, supreme"

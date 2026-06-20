@@ -7,6 +7,15 @@ sanskrit: "नैव तस्य कृतेनार्थो नाकृत
 transliteration: "naiva tasya kṛtenārtho nākṛteneha kaścana | na cāsya sarvabhūteṣu kaścidarthavyapāśrayaḥ ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "एव"
+    parts: ["eva (indeed, at all)"]
+    meaning: "indeed, at all"
+  - word: "तस्य"
+    parts: ["tad (he, that one)"]
+    meaning: "for him, his"
   - word: "कृतेन"
     parts: ["kṛ (to do, to perform)"]
     meaning: "by doing, through action"
@@ -16,9 +25,24 @@ dhatu_breakdown:
   - word: "अकृतेन"
     parts: ["a (not)", "kṛ (to do)"]
     meaning: "by not doing, through inaction"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this world"
+  - word: "कश्चन"
+    parts: ["kaścana (anything at all)"]
+    meaning: "anything at all"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अस्य"
+    parts: ["idam (this, his)"]
+    meaning: "for him, his"
   - word: "सर्वभूतेषु"
     parts: ["sarva (all, every)", "bhūta (being, creature)"]
     meaning: "among all beings, in all creatures"
+  - word: "कश्चित्"
+    parts: ["kaścit (any)"]
+    meaning: "any, anyone"
   - word: "व्यपाश्रयः"
     parts: ["vi (apart)", "apa (away)", "āśraya (dependence, refuge)"]
     meaning: "dependence, reliance upon"

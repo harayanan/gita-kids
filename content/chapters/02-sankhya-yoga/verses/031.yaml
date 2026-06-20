@@ -10,24 +10,48 @@ dhatu_breakdown:
   - word: "स्वधर्मम्"
     parts: ["sva (own, self)", "dhṛ (to hold, to sustain)"]
     meaning: "one's own duty, one's personal dharma"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "अवेक्ष्य"
     parts: ["ava (down, towards)", "īkṣ (to see, to consider)"]
     meaning: "having considered, having looked at carefully"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "विकम्पितुम्"
     parts: ["vi (apart, intensely)", "kamp (to tremble, to waver)"]
     meaning: "to waver, to tremble, to hesitate"
+  - word: "अर्हसि"
+    parts: ["arh (to deserve, to be fit)"]
+    meaning: "you ought — here: you should not"
   - word: "धर्म्यात्"
     parts: ["dhṛ (to hold, to sustain)"]
     meaning: "righteous, in accordance with dharma"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for, certainly"
   - word: "युद्धात्"
     parts: ["yudh (to fight, to wage war)"]
     meaning: "than battle, than war"
   - word: "श्रेयः"
     parts: ["śrī (to resort to, the auspicious)"]
     meaning: "better, greater good, higher benefit"
+  - word: "अन्यत्"
+    parts: ["anya (other)"]
+    meaning: "other, anything else"
   - word: "क्षत्रियस्य"
     parts: ["kṣatra (rulership, warrior power)"]
     meaning: "for a Kshatriya, for a warrior"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "विद्यते"
+    parts: ["vid (to find, to exist)"]
+    meaning: "exists, is found"
 
 meaning: >
   Considering your own dharma as a warrior, you should not waver.

@@ -16,18 +16,57 @@ dhatu_breakdown:
   - word: "उपहत"
     parts: ["upa (near)", "han (to strike)"]
     meaning: "afflicted, struck down"
+  - word: "स्वभावः"
+    parts: ["sva (own)", "bhāva (nature, from bhū — to be)"]
+    meaning: "nature, one's own being"
   - word: "धर्मसम्मूढ"
     parts: ["dharma (duty, right action)", "sam (completely)", "muh (to be confused)"]
     meaning: "completely confused about what is right"
+  - word: "चेताः"
+    parts: ["cit (to perceive, to think)"]
+    meaning: "mind, consciousness"
   - word: "पृच्छामि"
     parts: ["prach (to ask, to inquire)"]
     meaning: "I ask, I inquire"
+  - word: "त्वाम्"
+    parts: ["tvām (you)"]
+    meaning: "you"
+  - word: "यत्"
+    parts: ["yat (which, that which)"]
+    meaning: "that which, whatever"
+  - word: "श्रेयः"
+    parts: ["śrī (auspicious, better)"]
+    meaning: "better, the highest good"
+  - word: "स्यात्"
+    parts: ["as (to be)"]
+    meaning: "would be, may be"
+  - word: "निश्चितम्"
+    parts: ["niś (out, completely)", "ci (to determine)"]
+    meaning: "decisively, with certainty"
+  - word: "ब्रूहि"
+    parts: ["brū (to speak, to tell)"]
+    meaning: "tell, speak — an imperative"
+  - word: "तत्"
+    parts: ["tat (that)"]
+    meaning: "that"
+  - word: "मे"
+    parts: ["me (to me, my)"]
+    meaning: "to me, for me"
   - word: "शिष्यः"
     parts: ["śās (to teach, to instruct)"]
     meaning: "student, disciple"
+  - word: "ते"
+    parts: ["te (your, of you)"]
+    meaning: "your, of you"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "शाधि"
     parts: ["śās (to teach, to instruct)"]
     meaning: "teach me, instruct me"
+  - word: "माम्"
+    parts: ["mām (me)"]
+    meaning: "me"
   - word: "प्रपन्नम्"
     parts: ["pra (forward, fully)", "pad (to go, to fall)"]
     meaning: "surrendered, taken refuge"

@@ -7,9 +7,15 @@ sanskrit: "अहं वैश्वानरो भूत्वा प्रा
 transliteration: "ahaṁ vaiśvānaro bhūtvā prāṇināṁ dehamāśritaḥ | prāṇāpānasamāyuktaḥ pacāmyannaṁ caturvidham ||"
 
 dhatu_breakdown:
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "वैश्वानरः"
     parts: ["viśva (all, universal)", "nara (person, being)"]
     meaning: "the universal fire, the digestive fire Agni dwelling in all beings"
+  - word: "भूत्वा"
+    parts: ["bhū (to become, to be)"]
+    meaning: "having become"
   - word: "प्राणिनाम्"
     parts: ["prāṇa (breath, life-force)", "in (possessing)"]
     meaning: "of living beings, of those who breathe"
@@ -22,6 +28,9 @@ dhatu_breakdown:
   - word: "प्राणापानः"
     parts: ["prāṇa (incoming breath)", "apāna (outgoing breath)"]
     meaning: "the incoming and outgoing life-breaths"
+  - word: "समायुक्तः"
+    parts: ["sam (together)", "ā (towards)", "yuj (to join, to unite)"]
+    meaning: "joined together with, united with"
   - word: "पचामि"
     parts: ["pac (to cook, to digest, to ripen)"]
     meaning: "I cook, I digest"

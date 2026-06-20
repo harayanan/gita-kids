@@ -19,12 +19,18 @@ dhatu_breakdown:
   - word: "प्रवदन्ति"
     parts: ["pra (forth)", "vad (to speak, to say)"]
     meaning: "they declare, they say"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "पण्डिताः"
     parts: ["paṇḍ (to be learned, to be wise)"]
     meaning: "the wise, the learned"
   - word: "एकम्"
     parts: ["eka (one)"]
     meaning: "one, a single one"
+  - word: "अपि"
+    parts: ["api (even)"]
+    meaning: "even, only"
   - word: "आस्थितः"
     parts: ["ā (toward, fully)", "sthā (to stand, to be established)"]
     meaning: "firmly established, settled in"

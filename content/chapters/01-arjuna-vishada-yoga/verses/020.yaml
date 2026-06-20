@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "कपिध्वजः"
     parts: ["kapi (monkey — Hanuman)", "dhvaja (flag, banner)"]
     meaning: "he whose flag bears a monkey — Arjuna"
+  - word: "प्रवृत्ते"
+    parts: ["pra (forth)", "vṛt (to turn, set in motion)"]
+    meaning: "when it had begun, as it was set in motion"
   - word: "शस्त्रसम्पाते"
     parts: ["śastra (weapon)", "sampāta (clash, collision)"]
     meaning: "as the clash of weapons was about to begin"
@@ -31,12 +34,24 @@ dhatu_breakdown:
   - word: "उद्यम्य"
     parts: ["ud (up)", "yam (to raise, to hold)"]
     meaning: "having raised, lifting up"
+  - word: "पाण्डवः"
+    parts: ["pāṇḍu (King Pandu)", "a (son of)"]
+    meaning: "Arjuna, the son of Pandu"
   - word: "हृषीकेशम्"
     parts: ["hṛṣīka (senses)", "īśa (lord)"]
     meaning: "Krishna, the lord of the senses"
+  - word: "तदा"
+    parts: ["tadā (then, at that time)"]
+    meaning: "then, at that moment"
   - word: "वाक्यम्"
     parts: ["vāk (speech, word)"]
     meaning: "words, speech"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this"
+  - word: "आह"
+    parts: ["ah (to say, speak)"]
+    meaning: "said, spoke"
   - word: "महीपते"
     parts: ["mahī (earth)", "pati (lord)"]
     meaning: "O lord of the earth (addressing King Dhritarashtra)"

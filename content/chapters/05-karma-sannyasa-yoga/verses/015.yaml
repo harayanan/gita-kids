@@ -7,6 +7,9 @@ sanskrit: "नादत्ते कस्यचित्पापं न चै
 transliteration: "nādatte kasyacitpāpaṁ na caiva sukṛtaṁ vibhuḥ | ajñānenāvṛtaṁ jñānaṁ tena muhyanti jantavaḥ ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, neither"
   - word: "आदत्ते"
     parts: ["ā (toward)", "dā (to take, to receive)"]
     meaning: "takes on, accepts"
@@ -16,6 +19,12 @@ dhatu_breakdown:
   - word: "पापम्"
     parts: ["pāpa (sin, wrong)"]
     meaning: "wrongdoing, sin"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and, nor"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, even"
   - word: "सुकृतम्"
     parts: ["su (good)", "kṛ (to do, to act)"]
     meaning: "good deed, virtue"
@@ -31,6 +40,9 @@ dhatu_breakdown:
   - word: "ज्ञानम्"
     parts: ["jñā (to know)"]
     meaning: "knowledge, wisdom"
+  - word: "तेन"
+    parts: ["tena (by that, therefore)"]
+    meaning: "by that, because of this"
   - word: "मुह्यन्ति"
     parts: ["muh (to be confused, to be deluded)"]
     meaning: "they are confused, they are deluded"

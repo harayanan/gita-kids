@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "धार्तराष्ट्रान्"
     parts: ["dhṛtarāṣṭra (Dhritarashtra)", "a (sons of)"]
     meaning: "the sons of Dhritarashtra"
+  - word: "नः"
+    parts: ["asmad (to us, for us)"]
+    meaning: "to us, for us"
   - word: "का"
     parts: ["kim (what)"]
     meaning: "what"
@@ -34,6 +37,15 @@ dhatu_breakdown:
   - word: "आश्रयेत्"
     parts: ["ā (towards)", "śri (to take refuge)"]
     meaning: "would take shelter in, would cling to"
+  - word: "अस्मान्"
+    parts: ["asmad (us)"]
+    meaning: "us"
+  - word: "हत्वा"
+    parts: ["han (to kill)"]
+    meaning: "having killed, by killing"
+  - word: "एतान्"
+    parts: ["etad (these)"]
+    meaning: "these"
   - word: "आततायिनः"
     parts: ["ātatāyin (aggressor, one who attacks)"]
     meaning: "aggressors, those who attack"

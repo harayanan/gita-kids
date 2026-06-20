@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "तस्मात्"
     parts: ["tad (that, therefore)"]
     meaning: "therefore, for that reason"
+  - word: "यस्य"
+    parts: ["yad (who, whose)"]
+    meaning: "of whom, whose"
   - word: "महाबाहो"
     parts: ["mahā (great)", "bāhu (arm)"]
     meaning: "O mighty-armed one — a title for Arjuna"
@@ -25,9 +28,15 @@ dhatu_breakdown:
   - word: "इन्द्रियार्थेभ्यः"
     parts: ["indriya (sense)", "artha (object, purpose)"]
     meaning: "from the objects of the senses"
+  - word: "तस्य"
+    parts: ["tad (that, his)"]
+    meaning: "of that one, his"
   - word: "प्रज्ञा"
     parts: ["pra (forth)", "jñā (to know)"]
     meaning: "wisdom, deep understanding"
+  - word: "प्रतिष्ठिता"
+    parts: ["prati (firmly)", "sthā (to stand)"]
+    meaning: "established, firmly grounded"
 
 meaning: >
   Therefore, O mighty-armed, one whose senses are completely restrained

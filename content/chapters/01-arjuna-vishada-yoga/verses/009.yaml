@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "अन्ये"
     parts: ["anya (other)"]
     meaning: "and many others"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "बहवः"
     parts: ["bahu (many)"]
     meaning: "numerous"
@@ -25,6 +28,9 @@ dhatu_breakdown:
   - word: "नानाशस्त्रप्रहरणाः"
     parts: ["nānā (various)", "śastra (weapon)", "praharaṇa (wielding)"]
     meaning: "armed with many kinds of weapons"
+  - word: "सर्वे"
+    parts: ["sarva (all)"]
+    meaning: "all of them"
   - word: "युद्धविशारदाः"
     parts: ["yuddha (battle)", "viśārada (skilled, expert)"]
     meaning: "experts in the art of war"

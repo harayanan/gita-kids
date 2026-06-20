@@ -13,21 +13,48 @@ dhatu_breakdown:
   - word: "भोगान्"
     parts: ["bhuj (to enjoy, to experience)"]
     meaning: "enjoyments, pleasures"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, surely"
+  - word: "वः"
+    parts: ["yuṣmad (you, plural)"]
+    meaning: "to you (all)"
+  - word: "देवाः"
+    parts: ["div (to shine, to be celestial)"]
+    meaning: "the gods"
   - word: "दास्यन्ते"
     parts: ["dā (to give, to bestow)"]
     meaning: "shall give, will grant"
   - word: "यज्ञभाविताः"
     parts: ["yajña (sacrifice)", "bhāvita (nourished, sustained)"]
     meaning: "nourished by sacrifice, pleased by offerings"
+  - word: "तैः"
+    parts: ["tad (they, those)"]
+    meaning: "by them (the gods)"
   - word: "दत्तान्"
     parts: ["dā (to give)"]
     meaning: "given, bestowed"
+  - word: "अप्रदाय"
+    parts: ["a (not)", "pra (forth)", "dā (to give)"]
+    meaning: "without giving back, without offering"
+  - word: "एभ्यः"
+    parts: ["idam (this, these)"]
+    meaning: "to these (the gods)"
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "who, the one who"
   - word: "भुङ्क्ते"
     parts: ["bhuj (to enjoy, to consume)"]
     meaning: "enjoys, consumes"
   - word: "स्तेनः"
     parts: ["stena (thief, one who steals)"]
     meaning: "a thief"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, surely"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that person"
 
 meaning: >
   Krishna says: when you take care of the world through your efforts, the

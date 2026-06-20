@@ -16,15 +16,30 @@ dhatu_breakdown:
   - word: "अधिकारः"
     parts: ["adhi (over)", "kṛ (to do)"]
     meaning: "right, authority, jurisdiction"
+  - word: "ते"
+    parts: ["te (your)"]
+    meaning: "your, for you"
+  - word: "मा"
+    parts: ["mā (do not, never)"]
+    meaning: "do not, never (prohibitive particle)"
   - word: "फलेषु"
     parts: ["phal (to bear fruit)"]
     meaning: "in the fruits, in the results"
+  - word: "कदाचन"
+    parts: ["kadā (when)", "cana (ever)"]
+    meaning: "ever, at any time"
   - word: "कर्मफलहेतुः"
     parts: ["kṛ (to do)", "phala (fruit)", "hetu (cause, motive)"]
     meaning: "one whose motive is the fruit of action"
+  - word: "भूः"
+    parts: ["bhū (to be, to become)"]
+    meaning: "be, become (here with mā: do not become)"
   - word: "सङ्गः"
     parts: ["sam (together)", "añj (to attach, to cling)"]
     meaning: "attachment, clinging"
+  - word: "अस्तु"
+    parts: ["as (to be)"]
+    meaning: "let there be (here with mā: let there not be)"
   - word: "अकर्मणि"
     parts: ["a (not)", "kṛ (to do)"]
     meaning: "in inaction, in non-doing"

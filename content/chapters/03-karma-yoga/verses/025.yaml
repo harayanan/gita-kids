@@ -10,15 +10,30 @@ dhatu_breakdown:
   - word: "सक्ताः"
     parts: ["sañj (to cling, to attach)"]
     meaning: "attached, clinging to results"
+  - word: "कर्मणि"
+    parts: ["karman (action, deed)"]
+    meaning: "in action, in work"
   - word: "अविद्वांसः"
     parts: ["a (not)", "vid (to know, to understand)"]
     meaning: "the unwise, the ignorant"
+  - word: "यथा"
+    parts: ["yathā (as, just as)"]
+    meaning: "as, just as"
   - word: "कुर्वन्ति"
     parts: ["kṛ (to do, to act)"]
     meaning: "they act, they perform"
+  - word: "भारत"
+    parts: ["bharata (Bharata — descendant of Bharata)"]
+    meaning: "O Bharata (Arjuna, descendant of Bharata)"
+  - word: "कुर्यात्"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "should act, should do"
   - word: "विद्वान्"
     parts: ["vid (to know, to understand)"]
     meaning: "the wise one, the knowing person"
+  - word: "तथा"
+    parts: ["tathā (so, in that way)"]
+    meaning: "so, in the same way"
   - word: "असक्तः"
     parts: ["a (not)", "sañj (to cling, to attach)"]
     meaning: "unattached, without clinging"

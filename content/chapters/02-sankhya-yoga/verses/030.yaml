@@ -16,18 +16,39 @@ dhatu_breakdown:
   - word: "अवध्यः"
     parts: ["a (not)", "vadh (to kill, to slay)"]
     meaning: "indestructible, that which cannot be killed"
+  - word: "अयम्"
+    parts: ["ayam (this)"]
+    meaning: "this (the embodied soul)"
   - word: "देहे"
     parts: ["dih (to anoint, to form a body)"]
     meaning: "in the body"
   - word: "सर्वस्य"
     parts: ["sarva (all, every)"]
     meaning: "of everyone, of all beings"
+  - word: "भारत"
+    parts: ["bhārata (descendant of Bharata)"]
+    meaning: "O Bharata — an epithet for Arjuna"
+  - word: "तस्मात्"
+    parts: ["tasmāt (therefore)"]
+    meaning: "therefore, for that reason"
+  - word: "सर्वाणि"
+    parts: ["sarva (all, every)"]
+    meaning: "all"
   - word: "भूतानि"
     parts: ["bhū (to be, to become)"]
     meaning: "beings, creatures"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "त्वम्"
+    parts: ["tvam (you)"]
+    meaning: "you"
   - word: "शोचितुम्"
     parts: ["śuc (to grieve, to mourn)"]
     meaning: "to grieve"
+  - word: "अर्हसि"
+    parts: ["arh (to deserve, to be fit)"]
+    meaning: "you ought — here: you should not"
 
 meaning: >
   The soul dwelling in everyone's body is eternally indestructible,

@@ -7,6 +7,12 @@ sanskrit: "यो न हृष्यति न द्वेष्टि न श
 transliteration: "yo na hṛṣyati na dveṣṭi na śocati na kāṅkṣati | śubhāśubhaparityāgī bhaktimānyaḥ sa me priyaḥ ||"
 
 dhatu_breakdown:
+  - word: "यः"
+    parts: ["yad (who)"]
+    meaning: "who, the one who"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, neither"
   - word: "हृष्यति"
     parts: ["hṛṣ (to thrill, to rejoice)"]
     meaning: "rejoices, is elated"
@@ -25,6 +31,15 @@ dhatu_breakdown:
   - word: "भक्तिमान्"
     parts: ["bhakti (devotion)", "mat (possessing)"]
     meaning: "full of devotion"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that one"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
+  - word: "प्रियः"
+    parts: ["prī (to love, to please)"]
+    meaning: "dear, beloved"
 
 meaning: >
   Krishna says: The one who neither rejoices wildly nor hates, who neither

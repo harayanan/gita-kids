@@ -10,12 +10,18 @@ dhatu_breakdown:
   - word: "युधामन्युः"
     parts: ["yudha (battle)", "manyu (spirit, fury)"]
     meaning: "Yudhamanyu — whose spirit blazes in battle"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "विक्रान्तः"
     parts: ["vi (specially)", "kram (to stride)"]
     meaning: "the mighty, the courageous"
   - word: "उत्तमौजाः"
     parts: ["uttama (highest)", "ojas (energy, vitality)"]
     meaning: "Uttamaujas — of supreme energy"
+  - word: "वीर्यवान्"
+    parts: ["vīrya (valor)", "vat (possessing)"]
+    meaning: "full of valor"
   - word: "सौभद्रः"
     parts: ["subhadrā (Arjuna's wife)", "a (patronymic suffix)"]
     meaning: "son of Subhadra — Abhimanyu"
@@ -25,6 +31,9 @@ dhatu_breakdown:
   - word: "सर्वे"
     parts: ["sarva (all)"]
     meaning: "all of them"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, every one"
   - word: "महारथाः"
     parts: ["mahā (great)", "ratha (chariot)"]
     meaning: "great chariot warriors"

@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "कर्मयोगः"
     parts: ["kṛ (to do, to act)", "yuj (to yoke, to join)"]
     meaning: "the yoga of action, working selflessly"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "निःश्रेयसकरौ"
     parts: ["nis (out, beyond)", "śreyas (the highest good)", "kṛ (to do, to bring about)"]
     meaning: "both bringing about the highest good"
@@ -22,6 +25,9 @@ dhatu_breakdown:
   - word: "तयोः"
     parts: ["tad (that)"]
     meaning: "of those two"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
   - word: "कर्मसंन्यासात्"
     parts: ["kṛ (to do, to act)", "sam (fully)", "ni (down)", "as (to cast off)"]
     meaning: "than the renunciation of action"

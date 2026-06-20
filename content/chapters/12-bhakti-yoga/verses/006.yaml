@@ -7,12 +7,21 @@ sanskrit: "ये तु सर्वाणि कर्माणि मयि �
 transliteration: "ye tu sarvāṇi karmāṇi mayi sannyasya matparāḥ | ananyenaiva yogena māṁ dhyāyanta upāsate ||"
 
 dhatu_breakdown:
+  - word: "ये"
+    parts: ["yad (who, which)"]
+    meaning: "those who"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
   - word: "सर्वाणि"
     parts: ["sarva (all, every)"]
     meaning: "all"
   - word: "कर्माणि"
     parts: ["kṛ (to do)"]
     meaning: "actions, deeds"
+  - word: "मयि"
+    parts: ["mad (me)"]
+    meaning: "in Me"
   - word: "सन्न्यस्य"
     parts: ["sam (completely)", "ni (down)", "as (to throw, place)"]
     meaning: "having surrendered, having placed down"
@@ -22,9 +31,15 @@ dhatu_breakdown:
   - word: "अनन्येन"
     parts: ["an (not)", "anya (other)"]
     meaning: "with no other, single-minded"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, only"
   - word: "योगेन"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "through yoga, through devotion"
+  - word: "माम्"
+    parts: ["mad (me)"]
+    meaning: "Me"
   - word: "ध्यायन्तः"
     parts: ["dhyai (to meditate, to think upon)"]
     meaning: "meditating on"

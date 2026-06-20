@@ -16,6 +16,9 @@ dhatu_breakdown:
   - word: "आधत्स्व"
     parts: ["ā (toward)", "dhā (to place, to fix)"]
     meaning: "fix, place, settle"
+  - word: "मयि"
+    parts: ["mad (me)"]
+    meaning: "in Me"
   - word: "बुद्धिम्"
     parts: ["budh (to awaken, to know)"]
     meaning: "intellect, understanding"
@@ -25,9 +28,15 @@ dhatu_breakdown:
   - word: "निवसिष्यसि"
     parts: ["ni (in)", "vas (to dwell, to live)"]
     meaning: "you shall live, you shall dwell"
+  - word: "अतः"
+    parts: ["atas (from this, hence)"]
+    meaning: "from this, hence"
   - word: "ऊर्ध्वम्"
     parts: ["ūrdhva (upward, hereafter)"]
     meaning: "hereafter, from then on"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, no"
   - word: "संशयः"
     parts: ["sam (together)", "śī (to lie, to rest)"]
     meaning: "doubt"

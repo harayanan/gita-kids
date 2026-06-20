@@ -7,6 +7,9 @@ sanskrit: "तस्मादसक्तः सततं कार्यं क
 transliteration: "tasmādasaktaḥ satataṁ kāryaṁ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
 
 dhatu_breakdown:
+  - word: "तस्मात्"
+    parts: ["tad (that)"]
+    meaning: "therefore"
   - word: "असक्तः"
     parts: ["a (not)", "sañj (to cling, to attach)"]
     meaning: "unattached, without clinging"
@@ -22,12 +25,21 @@ dhatu_breakdown:
   - word: "समाचर"
     parts: ["sam (together, well)", "ā (toward)", "car (to move, to perform)"]
     meaning: "perform properly, carry out fully"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "आचरन्"
+    parts: ["ā (toward)", "car (to move, to perform)"]
+    meaning: "performing, while acting"
   - word: "परम्"
     parts: ["parama (highest, supreme)"]
     meaning: "the Supreme, the highest goal"
   - word: "आप्नोति"
     parts: ["āp (to reach, to attain)"]
     meaning: "attains, reaches"
+  - word: "पूरुषः"
+    parts: ["puruṣa (person, man)"]
+    meaning: "a person, a human being"
 
 meaning: >
   Krishna gives Arjuna a clear instruction: always do the work that needs to

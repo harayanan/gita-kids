@@ -16,12 +16,24 @@ dhatu_breakdown:
   - word: "एक"
     parts: ["eka (one)"]
     meaning: "one, single, unified"
+  - word: "इह"
+    parts: ["iha (here)"]
+    meaning: "here, in this world"
+  - word: "कुरुनन्दन"
+    parts: ["kuru (the Kuru lineage)", "nandana (joy, delight, son)"]
+    meaning: "O descendant of Kuru — an epithet for Arjuna"
   - word: "बहुशाखाः"
     parts: ["bahu (many)", "śākhā (branch)"]
     meaning: "many-branched, scattered in many directions"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for, certainly"
   - word: "अनन्ताः"
     parts: ["an (not)", "anta (end)"]
     meaning: "endless, infinite, without limit"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "बुद्धयः"
     parts: ["budh (to know, to awaken)"]
     meaning: "thoughts, intellects (plural)"

@@ -19,9 +19,21 @@ dhatu_breakdown:
   - word: "पर्जन्यात्"
     parts: ["parjanya (rain, rain-cloud)"]
     meaning: "from rain"
+  - word: "अन्नसम्भवः"
+    parts: ["anna (food)", "sam (together)", "bhava (arising, origin)"]
+    meaning: "the origin of food, food comes into being"
   - word: "यज्ञात्"
     parts: ["yaj (to worship, to sacrifice)"]
     meaning: "from sacrifice, from offering"
+  - word: "भवति"
+    parts: ["bhū (to become, to arise)"]
+    meaning: "comes into being, arises"
+  - word: "पर्जन्यः"
+    parts: ["parjanya (rain, rain-cloud)"]
+    meaning: "rain, the rain-cloud"
+  - word: "यज्ञः"
+    parts: ["yaj (to worship, to sacrifice)"]
+    meaning: "sacrifice, offering"
   - word: "कर्मसमुद्भवः"
     parts: ["karma (action, deed)", "sam (together)", "ut (up)", "bhava (arising)"]
     meaning: "born of action, arising from work"

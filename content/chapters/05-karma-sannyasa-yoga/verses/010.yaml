@@ -25,15 +25,27 @@ dhatu_breakdown:
   - word: "करोति"
     parts: ["kṛ (to do, to act)"]
     meaning: "does, acts"
+  - word: "यः"
+    parts: ["yaḥ (who)"]
+    meaning: "who, the one who"
   - word: "लिप्यते"
     parts: ["lip (to smear, to stain)"]
     meaning: "is stained, is touched"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "सः"
+    parts: ["saḥ (he)"]
+    meaning: "he, that person"
   - word: "पापेन"
     parts: ["pāpa (sin, wrong)"]
     meaning: "by sin, by wrongdoing"
   - word: "पद्मपत्रम्"
     parts: ["padma (lotus)", "patra (leaf)"]
     meaning: "a lotus leaf"
+  - word: "इव"
+    parts: ["iva (like)"]
+    meaning: "like, as"
   - word: "अम्भसा"
     parts: ["ambhas (water)"]
     meaning: "by water"

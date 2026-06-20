@@ -7,21 +7,36 @@ sanskrit: "या निशा सर्वभूतानां तस्या
 transliteration: "yā niśā sarvabhūtānāṁ tasyāṁ jāgarti saṁyamī | yasyāṁ jāgrati bhūtāni sā niśā paśyato muneḥ ||"
 
 dhatu_breakdown:
+  - word: "या"
+    parts: ["yad (which, that)"]
+    meaning: "which (feminine)"
   - word: "निशा"
     parts: ["niś (night)"]
     meaning: "night, darkness"
   - word: "सर्वभूतानाम्"
     parts: ["sarva (all)", "bhū (to become, to exist)"]
     meaning: "of all beings, of all creatures"
+  - word: "तस्याम्"
+    parts: ["tad (that)"]
+    meaning: "in that, therein"
   - word: "जागर्ति"
     parts: ["jāgṛ (to be awake, to be watchful)"]
     meaning: "is awake, is watchful"
   - word: "संयमी"
     parts: ["sam (together)", "yam (to restrain)"]
     meaning: "the self-disciplined one, the one with mastery"
+  - word: "यस्याम्"
+    parts: ["yad (which, in which)"]
+    meaning: "in which, wherein"
+  - word: "जाग्रति"
+    parts: ["jāgṛ (to be awake, to be watchful)"]
+    meaning: "are awake, are watchful"
   - word: "भूतानि"
     parts: ["bhū (to become, to be)"]
     meaning: "all beings, creatures"
+  - word: "सा"
+    parts: ["tad (that)"]
+    meaning: "that (feminine), it"
   - word: "पश्यतः"
     parts: ["paś (to see, to behold)"]
     meaning: "of the one who sees, of the seer"

@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "अकर्मणि"
     parts: ["a (not, non-)", "kṛ (to do, to act)"]
     meaning: "in inaction, in not-doing"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "कर्म"
     parts: ["kṛ (to do, to act)"]
     meaning: "action, doing"

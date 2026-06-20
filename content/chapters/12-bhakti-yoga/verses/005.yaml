@@ -13,9 +13,18 @@ dhatu_breakdown:
   - word: "अधिकतरः"
     parts: ["adhi (more)", "ka (suffix)", "tara (greater)"]
     meaning: "greater, more"
+  - word: "तेषाम्"
+    parts: ["tad (them)", "ām (genitive plural)"]
+    meaning: "for those, of them"
   - word: "अव्यक्तासक्तचेतसाम्"
     parts: ["avyakta (unmanifest)", "āsakta (attached)", "cetas (mind, consciousness)"]
     meaning: "of those whose minds are attached to the unmanifest"
+  - word: "अव्यक्ता"
+    parts: ["a (not)", "vi (distinct)", "añj (to manifest)"]
+    meaning: "the unmanifest (as a goal)"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "गतिः"
     parts: ["gam (to go)"]
     meaning: "the path, the goal"

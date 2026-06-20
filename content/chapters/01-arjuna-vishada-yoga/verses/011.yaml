@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "अयनेषु"
     parts: ["ayana (path, position)", "eṣu (in all)"]
     meaning: "at all strategic positions"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "सर्वेषु"
+    parts: ["sarva (all)", "eṣu (in, locative plural)"]
+    meaning: "in all (the positions)"
   - word: "यथाभागम्"
     parts: ["yathā (as)", "bhāga (share, division)"]
     meaning: "according to your respective positions"
@@ -19,6 +25,9 @@ dhatu_breakdown:
   - word: "भीष्मम्"
     parts: ["bhīṣma (the terrible one, Bhishma)"]
     meaning: "Bhishma, the grandsire"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, above all"
   - word: "अभिरक्षन्तु"
     parts: ["abhi (towards, fully)", "rakṣ (to protect)"]
     meaning: "must protect, do guard"
@@ -28,6 +37,9 @@ dhatu_breakdown:
   - word: "सर्वे"
     parts: ["sarva (all, every)"]
     meaning: "all, everyone"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, surely"
 
 meaning: >
   Duryodhana says: "All of you, standing at your assigned positions in the

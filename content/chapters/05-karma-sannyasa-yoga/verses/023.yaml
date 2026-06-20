@@ -16,6 +16,9 @@ dhatu_breakdown:
   - word: "एव"
     parts: ["eva (indeed)"]
     meaning: "indeed, even"
+  - word: "यः"
+    parts: ["yaḥ (who)"]
+    meaning: "who, the one who"
   - word: "सोढुम्"
     parts: ["sah (to endure, to withstand)"]
     meaning: "to withstand, to bear"
@@ -31,6 +34,9 @@ dhatu_breakdown:
   - word: "वेगम्"
     parts: ["vij (to rush, to surge)"]
     meaning: "the rush, the surge, the impulse"
+  - word: "सः"
+    parts: ["saḥ (he)"]
+    meaning: "he, that one"
   - word: "युक्तः"
     parts: ["yuj (to yoke, to join)"]
     meaning: "yoked, joined in yoga, steady"

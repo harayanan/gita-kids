@@ -22,12 +22,33 @@ dhatu_breakdown:
   - word: "प्रविशन्ति"
     parts: ["pra (into)", "viś (to enter)"]
     meaning: "enter into, flow into"
+  - word: "यद्वत्"
+    parts: ["yadvat (just as, in the manner that)"]
+    meaning: "just as, in the way that"
+  - word: "तद्वत्"
+    parts: ["tadvat (so too, in that same manner)"]
+    meaning: "so too, in that same way"
   - word: "कामाः"
     parts: ["kam (to desire)"]
     meaning: "desires, longings"
+  - word: "यम्"
+    parts: ["yad (whom, which)"]
+    meaning: "whom, the one whom"
+  - word: "सर्वे"
+    parts: ["sarva (all, every)"]
+    meaning: "all"
+  - word: "सः"
+    parts: ["tad (that, he)"]
+    meaning: "he, that one"
   - word: "शान्तिम्"
     parts: ["śam (to be calm, to be at peace)"]
     meaning: "peace, deep tranquility"
+  - word: "आप्नोति"
+    parts: ["āp (to reach, to attain)"]
+    meaning: "attains, obtains"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "कामकामी"
     parts: ["kāma (desire)", "kāmin (one who desires)"]
     meaning: "the desirer of desires, one who chases wanting itself"

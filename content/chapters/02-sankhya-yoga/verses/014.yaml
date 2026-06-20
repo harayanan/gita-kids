@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "मात्रास्पर्शाः"
     parts: ["mātrā (measure, sense-object)", "sparśa (touch, contact, from spṛś — to touch)"]
     meaning: "contacts of the senses with objects"
+  - word: "तु"
+    parts: ["tu (but, indeed)"]
+    meaning: "but, indeed"
+  - word: "कौन्तेय"
+    parts: ["kuntī (Kunti)", "eya (son of)"]
+    meaning: "O son of Kunti (Arjuna)"
   - word: "शीतोष्ण"
     parts: ["śīta (cold)", "uṣṇa (hot)"]
     meaning: "cold and heat"
@@ -22,6 +28,9 @@ dhatu_breakdown:
   - word: "अनित्याः"
     parts: ["a (not)", "nitya (eternal, permanent)"]
     meaning: "impermanent, not everlasting"
+  - word: "तान्"
+    parts: ["tad (them, those)"]
+    meaning: "them, those"
   - word: "तितिक्षस्व"
     parts: ["tij (to endure, to bear)"]
     meaning: "endure them, bear them patiently"

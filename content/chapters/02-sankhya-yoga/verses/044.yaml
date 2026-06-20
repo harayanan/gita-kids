@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "भोगैश्वर्यप्रसक्तानाम्"
     parts: ["bhoga (enjoyment)", "aiśvarya (power, lordship)", "pra-sañj (to cling, to attach)"]
     meaning: "of those deeply attached to pleasure and power"
+  - word: "तया"
+    parts: ["tad (that)"]
+    meaning: "by that (flowery speech)"
   - word: "अपहृतचेतसाम्"
     parts: ["apa (away)", "hṛ (to take, to seize)", "cetas (mind, consciousness)"]
     meaning: "whose minds have been stolen away, carried off"
@@ -22,6 +25,9 @@ dhatu_breakdown:
   - word: "समाधौ"
     parts: ["sam (together, completely)", "ā (toward)", "dhā (to place, to hold)"]
     meaning: "in samadhi, in deep meditative absorption"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "विधीयते"
     parts: ["vi (specially)", "dhā (to place, to establish)"]
     meaning: "is established, is settled"

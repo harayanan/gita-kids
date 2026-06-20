@@ -13,12 +13,18 @@ dhatu_breakdown:
   - word: "आविश्य"
     parts: ["ā (into)", "viś (to enter)"]
     meaning: "having entered, pervading"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "भूतानि"
     parts: ["bhū (to be, to become)"]
     meaning: "all beings, all that exists"
   - word: "धारयामि"
     parts: ["dhṛ (to hold, to sustain, to support)"]
     meaning: "I sustain, I uphold"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "ओजसा"
     parts: ["ojas (vital energy, vigour, strength)"]
     meaning: "with vital energy"
@@ -28,9 +34,15 @@ dhatu_breakdown:
   - word: "ओषधीः"
     parts: ["oṣadhi (plant, herb, medicinal plant)"]
     meaning: "plants, herbs"
+  - word: "सर्वाः"
+    parts: ["sarva (all)"]
+    meaning: "all"
   - word: "सोमः"
     parts: ["soma (the moon, the nectar, from su = to press out)"]
     meaning: "the moon, the source of nourishing sap"
+  - word: "भूत्वा"
+    parts: ["bhū (to become, to be)"]
+    meaning: "having become"
   - word: "रसात्मकः"
     parts: ["rasa (sap, juice, essence)", "ātmaka (consisting of, having the nature of)"]
     meaning: "consisting of life-giving sap"

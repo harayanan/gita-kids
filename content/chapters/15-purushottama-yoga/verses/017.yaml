@@ -10,12 +10,27 @@ dhatu_breakdown:
   - word: "उत्तमः"
     parts: ["ud (up, above)", "tama (superlative suffix)"]
     meaning: "the highest, the supreme"
+  - word: "पुरुषः"
+    parts: ["puruṣa (person, being)"]
+    meaning: "the Person, the being"
+  - word: "तु"
+    parts: ["tu (but, however)"]
+    meaning: "but, however"
+  - word: "अन्यः"
+    parts: ["anya (other, another)"]
+    meaning: "another, a different one"
   - word: "परमात्मा"
     parts: ["parama (supreme, highest)", "ātman (the Self)"]
     meaning: "the Supreme Self, the Oversoul"
+  - word: "इति"
+    parts: ["iti (thus, so)"]
+    meaning: "thus, so (named)"
   - word: "उदाहृतः"
     parts: ["ud (up)", "ā (toward)", "hṛ (to carry, to declare)"]
     meaning: "declared, called, celebrated"
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "who, the one who"
   - word: "लोकत्रयम्"
     parts: ["loka (world)", "traya (three, threefold)"]
     meaning: "the three worlds — earth, heaven, and the realm between"
@@ -25,6 +40,9 @@ dhatu_breakdown:
   - word: "बिभर्ति"
     parts: ["bhṛ (to bear, to sustain, to hold)"]
     meaning: "sustains, bears, supports"
+  - word: "अव्ययः"
+    parts: ["a (not)", "vi (away)", "aya (going)"]
+    meaning: "the imperishable, the inexhaustible"
   - word: "ईश्वरः"
     parts: ["īś (to rule, to be lord of)"]
     meaning: "the Lord, the sovereign"

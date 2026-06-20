@@ -31,9 +31,18 @@ dhatu_breakdown:
   - word: "असिद्धौ"
     parts: ["a (not)", "sidh (to succeed, to accomplish)"]
     meaning: "in failure"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "कृत्वा"
     parts: ["kṛ (to do, to act)"]
     meaning: "having acted, having done"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even (even having acted)"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "निबध्यते"
     parts: ["ni (down, firmly)", "bandh (to bind, to tie)"]
     meaning: "is bound, is tied down"

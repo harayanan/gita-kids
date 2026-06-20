@@ -13,9 +13,15 @@ dhatu_breakdown:
   - word: "एतत्"
     parts: ["etat (this)"]
     meaning: "this"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "even, also"
   - word: "अशक्तः"
     parts: ["a (not)", "śak (to be able)"]
     meaning: "unable, incapable"
+  - word: "असि"
+    parts: ["as (to be)"]
+    meaning: "you are"
   - word: "कर्तुम्"
     parts: ["kṛ (to do, to perform)"]
     meaning: "to do, to perform"
@@ -28,6 +34,9 @@ dhatu_breakdown:
   - word: "सर्वकर्मफलत्यागम्"
     parts: ["sarva (all)", "karma (action)", "phala (fruit, result)", "tyāga (renunciation)"]
     meaning: "renunciation of the fruits of all actions"
+  - word: "ततः"
+    parts: ["tatas (then, therefore)"]
+    meaning: "then, therefore"
   - word: "कुरु"
     parts: ["kṛ (to do)"]
     meaning: "do, perform"

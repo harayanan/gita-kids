@@ -7,6 +7,12 @@ sanskrit: "तानि सर्वाणि संयम्य युक्त
 transliteration: "tāni sarvāṇi saṁyamya yukta āsīta matparaḥ | vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā ||"
 
 dhatu_breakdown:
+  - word: "तानि"
+    parts: ["tad (that, those)"]
+    meaning: "those, them"
+  - word: "सर्वाणि"
+    parts: ["sarva (all, every)"]
+    meaning: "all, every"
   - word: "संयम्य"
     parts: ["sam (together)", "yam (to restrain, to control)"]
     meaning: "having restrained, having brought under control"
@@ -22,9 +28,24 @@ dhatu_breakdown:
   - word: "वशे"
     parts: ["vaś (to be under control, to wish)"]
     meaning: "under control, in one's power"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "यस्य"
+    parts: ["yad (who, whose)"]
+    meaning: "of whom, whose"
   - word: "इन्द्रियाणि"
     parts: ["indriya (sense organ, from indra — lord)"]
     meaning: "the senses"
+  - word: "तस्य"
+    parts: ["tad (that, his)"]
+    meaning: "of that one, his"
+  - word: "प्रज्ञा"
+    parts: ["pra (forth)", "jñā (to know)"]
+    meaning: "wisdom, deep understanding"
+  - word: "प्रतिष्ठिता"
+    parts: ["prati (firmly)", "sthā (to stand)"]
+    meaning: "established, firmly grounded"
 
 meaning: >
   Having restrained all the senses, one should sit focused with Me as the

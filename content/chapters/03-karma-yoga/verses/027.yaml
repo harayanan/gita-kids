@@ -16,6 +16,12 @@ dhatu_breakdown:
   - word: "गुणैः"
     parts: ["guṇa (quality, strand, attribute of nature)"]
     meaning: "by the three gunas — the qualities of nature"
+  - word: "कर्माणि"
+    parts: ["karman (action, deed)"]
+    meaning: "actions, deeds"
+  - word: "सर्वशः"
+    parts: ["sarva (all)", "śaḥ (in every way)"]
+    meaning: "in every way, in all respects"
   - word: "अहङ्कार"
     parts: ["aham (I)", "kāra (making, doing)"]
     meaning: "ego, the sense of 'I am the doer'"
@@ -25,6 +31,12 @@ dhatu_breakdown:
   - word: "कर्ता"
     parts: ["kṛ (to do, to make)"]
     meaning: "doer, the one who acts"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
+  - word: "इति"
+    parts: ["iti (thus, that)"]
+    meaning: "thus, that (marking the thought)"
   - word: "मन्यते"
     parts: ["man (to think, to believe)"]
     meaning: "thinks, believes"

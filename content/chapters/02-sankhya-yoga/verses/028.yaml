@@ -16,9 +16,15 @@ dhatu_breakdown:
   - word: "व्यक्तमध्यानि"
     parts: ["vi (apart)", "añj (to manifest)", "madhya (middle)"]
     meaning: "manifest in the middle, visible in their middle state"
+  - word: "भारत"
+    parts: ["bhārata (descendant of Bharata)"]
+    meaning: "O Bharata — an epithet for Arjuna"
   - word: "अव्यक्तनिधनानि"
     parts: ["a (not)", "vi (apart)", "añj (to manifest)", "nidhana (end, death)"]
     meaning: "unmanifest at death, invisible at the end"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, only — an emphatic particle"
   - word: "तत्र"
     parts: ["tad (that, there)"]
     meaning: "in that, therein"

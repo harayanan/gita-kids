@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "द्वौ"
     parts: ["dvi (two)"]
     meaning: "two, a pair"
+  - word: "इमौ"
+    parts: ["idam (these two)"]
+    meaning: "these two"
   - word: "पुरुषौ"
     parts: ["puruṣa (being, person, from pṝ — to fill)"]
     meaning: "two beings, two types of persons"
@@ -19,6 +22,15 @@ dhatu_breakdown:
   - word: "अक्षरः"
     parts: ["a (not)", "kṣar (to perish)"]
     meaning: "the imperishable, that which never passes"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (verily, indeed)"]
+    meaning: "verily, indeed"
+  - word: "सर्वाणि"
+    parts: ["sarva (all)"]
+    meaning: "all"
   - word: "भूतानि"
     parts: ["bhū (to be, to become)"]
     meaning: "all beings, all creatures"
@@ -28,6 +40,9 @@ dhatu_breakdown:
   - word: "लोके"
     parts: ["lok (to perceive, to see)"]
     meaning: "in the world, in creation"
+  - word: "उच्यते"
+    parts: ["vac (to speak, to call)"]
+    meaning: "is called, is said to be"
 
 meaning: >
   Krishna tells Arjuna there are two kinds of beings in the world. One

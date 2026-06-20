@@ -7,15 +7,27 @@ sanskrit: "एवं प्रवर्तितं चक्रं नानु
 transliteration: "evaṁ pravartitaṁ cakraṁ nānuvartayatīha yaḥ | aghāyurindriyārāmo moghaṁ pārtha sa jīvati ||"
 
 dhatu_breakdown:
+  - word: "एवम्"
+    parts: ["evam (thus, in this way)"]
+    meaning: "thus, in this way"
   - word: "प्रवर्तितम्"
     parts: ["pra (forward)", "vṛt (to turn, to set in motion)"]
     meaning: "set in motion, established"
   - word: "चक्रम्"
     parts: ["cakra (wheel, cycle)"]
     meaning: "wheel, the great cycle"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "अनुवर्तयति"
     parts: ["anu (along, following)", "vṛt (to turn, to follow)"]
     meaning: "follows along, keeps turning"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this world"
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "who, the one who"
   - word: "अघायुः"
     parts: ["agha (sin, evil)", "āyus (life, lifespan)"]
     meaning: "one whose life is full of sin, living in vain"
@@ -25,6 +37,15 @@ dhatu_breakdown:
   - word: "मोघम्"
     parts: ["mogha (in vain, uselessly, fruitlessly)"]
     meaning: "in vain, without purpose"
+  - word: "पार्थ"
+    parts: ["pṛthā (Pritha, Kunti)", "a (son of)"]
+    meaning: "O Partha, son of Pritha — Arjuna"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that person"
+  - word: "जीवति"
+    parts: ["jīv (to live)"]
+    meaning: "lives"
 
 meaning: >
   Krishna warns: this great wheel of mutual giving has been spinning since

@@ -13,15 +13,36 @@ dhatu_breakdown:
   - word: "कुरु"
     parts: ["kṛ (to do)"]
     meaning: "do! perform!"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "action, work"
+  - word: "त्वम्"
+    parts: ["tvad (you)"]
+    meaning: "you"
   - word: "ज्यायः"
     parts: ["jyā (to be superior)"]
     meaning: "superior, better"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "अकर्मणः"
     parts: ["a (without)", "karma (action)"]
     meaning: "than inaction"
   - word: "शरीरयात्रा"
     parts: ["śarīra (body)", "yātrā (journey, maintenance)"]
     meaning: "the journey of the body, keeping the body alive"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "ते"
+    parts: ["tvad (you)"]
+    meaning: "for you, your"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "प्रसिद्ध्येत्"
     parts: ["pra (forward)", "sidh (to succeed, to be accomplished)"]
     meaning: "would succeed, would be possible"

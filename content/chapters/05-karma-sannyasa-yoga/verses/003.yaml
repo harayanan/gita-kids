@@ -10,9 +10,18 @@ dhatu_breakdown:
   - word: "ज्ञेयः"
     parts: ["jñā (to know)"]
     meaning: "is to be known, should be recognized"
+  - word: "सः"
+    parts: ["saḥ (he)"]
+    meaning: "he, that person"
   - word: "नित्यसंन्यासी"
     parts: ["nitya (always, ever)", "sam (fully)", "ni (down)", "as (to cast off)"]
     meaning: "an ever-renouncer, always free inside"
+  - word: "यः"
+    parts: ["yaḥ (who)"]
+    meaning: "who, the one who"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, neither"
   - word: "द्वेष्टि"
     parts: ["dviṣ (to hate, to dislike)"]
     meaning: "he hates, he dislikes"
@@ -22,6 +31,9 @@ dhatu_breakdown:
   - word: "निर्द्वन्द्वः"
     parts: ["nir (free from, without)", "dvandva (pair of opposites)"]
     meaning: "free from the pairs of opposites, like joy and sorrow"
+  - word: "हि"
+    parts: ["hi (indeed)"]
+    meaning: "indeed, for"
   - word: "महाबाहो"
     parts: ["mahā (great)", "bāhu (arm)"]
     meaning: "O mighty-armed one — a name for Arjuna"

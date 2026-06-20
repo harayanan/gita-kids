@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "व्यामिश्रेण"
     parts: ["vi (apart)", "ā (toward)", "miśr (to mix)"]
     meaning: "mixed up, ambiguous"
+  - word: "इव"
+    parts: ["iva (as if, like)"]
+    meaning: "as if, seemingly"
   - word: "वाक्येन"
     parts: ["vac (to speak)"]
     meaning: "with words, by speech"
@@ -19,12 +22,33 @@ dhatu_breakdown:
   - word: "मोहयसि"
     parts: ["muh (to confuse, to bewilder)"]
     meaning: "you confuse, you bewilder"
+  - word: "मे"
+    parts: ["mad (I, me)"]
+    meaning: "my, of me"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that, therefore"
+  - word: "एकम्"
+    parts: ["eka (one)"]
+    meaning: "one, the single"
+  - word: "वद"
+    parts: ["vad (to speak, to tell)"]
+    meaning: "tell! say!"
   - word: "निश्चित्य"
     parts: ["niś (completely)", "ci (to determine, to ascertain)"]
     meaning: "having decided with certainty"
+  - word: "येन"
+    parts: ["yad (which, by which)"]
+    meaning: "by which"
   - word: "श्रेयः"
     parts: ["śri (the good, the beneficial)"]
     meaning: "the highest good, what is truly best"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
+  - word: "आप्नुयाम्"
+    parts: ["āp (to attain, to obtain)"]
+    meaning: "I may attain, I may reach"
 
 meaning: >
   Arjuna pleads: "Your words seem to pull me in two directions at once,

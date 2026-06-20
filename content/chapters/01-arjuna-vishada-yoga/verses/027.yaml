@@ -13,18 +13,39 @@ dhatu_breakdown:
   - word: "सुहृदः"
     parts: ["su (good)", "hṛd (heart)"]
     meaning: "well-wishers, good-hearted friends"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, verily"
   - word: "सेनयोः उभयोः"
     parts: ["senā (army)", "ubhaya (both)"]
     meaning: "in both armies"
+  - word: "अपि"
+    parts: ["api (also)"]
+    meaning: "also, even"
+  - word: "तान्"
+    parts: ["tad (those)"]
+    meaning: "them, those"
   - word: "समीक्ष्य"
     parts: ["sam (completely)", "īkṣ (to see)"]
     meaning: "having looked at carefully, having surveyed"
+  - word: "सः"
+    parts: ["tad (he)"]
+    meaning: "he"
   - word: "कौन्तेयः"
     parts: ["kuntī (Kunti)", "eya (son of)"]
     meaning: "Kaunteya — son of Kunti, Arjuna"
+  - word: "सर्वान्"
+    parts: ["sarva (all)"]
+    meaning: "all"
   - word: "बन्धून्"
     parts: ["bandh (to bind)"]
     meaning: "relatives, those bound to us"
+  - word: "अवस्थितान्"
+    parts: ["ava (down)", "sthā (to stand)"]
+    meaning: "standing, arrayed (ready for battle)"
   - word: "कृपया"
     parts: ["kṛp (to be compassionate)"]
     meaning: "with compassion, with pity"
@@ -37,6 +58,12 @@ dhatu_breakdown:
   - word: "विषीदन्"
     parts: ["vi (deeply)", "sad (to sink, to grieve)"]
     meaning: "sinking into sorrow, despairing"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this (these words)"
+  - word: "अब्रवीत्"
+    parts: ["brū (to speak)"]
+    meaning: "he said, he spoke"
 
 meaning: >
   He also saw fathers-in-law and well-wishers in both armies. Seeing all

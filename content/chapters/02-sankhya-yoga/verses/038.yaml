@@ -22,9 +22,21 @@ dhatu_breakdown:
   - word: "जयाजयौ"
     parts: ["ji (to conquer, to win)", "a (not)", "ji (to conquer)"]
     meaning: "victory and defeat"
+  - word: "ततः"
+    parts: ["tatas (then, therefore)"]
+    meaning: "then, therefore"
+  - word: "युद्धाय"
+    parts: ["yudh (to fight, to wage war)"]
+    meaning: "for battle, to fight"
   - word: "युज्यस्व"
     parts: ["yuj (to yoke, to unite, to engage)"]
     meaning: "engage yourself! prepare for battle!"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "एवम्"
+    parts: ["evam (thus)"]
+    meaning: "thus, in this way"
   - word: "पापम्"
     parts: ["pāpa (sin, wrongdoing)"]
     meaning: "sin"

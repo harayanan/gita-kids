@@ -25,9 +25,24 @@ dhatu_breakdown:
   - word: "विमुक्ताः"
     parts: ["vi (fully)", "muc (to release, to free)"]
     meaning: "completely liberated"
+  - word: "सुखदुःखसंज्ञैः"
+    parts: ["sukha (pleasure)", "duḥkha (pain)", "saṁjñā (named, known as)"]
+    meaning: "known as pleasure and pain"
+  - word: "गच्छन्ति"
+    parts: ["gam (to go, to reach)"]
+    meaning: "they go, they reach"
   - word: "अमूढाः"
     parts: ["a (not)", "mūḍha (deluded, confused)"]
     meaning: "undeluded, clear-seeing"
+  - word: "पदम्"
+    parts: ["pad (abode, state)"]
+    meaning: "the abode, the state"
+  - word: "अव्ययम्"
+    parts: ["a (not)", "vi (away)", "aya (going)"]
+    meaning: "imperishable, unchanging"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that"
 
 meaning: >
   Those who are free from pride and confusion, who have conquered the pull

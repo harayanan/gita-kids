@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "अव्यक्तः"
     parts: ["a (not)", "vi (apart)", "añj (to manifest, to make visible)"]
     meaning: "invisible, unmanifest"
+  - word: "अयम्"
+    parts: ["ayam (this)"]
+    meaning: "this (the soul)"
   - word: "अचिन्त्यः"
     parts: ["a (not)", "cint (to think)"]
     meaning: "unthinkable, beyond the reach of thought"
@@ -19,9 +22,21 @@ dhatu_breakdown:
   - word: "उच्यते"
     parts: ["vac (to speak)"]
     meaning: "is said, is declared"
+  - word: "तस्मात्"
+    parts: ["tasmāt (therefore)"]
+    meaning: "therefore, for that reason"
+  - word: "एवम्"
+    parts: ["evam (thus)"]
+    meaning: "thus, in this way"
   - word: "विदित्वा"
     parts: ["vid (to know)"]
     meaning: "having known, having understood"
+  - word: "एनम्"
+    parts: ["enam (this, him)"]
+    meaning: "this (soul)"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "अनुशोचितुम्"
     parts: ["anu (after)", "śuc (to grieve)"]
     meaning: "to grieve, to mourn"

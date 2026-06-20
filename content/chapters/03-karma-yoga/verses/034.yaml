@@ -19,12 +19,27 @@ dhatu_breakdown:
   - word: "व्यवस्थितौ"
     parts: ["vi (apart)", "ava (down)", "sthā (to stand, to be stationed)"]
     meaning: "are stationed, are established"
+  - word: "तयोः"
+    parts: ["tad (that — dual: of those two)"]
+    meaning: "of those two"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "वशम्"
     parts: ["vaśa (control, power, dominion)"]
     meaning: "under the control of"
   - word: "आगच्छेत्"
     parts: ["ā (toward)", "gam (to go, to come)"]
     meaning: "should come under, should fall into"
+  - word: "तौ"
+    parts: ["tad (that — dual: those two)"]
+    meaning: "those two"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "अस्य"
+    parts: ["idam (this — genitive: of this one)"]
+    meaning: "of this person, his"
   - word: "परिपन्थिनौ"
     parts: ["pari (around, against)", "pantha (path, road)"]
     meaning: "enemies on the path, highway robbers"

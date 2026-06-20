@@ -13,18 +13,33 @@ dhatu_breakdown:
   - word: "संयम्य"
     parts: ["sam (together)", "yam (to restrain, to control)"]
     meaning: "having restrained, holding back"
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "who, the one who"
+  - word: "आस्ते"
+    parts: ["ās (to sit, to remain)"]
+    meaning: "sits, remains"
   - word: "मनसा"
     parts: ["man (to think)"]
     meaning: "with the mind"
   - word: "स्मरन्"
     parts: ["smṛ (to remember, to dwell on)"]
     meaning: "remembering, thinking about"
+  - word: "इन्द्रियार्थान्"
+    parts: ["indriya (sense)", "artha (object, aim)"]
+    meaning: "the objects of the senses"
   - word: "विमूढात्मा"
     parts: ["vi (wrongly)", "muh (to be confused)", "ātman (self)"]
     meaning: "one whose self is deluded"
   - word: "मिथ्याचारः"
     parts: ["mithyā (falsely)", "ācāra (conduct, behavior)"]
     meaning: "false conduct, hypocrisy"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that person"
+  - word: "उच्यते"
+    parts: ["vac (to speak, to call)"]
+    meaning: "is called, is said to be"
 
 meaning: >
   Krishna gives a warning: someone who controls their body on the outside —

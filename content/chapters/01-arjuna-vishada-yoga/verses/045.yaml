@@ -34,6 +34,9 @@ dhatu_breakdown:
   - word: "तत्"
     parts: ["tad (that)"]
     meaning: "that"
+  - word: "मे"
+    parts: ["mad (for me)"]
+    meaning: "for me"
   - word: "क्षेमतरम्"
     parts: ["kṣema (welfare, safety, from kṣi — to dwell in peace)", "tara (more, better)"]
     meaning: "far better, much more peaceful"

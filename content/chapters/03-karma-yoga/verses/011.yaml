@@ -16,12 +16,30 @@ dhatu_breakdown:
   - word: "अनेन"
     parts: ["idam (this)"]
     meaning: "by this, through this"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those"
+  - word: "देवाः"
+    parts: ["div (to shine, to be celestial)"]
+    meaning: "the gods"
+  - word: "भावयन्तु"
+    parts: ["bhū (to nourish, to cause to be)"]
+    meaning: "let them nourish, may they cherish"
+  - word: "वः"
+    parts: ["yuṣmad (you, plural)"]
+    meaning: "you (all)"
   - word: "परस्परम्"
     parts: ["paraspar (mutual, each other)"]
     meaning: "mutually, one another"
+  - word: "भावयन्तः"
+    parts: ["bhū (to nourish, to cause to be)"]
+    meaning: "nourishing, cherishing"
   - word: "श्रेयः"
     parts: ["śri (to prosper, to excel)"]
     meaning: "the highest good, supreme welfare"
+  - word: "परम्"
+    parts: ["parama (highest, supreme)"]
+    meaning: "highest, supreme"
   - word: "अवाप्स्यथ"
     parts: ["ava (down)", "āp (to obtain, to reach)"]
     meaning: "shall obtain, shall attain"

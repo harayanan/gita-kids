@@ -25,6 +25,12 @@ dhatu_breakdown:
   - word: "कुर्वन्"
     parts: ["kṛ (to do, to act)"]
     meaning: "while doing, even while acting"
+  - word: "अपि"
+    parts: ["api (even)"]
+    meaning: "even, although"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "लिप्यते"
     parts: ["lip (to smear, to stick to)"]
     meaning: "is stained, is stuck to, is tainted"

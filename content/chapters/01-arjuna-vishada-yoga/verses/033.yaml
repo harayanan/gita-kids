@@ -16,6 +16,15 @@ dhatu_breakdown:
   - word: "पुत्राः"
     parts: ["putra (son)"]
     meaning: "sons"
+  - word: "तथा"
+    parts: ["tathā (likewise, as well)"]
+    meaning: "likewise, and so too"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, just so"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "पितामहाः"
     parts: ["pitā (father)", "mahā (great)"]
     meaning: "grandfathers, fathers of the father"

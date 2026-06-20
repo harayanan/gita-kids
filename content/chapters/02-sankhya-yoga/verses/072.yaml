@@ -7,6 +7,9 @@ sanskrit: "एषा ब्राह्मी स्थितिः पार्
 transliteration: "eṣā brāhmī sthitiḥ pārtha naināṁ prāpya vimuhyati | sthitvāsyāmantakāle'pi brahmanirvāṇamṛcchati ||"
 
 dhatu_breakdown:
+  - word: "एषा"
+    parts: ["etad (this)"]
+    meaning: "this (feminine)"
   - word: "ब्राह्मी"
     parts: ["bṛh (to grow, to expand)"]
     meaning: "of Brahman, divine, relating to the Absolute"
@@ -16,18 +19,36 @@ dhatu_breakdown:
   - word: "पार्थ"
     parts: ["pṛthā (Kunti, Arjuna's mother)"]
     meaning: "son of Pritha — Arjuna"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not, never"
+  - word: "एनाम्"
+    parts: ["enad (this, it)"]
+    meaning: "this, it (referring to the state of Brahman)"
+  - word: "प्राप्य"
+    parts: ["pra (forth)", "āp (to reach, to attain)"]
+    meaning: "having attained, on reaching"
   - word: "विमुह्यति"
     parts: ["vi (completely)", "muh (to be confused, deluded)"]
     meaning: "is deluded, becomes confused"
   - word: "स्थित्वा"
     parts: ["sthā (to stand, to remain established)"]
     meaning: "having been established, having remained"
+  - word: "अस्याम्"
+    parts: ["idam (this)"]
+    meaning: "in this, in this state"
   - word: "अन्तकाले"
     parts: ["anta (end)", "kāla (time)"]
     meaning: "at the end of time, at the hour of death"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even"
   - word: "ब्रह्मनिर्वाणम्"
     parts: ["brahma (the Absolute)", "niḥ (out, beyond)", "vā (to blow, extinguish)"]
     meaning: "liberation in Brahman, the peace of the Infinite"
+  - word: "ऋच्छति"
+    parts: ["ṛ (to go, to reach)"]
+    meaning: "reaches, attains"
 
 meaning: >
   This is the state of Brahman, O Partha. Attaining this, one is never

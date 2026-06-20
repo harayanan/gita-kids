@@ -13,9 +13,21 @@ dhatu_breakdown:
   - word: "कर्म"
     parts: ["kṛ (to do, to act)"]
     meaning: "action, deeds"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "मे"
+    parts: ["me (of mine, my)"]
+    meaning: "my, of mine"
   - word: "दिव्यम्"
     parts: ["div (to shine, to be heavenly)"]
     meaning: "divine, heavenly, shining"
+  - word: "एवम्"
+    parts: ["evam (thus, in this way)"]
+    meaning: "thus, in this way"
+  - word: "यः"
+    parts: ["yaḥ (who, whoever)"]
+    meaning: "whoever, the one who"
   - word: "वेत्ति"
     parts: ["vid (to know, to understand)"]
     meaning: "knows, understands"
@@ -40,6 +52,12 @@ dhatu_breakdown:
   - word: "एति"
     parts: ["i (to go, to come)"]
     meaning: "comes, reaches"
+  - word: "सः"
+    parts: ["saḥ (he, that one)"]
+    meaning: "he, that person"
+  - word: "अर्जुन"
+    parts: ["arjuna (Arjuna)"]
+    meaning: "O Arjuna"
 
 meaning: >
   Krishna explains the reward of truly understanding him. "Whoever really knows,

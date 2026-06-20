@@ -13,12 +13,21 @@ dhatu_breakdown:
   - word: "भीष्मम्"
     parts: ["bhī (to fear)", "ṣma (most)"]
     meaning: "Bhishma — the one who is most fearsome (by his terrible vow)"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "सङ्ख्ये"
     parts: ["sam (together)", "khyā (to count, to reckon)"]
     meaning: "in battle, in the reckoning of war"
   - word: "द्रोणम्"
     parts: ["droṇa (a vessel, a trough)"]
     meaning: "Drona — named for the vessel in which he was born"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "मधुसूदन"
+    parts: ["madhu (the demon Madhu)", "sūdana (slayer)"]
+    meaning: "O Madhusudana (Krishna) — slayer of the demon Madhu"
   - word: "इषुभिः"
     parts: ["iṣu (arrow)"]
     meaning: "with arrows"

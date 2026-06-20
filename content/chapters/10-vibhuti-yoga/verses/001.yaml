@@ -31,6 +31,9 @@ dhatu_breakdown:
   - word: "यत्"
     parts: ["yad (which)"]
     meaning: "which"
+  - word: "ते"
+    parts: ["te (to you)"]
+    meaning: "to you"
   - word: "अहम्"
     parts: ["aham (I)"]
     meaning: "I"

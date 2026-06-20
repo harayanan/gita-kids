@@ -7,6 +7,12 @@ sanskrit: "नैनं छिन्दन्ति शस्त्राणि 
 transliteration: "nainaṁ chindanti śastrāṇi nainaṁ dahati pāvakaḥ | na cainaṁ kledayantyāpo na śoṣayati mārutaḥ ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "एनम्"
+    parts: ["enad (this, him)"]
+    meaning: "this one (the soul)"
   - word: "छिन्दन्ति"
     parts: ["chid (to cut, to split)"]
     meaning: "they cut, they cleave"
@@ -19,6 +25,9 @@ dhatu_breakdown:
   - word: "पावकः"
     parts: ["pū (to purify)"]
     meaning: "fire, the purifier"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "क्लेदयन्ति"
     parts: ["klid (to become wet, to moisten)"]
     meaning: "they wet, they dissolve"

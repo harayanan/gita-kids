@@ -13,12 +13,36 @@ dhatu_breakdown:
   - word: "पराणि"
     parts: ["para (superior, beyond)"]
     meaning: "superior, higher"
+  - word: "आहुः"
+    parts: ["ah (to say, to declare)"]
+    meaning: "they say, it is said"
+  - word: "इन्द्रियेभ्यः"
+    parts: ["indriya (sense organ, faculty)"]
+    meaning: "than the senses"
+  - word: "परम्"
+    parts: ["para (superior, beyond)"]
+    meaning: "higher, superior"
   - word: "मनः"
     parts: ["man (to think, to reflect)"]
     meaning: "the mind"
+  - word: "मनसः"
+    parts: ["man (to think, to reflect)"]
+    meaning: "than the mind"
+  - word: "तु"
+    parts: ["tu (but, indeed)"]
+    meaning: "but, indeed"
+  - word: "परा"
+    parts: ["para (superior, beyond)"]
+    meaning: "higher, superior"
   - word: "बुद्धिः"
     parts: ["budh (to know, to awaken)"]
     meaning: "the intellect, the power of discernment"
+  - word: "यः"
+    parts: ["yad (who — the one who)"]
+    meaning: "the one who, that which"
+  - word: "बुद्धेः"
+    parts: ["budh (to know, to awaken)"]
+    meaning: "than the intellect"
   - word: "परतः"
     parts: ["para (beyond, superior to)"]
     meaning: "beyond, higher than"

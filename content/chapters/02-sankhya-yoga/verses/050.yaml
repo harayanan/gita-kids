@@ -13,18 +13,30 @@ dhatu_breakdown:
   - word: "जहाति"
     parts: ["hā (to abandon, to leave)"]
     meaning: "casts off, abandons, leaves behind"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this very life"
   - word: "उभे"
     parts: ["ubha (both)"]
     meaning: "both"
   - word: "सुकृतदुष्कृते"
     parts: ["su (good)", "kṛ (to do)", "dus (bad)", "kṛ (to do)"]
     meaning: "good deeds and bad deeds, merit and sin"
+  - word: "तस्मात्"
+    parts: ["tad (that, therefore)"]
+    meaning: "therefore, for that reason"
   - word: "योगाय"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "for yoga, toward yoga"
   - word: "युज्यस्व"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "strive for, devote yourself to — an imperative"
+  - word: "योगः"
+    parts: ["yuj (to yoke, to unite)"]
+    meaning: "yoga, union"
+  - word: "कर्मसु"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "in actions, in deeds"
   - word: "कौशलम्"
     parts: ["kuśala (skillful, expert)"]
     meaning: "skill, dexterity, artistry"

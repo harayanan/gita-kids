@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "बुद्धियुक्ताः"
     parts: ["budh (to know, to awaken)", "yuj (to yoke, to unite)"]
     meaning: "those endowed with equanimous intellect"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "फलम्"
     parts: ["phal (to bear fruit)"]
     meaning: "fruit, result, outcome"
@@ -25,6 +28,12 @@ dhatu_breakdown:
   - word: "जन्मबन्धविनिर्मुक्ताः"
     parts: ["janma (birth)", "bandha (bondage)", "vi-nis-muc (to fully release)"]
     meaning: "completely freed from the bondage of rebirth"
+  - word: "पदम्"
+    parts: ["pad (to go, to attain)"]
+    meaning: "the state, the abode, the goal"
+  - word: "गच्छन्ति"
+    parts: ["gam (to go, to reach)"]
+    meaning: "they go to, they reach"
   - word: "अनामयम्"
     parts: ["an (without)", "āmaya (sickness, sorrow)"]
     meaning: "free from sorrow, free from affliction"

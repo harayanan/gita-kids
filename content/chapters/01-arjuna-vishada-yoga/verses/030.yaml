@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "न"
     parts: ["na (not)"]
     meaning: "not, unable"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "शक्नोमि"
     parts: ["śak (to be able)"]
     meaning: "I am able"
@@ -22,12 +25,18 @@ dhatu_breakdown:
   - word: "इव"
     parts: ["iva (as if, like)"]
     meaning: "as if"
+  - word: "मे"
+    parts: ["mad (my)"]
+    meaning: "my"
   - word: "मनः"
     parts: ["manas (mind)"]
     meaning: "my mind"
   - word: "निमित्तानि"
     parts: ["nimitta (omen, sign, cause)"]
     meaning: "omens, signs"
+  - word: "पश्यामि"
+    parts: ["paś/dṛś (to see)"]
+    meaning: "I see, I behold"
   - word: "विपरीतानि"
     parts: ["vi (opposite)", "parīta (turned)"]
     meaning: "adverse, reversed, bad"

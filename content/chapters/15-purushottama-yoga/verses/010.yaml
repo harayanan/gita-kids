@@ -13,6 +13,12 @@ dhatu_breakdown:
   - word: "स्थितम्"
     parts: ["sthā (to stand, to dwell)"]
     meaning: "dwelling, staying in the body"
+  - word: "वा"
+    parts: ["vā (or)"]
+    meaning: "or"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "भुञ्जानम्"
     parts: ["bhuj (to enjoy, to experience)"]
     meaning: "enjoying, experiencing through the senses"
@@ -22,9 +28,15 @@ dhatu_breakdown:
   - word: "विमूढाः"
     parts: ["vi (deeply, completely)", "muh (to be deluded, to be confused)"]
     meaning: "the deeply deluded, those who are thoroughly confused"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "अनुपश्यन्ति"
     parts: ["anu (along, closely)", "paś (to see, to perceive)"]
     meaning: "perceive, see clearly"
+  - word: "पश्यन्ति"
+    parts: ["paś (to see, to perceive)"]
+    meaning: "they see, they perceive"
   - word: "ज्ञानचक्षुषः"
     parts: ["jñāna (knowledge, from jñā — to know)", "cakṣus (eye, from cakṣ — to see)"]
     meaning: "those with the eye of knowledge, the wise who see with understanding"

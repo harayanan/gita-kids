@@ -16,6 +16,15 @@ dhatu_breakdown:
   - word: "पार्थ"
     parts: ["pṛthā (Kunti)", "a (son of)"]
     meaning: "O son of Pritha (Arjuna)"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "एतत्"
+    parts: ["etat (this)"]
+    meaning: "this"
+  - word: "त्वयि"
+    parts: ["tvayi (in you, for you)"]
+    meaning: "in you, befitting you"
   - word: "उपपद्यते"
     parts: ["upa (near)", "pad (to fall, to be fitting)"]
     meaning: "is fitting, is proper"

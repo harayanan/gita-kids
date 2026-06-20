@@ -7,6 +7,9 @@ sanskrit: "स घोषो धार्तराष्ट्राणां ह
 transliteration: "sa ghoṣo dhārtarāṣṭrāṇāṁ hṛdayāni vyadārayat | nabhaśca pṛthivīṁ caiva tumulo vyanunādayan ||"
 
 dhatu_breakdown:
+  - word: "सः"
+    parts: ["tad (that)"]
+    meaning: "that"
   - word: "घोषः"
     parts: ["ghuṣ (to sound, to cry out)"]
     meaning: "sound, uproar"
@@ -25,6 +28,12 @@ dhatu_breakdown:
   - word: "पृथिवीम्"
     parts: ["pṛthivī (the earth)"]
     meaning: "the earth"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (indeed, both)"]
+    meaning: "as well, too"
   - word: "तुमुलः"
     parts: ["tumula (tumultuous)"]
     meaning: "tumultuous, tremendous"

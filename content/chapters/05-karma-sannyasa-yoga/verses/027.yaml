@@ -19,9 +19,15 @@ dhatu_breakdown:
   - word: "बाह्यान्"
     parts: ["bāhya (external)"]
     meaning: "the external ones"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "चक्षुः"
     parts: ["cakṣ (to see)"]
     meaning: "the eye, the gaze"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, and"
   - word: "अन्तरे"
     parts: ["antara (between)"]
     meaning: "between, in the middle of"

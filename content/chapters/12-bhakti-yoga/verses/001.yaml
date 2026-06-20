@@ -7,21 +7,42 @@ sanskrit: "एवं सततयुक्ता ये भक्तास्त
 transliteration: "evaṁ satatayuktā ye bhaktāstvāṁ paryupāsate | ye cāpyakṣaramavyaktaṁ teṣāṁ ke yogavittamāḥ ||"
 
 dhatu_breakdown:
+  - word: "एवम्"
+    parts: ["evam (thus, in this way)"]
+    meaning: "thus, in this way"
   - word: "सततयुक्ताः"
     parts: ["satata (always)", "yukta (joined, devoted)"]
     meaning: "constantly devoted"
+  - word: "ये"
+    parts: ["yad (who, which)"]
+    meaning: "those who"
   - word: "भक्ताः"
     parts: ["bhaj (to adore, to worship)"]
     meaning: "devotees"
+  - word: "त्वाम्"
+    parts: ["tvam (you)"]
+    meaning: "You"
   - word: "पर्युपासते"
     parts: ["pari (around, fully)", "upa (near)", "ās (to sit, to worship)"]
     meaning: "worship with full devotion"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "अक्षरम्"
     parts: ["a (not)", "kṣar (to perish)"]
     meaning: "the imperishable"
   - word: "अव्यक्तम्"
     parts: ["a (not)", "vi (distinct)", "añj (to manifest)"]
     meaning: "the unmanifest, formless"
+  - word: "तेषाम्"
+    parts: ["tad (them)", "ām (genitive plural)"]
+    meaning: "of those, among them"
+  - word: "के"
+    parts: ["kim (who, which)"]
+    meaning: "who, which ones"
   - word: "योगवित्तमाः"
     parts: ["yoga (union, discipline)", "vid (to know)", "tama (most, best)"]
     meaning: "the best knowers of yoga"

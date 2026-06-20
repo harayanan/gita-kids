@@ -28,6 +28,9 @@ dhatu_breakdown:
   - word: "आचरतः"
     parts: ["ā (toward, fully)", "car (to move, to perform)"]
     meaning: "of one who performs, who acts"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "action, the deed"
   - word: "समग्रम्"
     parts: ["sam (together, wholly)", "agra (front, whole extent)"]
     meaning: "entirely, completely, in full"

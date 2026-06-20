@@ -22,12 +22,24 @@ dhatu_breakdown:
   - word: "त्यक्त्वा"
     parts: ["tyaj (to abandon, to give up)"]
     meaning: "having abandoned, having given up"
+  - word: "धनञ्जय"
+    parts: ["dhana (wealth)", "jaya (winning, conqueror)"]
+    meaning: "O Dhananjaya, winner of wealth — an epithet for Arjuna"
   - word: "सिद्ध्यसिद्ध्योः"
     parts: ["sidh (to succeed, to accomplish)"]
     meaning: "in success and failure, in accomplishment and non-accomplishment"
+  - word: "समः"
+    parts: ["sama (equal, even)"]
+    meaning: "equal, even, the same"
+  - word: "भूत्वा"
+    parts: ["bhū (to be, to become)"]
+    meaning: "having become, being"
   - word: "समत्वम्"
     parts: ["sama (equal, even)"]
     meaning: "equanimity, evenness, balance"
+  - word: "योगः"
+    parts: ["yuj (to yoke, to unite)"]
+    meaning: "yoga"
   - word: "उच्यते"
     parts: ["vac (to speak, to call)"]
     meaning: "is called, is said to be"

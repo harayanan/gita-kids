@@ -22,9 +22,18 @@ dhatu_breakdown:
   - word: "स्वनुष्ठितात्"
     parts: ["su (well)", "anuṣṭhita (performed, carried out)"]
     meaning: "well-performed, perfectly done"
+  - word: "स्वधर्मे"
+    parts: ["sva (own, self)", "dharma (duty, calling)"]
+    meaning: "in one's own duty"
   - word: "निधनम्"
     parts: ["nidhana (death, end, destruction)"]
     meaning: "death, failure"
+  - word: "श्रेयः"
+    parts: ["śreyas (better, more beneficial)"]
+    meaning: "better, more worthy"
+  - word: "परधर्मः"
+    parts: ["para (other, another's)", "dharma (duty, calling)"]
+    meaning: "another's duty"
   - word: "भयावहः"
     parts: ["bhaya (fear, danger)", "āvaha (bringing, carrying)"]
     meaning: "fraught with danger, fear-bringing"

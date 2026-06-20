@@ -7,18 +7,42 @@ sanskrit: "यस्मात्क्षरमतीतोऽहमक्षर
 transliteration: "yasmātkṣaramatīto'hamakṣarādapi cottamaḥ | ato'smi loke vede ca prathitaḥ puruṣottamaḥ ||"
 
 dhatu_breakdown:
+  - word: "यस्मात्"
+    parts: ["yad (because, since)"]
+    meaning: "because, since"
   - word: "क्षरम्"
     parts: ["kṣar (to perish, to flow away)"]
     meaning: "the perishable"
   - word: "अतीतः"
     parts: ["ati (beyond)", "i (to go)"]
     meaning: "gone beyond, having transcended"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "अक्षरात्"
     parts: ["a (not)", "kṣar (to perish)"]
     meaning: "from the imperishable, beyond even the unchanging"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "उत्तमः"
     parts: ["ud (up, above)", "tama (superlative)"]
     meaning: "the highest, the supreme"
+  - word: "अतः"
+    parts: ["atas (therefore, hence)"]
+    meaning: "therefore, hence"
+  - word: "अस्मि"
+    parts: ["as (to be)"]
+    meaning: "I am"
+  - word: "लोके"
+    parts: ["loka (world)"]
+    meaning: "in the world"
+  - word: "वेदे"
+    parts: ["veda (the Veda)"]
+    meaning: "in the Veda"
   - word: "प्रथितः"
     parts: ["prath (to spread, to become known, to celebrate)"]
     meaning: "celebrated, renowned, declared"

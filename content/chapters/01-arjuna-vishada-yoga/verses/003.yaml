@@ -16,6 +16,9 @@ dhatu_breakdown:
   - word: "पाण्डुपुत्राणाम्"
     parts: ["pāṇḍu (King Pandu)", "putra (son)"]
     meaning: "of the sons of Pandu"
+  - word: "आचार्य"
+    parts: ["ā (towards)", "car (to move, conduct)"]
+    meaning: "O teacher (addressing Drona)"
   - word: "महतीम्"
     parts: ["mahat (great)"]
     meaning: "great, mighty"
@@ -28,6 +31,9 @@ dhatu_breakdown:
   - word: "द्रुपदपुत्रेण"
     parts: ["drupada (King Drupada)", "putra (son)"]
     meaning: "by the son of Drupada (Dhrishtadyumna)"
+  - word: "तव"
+    parts: ["tva (your)"]
+    meaning: "your"
   - word: "शिष्येण"
     parts: ["śiṣ (to teach)", "ya (one who learns)"]
     meaning: "by your student"

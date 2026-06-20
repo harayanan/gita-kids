@@ -22,12 +22,24 @@ dhatu_breakdown:
   - word: "रसवर्जम्"
     parts: ["rasa (taste, essence)", "vṛj (to exclude, avoid)"]
     meaning: "except the taste, the lingering flavor"
+  - word: "रसः"
+    parts: ["rasa (taste, relish)"]
+    meaning: "the taste, the relish, the longing for flavor"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even, also"
+  - word: "अस्य"
+    parts: ["idam (this)"]
+    meaning: "of this one, his"
   - word: "परम्"
     parts: ["para (beyond, supreme)"]
     meaning: "the Supreme, the highest reality"
   - word: "दृष्ट्वा"
     parts: ["dṛś (to see)"]
     meaning: "having seen, upon beholding"
+  - word: "निवर्तते"
+    parts: ["ni (down)", "vṛt (to turn)"]
+    meaning: "turns away, ceases"
 
 meaning: >
   Sense objects turn away from the abstinent soul, but the taste for them

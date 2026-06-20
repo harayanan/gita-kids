@@ -22,6 +22,12 @@ dhatu_breakdown:
   - word: "शुनि"
     parts: ["śvan (dog)"]
     meaning: "in a dog"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, even"
   - word: "श्वपाके"
     parts: ["śvan (dog)", "pac (to cook)"]
     meaning: "in one whom society pushed to its very edge"

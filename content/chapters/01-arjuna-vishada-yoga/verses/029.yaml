@@ -10,9 +10,15 @@ dhatu_breakdown:
   - word: "वेपथुः"
     parts: ["vep (to tremble)"]
     meaning: "trembling, shaking"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "शरीरे"
     parts: ["śarīra (body)"]
     meaning: "in the body"
+  - word: "मे"
+    parts: ["mad (my)"]
+    meaning: "my"
   - word: "रोमहर्षः"
     parts: ["roma (body hair)", "harṣa (standing up)"]
     meaning: "horripilation — the hair standing on end"
@@ -31,6 +37,9 @@ dhatu_breakdown:
   - word: "त्वक्"
     parts: ["tvac (skin)"]
     meaning: "the skin"
+  - word: "एव"
+    parts: ["eva (indeed)"]
+    meaning: "indeed, even"
   - word: "परिदह्यते"
     parts: ["pari (all around)", "dah (to burn)"]
     meaning: "is burning all over"

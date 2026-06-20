@@ -10,27 +10,48 @@ dhatu_breakdown:
   - word: "जातस्य"
     parts: ["jan (to be born)"]
     meaning: "of the one who is born"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for, certainly"
   - word: "ध्रुवः"
     parts: ["dhru (to be firm, to be fixed)"]
     meaning: "certain, fixed, inevitable"
   - word: "मृत्युः"
     parts: ["mṛ (to die)"]
     meaning: "death"
+  - word: "ध्रुवम्"
+    parts: ["dhru (to be firm, to be fixed)"]
+    meaning: "certain, inevitable"
   - word: "जन्म"
     parts: ["jan (to be born)"]
     meaning: "birth"
   - word: "मृतस्य"
     parts: ["mṛ (to die)"]
     meaning: "of the one who has died"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "तस्मात्"
+    parts: ["tasmāt (therefore)"]
+    meaning: "therefore, for that reason"
   - word: "अपरिहार्ये"
     parts: ["a (not)", "pari (around, fully)", "hṛ (to take, to remove)"]
     meaning: "unavoidable, that which cannot be taken away from"
   - word: "अर्थे"
     parts: ["artha (matter, thing, purpose)"]
     meaning: "in a matter, regarding a thing"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "त्वम्"
+    parts: ["tvam (you)"]
+    meaning: "you"
   - word: "शोचितुम्"
     parts: ["śuc (to grieve, to mourn)"]
     meaning: "to grieve, to sorrow"
+  - word: "अर्हसि"
+    parts: ["arh (to deserve, to be fit)"]
+    meaning: "you ought — here: you should not"
 
 meaning: >
   For the born, death is certain; for the dead, birth is certain.

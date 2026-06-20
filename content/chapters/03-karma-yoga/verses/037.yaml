@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "कामः"
     parts: ["kām (to desire, to long for)"]
     meaning: "desire, craving"
+  - word: "एषः"
+    parts: ["etad (this)"]
+    meaning: "this"
   - word: "क्रोधः"
     parts: ["krudh (to be angry, to rage)"]
     meaning: "anger, wrath"
@@ -22,6 +25,15 @@ dhatu_breakdown:
   - word: "महापाप्मा"
     parts: ["mahā (great)", "pāpman (sin, evil)"]
     meaning: "greatly sinful, the source of great evil"
+  - word: "विद्धि"
+    parts: ["vid (to know, to understand)"]
+    meaning: "know!, understand!"
+  - word: "एनम्"
+    parts: ["enad (this — accusative: this one)"]
+    meaning: "this one, it"
+  - word: "इह"
+    parts: ["iha (here, in this world)"]
+    meaning: "here, in this world"
   - word: "वैरिणम्"
     parts: ["vairin (enemy, adversary)"]
     meaning: "the enemy"

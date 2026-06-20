@@ -7,6 +7,9 @@ sanskrit: "मयि सर्वाणि कर्माणि संन्य
 transliteration: "mayi sarvāṇi karmāṇi saṁnyasyādhyātmacetasā | nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ ||"
 
 dhatu_breakdown:
+  - word: "मयि"
+    parts: ["mad (I — locative: in me)"]
+    meaning: "in me, to me"
   - word: "सर्वाणि कर्माणि"
     parts: ["sarva (all)", "karman (action, deed)"]
     meaning: "all actions"
@@ -22,6 +25,9 @@ dhatu_breakdown:
   - word: "निर्ममः"
     parts: ["nir (without)", "mama (mine, possessiveness)"]
     meaning: "without ego, without the sense of 'mine'"
+  - word: "भूत्वा"
+    parts: ["bhū (to be, to become)"]
+    meaning: "having become"
   - word: "युध्यस्व"
     parts: ["yudh (to fight, to wage battle)"]
     meaning: "fight!"

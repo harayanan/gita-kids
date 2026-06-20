@@ -7,9 +7,18 @@ sanskrit: "ये तु धर्म्यामृतमिदं यथोक
 transliteration: "ye tu dharmyāmṛtamidaṁ yathoktaṁ paryupāsate | śraddadhānā matparamā bhaktāste'tīva me priyāḥ ||"
 
 dhatu_breakdown:
+  - word: "ये"
+    parts: ["yad (who, which)"]
+    meaning: "those who"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
   - word: "धर्म्यामृतम्"
     parts: ["dharmya (righteous, of dharma)", "amṛta (immortal, nectar)"]
     meaning: "the immortal nectar of dharma — teachings that never die"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "यथोक्तम्"
     parts: ["yathā (as, in the way that)", "ukta (spoken, said)"]
     meaning: "as has been spoken, as declared"
@@ -25,9 +34,15 @@ dhatu_breakdown:
   - word: "भक्ताः"
     parts: ["bhaj (to share, to love, to worship)"]
     meaning: "devotees, those who love"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those ones"
   - word: "अतीव"
     parts: ["ati (beyond, exceedingly)", "iva (indeed)"]
     meaning: "exceedingly, beyond all measure"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
   - word: "प्रियाः"
     parts: ["prī (to love, to please)"]
     meaning: "dear, beloved ones"

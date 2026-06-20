@@ -16,12 +16,33 @@ dhatu_breakdown:
   - word: "नित्यम्"
     parts: ["nitya (eternal)"]
     meaning: "the eternal"
+  - word: "यः"
+    parts: ["yat (who)"]
+    meaning: "who, the one who"
+  - word: "एनम्"
+    parts: ["enad (this, him)"]
+    meaning: "this one (the soul)"
   - word: "अजम्"
     parts: ["a (not)", "jan (to be born)"]
     meaning: "the unborn"
   - word: "अव्ययम्"
     parts: ["a (not)", "vi (apart)", "i (to go)"]
     meaning: "the imperishable, that which does not decay"
+  - word: "कथम्"
+    parts: ["katham (how)"]
+    meaning: "how"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that one"
+  - word: "पुरुषः"
+    parts: ["puruṣa (person, being)"]
+    meaning: "person"
+  - word: "पार्थ"
+    parts: ["pṛthā (Kunti)", "a (son of)"]
+    meaning: "O son of Pritha (Arjuna)"
+  - word: "कम्"
+    parts: ["kim (whom)"]
+    meaning: "whom"
   - word: "घातयति"
     parts: ["han (to kill)", "causative form"]
     meaning: "causes to be slain"

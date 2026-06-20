@@ -16,18 +16,39 @@ dhatu_breakdown:
   - word: "वह्निः"
     parts: ["vah (to carry, to bear)"]
     meaning: "fire"
+  - word: "यथा"
+    parts: ["yathā (as, just as)"]
+    meaning: "as, just as"
   - word: "आदर्शः"
     parts: ["ā (towards)", "dṛś (to see)"]
     meaning: "mirror"
   - word: "मलेन"
     parts: ["mala (dirt, dust, impurity)"]
     meaning: "by dust, by grime"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "उल्बेन"
     parts: ["ulba (membrane, womb-covering)"]
     meaning: "by the membrane, by the womb"
+  - word: "आवृतः"
+    parts: ["ā (towards)", "vṛ (to cover, to conceal)"]
+    meaning: "covered, enveloped"
   - word: "गर्भः"
     parts: ["gṛbh (to seize, to hold within)"]
     meaning: "embryo, the unborn child"
+  - word: "तथा"
+    parts: ["tathā (so, in that way)"]
+    meaning: "so, in the same way"
+  - word: "तेन"
+    parts: ["tad (that — instrumental: by that)"]
+    meaning: "by that (desire)"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this (knowledge)"
+  - word: "आवृतम्"
+    parts: ["ā (towards)", "vṛ (to cover, to conceal)"]
+    meaning: "is covered, is veiled"
 
 meaning: >
   Krishna gives three pictures to explain how desire hides our inner

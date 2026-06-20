@@ -16,12 +16,30 @@ dhatu_breakdown:
   - word: "सृष्ट्वा"
     parts: ["sṛj (to create, to emit)"]
     meaning: "having created"
+  - word: "पुरा"
+    parts: ["purā (formerly, long ago)"]
+    meaning: "long ago, in the beginning"
+  - word: "उवाच"
+    parts: ["vac (to speak, to say)"]
+    meaning: "said, spoke"
   - word: "प्रजापतिः"
     parts: ["prajā (offspring)", "pati (lord, master)"]
     meaning: "lord of creatures — Brahma, the Creator"
+  - word: "अनेन"
+    parts: ["idam (this)"]
+    meaning: "by this, through this (sacrifice)"
   - word: "प्रसविष्यध्वम्"
     parts: ["pra (forth)", "sū (to produce, to bring forth)"]
     meaning: "shall prosper, shall multiply"
+  - word: "एषः"
+    parts: ["etad (this)"]
+    meaning: "this, may this"
+  - word: "वः"
+    parts: ["yuṣmad (you, plural)"]
+    meaning: "for you (all)"
+  - word: "अस्तु"
+    parts: ["as (to be)"]
+    meaning: "let it be, may it be"
   - word: "इष्टकामधुक्"
     parts: ["iṣṭa (desired)", "kāma (wish)", "duh (to milk, to yield)"]
     meaning: "wish-fulfilling cow, the granter of desires"

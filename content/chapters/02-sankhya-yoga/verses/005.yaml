@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "अहत्वा"
     parts: ["a (not)", "han (to kill)"]
     meaning: "without killing, rather than killing"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "महानुभावान्"
     parts: ["mahā (great)", "anubhāva (dignity, soul)"]
     meaning: "great-souled, noble"
@@ -25,6 +28,30 @@ dhatu_breakdown:
   - word: "भैक्ष्यम्"
     parts: ["bhikṣā (alms, begging)"]
     meaning: "food obtained by begging"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even, also"
+  - word: "इह"
+    parts: ["iha (here)"]
+    meaning: "here, in this world"
+  - word: "लोके"
+    parts: ["loka (world)"]
+    meaning: "in the world"
+  - word: "हत्वा"
+    parts: ["han (to kill)"]
+    meaning: "having killed"
+  - word: "अर्थकामान्"
+    parts: ["artha (wealth)", "kāma (desire)"]
+    meaning: "those who desire wealth, greedy for gain"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, however"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, even (here, in this very world)"
+  - word: "भुञ्जीय"
+    parts: ["bhuj (to enjoy, to eat)"]
+    meaning: "I would enjoy"
   - word: "रुधिरप्रदिग्धान्"
     parts: ["rudhira (blood)", "pradigdha (smeared)"]
     meaning: "smeared with blood, blood-stained"

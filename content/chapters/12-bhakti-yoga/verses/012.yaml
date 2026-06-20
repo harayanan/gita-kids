@@ -10,21 +10,33 @@ dhatu_breakdown:
   - word: "श्रेयः"
     parts: ["śri (to be excellent)"]
     meaning: "better, superior"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "ज्ञानम्"
     parts: ["jñā (to know)"]
     meaning: "knowledge, wisdom"
   - word: "अभ्यासात्"
     parts: ["abhi (towards)", "as (to throw, to practise)"]
     meaning: "than practice, from practice"
+  - word: "ज्ञानात्"
+    parts: ["jñā (to know)"]
+    meaning: "than knowledge, from knowledge"
   - word: "ध्यानम्"
     parts: ["dhyai (to meditate, to contemplate)"]
     meaning: "meditation, deep contemplation"
   - word: "विशिष्यते"
     parts: ["vi (distinctly)", "śiṣ (to distinguish)"]
     meaning: "is distinguished, is superior"
+  - word: "ध्यानात्"
+    parts: ["dhyai (to meditate, to contemplate)"]
+    meaning: "than meditation, from meditation"
   - word: "कर्मफलत्यागः"
     parts: ["karma (action)", "phala (fruit)", "tyāga (renunciation)"]
     meaning: "renunciation of the fruits of action"
+  - word: "त्यागात्"
+    parts: ["tyaj (to give up, to renounce)"]
+    meaning: "from renunciation, through letting go"
   - word: "शान्तिः"
     parts: ["śam (to be calm, to be at peace)"]
     meaning: "peace, tranquility"

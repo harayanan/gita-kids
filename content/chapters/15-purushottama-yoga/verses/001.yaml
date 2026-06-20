@@ -16,15 +16,33 @@ dhatu_breakdown:
   - word: "अश्वत्थम्"
     parts: ["a (not)", "śvaḥ (tomorrow)", "stha (to remain)"]
     meaning: "the sacred fig tree, literally 'not staying till tomorrow'"
+  - word: "प्राहुः"
+    parts: ["pra (forth)", "ah (to say, to declare)"]
+    meaning: "they say, they call it"
   - word: "अव्ययम्"
     parts: ["a (not)", "vi (away)", "aya (going)"]
     meaning: "imperishable, eternal"
   - word: "छन्दांसि"
     parts: ["chandas (Vedic hymn, sacred metre)"]
     meaning: "the Vedic hymns"
+  - word: "यस्य"
+    parts: ["yad (which, whose)"]
+    meaning: "of which, whose"
   - word: "पर्णानि"
     parts: ["parṇa (leaf)"]
     meaning: "the leaves"
+  - word: "यः"
+    parts: ["yad (who, the one who)"]
+    meaning: "the one who"
+  - word: "तम्"
+    parts: ["tad (that, it)"]
+    meaning: "that, it (the tree)"
+  - word: "वेद"
+    parts: ["vid (to know)"]
+    meaning: "knows"
+  - word: "सः"
+    parts: ["tad (he, that one)"]
+    meaning: "he, that person"
   - word: "वेदवित्"
     parts: ["veda (knowledge, the Vedas)", "vid (to know)"]
     meaning: "the knower of the Vedas"

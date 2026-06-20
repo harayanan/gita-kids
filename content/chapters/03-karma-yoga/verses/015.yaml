@@ -16,12 +16,24 @@ dhatu_breakdown:
   - word: "विद्धि"
     parts: ["vid (to know, to understand)"]
     meaning: "know this, understand"
+  - word: "ब्रह्म"
+    parts: ["brahman (Brahman, the Absolute; also the Vedas)"]
+    meaning: "Brahman; the Veda"
   - word: "अक्षरसमुद्भवम्"
     parts: ["akṣara (the Imperishable, the eternal syllable)", "samudbhava (arising from)"]
     meaning: "arising from the Imperishable — from Brahman itself"
+  - word: "तस्मात्"
+    parts: ["tad (that)"]
+    meaning: "therefore, from that"
   - word: "सर्वगतम्"
     parts: ["sarva (all, every)", "gata (gone, pervading)"]
     meaning: "all-pervading, present everywhere"
+  - word: "नित्यम्"
+    parts: ["nitya (eternal, perpetual)"]
+    meaning: "eternally, forever"
+  - word: "यज्ञे"
+    parts: ["yaj (to worship, to sacrifice)"]
+    meaning: "in sacrifice, in the act of offering"
   - word: "प्रतिष्ठितम्"
     parts: ["prati (towards, firmly)", "sthā (to stand, to be established)"]
     meaning: "established, rooted, grounded"

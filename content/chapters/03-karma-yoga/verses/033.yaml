@@ -13,18 +13,33 @@ dhatu_breakdown:
   - word: "चेष्टते"
     parts: ["ceṣṭ (to act, to behave, to move)"]
     meaning: "one acts, one behaves"
+  - word: "स्वस्याः"
+    parts: ["sva (own)"]
+    meaning: "of one's own"
   - word: "प्रकृतेः"
     parts: ["prakṛti (nature, essential character)"]
     meaning: "of one's own nature"
   - word: "ज्ञानवान्"
     parts: ["jñāna (knowledge, wisdom)", "vat (possessing)"]
     meaning: "even the wise person, the one who knows"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "even, also"
+  - word: "प्रकृतिम्"
+    parts: ["prakṛti (nature, essential character)"]
+    meaning: "nature, one's own nature"
   - word: "यान्ति"
     parts: ["yā (to go, to follow, to move toward)"]
     meaning: "they follow, they go toward"
+  - word: "भूतानि"
+    parts: ["bhū (to be, to become — bhūta: living being)"]
+    meaning: "living beings, creatures"
   - word: "निग्रहः"
     parts: ["ni (down)", "grah (to seize, to restrain)"]
     meaning: "repression, forced restraint"
+  - word: "किम्"
+    parts: ["kim (what)"]
+    meaning: "what"
   - word: "करिष्यति"
     parts: ["kṛ (to do, to accomplish)"]
     meaning: "will accomplish, will achieve"

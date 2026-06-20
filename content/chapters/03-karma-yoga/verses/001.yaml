@@ -10,24 +10,45 @@ dhatu_breakdown:
   - word: "ज्यायसी"
     parts: ["jyā (to be superior, to overpower)"]
     meaning: "superior, greater"
+  - word: "चेत्"
+    parts: ["cet (if)"]
+    meaning: "if"
   - word: "कर्मणः"
     parts: ["kṛ (to do, to act)"]
     meaning: "than action"
+  - word: "ते"
+    parts: ["tvad (you)"]
+    meaning: "by you, in your view"
+  - word: "मता"
+    parts: ["man (to think, to consider)"]
+    meaning: "is considered, is held to be"
   - word: "बुद्धिः"
     parts: ["budh (to know, to awaken)"]
     meaning: "intelligence, understanding"
   - word: "जनार्दन"
     parts: ["jana (people)", "ardana (stirrer, mover)"]
     meaning: "O mover of people — a name for Krishna"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "then, in that case"
+  - word: "किम्"
+    parts: ["kim (why, what)"]
+    meaning: "why"
   - word: "कर्मणि"
     parts: ["kṛ (to do, to act)"]
     meaning: "in action"
   - word: "घोरे"
     parts: ["ghur (to be terrible, to frighten)"]
     meaning: "terrible, dreadful"
+  - word: "माम्"
+    parts: ["mad (I, me)"]
+    meaning: "me"
   - word: "नियोजयसि"
     parts: ["ni (into)", "yuj (to yoke, to join)"]
     meaning: "you engage, you push into"
+  - word: "केशव"
+    parts: ["keśava (Keshava, one with beautiful hair)"]
+    meaning: "O Keshava — a name for Krishna"
 
 meaning: >
   Arjuna is confused and frustrated. He says to Krishna: "If You think that

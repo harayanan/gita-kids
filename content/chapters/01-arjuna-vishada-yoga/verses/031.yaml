@@ -16,6 +16,15 @@ dhatu_breakdown:
   - word: "विजयम्"
     parts: ["vi (special)", "ji (to conquer)"]
     meaning: "victory"
+  - word: "कृष्ण"
+    parts: ["kṛṣṇa (Krishna)"]
+    meaning: "O Krishna"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "nor, not"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and, nor"
   - word: "राज्यम्"
     parts: ["rāj (to rule)", "ya (that which)"]
     meaning: "kingdom, sovereignty"
@@ -25,6 +34,12 @@ dhatu_breakdown:
   - word: "किम्"
     parts: ["kim (what)"]
     meaning: "what use, what good"
+  - word: "नः"
+    parts: ["asmad (us, to us)"]
+    meaning: "to us, for us"
+  - word: "राज्येन"
+    parts: ["rāj (to rule)", "ya (that which)"]
+    meaning: "by a kingdom, with sovereignty"
   - word: "भोगैः"
     parts: ["bhuj (to enjoy)", "a (that which)"]
     meaning: "by enjoyments, through pleasures"
@@ -34,6 +49,9 @@ dhatu_breakdown:
   - word: "गोविन्द"
     parts: ["go (cows, senses)", "vinda (protector)"]
     meaning: "O Govinda — Krishna, protector of cows and senses"
+  - word: "वा"
+    parts: ["vā (or)"]
+    meaning: "or"
 
 meaning: >
   "I do not desire victory, O Krishna, nor kingdom, nor pleasures. Of what

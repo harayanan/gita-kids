@@ -7,6 +7,9 @@ sanskrit: "यदादित्यगतं तेजो जगद्भास�
 transliteration: "yadādityagataṁ tejo jagadbhāsayate'khilam | yaccandramasi yaccāgnau tattejo viddhi māmakam ||"
 
 dhatu_breakdown:
+  - word: "यत्"
+    parts: ["yad (which, that which)"]
+    meaning: "which, that which"
   - word: "आदित्यगतम्"
     parts: ["āditya (sun, son of Aditi)", "gata (situated in, belonging to)"]
     meaning: "that which is in the sun"
@@ -25,9 +28,18 @@ dhatu_breakdown:
   - word: "चन्द्रमसि"
     parts: ["candra (shining, the moon)", "mas (suffix)"]
     meaning: "in the moon"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "अग्नौ"
     parts: ["agni (fire, from ag = to move, to lead)"]
     meaning: "in fire"
+  - word: "तत्"
+    parts: ["tad (that)"]
+    meaning: "that (radiance)"
+  - word: "विद्धि"
+    parts: ["vid (to know)"]
+    meaning: "know! understand!"
   - word: "मामकम्"
     parts: ["mama (my)", "ka (suffix of belonging)"]
     meaning: "Mine, belonging to Me"

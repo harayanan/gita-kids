@@ -25,6 +25,12 @@ dhatu_breakdown:
   - word: "पाण्डवाः"
     parts: ["pāṇḍu (King Pandu)", "a (descendant of)"]
     meaning: "the sons of Pandu"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, surely"
   - word: "किम्"
     parts: ["kim (what)"]
     meaning: "what"

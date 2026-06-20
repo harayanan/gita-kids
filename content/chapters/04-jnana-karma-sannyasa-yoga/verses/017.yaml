@@ -19,6 +19,9 @@ dhatu_breakdown:
   - word: "बोद्धव्यम्"
     parts: ["budh (to know, to understand)", "tavya (ought to be — must-do ending)"]
     meaning: "must be understood, ought to be known"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "विकर्मणः"
     parts: ["vi (wrong, apart)", "kṛ (to do, to act)"]
     meaning: "of wrong action, of forbidden doing"

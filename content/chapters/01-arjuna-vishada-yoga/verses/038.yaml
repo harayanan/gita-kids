@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "पापात्"
     parts: ["pāpa (sin)"]
     meaning: "from this sin"
+  - word: "अस्मात्"
+    parts: ["idam (this)"]
+    meaning: "this, from this"
   - word: "निवर्तितुम्"
     parts: ["ni (back)", "vṛt (to turn)"]
     meaning: "to turn away, to retreat"

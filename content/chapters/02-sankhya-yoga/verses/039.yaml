@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "एषा"
     parts: ["etad (this)"]
     meaning: "this (referring to the wisdom just taught)"
+  - word: "ते"
+    parts: ["te (to you)"]
+    meaning: "to you (dative)"
   - word: "अभिहिता"
     parts: ["abhi (toward)", "dhā (to place, to declare)"]
     meaning: "declared, described, taught"
@@ -22,6 +25,27 @@ dhatu_breakdown:
   - word: "योगे"
     parts: ["yuj (to yoke, to unite)"]
     meaning: "in yoga — the path of disciplined action"
+  - word: "तु"
+    parts: ["tu (but)"]
+    meaning: "but, now"
+  - word: "इमाम्"
+    parts: ["idam (this)"]
+    meaning: "this (wisdom of yoga)"
+  - word: "शृणु"
+    parts: ["śru (to hear)"]
+    meaning: "hear! listen!"
+  - word: "बुद्ध्या"
+    parts: ["budh (to know, to awaken)"]
+    meaning: "with understanding, by the intellect"
+  - word: "युक्तः"
+    parts: ["yuj (to yoke, to unite)"]
+    meaning: "endowed, joined, yoked"
+  - word: "यया"
+    parts: ["yad (which)"]
+    meaning: "by which"
+  - word: "पार्थ"
+    parts: ["pārtha (son of Pritha/Kunti)"]
+    meaning: "O Partha — an epithet for Arjuna"
   - word: "कर्मबन्धम्"
     parts: ["kṛ (to do, to act)", "bandh (to bind)"]
     meaning: "the bondage of action, being trapped by deeds"

@@ -7,6 +7,9 @@ sanskrit: "योऽन्तःसुखोऽन्तरारामस्त
 transliteration: "yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṁ brahmabhūto'dhigacchati ||"
 
 dhatu_breakdown:
+  - word: "यः"
+    parts: ["yaḥ (who)"]
+    meaning: "who, the one who"
   - word: "अन्तःसुखः"
     parts: ["antaḥ (within)", "sukh (to be happy)"]
     meaning: "happy within, whose joy is inside"
@@ -22,6 +25,9 @@ dhatu_breakdown:
   - word: "एव"
     parts: ["eva (indeed)"]
     meaning: "indeed"
+  - word: "सः"
+    parts: ["saḥ (he)"]
+    meaning: "he, that person"
   - word: "योगी"
     parts: ["yuj (to yoke, to join)"]
     meaning: "the yogi, the one joined in yoga"

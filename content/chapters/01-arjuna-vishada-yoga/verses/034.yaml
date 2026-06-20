@@ -37,6 +37,12 @@ dhatu_breakdown:
   - word: "हेतोः"
     parts: ["hetu (cause, reason, sake)"]
     meaning: "for the sake of"
+  - word: "किम्"
+    parts: ["kim (what)"]
+    meaning: "what (to speak of), how much less"
+  - word: "नु"
+    parts: ["nu (indeed, pray)"]
+    meaning: "indeed (emphatic) — how much less, then"
   - word: "महीकृते"
     parts: ["mahī (earth)", "kṛte (for the sake of)"]
     meaning: "for the sake of this earth"

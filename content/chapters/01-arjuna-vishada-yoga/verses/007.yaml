@@ -10,9 +10,18 @@ dhatu_breakdown:
   - word: "अस्माकम्"
     parts: ["asmad (us, our)"]
     meaning: "on our side"
+  - word: "तु"
+    parts: ["tu (but, now)"]
+    meaning: "but, now"
   - word: "विशिष्टाः"
     parts: ["vi (specially)", "śiṣ (to distinguish)"]
     meaning: "the distinguished ones, the best"
+  - word: "ये"
+    parts: ["yad (who)"]
+    meaning: "those who"
+  - word: "तान्"
+    parts: ["tad (them)"]
+    meaning: "them"
   - word: "निबोध"
     parts: ["ni (down, into)", "budh (to know, awaken)"]
     meaning: "know them, understand"
@@ -22,6 +31,9 @@ dhatu_breakdown:
   - word: "नायकाः"
     parts: ["nī (to lead)", "aka (one who)"]
     meaning: "the leaders, commanders"
+  - word: "मम"
+    parts: ["mad (my)"]
+    meaning: "my"
   - word: "सैन्यस्य"
     parts: ["sainya (army)"]
     meaning: "of the army"
@@ -31,6 +43,9 @@ dhatu_breakdown:
   - word: "ब्रवीमि"
     parts: ["brū (to speak)"]
     meaning: "I will tell you"
+  - word: "ते"
+    parts: ["tva (you)"]
+    meaning: "to you"
 
 meaning: >
   Duryodhana said: "But now, O best of Brahmins, let me also tell you about

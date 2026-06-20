@@ -19,12 +19,30 @@ dhatu_breakdown:
   - word: "मंस्यन्ते"
     parts: ["man (to think, to consider)"]
     meaning: "they will think, they will consider"
+  - word: "त्वाम्"
+    parts: ["tvam (you)"]
+    meaning: "you (accusative)"
   - word: "महारथाः"
     parts: ["mahā (great)", "ratha (chariot)"]
     meaning: "great chariot warriors, the mightiest fighters"
+  - word: "येषाम्"
+    parts: ["yad (who, which)"]
+    meaning: "of whom, by whom"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "त्वम्"
+    parts: ["tvam (you)"]
+    meaning: "you (nominative)"
   - word: "बहुमतः"
     parts: ["bahu (much, greatly)", "man (to think, to esteem)"]
     meaning: "highly esteemed, greatly honored"
+  - word: "भूत्वा"
+    parts: ["bhū (to be, to become)"]
+    meaning: "having been, having become"
+  - word: "यास्यसि"
+    parts: ["yā (to go, to reach)"]
+    meaning: "you will go to, you will fall into"
   - word: "लाघवम्"
     parts: ["laghu (light, small, trivial)"]
     meaning: "lightness, insignificance, contempt"

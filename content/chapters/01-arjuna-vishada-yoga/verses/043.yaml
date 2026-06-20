@@ -31,6 +31,9 @@ dhatu_breakdown:
   - word: "भवति"
     parts: ["bhū (to be, to become)"]
     meaning: "it becomes, it is"
+  - word: "इति"
+    parts: ["iti (thus)"]
+    meaning: "thus — closing what was heard"
   - word: "अनुशुश्रुम"
     parts: ["anu (following)", "śru (to hear)"]
     meaning: "we have heard (from the scriptures and elders)"

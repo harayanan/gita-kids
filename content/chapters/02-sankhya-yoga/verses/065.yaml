@@ -10,18 +10,30 @@ dhatu_breakdown:
   - word: "प्रसादे"
     parts: ["pra (forth)", "sad (to sit, to settle)"]
     meaning: "in serenity, in the state of inner clarity"
+  - word: "सर्व"
+    parts: ["sarva (all, every)"]
+    meaning: "all, every"
   - word: "दुःखानाम्"
     parts: ["duḥ (bad, difficult)", "kha (space)"]
     meaning: "of all sorrows, of all sufferings"
   - word: "हानिः"
     parts: ["hā (to leave, to abandon)"]
     meaning: "destruction, disappearance, cessation"
+  - word: "अस्य"
+    parts: ["idam (this)"]
+    meaning: "of this one, for him"
   - word: "उपजायते"
     parts: ["upa (near)", "jan (to be born)"]
     meaning: "arises, comes into being"
   - word: "प्रसन्नचेतसः"
     parts: ["pra (forth)", "sad (to settle)", "cit (to perceive, to be aware)"]
     meaning: "of the serene-minded, of the clear-hearted"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
+  - word: "आशु"
+    parts: ["āśu (quickly, soon)"]
+    meaning: "quickly, soon"
   - word: "बुद्धिः"
     parts: ["budh (to awaken, to know)"]
     meaning: "intellect, wisdom, discerning faculty"

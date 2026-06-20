@@ -7,24 +7,45 @@ sanskrit: "यदा संहरते चायं कूर्मोऽङ्
 transliteration: "yadā saṁharate cāyaṁ kūrmo'ṅgānīva sarvaśaḥ | indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā ||"
 
 dhatu_breakdown:
+  - word: "यदा"
+    parts: ["yadā (when)"]
+    meaning: "when"
   - word: "संहरते"
     parts: ["sam (together)", "hṛ (to take, to withdraw)"]
     meaning: "withdraws completely, draws inward"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अयम्"
+    parts: ["idam (this)"]
+    meaning: "this one"
   - word: "कूर्मः"
     parts: ["kūrma (tortoise)"]
     meaning: "a tortoise"
   - word: "अङ्गानि"
     parts: ["aṅga (limb, body part)"]
     meaning: "limbs, body parts"
+  - word: "इव"
+    parts: ["iva (like, as)"]
+    meaning: "like, as"
+  - word: "सर्वशः"
+    parts: ["sarva (all, every)"]
+    meaning: "completely, in every way"
   - word: "इन्द्रियाणि"
     parts: ["indriya (sense organ, from indra — ruler)"]
     meaning: "the senses — sight, sound, touch, taste, smell"
   - word: "इन्द्रियार्थेभ्यः"
     parts: ["indriya (sense)", "artha (object, purpose)"]
     meaning: "from the objects of the senses"
+  - word: "तस्य"
+    parts: ["tad (that, his)"]
+    meaning: "of that one, his"
   - word: "प्रज्ञा"
     parts: ["pra (forth)", "jñā (to know)"]
     meaning: "wisdom, deep understanding"
+  - word: "प्रतिष्ठिता"
+    parts: ["prati (firmly)", "sthā (to stand)"]
+    meaning: "established, firmly grounded"
 
 meaning: >
   When one withdraws the senses from sense objects completely, as a tortoise

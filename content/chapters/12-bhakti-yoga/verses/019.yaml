@@ -28,9 +28,15 @@ dhatu_breakdown:
   - word: "भक्तिमान्"
     parts: ["bhakti (devotion)", "mat (possessing)"]
     meaning: "full of devotion"
+  - word: "मे"
+    parts: ["mad (my, to me)"]
+    meaning: "to Me"
   - word: "प्रियः"
     parts: ["prī (to love, to please)"]
     meaning: "dear, beloved"
+  - word: "नरः"
+    parts: ["nara (man, person)"]
+    meaning: "the person, the man"
 
 meaning: >
   Krishna says: The one who is the same when blamed or praised, who is

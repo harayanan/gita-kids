@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "तत्त्ववित्"
     parts: ["tattva (truth, reality)", "vid (to know)"]
     meaning: "knower of truth, one who sees reality"
+  - word: "तु"
+    parts: ["tu (but, however)"]
+    meaning: "but, however"
   - word: "महाबाहो"
     parts: ["mahā (great)", "bāhu (arm)"]
     meaning: "O mighty-armed one"
@@ -19,12 +22,21 @@ dhatu_breakdown:
   - word: "गुणाः"
     parts: ["guṇa (quality, strand of nature)"]
     meaning: "the qualities of nature"
+  - word: "गुणेषु"
+    parts: ["guṇa (quality, strand of nature)"]
+    meaning: "among the qualities, upon the qualities"
   - word: "वर्तन्ते"
     parts: ["vṛt (to turn, to operate, to move)"]
     meaning: "they operate, they interact"
+  - word: "इति"
+    parts: ["iti (thus, that)"]
+    meaning: "thus, that (marking the thought)"
   - word: "मत्वा"
     parts: ["man (to think, to understand)"]
     meaning: "having understood, having realized"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "सज्जते"
     parts: ["sañj (to cling, to become attached)"]
     meaning: "becomes attached"

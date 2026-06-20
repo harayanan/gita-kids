@@ -16,6 +16,12 @@ dhatu_breakdown:
   - word: "मनः"
     parts: ["man (to think)"]
     meaning: "the mind"
+  - word: "ये"
+    parts: ["yad (who, which)"]
+    meaning: "those who"
+  - word: "माम्"
+    parts: ["mad (me)"]
+    meaning: "Me"
   - word: "नित्ययुक्ताः"
     parts: ["nitya (always, eternal)", "yukta (joined, devoted)"]
     meaning: "ever devoted"
@@ -28,9 +34,21 @@ dhatu_breakdown:
   - word: "परया"
     parts: ["para (supreme, highest)"]
     meaning: "supreme, utmost"
+  - word: "उपेताः"
+    parts: ["upa (near, with)", "i (to go, to be endowed)"]
+    meaning: "endowed with, possessed of"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those ones"
+  - word: "मे"
+    parts: ["mad (my, by me)"]
+    meaning: "by Me"
   - word: "युक्ततमाः"
     parts: ["yukta (united, devoted)", "tama (most, best)"]
     meaning: "the most devoted, best in yoga"
+  - word: "मताः"
+    parts: ["man (to think, to consider)"]
+    meaning: "considered, regarded"
 
 meaning: >
   Krishna answers: "Those who fix their minds on Me with unwavering devotion,

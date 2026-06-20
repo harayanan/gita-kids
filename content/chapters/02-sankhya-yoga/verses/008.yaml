@@ -7,12 +7,24 @@ sanskrit: "न हि प्रपश्यामि ममापनुद्य
 transliteration: "na hi prapaśyāmi mamāpanudyādyacchokamucchoṣaṇamindriyāṇām | avāpya bhūmāvasapatnamṛddhaṁ rājyaṁ surāṇāmapi cādhipatyam ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "प्रपश्यामि"
     parts: ["pra (forward, clearly)", "paś (to see)"]
     meaning: "I see, I foresee"
+  - word: "मम"
+    parts: ["mama (my, of me)"]
+    meaning: "my, for me"
   - word: "अपनुद्यात्"
     parts: ["apa (away)", "nud (to push, to drive)"]
     meaning: "could drive away, could remove"
+  - word: "यत्"
+    parts: ["yat (which, that which)"]
+    meaning: "that which, what"
   - word: "शोकम्"
     parts: ["śuc (to grieve, to burn)"]
     meaning: "grief, sorrow"
@@ -25,9 +37,27 @@ dhatu_breakdown:
   - word: "अवाप्य"
     parts: ["ava (down, fully)", "āp (to obtain)"]
     meaning: "having obtained, even if attaining"
+  - word: "भूमौ"
+    parts: ["bhūmi (earth, land)"]
+    meaning: "on the earth"
+  - word: "असपत्नम्"
+    parts: ["a (not)", "sapatna (rival, enemy)"]
+    meaning: "unrivalled, without enemies"
+  - word: "ऋद्धम्"
+    parts: ["ṛdh (to prosper, to thrive)"]
+    meaning: "prosperous, flourishing"
   - word: "राज्यम्"
     parts: ["rāj (to rule, to shine)"]
     meaning: "kingdom, dominion"
+  - word: "सुराणाम्"
+    parts: ["sura (god, deity)"]
+    meaning: "of the gods"
+  - word: "अपि"
+    parts: ["api (even, also)"]
+    meaning: "even, also"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "अधिपत्यम्"
     parts: ["adhi (over, above)", "pati (lord, master)"]
     meaning: "sovereignty, supreme lordship"

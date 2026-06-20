@@ -10,9 +10,24 @@ dhatu_breakdown:
   - word: "अविनाशि"
     parts: ["a (not)", "vi (apart)", "naś (to perish, to be destroyed)"]
     meaning: "indestructible, imperishable"
+  - word: "तु"
+    parts: ["tu (but, indeed)"]
+    meaning: "but, indeed"
+  - word: "तत्"
+    parts: ["tat (that)"]
+    meaning: "that"
   - word: "विद्धि"
     parts: ["vid (to know)"]
     meaning: "know, understand — an imperative"
+  - word: "येन"
+    parts: ["yat (by which)"]
+    meaning: "by which"
+  - word: "सर्वम्"
+    parts: ["sarva (all, whole)"]
+    meaning: "all, the whole"
+  - word: "इदम्"
+    parts: ["idam (this)"]
+    meaning: "this (universe)"
   - word: "ततम्"
     parts: ["tan (to spread, to pervade)"]
     meaning: "pervaded, spread throughout"
@@ -22,6 +37,15 @@ dhatu_breakdown:
   - word: "अव्ययस्य"
     parts: ["a (not)", "vi (apart)", "i (to go)"]
     meaning: "of the imperishable, of that which does not diminish"
+  - word: "अस्य"
+    parts: ["idam (of this)"]
+    meaning: "of this"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "कश्चित्"
+    parts: ["kim (who)", "cit (any — indefinite suffix)"]
+    meaning: "anyone, no one (with na)"
   - word: "कर्तुम्"
     parts: ["kṛ (to do, to make)"]
     meaning: "to do, to bring about"

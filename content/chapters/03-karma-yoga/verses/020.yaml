@@ -10,6 +10,12 @@ dhatu_breakdown:
   - word: "कर्मणा"
     parts: ["kṛ (to do, to act)"]
     meaning: "by action, through work"
+  - word: "एव"
+    parts: ["eva (only, alone)"]
+    meaning: "only, alone"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "संसिद्धिम्"
     parts: ["sam (completely)", "sidh (to succeed, to be perfected)"]
     meaning: "complete perfection, highest success"
@@ -22,6 +28,12 @@ dhatu_breakdown:
   - word: "लोकसंग्रहम्"
     parts: ["loka (world, people)", "saṁgraha (holding together, welfare)"]
     meaning: "welfare of the world, keeping society together"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
+  - word: "सम्पश्यन्"
+    parts: ["sam (fully)", "dṛś (to see, to consider)"]
+    meaning: "keeping in view, considering"
   - word: "कर्तुम्"
     parts: ["kṛ (to do, to act)"]
     meaning: "to do, to perform"

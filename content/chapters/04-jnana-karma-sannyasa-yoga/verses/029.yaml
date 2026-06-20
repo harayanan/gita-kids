@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "अपानम्"
     parts: ["apa (down, away)", "an (to breathe)"]
     meaning: "the outgoing breath"
+  - word: "तथा"
+    parts: ["tathā (likewise, in the same way)"]
+    meaning: "likewise, and so"
   - word: "अपरे"
     parts: ["apara (other, others)"]
     meaning: "still others"

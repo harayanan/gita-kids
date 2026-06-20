@@ -22,6 +22,9 @@ dhatu_breakdown:
   - word: "पितॄन्"
     parts: ["pitṛ (father)"]
     meaning: "fathers, elders (father figures)"
+  - word: "अथ"
+    parts: ["atha (and, then)"]
+    meaning: "and, as well as"
   - word: "पितामहान्"
     parts: ["pitā (father)", "mahā (great)"]
     meaning: "grandfathers, patriarchs"
@@ -43,6 +46,9 @@ dhatu_breakdown:
   - word: "सखीन्"
     parts: ["sakhi (friend)"]
     meaning: "friends, companions"
+  - word: "तथा"
+    parts: ["tathā (likewise, as well)"]
+    meaning: "likewise, as well"
 
 meaning: >
   There, Arjuna saw standing in both armies — fathers, grandfathers,

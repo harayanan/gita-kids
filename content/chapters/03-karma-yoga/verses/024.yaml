@@ -10,21 +10,45 @@ dhatu_breakdown:
   - word: "उत्सीदेयुः"
     parts: ["ut (up, away)", "sad (to sink, to perish)"]
     meaning: "would perish, would be destroyed"
+  - word: "इमे"
+    parts: ["idam (this — these)"]
+    meaning: "these"
   - word: "लोकाः"
     parts: ["loka (world, realm)"]
     meaning: "the worlds, all realms of existence"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
   - word: "कुर्याम्"
     parts: ["kṛ (to do, to act)"]
     meaning: "I were to do, I would perform"
+  - word: "कर्म"
+    parts: ["karman (action, deed)"]
+    meaning: "action, work"
+  - word: "चेत्"
+    parts: ["cet (if)"]
+    meaning: "if"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "सङ्करस्य"
     parts: ["sam (together)", "kṛ (to make, to mix)"]
     meaning: "chaos, confusion, disorder"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
   - word: "कर्ता"
     parts: ["kṛ (to do, to make)"]
     meaning: "the cause, the author"
+  - word: "स्याम्"
+    parts: ["as (to be)"]
+    meaning: "I would be"
   - word: "उपहन्याम्"
     parts: ["upa (near, toward)", "han (to strike, to destroy)"]
     meaning: "would destroy, would ruin"
+  - word: "इमाः"
+    parts: ["idam (this — these)"]
+    meaning: "these"
   - word: "प्रजाः"
     parts: ["pra (forth)", "jan (to be born)"]
     meaning: "beings, people, all living creatures"

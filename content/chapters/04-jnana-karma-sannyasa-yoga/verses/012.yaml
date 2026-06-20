@@ -28,6 +28,9 @@ dhatu_breakdown:
   - word: "क्षिप्रम्"
     parts: ["kṣip (to throw, to be quick)"]
     meaning: "quickly, swiftly"
+  - word: "हि"
+    parts: ["hi (indeed, for)"]
+    meaning: "indeed, for"
   - word: "मानुषे"
     parts: ["man (to think)", "uṣa (suffix forming 'belonging to')"]
     meaning: "human, belonging to people"

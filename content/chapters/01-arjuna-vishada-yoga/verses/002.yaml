@@ -10,6 +10,9 @@ dhatu_breakdown:
   - word: "दृष्ट्वा"
     parts: ["dṛś (to see)", "tvā (having)"]
     meaning: "having seen"
+  - word: "तु"
+    parts: ["tu (but, and)"]
+    meaning: "but, and"
   - word: "पाण्डवानीकम्"
     parts: ["pāṇḍava (sons of Pandu)", "anīka (army)"]
     meaning: "the army of the Pandavas"

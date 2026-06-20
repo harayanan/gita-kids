@@ -28,9 +28,18 @@ dhatu_breakdown:
   - word: "कैः"
     parts: ["ka (who)"]
     meaning: "with whom"
+  - word: "मया"
+    parts: ["asmad (I, by me)"]
+    meaning: "by me"
+  - word: "सह"
+    parts: ["saha (with, together)"]
+    meaning: "with, together with"
   - word: "योद्धव्यम्"
     parts: ["yudh (to fight)", "tavya (must be)"]
     meaning: "I must fight"
+  - word: "अस्मिन्"
+    parts: ["idam (this)"]
+    meaning: "in this"
   - word: "रणसमुद्यमे"
     parts: ["raṇa (battle)", "samudyama (great undertaking)"]
     meaning: "in this great battle effort"

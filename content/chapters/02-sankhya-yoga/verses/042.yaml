@@ -7,6 +7,12 @@ sanskrit: "यामिमां पुष्पितां वाचं प्
 transliteration: "yāmimāṁ puṣpitāṁ vācaṁ pravadantyavipaścitaḥ | vedavādaratāḥ pārtha nānyadastīti vādinaḥ ||"
 
 dhatu_breakdown:
+  - word: "याम्"
+    parts: ["yad (which)"]
+    meaning: "which"
+  - word: "इमाम्"
+    parts: ["idam (this)"]
+    meaning: "this"
   - word: "पुष्पिताम्"
     parts: ["puṣp (to flower, to bloom)"]
     meaning: "flowery, ornate, blossoming with elaborate words"
@@ -22,6 +28,21 @@ dhatu_breakdown:
   - word: "वेदवादरताः"
     parts: ["veda (scripture)", "vāda (doctrine, argument)", "rata (devoted to)"]
     meaning: "devoted to the letter of the Vedas, attached to scriptural argument"
+  - word: "पार्थ"
+    parts: ["pārtha (son of Pritha/Kunti)"]
+    meaning: "O Partha — an epithet for Arjuna"
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "अन्यत्"
+    parts: ["anya (other)"]
+    meaning: "other, anything else"
+  - word: "अस्ति"
+    parts: ["as (to be)"]
+    meaning: "is, exists"
+  - word: "इति"
+    parts: ["iti (thus)"]
+    meaning: "thus (marks the end of a quoted assertion)"
   - word: "वादिनः"
     parts: ["vad (to speak, to argue)"]
     meaning: "those who argue, those who proclaim"

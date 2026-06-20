@@ -10,12 +10,18 @@ dhatu_breakdown:
   - word: "अन्तवन्तः"
     parts: ["anta (end)", "vat (having, possessing)"]
     meaning: "having an end, perishable"
+  - word: "इमे"
+    parts: ["idam (these)"]
+    meaning: "these"
   - word: "देहाः"
     parts: ["dih (to anoint, to form a body)"]
     meaning: "bodies"
   - word: "नित्यस्य"
     parts: ["nitya (eternal, everlasting)"]
     meaning: "of the eternal one"
+  - word: "उक्ताः"
+    parts: ["vac (to speak, to say)"]
+    meaning: "are said to be, are declared"
   - word: "शरीरिणः"
     parts: ["śarīra (body)", "in (possessor)"]
     meaning: "of the embodied soul, of the one who dwells in the body"
@@ -25,9 +31,15 @@ dhatu_breakdown:
   - word: "अप्रमेयस्य"
     parts: ["a (not)", "pra (forth)", "mā (to measure)"]
     meaning: "of the immeasurable, of that which cannot be defined"
+  - word: "तस्मात्"
+    parts: ["tad (that)", "asmāt (from this)"]
+    meaning: "therefore, for that reason"
   - word: "युध्यस्व"
     parts: ["yudh (to fight)"]
     meaning: "fight — an imperative command"
+  - word: "भारत"
+    parts: ["bhṛ (to bear, to support)"]
+    meaning: "O descendant of Bharata (Arjuna)"
 
 meaning: >
   These bodies are perishable, but the soul is eternal, indestructible,

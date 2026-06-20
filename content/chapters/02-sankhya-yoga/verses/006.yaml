@@ -7,27 +7,63 @@ sanskrit: "न चैतद्विद्मः कतरन्नो गरी
 transliteration: "na caitadvidmaḥ kataranno garīyo yadvā jayema yadi vā no jayeyuḥ | yāneva hatvā na jijīviṣāmaste'vasthitāḥ pramukhe dhārtarāṣṭrāḥ ||"
 
 dhatu_breakdown:
+  - word: "न"
+    parts: ["na (not)"]
+    meaning: "not"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "एतत्"
+    parts: ["etat (this)"]
+    meaning: "this"
   - word: "विद्मः"
     parts: ["vid (to know)"]
     meaning: "we know"
   - word: "कतरत्"
     parts: ["katara (which of two)"]
     meaning: "which of the two"
+  - word: "नः"
+    parts: ["naḥ (for us, our)"]
+    meaning: "for us, of us"
   - word: "गरीयः"
     parts: ["guru (heavy, weighty, better)"]
     meaning: "better, weightier, preferable"
+  - word: "यत्"
+    parts: ["yat (whether, which)"]
+    meaning: "whether (yad vā — whether... or)"
+  - word: "वा"
+    parts: ["vā (or)"]
+    meaning: "or"
   - word: "जयेम"
     parts: ["ji (to conquer)"]
     meaning: "we should conquer"
+  - word: "यदि"
+    parts: ["yadi (if)"]
+    meaning: "if, whether"
   - word: "जयेयुः"
     parts: ["ji (to conquer)"]
     meaning: "they should conquer us"
+  - word: "यान्"
+    parts: ["yat (whom, which)"]
+    meaning: "whom, those whom"
+  - word: "एव"
+    parts: ["eva (indeed, the very ones)"]
+    meaning: "indeed, the very ones"
   - word: "हत्वा"
     parts: ["han (to kill, to strike)"]
     meaning: "having killed"
   - word: "जिजीविषामः"
     parts: ["jīv (to live)", "san (desiderative — wish to)"]
     meaning: "we would wish to live"
+  - word: "ते"
+    parts: ["tad (they, those)"]
+    meaning: "they, those"
+  - word: "अवस्थिताः"
+    parts: ["ava (down)", "sthā (to stand)"]
+    meaning: "stationed, arrayed, standing"
+  - word: "प्रमुखे"
+    parts: ["pra (forth)", "mukha (face, front)"]
+    meaning: "in front, facing us"
   - word: "धार्तराष्ट्राः"
     parts: ["dhṛtarāṣṭra (Dhritarashtra)", "aḥ (sons of)"]
     meaning: "the sons of Dhritarashtra"

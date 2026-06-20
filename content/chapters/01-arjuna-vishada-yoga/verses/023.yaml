@@ -13,6 +13,9 @@ dhatu_breakdown:
   - word: "अवेक्षे"
     parts: ["ava (towards)", "īkṣ (to see)"]
     meaning: "let me look upon, observe"
+  - word: "अहम्"
+    parts: ["aham (I)"]
+    meaning: "I"
   - word: "ये एते"
     parts: ["ya (who)", "etad (these)"]
     meaning: "those who"
@@ -28,6 +31,9 @@ dhatu_breakdown:
   - word: "दुर्बुद्धेः"
     parts: ["dur (evil, bad)", "buddhi (mind, intelligence)"]
     meaning: "evil-minded"
+  - word: "युद्धे"
+    parts: ["yudh (to fight)"]
+    meaning: "in the battle"
   - word: "प्रियचिकीर्षवः"
     parts: ["priya (pleasing)", "cikīrṣā (wishing to do)"]
     meaning: "wishing to please, wanting to do a favour for"

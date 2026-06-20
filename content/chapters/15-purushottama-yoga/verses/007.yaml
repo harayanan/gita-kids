@@ -7,12 +7,21 @@ sanskrit: "ममैवांशो जीवलोके जीवभूतः 
 transliteration: "mamaivāṁśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
 
 dhatu_breakdown:
+  - word: "मम"
+    parts: ["mama (my, mine)"]
+    meaning: "My, of Me"
+  - word: "एव"
+    parts: ["eva (verily, only)"]
+    meaning: "verily, indeed"
   - word: "अंशः"
     parts: ["aṁśa (fragment, part)"]
     meaning: "a fragment, a portion"
   - word: "जीवलोके"
     parts: ["jīva (living being, from jīv — to live)", "loka (world)"]
     meaning: "in the world of living beings"
+  - word: "जीवभूतः"
+    parts: ["jīva (living being)", "bhū (to become, to be)"]
+    meaning: "becoming the living soul, existing as the individual self"
   - word: "सनातनः"
     parts: ["sanātana (eternal, ancient)"]
     meaning: "eternal, existing since beginningless time"

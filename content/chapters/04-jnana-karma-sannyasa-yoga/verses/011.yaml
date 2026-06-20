@@ -25,12 +25,18 @@ dhatu_breakdown:
   - word: "तथा"
     parts: ["tathā (in that way, so)"]
     meaning: "in that very way"
+  - word: "एव"
+    parts: ["eva (indeed, exactly)"]
+    meaning: "exactly, just so (emphasis)"
   - word: "भजामि"
     parts: ["bhaj (to share, to love, to serve, to reward)"]
     meaning: "I meet, I love, I respond to"
   - word: "अहम्"
     parts: ["aham (I)"]
     meaning: "I"
+  - word: "मम"
+    parts: ["mama (of me, my)"]
+    meaning: "my, of mine"
   - word: "वर्त्म"
     parts: ["vṛt (to turn, to move, to follow a track)"]
     meaning: "path, way, track"

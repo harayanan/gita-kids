@@ -11,6 +11,9 @@ dhatu_breakdown:
   - word: "ये"
     parts: ["yad (which)"]
     meaning: "those which"
+  - word: "हि"
+    parts: ["hi (indeed)"]
+    meaning: "indeed, for"
   - word: "संस्पर्शजाः"
     parts: ["sam (together)", "spṛś (to touch, to contact)", "jan (to be born)"]
     meaning: "born from the contact of the senses with their objects"

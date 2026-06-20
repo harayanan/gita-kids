@@ -10,9 +10,18 @@ dhatu_breakdown:
   - word: "शरीरम्"
     parts: ["śarīra (body, from śṝ — to decay)"]
     meaning: "body, that which decays"
+  - word: "यत्"
+    parts: ["yad (which, when)"]
+    meaning: "which, when"
   - word: "अवाप्नोति"
     parts: ["ava (towards)", "āp (to obtain, to reach)"]
     meaning: "obtains, takes on"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "अपि"
+    parts: ["api (also, even)"]
+    meaning: "also, even"
   - word: "उत्क्रामति"
     parts: ["ut (upward)", "kram (to step, to move)"]
     meaning: "departs, rises out of"
@@ -22,6 +31,9 @@ dhatu_breakdown:
   - word: "गृहीत्वा"
     parts: ["grah (to grasp, to take hold of)"]
     meaning: "having grasped, having gathered"
+  - word: "एतानि"
+    parts: ["etad (these)"]
+    meaning: "these (the mind and senses)"
   - word: "संयाति"
     parts: ["sam (together)", "yā (to go, to travel)"]
     meaning: "goes forth, travels onward"
@@ -31,6 +43,9 @@ dhatu_breakdown:
   - word: "गन्धान्"
     parts: ["gandha (fragrance, scent)"]
     meaning: "fragrances, scents"
+  - word: "इव"
+    parts: ["iva (like, as)"]
+    meaning: "like, just as"
   - word: "आशयात्"
     parts: ["ā (from)", "śī (to rest, to lie)"]
     meaning: "from the resting place, from the source"
