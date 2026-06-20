@@ -2,7 +2,7 @@
 /**
  * generate-illustration.mjs
  *
- * Generates folk art illustrations for the Gita for Kids project
+ * Generates folk art illustrations for the Gita Kids project
  * using the Gemini image generation API. Supports multiple art styles
  * (Madhubani, Pichwai, Pattachitra, Warli, Kalamkari) based on the
  * chapter's meta.yaml `folk_art_style` field.

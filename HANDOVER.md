@@ -1,8 +1,8 @@
-# Gita for Kids — Handover
+# Gita Kids — Handover
 
 ## Current Status: 10 Chapters Active (397/700 verses), all illustrated
 
-The site is deployed at https://gita-for-kids.vercel.app. Ten chapters and back matter are active:
+The site is deployed at https://gitakds.com. Ten chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete

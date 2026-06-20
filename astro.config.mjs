@@ -3,7 +3,7 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://gita-for-kids.vercel.app',
+  site: 'https://gitakds.com',
   integrations: [
     react(),
     tailwind(),

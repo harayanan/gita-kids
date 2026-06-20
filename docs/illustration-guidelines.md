@@ -1,6 +1,6 @@
-# Illustration Guidelines — Gita for Kids
+# Illustration Guidelines — Gita Kids
 
-This document defines the visual standards for all illustrations in the Gita for Kids series. Every illustration prompt must reference these guidelines to maintain series cohesion.
+This document defines the visual standards for all illustrations in the Gita Kids series. Every illustration prompt must reference these guidelines to maintain series cohesion.
 
 ---
 
