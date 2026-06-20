@@ -40,9 +40,18 @@ Canonical domain **https://gitakids.com** (user's message said "gitakds.com" —
 - **GitHub repo** renamed `harayanan/gita-for-kids` → `harayanan/gita-kids` (`gh repo rename`); local remote updated; GitHub auto-redirects the old URL.
 - **Deployed + verified live**: push to `main` auto-deployed to production (Vercel Git integration survived the GitHub rename — keys off repo ID). Home, Ch10/Ch13 indexes, verse pages, and images all HTTP 200.
 
-#### Vercel items still needing YOU (CLI 50.10.1 can't do these)
-1. **Project name** is still `gita-for-kids` in Vercel (CLI has no `project rename`). Rename in dashboard: Project → Settings → General → Project Name → `gita-kids`. This also changes the default URL to `gita-kids.vercel.app`. `.vercel/project.json` uses the stable projectId, so deploys keep working regardless.
-2. **Custom domains**: `gitakids.com` + `gitakids.org` are on the Vercel account but **nameservers are still "Third Party"** (DNS not pointed at Vercel). To go live on the real domains: in the registrar, point DNS to Vercel (switch nameservers to Vercel's, or add the A/CNAME records Vercel shows); in Vercel, add both domains to the project and set `gitakids.org` → `gitakids.com` (301 redirect), with `gitakids.com` primary. Until then, production serves at `gita-for-kids.vercel.app`.
+### Domains — LIVE
+DNS is pointed (name.com nameservers → Vercel A record 216.198.79.1). Both `gitakids.com` and `gitakids.org` serve the site (HTTP 200). Vercel **project name left as `gita-for-kids`** per user (deploys key off the stable projectId, so this is cosmetic only).
+
+Canonical decided: **apex `https://gitakids.com`** (user's "gitakds.com" was a typo). Implemented in code:
+- `<link rel="canonical">` + `og:url` on every page → `https://gitakids.com/<path>` (in `BaseLayout.astro`, via `Astro.site`). Regardless of which domain/www served the request, search engines see the apex as canonical.
+- Hero `ॐ` divider: replaced the stylised hand-drawn Om SVG with the real ॐ glyph (Noto Serif Devanagari, gold, fade/scale-in, reduced-motion safe).
+
+#### Remaining Vercel dashboard steps (domain-level; CLI 50.10.1 can't set redirects/primary)
+Currently `gitakids.com` 308-redirects to `www.gitakids.com`, and `gitakids.org` serves a duplicate. To match the canonical:
+1. **Make apex primary**: Project → Settings → Domains → set `gitakids.com` as the primary/production domain (so `www.gitakids.com` redirects to `gitakids.com`, not the reverse).
+2. **Redirect .org → .com**: set `gitakids.org` (and `www.gitakids.org`) to **Redirect** to `gitakids.com` (301), instead of serving.
+The canonical tag already protects SEO in the meantime, but the redirect removes the duplicate entirely.
 
 ## What Was Done This Session (2026-06-17)
 
