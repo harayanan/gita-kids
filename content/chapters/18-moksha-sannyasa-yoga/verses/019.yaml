@@ -1,0 +1,101 @@
+chapter: 18
+verse: 19
+
+speaker: krishna
+
+sanskrit: "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः। प्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि॥"
+
+transliteration: "jñānaṁ karma ca kartā ca tridhaiva guṇabhedataḥ | procyate guṇasaṅkhyāne yathāvacchṛṇu tānyapi ||"
+
+dhatu_breakdown:
+  - word: "ज्ञानम्"
+    parts: ["jñā (to know)", "jñāna (knowledge)"]
+    meaning: "knowledge"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "action, deed"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "कर्ता"
+    parts: ["kṛ (to do)", "kartṛ (doer)"]
+    meaning: "the doer"
+  - word: "त्रिधा"
+    parts: ["tri (three)", "dhā (kind, division)"]
+    meaning: "in three ways, threefold"
+  - word: "एव"
+    parts: ["eva (indeed, only)"]
+    meaning: "indeed, just so"
+  - word: "गुणभेदतः"
+    parts: ["guṇa (quality, strand of nature)", "bhid (to split, to divide)", "bhedataḥ (according to the division)"]
+    meaning: "according to the difference of the three gunas (qualities of nature)"
+  - word: "प्रोच्यते"
+    parts: ["pra (forth)", "vac (to speak)"]
+    meaning: "is declared, is told"
+  - word: "गुणसंख्याने"
+    parts: ["guṇa (quality)", "sam (together)", "khyā (to count, to reckon)", "saṅkhyāna (counting, the Sankhya teaching)"]
+    meaning: "in the teaching that counts the gunas (the Sankhya philosophy)"
+  - word: "यथावत्"
+    parts: ["yathā (as, in the manner)", "vat (like, accordingly)"]
+    meaning: "duly, properly, exactly as it is"
+  - word: "शृणु"
+    parts: ["śru (to hear, to listen)"]
+    meaning: "listen, hear"
+  - word: "तानि"
+    parts: ["tad (that, those)"]
+    meaning: "them, those"
+  - word: "अपि"
+    parts: ["api (also, too)"]
+    meaning: "also, as well"
+
+meaning: >
+  Krishna says that three big things in life — knowledge, action, and the doer
+  — each come in three different colours, depending on which of nature's three
+  strands shines through them: sattva (the clear, light strand), rajas (the
+  restless, fiery strand), and tamas (the dull, heavy strand). It is like
+  learning that there are warm colours, cool colours, and grey ones, and that
+  the same shape looks very different in each. "Listen carefully," he says, "and
+  I will name them for you, one by one."
+
+story:
+  title: "Grandmother Sandhya's Three Lamps"
+  source: "mythological"
+  body: |
+    On the night of a great festival in the old kingdom of Vidarbha, a
+    grandmother named Sandhya gathered her grandchildren on the cool stone steps
+    of the temple courtyard. The whole town glowed with little oil lamps, and
+    the children's eyes were wide.
+
+    "Tonight," she said, "I will teach you a secret about why the same thing can
+    feel so different. Watch." She set three clay lamps in a row before them.
+
+    She lit the first with a clean white cotton wick and pure ghee. It burned
+    tall and steady, bright and calm, and the children's faces relaxed in its
+    glow. "This," said Sandhya, "is the sattva flame — clear, gentle, true. When
+    knowledge wears this colour, you see things as they really are. When a deed
+    wears it, the deed is calm and selfless. When a person wears it, they are
+    peaceful and steady."
+
+    She lit the second lamp with too much oil and a thick wick. It flared up
+    hot, leaping and crackling, throwing wild shadows that danced on the temple
+    walls. The children flinched and giggled. "This is the rajas flame," she
+    said. "Restless, hungry, always grasping for more. Knowledge in this colour
+    sees only differences and quarrels. A deed in this colour is full of
+    striving and want. A person in this colour can never sit still."
+
+    She lit the third with a soggy, half-burnt wick. It sputtered, smoked, and
+    gave almost no light at all, just a dull red coal. "And this," she said
+    softly, "is the tamas flame. Heavy, dim, full of smoke. Knowledge here is
+    confused and clings to one small wrong idea. A deed here is careless and
+    lazy. A person here would rather sleep than see."
+
+    The children looked from lamp to lamp — the same clay, the same fire, three
+    completely different flames.
+
+    "The world is made of these three strands woven together," said Grandmother
+    Sandhya, "in everything you know, everything you do, and everyone you meet.
+    Learn to spot which flame is burning, and you will understand people — and
+    yourself — far better. Now lean close, little ones. I will tell you each
+    one, just as my own grandmother told me."
+
+reflection: "Think of one activity, like helping at home. How might it feel calm and steady, or restless and pushy, or lazy and grumbling? Which 'flame' do you want it to have?"

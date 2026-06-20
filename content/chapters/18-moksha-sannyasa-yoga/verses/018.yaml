@@ -1,0 +1,98 @@
+chapter: 18
+verse: 18
+
+speaker: krishna
+
+sanskrit: "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना। करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः॥"
+
+transliteration: "jñānaṁ jñeyaṁ parijñātā trividhā karmacodanā | karaṇaṁ karma karteti trividhaḥ karmasaṅgrahaḥ ||"
+
+dhatu_breakdown:
+  - word: "ज्ञानम्"
+    parts: ["jñā (to know)", "jñāna (knowledge)"]
+    meaning: "knowledge, the act of knowing"
+  - word: "ज्ञेयम्"
+    parts: ["jñā (to know)"]
+    meaning: "the known, the thing to be known"
+  - word: "परिज्ञाता"
+    parts: ["pari (around, fully)", "jñā (to know)"]
+    meaning: "the knower, the one who knows fully"
+  - word: "त्रिविधा"
+    parts: ["tri (three)", "vidhā (kind, sort)"]
+    meaning: "of three kinds, threefold"
+  - word: "कर्मचोदना"
+    parts: ["kṛ (to do, to act)", "cud (to impel, to urge)", "codanā (urging, prompting)"]
+    meaning: "the urge that prompts action, what sets a deed in motion"
+  - word: "करणम्"
+    parts: ["kṛ (to do)", "karaṇa (instrument, means)"]
+    meaning: "the instrument, the tool or means"
+  - word: "कर्म"
+    parts: ["kṛ (to do, to act)"]
+    meaning: "the deed itself, the action done"
+  - word: "कर्ता"
+    parts: ["kṛ (to do)", "kartṛ (doer)"]
+    meaning: "the doer, the one acting"
+  - word: "इति"
+    parts: ["iti (thus, so)"]
+    meaning: "thus, so it is said"
+  - word: "त्रिविधः"
+    parts: ["tri (three)", "vidha (kind, sort)"]
+    meaning: "of three kinds, threefold"
+  - word: "कर्मसंग्रहः"
+    parts: ["kṛ (to do, to act)", "sam (together)", "grah (to grasp, to gather)", "saṅgraha (collection, sum)"]
+    meaning: "the make-up of action, the parts that gather into a deed"
+
+meaning: >
+  Krishna takes any action apart to show what it is made of. Before a deed,
+  three things stir it: knowing how (knowledge), the thing you want to know or
+  do (the known), and you yourself (the knower). And inside the deed there are
+  three more parts: the tool you use (the instrument), the work that gets done
+  (the deed), and the one doing it (the doer). Like looking at a clock and
+  finding its gears, Krishna shows that even something as simple as helping a
+  friend is built from many quiet pieces working together.
+
+story:
+  title: "The Potter's Six Pieces"
+  source: "mythological"
+  body: |
+    In a village by a slow brown river there lived an old potter named Kumbha,
+    famous for water pots so smooth and round that people said the moon must
+    have shaped them. A curious sage on his travels stopped to watch the old man
+    work, for the sage wished to understand how a single deed comes to be.
+
+    "Teach me, potter," said the sage, sitting in the doorway. "When you make a
+    pot, how many things are truly at work?"
+
+    Kumbha laughed and kept his wheel spinning. "More than you'd think for such
+    a humble cup," he said. "Watch, and I will count them for you."
+
+    "First," he said, "before my hands touch the clay, there is the knowing —
+    the craft my father taught me, how wet the clay must be, how fast to spin.
+    That is the knowledge." He tapped his head.
+
+    "Second, there is what I mean to make — this pot, round and deep, here in my
+    mind before it is in the world. That is the thing to be known, the goal."
+
+    "Third," he said, "there is me, old Kumbha, the one who knows the craft and
+    holds the goal. The knower. Without a knower, the knowing and the goal just
+    float, doing nothing."
+
+    The wheel hummed. A shape began to rise from the grey lump.
+
+    "Now the deed itself begins," Kumbha went on. "Fourth, my tools — the spinning
+    wheel, my wet fingers, the little wooden rib. The instruments. Fifth, the
+    work as it happens — the clay climbing, the walls thinning, the rim curling
+    over. The deed. And sixth," he lifted the finished pot and held it to the
+    light, "the doer, the hands that did it. Me again, but now acting, not just
+    knowing."
+
+    The sage counted on his fingers and smiled. "Three before, three during.
+    Knowledge, goal, knower — then tool, work, doer. Six quiet pieces in one
+    little pot."
+
+    "Aye," said Kumbha, setting the pot to dry. "And it is the same with every
+    deed under the sun, from making a pot to fighting a battle to speaking a
+    kind word. See the pieces, and you understand the whole. Then you act with
+    open eyes instead of stumbling about in the dark."
+
+reflection: "Pick a small thing you did today, like writing your name. Can you find the parts — what you knew, what you wanted, who you are, your tools, the work, and you doing it?"

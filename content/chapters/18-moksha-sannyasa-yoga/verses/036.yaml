@@ -1,0 +1,104 @@
+chapter: 18
+verse: 36
+speaker: krishna
+
+sanskrit: "सुखं त्विदानीं त्रिविधं शृणु मे भरतर्षभ। अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति॥"
+
+transliteration: "sukhaṁ tvidānīṁ trividhaṁ śṛṇu me bharatarṣabha | abhyāsādramate yatra duḥkhāntaṁ ca nigacchati ||"
+
+dhatu_breakdown:
+  - word: "सुखम्"
+    parts: ["su (good, easy)", "kha (space, hollow)"]
+    meaning: "happiness, ease, gladness"
+  - word: "तु"
+    parts: ["tu (but, now)"]
+    meaning: "but, and now"
+  - word: "इदानीम्"
+    parts: ["idānīm (now, at this moment)"]
+    meaning: "now, at this point"
+  - word: "त्रिविधम्"
+    parts: ["tri (three)", "vidha (kind, sort)"]
+    meaning: "of three kinds, threefold"
+  - word: "शृणु"
+    parts: ["śru (to hear, to listen)"]
+    meaning: "hear, listen"
+  - word: "मे"
+    parts: ["mad (I, me)"]
+    meaning: "from me, of me"
+  - word: "भरतर्षभ"
+    parts: ["bharata (the Bharata line)", "ṛṣabha (bull, best)"]
+    meaning: "O best of the Bharatas — a name for Arjuna"
+  - word: "अभ्यासात्"
+    parts: ["abhi (toward)", "as (to throw, to apply)"]
+    meaning: "through practice, by steady repetition"
+  - word: "रमते"
+    parts: ["ram (to delight, to take joy)"]
+    meaning: "one delights, one finds joy"
+  - word: "यत्र"
+    parts: ["yatra (where, in which)"]
+    meaning: "in which, where"
+  - word: "दुःखान्तम्"
+    parts: ["duḥkha (sorrow, pain)", "anta (end)"]
+    meaning: "the end of sorrow"
+  - word: "च"
+    parts: ["ca (and)"]
+    meaning: "and"
+  - word: "निगच्छति"
+    parts: ["ni (down, into)", "gam (to go, to reach)"]
+    meaning: "one reaches, one comes to"
+
+meaning: >
+  Krishna says: "And now, best of the Bharatas, hear from me about happiness,
+  for it too comes in three kinds. There is a happiness in which a person, after
+  steady practice, comes to take real joy — and in that joy reaches the end of
+  all sorrow." He is telling Arjuna that not every happy feeling is the same. Some
+  kinds last and heal you; others fade and leave you emptier than before. So it
+  is worth learning to tell them apart.
+
+story:
+  title: "Dadu and the Three Sweets"
+  source: "modern"
+  body: |
+    The sea breeze had cooled by evening, and Aarav sat on the warm steps of
+    Dadu's house in Puri with three little things in front of him: a fistful of
+    boiled sweets from the market, a single ripe mango, and a small clay cup of
+    bitter neem tea that his grandmother made him drink when the weather turned.
+
+    "Dadu," Aarav grumbled, "why is happiness so confusing? The sweets make me
+    happy, the mango makes me happy, and even when I finish my homework I feel
+    happy. But they don't feel the same."
+
+    Dadu lowered himself onto the step beside the boy, slow and creaky like an
+    old boat being eased into water. He looked at the three things and chuckled.
+
+    "You have noticed something many grown men never notice in their whole
+    lives," he said. "Not all happiness is the same kind. There are, in truth,
+    three kinds — and the wise learn to tell them apart, the way a fisherman
+    learns to read three different clouds."
+
+    Aarav popped a sweet into his mouth. "Three kinds? They all feel nice."
+
+    "They feel nice at different moments, and they leave you in different
+    places," said Dadu. "Eat the sweets, and the gladness is bright and quick —
+    but in an hour your teeth ache and you want more. That is one kind. The
+    mango is patient — you wait all summer for it, and the sweetness is honest
+    and full. That is another. And the neem tea —" he tapped the bitter cup and
+    smiled "— is no fun at all going down, but it clears your blood and keeps
+    you well for weeks. That is a third kind altogether."
+
+    Aarav made a face at the neem cup. "So the worst-tasting one is good for me?"
+
+    "Sometimes the thing that is hard at the start is the very thing that brings
+    you the longest joy," Dadu said. "And sometimes the thing that is sweet at
+    the start turns sour later. You cannot judge happiness only by its first
+    taste. You have to ask: where does it leave me in the end?"
+
+    He gestured at the darkening sea. "Krishna once told a great warrior the
+    very same thing — listen, he said, for happiness comes in three kinds. Tonight
+    I am only repeating the old lesson, with sweets and a mango and a cup of
+    bitter tea."
+
+    Aarav looked at the three things again, and this time they did not all look
+    the same.
+
+reflection: "Think of three things that made you happy this week. Did each one make you happy in the same way, or in different ways? Which kind of happiness do you think lasts the longest?"
