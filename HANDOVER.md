@@ -1,17 +1,39 @@
 # Gita for Kids — Handover
 
-## Current Status: 8 Chapters Active (320/700 verses), all illustrated
+## Current Status: 10 Chapters Active (397/700 verses), all illustrated
 
-The site is deployed at https://gita-for-kids.vercel.app. Eight chapters and back matter are active:
+The site is deployed at https://gita-for-kids.vercel.app. Ten chapters and back matter are active:
 - **Chapter 1** (Arjuna Vishada Yoga): 47/47 verses, 47 illustrations (Madhubani), complete
 - **Chapter 2** (Sankhya Yoga): 72/72 verses, 72/72 illustrations (Gond), complete
 - **Chapter 3** (Karma Yoga): 43/43 verses, 43/43 illustrations (Pattachitra), complete
 - **Chapter 4** (Jnana Karma Sannyasa Yoga): 42/42 verses, 42/42 illustrations (Warli), complete
 - **Chapter 5** (Karma Sannyasa Yoga): 29/29 verses, 29/29 illustrations (Kalamkari), complete
 - **Chapter 6** (Dhyana Yoga): 47/47 verses, 47/47 illustrations (Madhubani), complete
+- **Chapter 10** (Vibhuti Yoga): 42/42 verses, 42/42 illustrations (Kalamkari), complete
 - **Chapter 12** (Bhakti Yoga): 20/20 verses, 20/20 illustrations (Pichwai), complete
+- **Chapter 13** (Kshetra-Kshetrajna Vibhaga Yoga): 35/35 verses, 35/35 illustrations (Pattachitra), complete
 - **Chapter 15** (Purushottama Yoga): 20/20 verses, 20/20 illustrations (Kalamkari), complete
 - **Gitamahatmyam**: 18 stories (one per chapter), back matter page
+
+## What Was Done This Session (2026-06-20)
+
+Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**.
+
+### Chapter 10 (Vibhuti Yoga) authored + illustrated — NEW, complete
+- **All 42 verses written** (Kalamkari) by 6 parallel agents against a shared outline spec (`docs/chapter-10-outline.md`). Speaker map: 12–18 = arjuna (Arjuna's hymn of praise + request), rest = krishna. Status flipped `coming_soon` → `active`.
+- **Sanskrit audited** by an independent read-only agent: 0 critical, 0 high. 1 low orthographic fix applied (v41 `तेजोंऽश` → `तेजोंश` / `tejoṁ'śa` → `tejoṁśa`, normalising the avagraha to the Gita Press form). All vibhuti proper names verified in both scripts.
+- **All 42 Kalamkari illustrations generated** via `node scripts/generate-illustration.mjs --chapter 10 --batch 1-42` — zero failures. Spot-checked v21 (sun/moon, Krishna among the Adityas) — correct Kalamkari style, consistent character designs. Same JPEG-data-as-.png caveat (1376×768).
+
+### Chapter 13 (Kshetra-Kshetrajna Vibhaga Yoga) authored + illustrated — NEW, complete
+- **All 35 verses written** (Pattachitra) by 5 parallel agents against `docs/chapter-13-outline.md`. Uses the **35-verse recension** (Arjuna's question as verse 1; v2 = `idaṁ śarīraṁ`). Speaker map: v1 = arjuna, 2–35 = krishna. Status flipped `coming_soon` → `active`.
+- **Sanskrit audited clean** by an independent read-only agent: 0 critical, 0 high, 0 low across all 35 verses. Recension numbering verified (no off-by-one).
+- **All 35 Pattachitra illustrations generated** via `node scripts/generate-illustration.mjs --chapter 13 --batch 1-35` — zero failures. Spot-checked v23 (two-birds-on-one-tree, Mundaka image) — correct Pattachitra style. Same JPEG-data-as-.png caveat (1376×768).
+
+### Build & verification
+- Build passes (414 pages). All 77 new verse pages reference and ship their images; dist contains 42 + 35 PNGs.
+
+### Pending (next session): Rebrand to "Gita Kids"
+User bought **gitakds.com** (canonical) and **gitakids.org** (redirect). Rename "Gita for Kids" → "Gita Kids" across the site; slug `gita-for-kids` → `gita-kids`; rename project folder, GitHub repo (`harayanan/gita-for-kids` → `gita-kids`, gh authed), and Vercel project (authed); update `astro.config` site to `https://gitakds.com`; attach both domains in Vercel; rebuild + verify. See memory `rebrand-to-gita-kids`.
 
 ## What Was Done This Session (2026-06-17)
 
