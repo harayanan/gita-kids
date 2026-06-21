@@ -21,7 +21,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
@@ -40,6 +40,46 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <ClientRouter />
+
+    <!-- Native app shell: activates only inside the Capacitor app, never on the website -->
+    <script is:inline>
+      (function () {
+        var C = window.Capacitor;
+        if (!C || !(C.isNativePlatform && C.isNativePlatform())) return;
+        document.documentElement.classList.add('native-app');
+        var P = C.Plugins || {};
+        try {
+          if (P.StatusBar) {
+            P.StatusBar.setOverlaysWebView({ overlay: true }); // edge-to-edge: content under the status bar
+            P.StatusBar.setStyle({ style: 'DARK' });           // dark icons on the cream background
+          }
+        } catch (e) {}
+        function onReady(fn) {
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+        onReady(function () { try { if (P.SplashScreen) P.SplashScreen.hide(); } catch (e) {} });
+        try {
+          if (P.App) {
+            P.App.addListener('backButton', function () {
+              if (window.history.length > 1) window.history.back();
+              else P.App.exitApp();
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <style is:global>
+      /* Native-app feel — scoped to the Capacitor app only (html.native-app) */
+      html.native-app, html.native-app body { overscroll-behavior: none; }
+      html.native-app {
+        -webkit-user-select: none; user-select: none;
+        -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+      }
+      /* Keep content clear of the overlaid status bar and the gesture/nav bar */
+      html.native-app #site-nav { padding-top: calc(1.25rem + env(safe-area-inset-top)) !important; }
+      html.native-app body { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
   </head>
   <body class="min-h-screen flex flex-col bg-cream">
     <!-- Skip to content (accessibility) -->

@@ -20,6 +20,14 @@ const config: CapacitorConfig = {
   android: {
     backgroundColor: '#FDF6E3',
   },
+  plugins: {
+    SplashScreen: {
+      backgroundColor: '#FDF6E3',
+      launchAutoHide: false, // the site's app-mode script hides it once loaded
+      showSpinner: false,
+      androidScaleType: 'CENTER_CROP',
+    },
+  },
 };
 
 export default config;
