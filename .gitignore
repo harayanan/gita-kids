@@ -6,3 +6,7 @@ dist/
 .DS_Store
 .vercel
 .gstack/
+
+# image-generation candidates (keep only the chosen finals)
+assets/_icon-candidates/
+assets/character-refs/**/_candidates/
