@@ -26,6 +26,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Favicon (peacock-feather logo) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,6 +85,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       /* Keep content clear of the overlaid status bar and the gesture/nav bar */
       html.native-app #site-nav { padding-top: calc(1.25rem + env(safe-area-inset-top)) !important; }
       html.native-app body { padding-bottom: env(safe-area-inset-bottom); }
+      /* Define the system-bar zones with a subtle warm band so they don't fully
+         blend into the cream content (dark icons stay high-contrast on it). */
+      html.native-app::before { content: ""; position: fixed; top: 0; left: 0; right: 0;
+        height: env(safe-area-inset-top); background: #F0E2C0; z-index: 9998; pointer-events: none; }
+      html.native-app::after { content: ""; position: fixed; bottom: 0; left: 0; right: 0;
+        height: env(safe-area-inset-bottom); background: #F0E2C0; z-index: 9998; pointer-events: none; }
     </style>
   </head>
   <body class="min-h-screen flex flex-col bg-cream">
