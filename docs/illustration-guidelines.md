@@ -146,6 +146,7 @@ Regenerate with: `node scripts/generate-illustration.mjs --chapter 12 --batch 1-
 
 ## 6. Series Cohesion Rules
 
+- **Quality benchmark (project owner, 2026-06-21):** the **Chapter 12 (Pichwai)** illustrations are the best in the book — "hit pichwai out of the park." Treat them as the gold standard and aim for that level of richness (dark-ground Nathdwara temple style, jewel tones, devotional warmth) across all chapters.
 - Use image `003.png` (Drona between armies) as the **stylistic North Star** for all new and regenerated images.
 - Border style must match across all images — use `003.png`'s dense floral border as the template.
 - Character designs must be consistent across all illustrations — reference the character sheet in Section 1 in every prompt.
