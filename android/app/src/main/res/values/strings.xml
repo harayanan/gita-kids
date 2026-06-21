@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gita Kids</string>
+    <string name="title_activity_main">Gita Kids</string>
+    <string name="package_name">com.gitakids.app</string>
+    <string name="custom_url_scheme">com.gitakids.app</string>
+</resources>
