@@ -78,6 +78,15 @@ Once enabled, every push touching the native shell rebuilds the APK and refreshe
 
 ---
 
+## Native app feel (implemented 2026-06-21)
+Plugins: `@capacitor/status-bar`, `@capacitor/splash-screen`, `@capacitor/app`.
+- **Edge-to-edge fullscreen** — status bar overlays the WebView (content goes under it), dark icons on cream, safe-area padding so the nav clears the notch/clock.
+- **Splash screen** (cream bg), hidden by the site once loaded.
+- **Android back button** → navigates WebView history, exits at root.
+- **Webpage tells removed** — no text-selection, long-press callout, tap highlight, or overscroll glow.
+- All of the above is gated to `html.native-app` (set when `window.Capacitor` is present) in `src/layouts/BaseLayout.astro`, so the **website is unaffected**. The CSS-level polish ships with the site (live on any installed APK); the native bars/splash/back-button need the rebuilt APK.
+- **Still to do (native feel):** custom app launcher icon (default Capacitor icon today; `sharp` + `@capacitor/assets` available), keep-screen-awake while reading, haptics on tap.
+
 ## Phase 2 (bundled, offline) — checklist for later
 - [ ] Finalize images + content.
 - [ ] Image-optimization pipeline (PNG → WebP/AVIF; ~934 MB → ~150 MB target).
