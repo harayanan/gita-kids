@@ -138,6 +138,20 @@ export const STYLE_PROMPTS = {
 - NOT Madhubani — avoid cream backgrounds, geometric folk patterns, double-line outlines, and red/saffron dominant palette
 - Always illustrate the verse/mythological scene, NOT any modern story analogy`,
   },
+  'pichwai-narrative': {
+    name: 'Pichwai (Nathdwara) narrative',
+    prompt: `STYLE REQUIREMENTS (CRITICAL — follow every rule exactly):
+- In the style of traditional Nathdwara Pichwai temple paintings from Rajasthan — opulent, sacred, richly detailed
+- DARK BACKGROUND (MANDATORY): deep blue (#0A1A3A), black (#1A1A2E), or deep green (#0A2A1A) — NEVER cream, NEVER white, NEVER light backgrounds
+- Rich jewel-tone palette: emerald, sapphire, ruby, gold on dark ground; fine gold linework and gilded highlights
+- Flat perspective — NO shading, NO atmospheric depth, NO 3D rendering
+- Dense ornate floral and foliate patterns filling all empty space (horror vacui)
+- Figures in strict profile OR frontal view, NEVER three-quarter view
+- Ornate textile-like border with lotus, paisley, or floral chain on all four sides — gold on dark ground
+- Render the ACTUAL scene of this verse — the Mahabharata battlefield world: warriors, chariots, horses, bows, conches, kings, palaces — in this opulent Pichwai manner. This is a NARRATIVE Pichwai panel: it need NOT be centered on Krishna and need NOT include cows, gopis, or lotus ponds unless the scene itself calls for them.
+- NOT Madhubani — no cream backgrounds, no double-line folk outlines, no geometric folk fills
+- Always illustrate the verse/mythological scene, NOT any modern story analogy`,
+  },
   pattachitra: {
     name: 'Pattachitra (Odisha)',
     prompt: `STYLE REQUIREMENTS (CRITICAL — follow every rule exactly):
@@ -313,7 +327,7 @@ Illustrate the MYTHOLOGICAL scene — divine figures, ancient India settings, sa
  * background with jewel tones; all other styles use the standard cream palette.
  */
 export function buildColorPalette(artStyle) {
-  const isPichwai = artStyle === 'pichwai';
+  const isPichwai = artStyle.startsWith('pichwai');
   return isPichwai
     ? `COLOR PALETTE (Pichwai jewel tones on dark ground):
 - Dark background: deep blue #0A1A3A, black #1A1A2E, or deep green #0A2A1A
