@@ -411,15 +411,15 @@ export async function generateImageWithRetry(parts, apiKey, maxRetries = 3) {
         const data = await response.json();
 
         // Extract base64 image from response parts
-        const parts = data?.candidates?.[0]?.content?.parts ?? [];
-        for (const part of parts) {
+        const respParts = data?.candidates?.[0]?.content?.parts ?? [];
+        for (const part of respParts) {
           if (part?.inlineData?.data) {
             return { base64: part.inlineData.data, mimeType: part.inlineData.mimeType || 'image/png', model };
           }
         }
 
         // If we got a response but no image data, log the text response
-        const textParts = parts.filter(p => p.text).map(p => p.text).join(' ');
+        const textParts = respParts.filter(p => p.text).map(p => p.text).join(' ');
         if (textParts) {
           console.warn(`  Model returned text instead of image: ${textParts.slice(0, 200)}`);
         }

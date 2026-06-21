@@ -1,0 +1,333 @@
+# Chapter 1 — Arjuna Vishada Yoga — scene briefs
+# Drives image generation. relevance_mode: specific | evocative | devotional.
+# cast keys: dhritarashtra sanjaya duryodhana bhishma drona arjuna krishna
+#            warrior-pandava warrior-kaurava
+- verse: 1
+  relevance_mode: specific
+  cast: [dhritarashtra, sanjaya]
+  action: "Blind king Dhritarashtra grips his cold stone throne and asks Sanjaya what his sons and the Pandavas did when they gathered to fight on Kurukshetra"
+  setting: "Hastinapura palace hall, the battlefield of Kurukshetra glimpsed far through a high arched window"
+  props: ["marble throne", "blindfold", "burning incense"]
+  notes: "Distant war drums and conches sounding from the north"
+- verse: 2
+  relevance_mode: specific
+  cast: [duryodhana, drona]
+  action: "Duryodhana steps down from his chariot and approaches his teacher Drona after seeing the Pandava army arrayed in formation"
+  setting: "Kaurava side of the Kurukshetra battlefield at dawn, Pandava army massed across the plain"
+  props: ["chariot", "Drona's bow resting across his knees", "gold armor"]
+  notes: ""
+- verse: 3
+  relevance_mode: specific
+  cast: [duryodhana, drona]
+  action: "Duryodhana points across the field at the vast Pandava army and tells Drona it was arrayed by his own student Dhrishtadyumna"
+  setting: "Kaurava chariot line at Kurukshetra, the Pandava army spread in battle formation opposite"
+  props: ["pointing gesture", "banners", "Drona's bow"]
+  notes: "Dhrishtadyumna (Drupada's son) is a Pandava-side warrior arraying the army in the distance"
+- verse: 4
+  relevance_mode: specific
+  cast: [duryodhana, drona, warrior-pandava]
+  action: "Duryodhana names the Pandava champions to Drona, gesturing toward Satyaki, Virata, and the great chariot-warrior Drupada across the field"
+  setting: "Kaurava chariot at Kurukshetra, distant Pandava warriors and a trumpeting war elephant"
+  props: ["chariots", "war elephant", "saffron and crimson banners"]
+  notes: "Named warriors Satyaki, Virata, Drupada all map to warrior-pandava"
+- verse: 5
+  relevance_mode: specific
+  cast: [duryodhana, warrior-pandava]
+  action: "Duryodhana continues naming Pandava-side kings — Dhrishtaketu, Chekitana, the King of Kashi, Purujit, Kuntibhoja, Shaibya — standing as a row of armored chariot-warriors under their banners"
+  setting: "Kurukshetra battlefield, Pandava allied kings ranked beneath their distinct banners"
+  props: ["banners", "war chariots", "raised bows"]
+  notes: "All named are Pandava-side allied kings"
+- verse: 6
+  relevance_mode: specific
+  cast: [duryodhana, warrior-pandava]
+  action: "Duryodhana names the Pandava great chariot-warriors — Yudhamanyu, Uttamaujas, the young Abhimanyu, and Draupadi's five sons — arrayed for battle across the field"
+  setting: "Kurukshetra, a cluster of Pandava chariot-warriors including a youthful archer drawing his bow"
+  props: ["chariots", "drawn bow", "white chariot horses"]
+  notes: "Young archer evokes Abhimanyu"
+- verse: 7
+  relevance_mode: specific
+  cast: [duryodhana, drona]
+  action: "Duryodhana turns from the enemy lines to Drona and begins naming the distinguished commanders of his own army"
+  setting: "Kaurava command position at Kurukshetra, the Kaurava host ranked behind"
+  props: ["Drona's bow", "Kaurava banners", "raised hand"]
+  notes: "Addresses Drona as dvijottama, best of brahmins"
+- verse: 8
+  relevance_mode: specific
+  cast: [duryodhana, bhishma, drona, warrior-kaurava]
+  action: "Duryodhana names his own champions — Drona himself, the silver-haired Bhishma in his chariot, Karna, Kripa, Ashwatthama, Vikarna and Bhurishravas"
+  setting: "Kaurava front line at Kurukshetra, elder warriors ranked in their chariots"
+  props: ["Bhishma's silver hair and chariot", "bows", "Kaurava banners"]
+  notes: "Karna, Kripa, Ashwatthama, Vikarna, Bhurishravas map to warrior-kaurava"
+- verse: 9
+  relevance_mode: specific
+  cast: [duryodhana, warrior-kaurava]
+  action: "Duryodhana sweeps his arm over a host of Kaurava warriors armed with many kinds of weapons, all pledged to give their lives for his sake"
+  setting: "Kaurava army massed at Kurukshetra, ranks of armed soldiers behind their prince"
+  props: ["assorted weapons — swords, maces, spears", "Kaurava banners", "chariots"]
+  notes: ""
+- verse: 10
+  relevance_mode: specific
+  cast: [duryodhana, bhishma, warrior-pandava]
+  action: "Duryodhana boasts that his Bhishma-guarded host is boundless while the Pandava force guarded by Bhima is small, gesturing from Bhishma's chariot toward the distant Pandava lines"
+  setting: "Kaurava line at Kurukshetra, Bhishma at the head, Bhima visible among the Pandava ranks opposite"
+  props: ["Bhishma's chariot and banner", "Bhima's mace across the field", "raised arm"]
+  notes: "Bhima maps to warrior-pandava"
+- verse: 11
+  relevance_mode: specific
+  cast: [duryodhana, warrior-kaurava]
+  action: "Duryodhana points along the Kaurava ranks and commands his warriors to hold their assigned positions and guard Bhishma from every side"
+  setting: "Kaurava battle formation at Kurukshetra"
+  props: ["war banner", "mace"]
+  notes: "Bhishma named as the one to protect"
+- verse: 12
+  relevance_mode: specific
+  cast: [bhishma, duryodhana]
+  action: "The aged Bhishma roars like a lion and blows his conch with a thunderous blast to gladden Duryodhana's heart"
+  setting: "Kaurava front line at Kurukshetra"
+  props: ["conch", "white beard", "elder's crown"]
+  notes: "Bhishma is the grandsire, eldest of the Kurus"
+- verse: 13
+  relevance_mode: specific
+  cast: [warrior-kaurava]
+  action: "All at once the Kaurava conches, kettledrums, tabors, war drums and cow-horn trumpets burst out together in a tremendous earth-shaking roar"
+  setting: "Kaurava army across the field at Kurukshetra"
+  props: ["conch", "kettledrum", "war drum", "cow-horn trumpet"]
+  notes: "A wall of instruments, tumultuous sound"
+- verse: 14
+  relevance_mode: specific
+  cast: [krishna, arjuna]
+  action: "Standing in their great chariot drawn by white horses, Krishna and Arjuna blow their two divine conches together in a single clear piercing note"
+  setting: "Pandava chariot on the field at Kurukshetra"
+  props: ["Panchajanya", "Devadatta", "white horses", "Gandiva", "Hanuman banner"]
+  notes: "Two conches answer the hundred Kaurava drums"
+- verse: 15
+  relevance_mode: specific
+  cast: [krishna, arjuna, warrior-pandava]
+  action: "Krishna blows Panchajanya, Arjuna blows Devadatta, and wolf-bellied Bhima raises his enormous conch Paundra and blows a mighty blast"
+  setting: "Pandava front at Kurukshetra"
+  props: ["Panchajanya", "Devadatta", "Paundra", "mace"]
+  notes: "Bhima (warrior-pandava) is the mighty wolf-bellied one"
+- verse: 16
+  relevance_mode: specific
+  cast: [warrior-pandava]
+  action: "King Yudhishthira blows Anantavijaya while the twins Nakula and Sahadeva blow Sughosha and Manipushpaka, all five Pandava brothers sounding together"
+  setting: "Pandava front line at Kurukshetra"
+  props: ["Anantavijaya", "Sughosha", "Manipushpaka"]
+  notes: "Yudhishthira and the twins are warrior-pandava"
+- verse: 17
+  relevance_mode: specific
+  cast: [warrior-pandava]
+  action: "The great archer King of Kashi, Shikhandi, Dhrishtadyumna, Virata and the invincible Satyaki raise their bows and blow their conches on the Pandava side"
+  setting: "Pandava ranks at Kurukshetra"
+  props: ["bow", "conch", "war banner"]
+  notes: "Roll-call of Pandava allies"
+- verse: 18
+  relevance_mode: specific
+  cast: [warrior-pandava]
+  action: "King Drupada, the sons of Draupadi, and the mighty-armed young Abhimanyu each blow their conches one after another, every voice distinct"
+  setting: "Pandava ranks at Kurukshetra"
+  props: ["conch", "war banner"]
+  notes: "Each blows separately; Abhimanyu the youngest"
+- verse: 19
+  relevance_mode: specific
+  cast: [warrior-pandava, warrior-kaurava]
+  action: "The tumultuous Pandava war cry echoes through sky and earth and shatters the hearts of Dhritarashtra's sons, who shrink back in fear"
+  setting: "The battlefield of Kurukshetra, between the two armies"
+  props: ["conch", "war drum"]
+  notes: "Pandava side sounding, Kaurava side gripped by fear"
+- verse: 20
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Seeing the Kauravas drawn up for battle, Arjuna of the Hanuman banner raises his bow Gandiva and asks Krishna to drive his chariot between the two armies so he can see whom he must fight"
+  setting: "Pandava chariot at the center of Kurukshetra, weapons about to clash"
+  props: ["Gandiva", "Hanuman banner", "chariot", "white horses"]
+  notes: "Arjuna chooses to look before he acts"
+- verse: 21
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna asks Krishna to drive his chariot and station it in the middle, between the two armies"
+  setting: "Open ground between the Kurukshetra armies"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: ""
+- verse: 22
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "From the chariot between the armies, Arjuna gazes across at the assembled warriors who stand ready and eager to fight"
+  setting: "Between the two armies on the Kurukshetra plain"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: "Arjuna scans the opposing ranks"
+- verse: 23
+  relevance_mode: specific
+  cast: [arjuna, krishna, warrior-kaurava]
+  action: "Arjuna looks closely at the warriors gathered to fight on Duryodhana's side, surveying the ranks who have come to please the Kaurava prince"
+  setting: "Between the two armies, facing the Kaurava ranks"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: "Focus on the Kaurava-side warriors assembled"
+- verse: 24
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Krishna takes the reins and drives the finest chariot to a halt in the middle, exactly between the two great armies"
+  setting: "Open ground at the center of the Kurukshetra battlefield"
+  props: ["chariot", "white horses", "reins"]
+  notes: "Krishna acts silently on Arjuna's request"
+- verse: 25
+  relevance_mode: specific
+  cast: [arjuna, krishna, bhishma, drona]
+  action: "Krishna points toward Bhishma, Drona, and the assembled kings and tells Arjuna to behold the gathered Kurus"
+  setting: "Between the armies, facing the front ranks led by Bhishma and Drona"
+  props: ["chariot", "white horses"]
+  notes: "Bhishma and Drona at the head of the assembled rulers"
+- verse: 26
+  relevance_mode: specific
+  cast: [arjuna, krishna, warrior-pandava, warrior-kaurava]
+  action: "Standing in his chariot, Arjuna sees fathers, grandfathers, teachers, uncles, brothers, sons, grandsons, and friends arrayed across both armies"
+  setting: "Between the two armies, surveying kinsmen on both sides"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: "Kinsmen on both sides"
+- verse: 27
+  relevance_mode: specific
+  cast: [arjuna, krishna, warrior-pandava, warrior-kaurava]
+  action: "Seeing fathers-in-law and well-wishers among the relatives in both armies, Arjuna is overcome with deep compassion and sinks into sorrow"
+  setting: "Between the two armies, kinsmen arrayed on both sides"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: "Arjuna's face shows overwhelming compassion; sorrow begins"
+- verse: 28
+  relevance_mode: evocative
+  cast: [arjuna, krishna]
+  action: "His courage failing at the sight of his kinsmen, Arjuna's limbs grow weak and his mouth runs dry as he turns to Krishna in distress"
+  setting: "In the chariot between the armies, Arjuna's body beginning to fail"
+  props: ["chariot", "white horses", "Gandiva bow"]
+  notes: "Inner collapse — Arjuna slumping, addressing Krishna"
+- verse: 29
+  relevance_mode: evocative
+  cast: [arjuna, krishna]
+  action: "Arjuna's whole body trembles and his hair stands on end as the divine bow Gandiva slips from his hand and his skin seems to burn"
+  setting: "In the chariot between the armies, Arjuna overcome"
+  props: ["chariot", "white horses", "Gandiva bow slipping from hand"]
+  notes: "Gandiva slipping from Arjuna's grip; trembling body"
+- verse: 30
+  relevance_mode: evocative
+  cast: [arjuna, krishna]
+  action: "Unable to stand steady, his mind reeling, Arjuna slumps in the chariot with the Gandiva hanging useless, seeing ill omens everywhere"
+  setting: "In the chariot between the armies, Arjuna unsteady and disoriented"
+  props: ["chariot", "white horses", "Gandiva bow hanging useless"]
+  notes: "Arjuna's mind spinning; adverse omens"
+- verse: 31
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna turns to Krishna in the chariot and shakes his head, refusing victory, kingdom, and pleasure"
+  setting: "Arjuna's chariot between the two armies"
+  props: ["Gandiva bow lowered", "chariot reins"]
+  notes: ""
+- verse: 32
+  relevance_mode: specific
+  cast: [arjuna]
+  action: "Arjuna gazes across at the kinsmen arrayed in battle who have laid down their lives and wealth for this fight"
+  setting: "Arjuna's chariot facing the massed armies"
+  props: ["Gandiva bow", "chariot"]
+  notes: "Keep focus on Arjuna's stricken gaze"
+- verse: 33
+  relevance_mode: evocative
+  cast: []
+  action: "Teachers, fathers, sons, grandfathers, uncles, and grandsons stand ranked across the field as one tangled family of kin"
+  setting: "The battlefield ranks seen as a lineage of relatives, elders to children"
+  props: []
+  notes: "Symbolic image of the whole web of kinship"
+- verse: 34
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna lowers his bow and tells Krishna he will not strike these kinsmen even to win all three worlds"
+  setting: "Arjuna's chariot between the armies"
+  props: ["Gandiva bow held down", "chariot"]
+  notes: ""
+- verse: 35
+  relevance_mode: evocative
+  cast: []
+  action: "A victor stands alone amid the slain bodies of his own kinsmen, sin clinging to him like a shadow at dawn"
+  setting: "The battlefield after the killing, strewn with fallen relatives at first light"
+  props: ["fallen weapons"]
+  notes: "Symbolic image of the joyless, sin-stained aftermath Arjuna foresees"
+- verse: 36
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna pleads with Krishna, asking how they could ever be happy after killing their own kinsmen"
+  setting: "Arjuna's chariot between the armies"
+  props: ["Gandiva bow", "chariot"]
+  notes: ""
+- verse: 37
+  relevance_mode: evocative
+  cast: [warrior-kaurava]
+  action: "Kaurava warriors stand blinded by greed, unseeing of the crime of destroying their own family and betraying friends"
+  setting: "The Kaurava ranks across the field, eyes clouded as if veiled"
+  props: []
+  notes: "Symbolic image of greed-blinded kinsmen"
+- verse: 38
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna turns to Krishna and argues that those who clearly see the evil of family-ruin should turn away from the sin"
+  setting: "Arjuna's chariot between the armies"
+  props: ["Gandiva bow", "chariot"]
+  notes: ""
+- verse: 39
+  relevance_mode: evocative
+  cast: []
+  action: "An abandoned household sits in ruin as the eternal family rites fall silent and lawlessness creeps over the deserted hearth"
+  setting: "A ruined ancestral home with cold hearth and untended altar"
+  props: ["cold sacrificial fire", "untended household altar"]
+  notes: "Symbolic image of collapsed kula-dharma"
+- verse: 40
+  relevance_mode: evocative
+  cast: []
+  action: "Mourning women of a broken household stand veiled and grieving as the order of the family unravels around them"
+  setting: "The courtyard of a fallen family, women in mourning amid disarray"
+  props: []
+  notes: "Family ruin spreading outward"
+- verse: 41
+  relevance_mode: evocative
+  cast: []
+  action: "Beside a deserted ancestral shrine, an offering of rice balls and a vessel of water lie untouched, the sacred fire gone cold and grey with ash"
+  setting: "An abandoned family shrine in the lengthening shadows of evening"
+  props: ["cold sacred fire", "untouched rice ball offerings", "overturned water vessel"]
+  notes: "Lost ancestral offerings (pinda and water)"
+- verse: 42
+  relevance_mode: evocative
+  cast: []
+  action: "A crumbling ancestral hall stands choked by creeping vines, its carved pillars cracked and its lamp niches dark and empty"
+  setting: "A once-great family hall fallen to ruin and overgrowth"
+  props: ["cracked carved pillars", "empty lamp niches", "creeping vines"]
+  notes: "Eternal family and community dharma uprooted"
+- verse: 43
+  relevance_mode: evocative
+  cast: [arjuna]
+  action: "Arjuna stands with bowed head and a haunted expression, repeating what the elders taught him, while behind him faint ancestral forms recede into shadow"
+  setting: "Arjuna's chariot at the field's edge, dusk gathering"
+  props: ["Gandiva bow held loosely", "fading ancestral figures in shadow"]
+  notes: "anususruma — 'we have heard'; inherited warning"
+- verse: 44
+  relevance_mode: evocative
+  cast: [arjuna]
+  action: "Arjuna presses a hand to his brow in a gesture of horror and self-reproach, his face stricken as he beholds the two armies he is poised to set against each other"
+  setting: "Arjuna's chariot between the facing armies on Kurukshetra"
+  props: ["Gandiva bow lowered", "two facing armies in the distance"]
+  notes: "'Aho bata!' — recognizing one's own sin"
+- verse: 45
+  relevance_mode: specific
+  cast: [arjuna, warrior-kaurava]
+  action: "Arjuna lowers his weapons and opens his empty hands, standing unresisting as armed sons of Dhritarashtra raise their swords before him"
+  setting: "Arjuna's chariot facing the Kaurava ranks on the battlefield"
+  props: ["Gandiva and arrows set down", "raised swords of the Kauravas"]
+  notes: "Better to be killed unarmed than to fight"
+- verse: 46
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Arjuna's Gandiva slips from his fingers and strikes the chariot floor, arrows spilling from the quiver, as he sinks down grief-stricken while Krishna holds the reins in silence"
+  setting: "Arjuna's chariot in the middle of the battlefield, the white horses still"
+  props: ["fallen Gandiva bow", "scattered arrows", "chariot seat", "reins held by Krishna"]
+  notes: "Arjuna casts aside bow and arrows"
+- verse: 47
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "Sinking into despair, Arjuna sits down on the seat of his chariot in the middle of the battlefield, no longer wishing to fight, while Krishna stands beside him at the reins"
+  setting: "Arjuna's chariot in the middle of the battlefield between the two great armies"
+  props: ["cast-aside Gandiva bow", "scattered arrows", "chariot seat", "reins in Krishna's hands"]
+  notes: "Chapter climax — Arjuna sits down, mind overwhelmed with grief"
