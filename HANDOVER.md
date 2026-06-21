@@ -29,6 +29,8 @@ Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
 ## What Was Done This Session (2026-06-21)
 
+**Advaita Vedanta pass.** Audited all 701 verses (translations + stories) against the Śaṅkara / Madhusūdana Sarasvatī non-dual reading via 9 parallel agents. Finding: the book was already strongly Advaita-aligned (waves/ocean, one-fire-many-lamps, moon-in-pots imagery throughout; Ch 13 exemplary) and had **no mythological/factual errors**. Reworded 16 theologically loaded verses to let the non-dual reading read through without stripping the devotional warmth (Madhusūdana keeps bhakti as culminating in non-difference): the Ch 18 carama-śloka cluster (18.61/62/65/66 — "Me/Lord" = the supreme Self / one's own deepest nature, surrender = dropping ego-doership; 18.61 recovers the māyā clause), mokṣa as becoming-not-relocating (8.5/8.15/8.21, 14.26/27), Ch 12 saguṇa→nirguṇa gradation (12.2/4), karma-purifies-toward-jñāna (3.19/20, 4.33), plus 2.61 and 11.54. Stories (Gajendra, kite/storm, Hanuman temple) kept; only their framing now points inward. Built clean (744 pages), deployed.
+
 Added a per-chapter **verse summary page** at `/chapters/{slug}/summary` (`src/pages/chapters/[chapter]/summary.astro`). Each page shows one hero illustration (verse 1) and a two-column table of every verse: Sanskrit (Devanagari + IAST transliteration) on the left, English meaning + speaker tag on the right. The table is responsive — below the `md` breakpoint the header hides and each row collapses to a stacked card so it reads on mobile. Each chapter index page now links to its summary. Live and verified on all 18 chapters (e.g. https://gitakids.com/chapters/02-sankhya-yoga/summary/). Build: 744 pages.
 
 ## What Was Done This Session (2026-06-20)
