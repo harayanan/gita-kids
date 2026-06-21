@@ -50,7 +50,7 @@ const IMAGE_MODELS = [
 // Helpers
 // ---------------------------------------------------------------------------
 
-function readApiKey() {
+export function readApiKey() {
   if (process.env.GEMINI_API_KEY) {
     return process.env.GEMINI_API_KEY.trim();
   }
@@ -108,7 +108,7 @@ function resolveChapterSync(chapterArg) {
 // Folk art style prompt blocks
 // ---------------------------------------------------------------------------
 
-const STYLE_PROMPTS = {
+export const STYLE_PROMPTS = {
   madhubani: {
     name: 'Madhubani (Mithila)',
     prompt: `STYLE REQUIREMENTS (CRITICAL — follow every rule exactly):
@@ -243,7 +243,7 @@ function readVerseData(verseNum, versesDir) {
 // Character reference sheet (from illustration-guidelines.md)
 // ---------------------------------------------------------------------------
 
-const CHARACTER_REFS = {
+export const CHARACTER_REFS = {
   dhritarashtra: `Dhritarashtra: Elderly stout king, white/cream royal silk robes, gold crown, silk blindfold over eyes, seated on throne, white hair and beard.`,
   sanjaya: `Sanjaya: Middle-aged advisor, simple indigo robes (no armor, no crown), meditative seated posture, wise and calm eyes.`,
   duryodhana: `Duryodhana: Young warrior (25-30), strong jaw, proud bearing, red-gold armor over yellow silk, ornate gold crown with red gem, strong muscular build.`,
@@ -308,19 +308,13 @@ Story theme: "${story_title || 'N/A'}"
 Illustrate the MYTHOLOGICAL scene — divine figures, ancient India settings, sacred landscapes. Do NOT illustrate any modern analogy or contemporary scene.`;
 }
 
-function buildPrompt(verseData, chapterMeta) {
-  const characters = getRelevantCharacters(verseData);
-  const scene = buildSceneDescription(verseData, chapterMeta);
-  const artStyle = chapterMeta.folk_art_style || 'madhubani';
-  const styleConfig = STYLE_PROMPTS[artStyle] || STYLE_PROMPTS.madhubani;
-
-  const characterBlock = characters.length > 0
-    ? `\nCHARACTERS (use these exact visual attributes):\n${characters.map(c => `- ${c}`).join('\n')}\n`
-    : '';
-
-  // Pichwai uses a dark background with jewel tones instead of the standard cream palette
+/**
+ * Build the color-palette block for a given art style. Pichwai uses a dark
+ * background with jewel tones; all other styles use the standard cream palette.
+ */
+export function buildColorPalette(artStyle) {
   const isPichwai = artStyle === 'pichwai';
-  const colorPalette = isPichwai
+  return isPichwai
     ? `COLOR PALETTE (Pichwai jewel tones on dark ground):
 - Dark background: deep blue #0A1A3A, black #1A1A2E, or deep green #0A2A1A
 - Emerald green: #0D6B3F
@@ -337,6 +331,19 @@ function buildPrompt(verseData, chapterMeta) {
 - Gold/amber: #C4A24E
 - Cream background: #FDF6E3
 - NO bright green grass, NO blue sky, NO purple, NO neon colors, NO black backgrounds`;
+}
+
+function buildPrompt(verseData, chapterMeta) {
+  const characters = getRelevantCharacters(verseData);
+  const scene = buildSceneDescription(verseData, chapterMeta);
+  const artStyle = chapterMeta.folk_art_style || 'madhubani';
+  const styleConfig = STYLE_PROMPTS[artStyle] || STYLE_PROMPTS.madhubani;
+
+  const characterBlock = characters.length > 0
+    ? `\nCHARACTERS (use these exact visual attributes):\n${characters.map(c => `- ${c}`).join('\n')}\n`
+    : '';
+
+  const colorPalette = buildColorPalette(artStyle);
 
   return `Create a ${styleConfig.name} folk art style illustration for a children's book about the Bhagavad Gita.
 
@@ -363,7 +370,7 @@ FORMAT: Landscape orientation 16:9 aspect ratio (1408×768 px), suitable for ful
 // Gemini API call
 // ---------------------------------------------------------------------------
 
-async function generateImageWithRetry(prompt, apiKey, maxRetries = 3) {
+export async function generateImageWithRetry(parts, apiKey, maxRetries = 3) {
   const models = IMAGE_MODELS;
 
   for (const model of models) {
@@ -372,7 +379,7 @@ async function generateImageWithRetry(prompt, apiKey, maxRetries = 3) {
       try {
         const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
         const body = {
-          contents: [{ parts: [{ text: prompt }] }],
+          contents: [{ parts }],
           generationConfig: {
             responseModalities: ['TEXT', 'IMAGE'],
           },
@@ -437,7 +444,7 @@ async function generateImageWithRetry(prompt, apiKey, maxRetries = 3) {
 // Save image
 // ---------------------------------------------------------------------------
 
-function saveImage(base64Data, outputPath, mimeType = 'image/png') {
+export function saveImage(base64Data, outputPath, mimeType = 'image/png') {
   mkdirSync(dirname(outputPath), { recursive: true });
   const buffer = Buffer.from(base64Data, 'base64');
 
@@ -490,7 +497,7 @@ async function generateIllustration(verseNum, chapter, options = {}) {
   console.log('  Calling Gemini API...');
   const startTime = Date.now();
 
-  const { base64, mimeType, model } = await generateImageWithRetry(prompt, apiKey);
+  const { base64, mimeType, model } = await generateImageWithRetry([{ text: prompt }], apiKey);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Success via ${model} in ${elapsed}s (mimeType: ${mimeType})`);
@@ -634,7 +641,11 @@ async function main() {
   }
 }
 
-main().catch(err => {
-  console.error('\nFatal error:', err.message);
-  process.exit(1);
-});
+// Only run the CLI when this file is executed directly, not when imported
+// (Tasks 3/4/6 import the exported helpers from this module).
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch(err => {
+    console.error('\nFatal error:', err.message);
+    process.exit(1);
+  });
+}

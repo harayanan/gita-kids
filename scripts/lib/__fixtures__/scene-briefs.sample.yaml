@@ -1,0 +1,8 @@
+# scripts/lib/__fixtures__/scene-briefs.sample.yaml
+- verse: 1
+  relevance_mode: specific
+  cast: [dhritarashtra, sanjaya]
+  action: "King asks Sanjaya what happened"
+  setting: "Hastinapura palace hall"
+  props: ["throne", "blindfold"]
+  notes: ""
