@@ -52,6 +52,20 @@ function formatSpeaker(speaker: string): string {
   summary={chapter.summary}
   illustration={firstIllustration}
 >
+  <!-- Summary / quick-reference link -->
+  <a
+    href={`/chapters/${slug}/summary`}
+    class="mb-6 flex items-center gap-3 rounded-xl border border-gold/25 bg-cream/60 px-5 py-3.5 transition-all hover:border-saffron/40 hover:shadow-sm scroll-reveal"
+    style={`border-left: 4px solid ${accentColor}`}
+  >
+    <span class="font-devanagari text-lg" style={`color: ${accentColor}`}>&#x2630;</span>
+    <span class="flex-1">
+      <span class="block font-body text-sm font-semibold text-gray-800">Verse summary</span>
+      <span class="block font-ui text-xs text-gray-500">All {verses.length} verses — Sanskrit and English, side by side</span>
+    </span>
+    <span class="font-ui text-sm text-saffron shrink-0">View &rarr;</span>
+  </a>
+
   <!-- Art style callout -->
   {artStyle && (
     <details class="mb-10 rounded-xl border border-gold/20 bg-cream/60 scroll-reveal group" style={`border-left: 4px solid ${accentColor}`}>

@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ChapterNav from '../../../components/ChapterNav.astro';
+import { getAllChapters, getChapter, getChapterVerses, getIllustrationAltText } from '../../../lib/content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  return getAllChapters()
+    .filter((c) => c.status === 'active')
+    .map((c) => ({ params: { chapter: c.slug } }));
+}
+
+const { chapter: slug } = Astro.params;
+const chapter = getChapter(slug!);
+if (!chapter) return Astro.redirect('/');
+
+const verses = getChapterVerses(slug!);
+const allChapters = getAllChapters();
+
+// Pick a hero illustration: prefer verse 1, fall back to the first one present.
+function illustrationFor(verseNum: number): string | undefined {
+  const padded = String(verseNum).padStart(3, '0');
+  return fs.existsSync(path.resolve(`public/illustrations/${slug}/${padded}.png`))
+    ? `/illustrations/${slug}/${padded}.png`
+    : undefined;
+}
+const heroVerse = verses.find((v) => illustrationFor(v.verse));
+const hero = heroVerse ? illustrationFor(heroVerse.verse) : undefined;
+const heroAlt = heroVerse
+  ? getIllustrationAltText(slug!, String(heroVerse.verse).padStart(3, '0')) ?? `Illustration from Chapter ${chapter.number}`
+  : undefined;
+
+// Speaker label formatting
+function formatSpeaker(speaker: string): string {
+  return speaker.charAt(0).toUpperCase() + speaker.slice(1);
+}
+
+// Color accent based on folk_art_style (mirrors chapter index)
+const styleColors: Record<string, string> = {
+  madhubani:   '#C75B12',
+  gond:        '#2D3A87',
+  pichwai:     '#2D3A87',
+  pattachitra: '#B85C3A',
+  warli:       '#B85C3A',
+  kalamkari:   '#1A6847',
+};
+const accentColor = styleColors[chapter.folk_art_style] || '#C4A24E';
+---
+
+<BaseLayout title={`Chapter ${chapter.number}: ${chapter.name} — Verse Summary — Gita Kids`}>
+  <nav slot="breadcrumb" class="max-w-5xl mx-auto px-6 pt-5 pb-2">
+    <ol class="flex items-center gap-2 font-ui text-xs text-gray-500">
+      <li><a href="/" class="hover:text-saffron transition-colors">Home</a></li>
+      <li class="text-gold/40">&rsaquo;</li>
+      <li><a href={`/chapters/${slug}`} class="hover:text-saffron transition-colors">Chapter {chapter.number}</a></li>
+      <li class="text-gold/40">&rsaquo;</li>
+      <li class="text-gray-600">Summary</li>
+    </ol>
+  </nav>
+
+  <!-- Hero illustration -->
+  {hero && (
+    <div class="max-w-4xl mx-auto px-4 mt-2">
+      <img
+        src={hero}
+        alt={heroAlt}
+        class="w-full rounded-xl shadow-sm"
+        loading="eager"
+      />
+    </div>
+  )}
+
+  <div class="max-w-5xl mx-auto px-4 py-10">
+    <!-- Header -->
+    <header class="text-center mb-10">
+      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">
+        Chapter {chapter.number} &middot; Verse Summary
+      </span>
+      <h1 class="font-body text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-2">
+        {chapter.name}
+      </h1>
+      <p lang="sa" class="font-devanagari text-xl text-saffron/70">
+        {chapter.sanskrit_name}
+      </p>
+      <p class="font-body text-base text-gray-600 mt-4 max-w-xl mx-auto leading-relaxed">
+        {chapter.summary}
+      </p>
+      <p class="font-ui text-sm text-gray-500 mt-4">
+        All {verses.length} verses — Sanskrit and English, side by side.
+        <a href={`/chapters/${slug}`} class="text-saffron hover:underline">Read with illustrations &rarr;</a>
+      </p>
+    </header>
+
+    <!--
+      Sanskrit / English table.
+      Desktop (md+): real two-column table.
+      Mobile: rows collapse to stacked cards (header hidden, cells block).
+    -->
+    <div class="md:overflow-hidden md:rounded-xl md:border md:border-gold/20 md:bg-white/50">
+      <table class="w-full border-collapse block md:table">
+        <thead class="hidden md:table-header-group">
+          <tr class="text-left font-ui text-[11px] font-semibold uppercase tracking-wider text-gray-500" style={`background: ${accentColor}10`}>
+            <th class="py-3 px-3 w-12 text-center">#</th>
+            <th class="py-3 px-4 w-1/2">Sanskrit</th>
+            <th class="py-3 px-4">English</th>
+          </tr>
+        </thead>
+        <tbody class="block md:table-row-group">
+          {verses.map((v, i) => (
+            <tr
+              id={`v${v.verse}`}
+              class="block md:table-row align-top transition-colors hover:bg-saffron/[0.04] target:bg-saffron/10
+                     mb-4 md:mb-0 rounded-xl md:rounded-none border border-gold/20 md:border-0 md:border-t md:border-gold/10 bg-white/60 md:bg-transparent overflow-hidden"
+              style={i % 2 === 1 ? 'background: rgba(196,162,78,0.04)' : ''}
+            >
+              <td class="block md:table-cell md:w-12 md:text-center md:py-4 md:px-3 px-4 pt-3 md:pt-4">
+                <a
+                  href={`/chapters/${slug}/${String(v.verse).padStart(3, '0')}`}
+                  class="font-ui text-xs font-bold hover:underline"
+                  style={`color: ${accentColor}`}
+                >
+                  Verse {chapter.number}.{v.verse}
+                </a>
+              </td>
+              <td class="block md:table-cell px-4 md:py-4 pt-2 md:border-t-0 border-t border-gold/10 md:mt-0">
+                <p lang="sa" class="font-devanagari text-lg text-gray-900 leading-relaxed">
+                  {v.sanskrit}
+                </p>
+                <p class="font-body text-xs text-gray-400 italic mt-1.5 leading-relaxed">
+                  {v.transliteration}
+                </p>
+              </td>
+              <td class="block md:table-cell px-4 py-3 md:py-4">
+                <span class="font-ui text-[10px] uppercase tracking-wider text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded">
+                  {formatSpeaker(v.speaker)}
+                </span>
+                <p class="font-body text-sm md:text-base text-gray-700 leading-relaxed mt-2">
+                  {v.meaning}
+                </p>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <ChapterNav chapters={allChapters} currentChapter={chapter.number} />
+  </div>
+</BaseLayout>
