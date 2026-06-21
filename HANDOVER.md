@@ -27,6 +27,10 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-21)
+
+Added a per-chapter **verse summary page** at `/chapters/{slug}/summary` (`src/pages/chapters/[chapter]/summary.astro`). Each page shows one hero illustration (verse 1) and a two-column table of every verse: Sanskrit (Devanagari + IAST transliteration) on the left, English meaning + speaker tag on the right. The table is responsive — below the `md` breakpoint the header hides and each row collapses to a stacked card so it reads on mobile. Each chapter index page now links to its summary. Live and verified on all 18 chapters (e.g. https://gitakids.com/chapters/02-sankhya-yoga/summary/). Build: 744 pages.
+
 ## What Was Done This Session (2026-06-20)
 
 Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Chapters 3 and 5 were already complete; authored and illustrated **Chapter 10** and **Chapter 13**. Then rebranded to **Gita Kids** (see below), ran a **word-by-word completeness pass**, authored + illustrated **Chapter 7**, and then **authored + illustrated all 7 remaining chapters (8, 9, 11, 14, 16, 17, 18)** — completing the entire Gita.
@@ -196,4 +200,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-20
+Last reviewed: 2026-06-21
