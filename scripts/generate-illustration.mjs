@@ -245,7 +245,7 @@ function readVerseData(verseNum, versesDir) {
 
 export const CHARACTER_REFS = {
   dhritarashtra: `Dhritarashtra: Elderly stout king, white/cream royal silk robes, gold crown, silk blindfold over eyes, seated on throne, white hair and beard.`,
-  sanjaya: `Sanjaya: Middle-aged advisor, simple indigo robes (no armor, no crown), meditative seated posture, wise and calm eyes.`,
+  sanjaya: `Sanjaya: Middle-aged royal court advisor and bard (King Dhritarashtra's charioteer-narrator), dark hair tied in a topknot and a short neat beard, a simple indigo dhoti and shawl (no armor, no crown), an alert storyteller's expression as if recounting events. He is a Hindu court minister — NOT a Buddhist or Jain monk: NO shaved or bald head, NO monk's robe over one shoulder, NOT in a cross-legged meditation pose.`,
   duryodhana: `Duryodhana: Young warrior (25-30), strong jaw, proud bearing, with a thick black moustache and a faint hard, angry frown that subtly hints at his darker nature (kept gentle and not scary for children), red-gold armor over yellow silk, ornate gold crown with a red gem, strong muscular build.`,
   drona: `Drona: Elderly sage (60+), simple saffron robes, no crown, long white beard, teaching staff or bow, calm authority.`,
   bhishma: `Bhishma: Ancient warrior (80+), towering stature, silver armor, flowing white hair (no crown), massive bow, weathered face with kind eyes.`,
