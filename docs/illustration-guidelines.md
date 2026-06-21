@@ -12,10 +12,10 @@ Use these fixed visual attributes in every illustration prompt that includes the
 |-----------|-----------|----------|----------------|-------|
 | **Dhritarashtra** | Elderly, stout | White/cream royal silk robes | Gold crown | Silk blindfold over eyes; seated on throne; white hair and beard |
 | **Sanjaya** | Middle-aged | Simple indigo robes, no armor | None | No crown; meditative seated posture; wise, calm eyes |
-| **Duryodhana** | Young warrior (25–30), strong jaw, proud bearing | Red-gold armor over yellow silk | Ornate gold crown with red gem | Strong, muscular build |
+| **Duryodhana** | Young warrior (25–30), strong jaw, proud bearing | Red-gold armor over yellow silk | Ornate gold crown with red gem | Thick black moustache; faint hard/angry frown (subtle, child-safe); strong muscular build |
 | **Drona** | Elderly sage (60+) | Simple saffron robes | None | Long white beard; teaching staff or bow; calm authority |
 | **Bhishma** | Ancient warrior (80+), towering stature | Silver armor | Flowing white hair (no crown) | Massive bow; weathered face with kind eyes |
-| **Arjuna** | Young warrior (25), lean and athletic | Terracotta/saffron armor | Distinctive diadem/headband | Holds divine bow Gandiva |
+| **Arjuna** | Young warrior (25), lean and athletic | Terracotta/saffron armor | Plain warrior's diadem/headband — NO peacock feather | Black moustache; human (warm brown) skin; holds Gandiva. Distinct from Krishna (not blue, no flute, no feather, no crown) |
 | **Krishna** | Youthful, graceful | Yellow silk robes | Peacock feather in crown | Blue-tinged skin; divine smile; flute at waist |
 
 ---

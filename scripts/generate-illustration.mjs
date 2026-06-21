@@ -246,10 +246,10 @@ function readVerseData(verseNum, versesDir) {
 export const CHARACTER_REFS = {
   dhritarashtra: `Dhritarashtra: Elderly stout king, white/cream royal silk robes, gold crown, silk blindfold over eyes, seated on throne, white hair and beard.`,
   sanjaya: `Sanjaya: Middle-aged advisor, simple indigo robes (no armor, no crown), meditative seated posture, wise and calm eyes.`,
-  duryodhana: `Duryodhana: Young warrior (25-30), strong jaw, proud bearing, red-gold armor over yellow silk, ornate gold crown with red gem, strong muscular build.`,
+  duryodhana: `Duryodhana: Young warrior (25-30), strong jaw, proud bearing, with a thick black moustache and a faint hard, angry frown that subtly hints at his darker nature (kept gentle and not scary for children), red-gold armor over yellow silk, ornate gold crown with a red gem, strong muscular build.`,
   drona: `Drona: Elderly sage (60+), simple saffron robes, no crown, long white beard, teaching staff or bow, calm authority.`,
   bhishma: `Bhishma: Ancient warrior (80+), towering stature, silver armor, flowing white hair (no crown), massive bow, weathered face with kind eyes.`,
-  arjuna: `Arjuna: Young warrior (25), lean and athletic, terracotta/saffron armor, distinctive diadem/headband, holds divine bow Gandiva.`,
+  arjuna: `Arjuna: Young warrior (25), lean and athletic, with a neat black moustache and ordinary human (warm brown) skin, terracotta and saffron armor, a plain warrior's diadem/headband — NO peacock feather (the peacock feather belongs ONLY to Krishna), holds the divine bow Gandiva. Clearly DISTINCT from Krishna: not blue-skinned, no flute, no peacock feather, no crown.`,
   krishna: `Krishna: Youthful graceful figure, yellow silk robes, peacock feather in crown, blue-tinged skin, divine smile, flute at waist.`,
 };
 
