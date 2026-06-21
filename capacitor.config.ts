@@ -10,8 +10,12 @@ const config: CapacitorConfig = {
   // When images + content are finalized, switch to a bundled build (drop
   // `server.url`, point `webDir` at the Astro `dist/`).
   server: {
-    url: 'https://gitakids.com',
-    androidScheme: 'https',
+    // Point at the FINAL host. gitakids.com 308-redirects to www.gitakids.com;
+    // loading the apex made Capacitor treat the off-host redirect as an external
+    // link and bounce the user out to Chrome. Allow both hosts so all in-site
+    // navigation (and any redirect) stays inside the app WebView.
+    url: 'https://www.gitakids.com',
+    allowNavigation: ['gitakids.com', 'www.gitakids.com', '*.gitakids.com'],
   },
   android: {
     backgroundColor: '#FDF6E3',
