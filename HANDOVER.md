@@ -52,6 +52,8 @@ Prioritized at user's request: complete chapters 3, 5, 10, 13 before others. Cha
 - Pichwai illustration spot-checks confirmed correct dark-ground temple style; all chapters verified live (HTTP 200) on gitakids.com.
 
 ### Next steps (book content done)
+- **TODO (HN requested 2026-06-21): read-aloud rhythm pass.** Doctrine is settled (3 Advaita passes done). This is a separate *spoken-cadence* polish — read each story aloud (or TTS) and fix only the stumbles: stacked clauses/tongue-twisters, sentence-length monotony, weak trailing words, hard-to-say name clusters, dialogue that doesn't sound like a real grandparent speaking. Touches nothing doctrinal/Sanskrit. Small output (a few word-swaps/sentence-splits per chapter). Start with Ch 2 as a sample.
+- **Naming cleanup (loose end found 2026-06-21):** the project was renamed `gita-for-kids` → `gita-kids` (repo, GitHub `harayanan/gita-kids`, domain gitakids.com). Still using the old name: the symlink `for-shakti/gita-for-kids -> gita-kids`, the parent `claudecode/CLAUDE.md` reference, and the **Vercel project name `gita-for-kids`** (source of the `gita-for-kids-*.vercel.app` deploy URLs). Optional tidy: rename the Vercel project, update CLAUDE.md, drop the symlink. Vercel rename is outward-facing — confirm with HN first.
 - Optional polish: image-optimization pipeline (WebP variants — images are still ~1.4MB JPEG-as-PNG) + PWA, as prerequisites for the iOS/Android apps (Capacitor) the user asked about.
 - Vercel dashboard (still pending from rebrand): make `gitakids.com` apex primary; redirect `gitakids.org` → `gitakids.com`.
 
