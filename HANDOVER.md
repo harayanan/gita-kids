@@ -6,7 +6,7 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 | Ch | Name | Verses | Style |
 |----|------|--------|-------|
-| 1 | Arjuna Vishada Yoga | 47 | Madhubani |
+| 1 | Arjuna Vishada Yoga | 47 | Pichwai |
 | 2 | Sankhya Yoga | 72 | Gond |
 | 3 | Karma Yoga | 43 | Pattachitra |
 | 4 | Jnana Karma Sannyasa Yoga | 42 | Warli |
@@ -26,6 +26,14 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 | 18 | Moksha Sannyasa Yoga | 78 | Pattachitra |
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
+
+## What Was Done This Session (2026-06-22)
+
+**Ch1 character-fidelity fixes (owner feedback).** Two corrections to the Pichwai Ch1 set:
+1. **Bhishma now bearded + moustached.** Owner noted he was rendered clean-shaven; popular media always shows him with a full white beard and moustache. Updated the Bhishma character ref in `scripts/generate-illustration.mjs` (`CHARACTER_REFS.bhishma`) and `docs/illustration-guidelines.md` §1, then regenerated the images where Bhishma is prominent: **008, 010, 025**. (012 already had the beard; 011/013/032/044 only mention him in text / show him in the far background — left as-is.)
+2. **Krishna now larger / more prominent than Arjuna.** In several two-shots Krishna read smaller/slighter than Arjuna — wrong, since he is Bhagavan giving the teaching. Updated `CHARACTER_REFS.krishna` ("largest, tallest, most prominent figure; radiant golden halo") and added a **COMPOSITION rule in `buildPrompt`** that fires whenever both Krishna and Arjuna are in a scene (Krishna ≥ Arjuna in height/scale, dominant, haloed, even as charioteer). Also extended `getRelevantCharacters` to detect **epithets** (Partha/Dhananjaya/Kaunteya → Arjuna; Madhava/Hrishikesha/Govinda/Keshava/etc → Krishna) so the rule fires on verses that use epithets rather than plain names (e.g. v25 "O Partha"). Regenerated the offenders: **015, 020, 024, 025, 030**.
+
+All 7 regenerated images verified by eye — Bhishma bearded, Krishna dominant with halo, Pichwai dark-ground jewel-tone style intact (Ch12 benchmark level). `008`/`010` also synced to the stale `content/.../illustrations/` mirror. **Not yet deployed** — run `/cpd` or `npm run build` + push when ready. Borderline two-shots left untouched (014/021/028/047 — Krishna already adequately sized); revisit if owner wants them larger too.
 
 ## What Was Done This Session (2026-06-21)
 
@@ -217,4 +225,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-21
+Last reviewed: 2026-06-22

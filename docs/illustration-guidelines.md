@@ -14,9 +14,9 @@ Use these fixed visual attributes in every illustration prompt that includes the
 | **Sanjaya** | Middle-aged | Simple indigo dhoti + shawl, no armor | None (hair in a topknot) | Court advisor/bard, NOT a monk; short beard; storyteller's pose; NO shaved head, NO monk's robe, not cross-legged meditation |
 | **Duryodhana** | Young warrior (25–30), strong jaw, proud bearing | Red-gold armor over yellow silk | Ornate gold crown with red gem | Thick black moustache; faint hard/angry frown (subtle, child-safe); strong muscular build |
 | **Drona** | Elderly sage (60+) | Simple saffron robes | None | Long white beard; teaching staff or bow; calm authority |
-| **Bhishma** | Ancient warrior (80+), towering stature | Silver armor | Flowing white hair (no crown) | Massive bow; weathered face with kind eyes |
+| **Bhishma** | Ancient warrior (80+), towering stature | Silver armor | Flowing white hair (no crown) | Massive bow; weathered face with kind eyes; **full flowing white beard and thick white moustache (always bearded — NEVER clean-shaven)** |
 | **Arjuna** | Young warrior (25), lean and athletic | Terracotta/saffron armor | Plain warrior's diadem/headband — NO peacock feather | Black moustache; human (warm brown) skin; holds Gandiva. Distinct from Krishna (not blue, no flute, no feather, no crown) |
-| **Krishna** | Youthful, graceful | Yellow silk robes | Peacock feather in crown | Blue-tinged skin; divine smile; flute at waist |
+| **Krishna** | Youthful, graceful | Yellow silk robes | Peacock feather in crown | Blue-tinged skin; divine smile; flute at waist. **He is Bhagavan (the divine teacher): always the largest, tallest, most prominent human figure in the scene — bigger than Arjuna even when Krishna is the charioteer and Arjuna is seated. Radiant golden halo.** |
 
 ---
 

@@ -262,9 +262,9 @@ export const CHARACTER_REFS = {
   sanjaya: `Sanjaya: Middle-aged royal court advisor and bard (King Dhritarashtra's charioteer-narrator), dark hair tied in a topknot and a short neat beard, a simple indigo dhoti and shawl (no armor, no crown), an alert storyteller's expression as if recounting events. He is a Hindu court minister — NOT a Buddhist or Jain monk: NO shaved or bald head, NO monk's robe over one shoulder, NOT in a cross-legged meditation pose.`,
   duryodhana: `Duryodhana: Young warrior (25-30), strong jaw, proud bearing, with a thick black moustache and a faint hard, angry frown that subtly hints at his darker nature (kept gentle and not scary for children), red-gold armor over yellow silk, ornate gold crown with a red gem, strong muscular build.`,
   drona: `Drona: Elderly sage (60+), simple saffron robes, no crown, long white beard, teaching staff or bow, calm authority.`,
-  bhishma: `Bhishma: Ancient warrior (80+), towering stature, silver armor, flowing white hair (no crown), massive bow, weathered face with kind eyes.`,
+  bhishma: `Bhishma: Ancient warrior (80+), towering stature, silver armor, flowing white hair (no crown), a FULL flowing white beard and a thick white moustache (always shown bearded and moustached, as in popular depictions — NEVER clean-shaven), massive bow, weathered face with kind eyes.`,
   arjuna: `Arjuna: Young warrior (25), lean and athletic, with a neat black moustache and ordinary human (warm brown) skin, terracotta and saffron armor, a plain warrior's diadem/headband — NO peacock feather (the peacock feather belongs ONLY to Krishna), holds the divine bow Gandiva. Clearly DISTINCT from Krishna: not blue-skinned, no flute, no peacock feather, no crown.`,
-  krishna: `Krishna: Youthful graceful figure, yellow silk robes, peacock feather in crown, blue-tinged skin, divine smile, flute at waist.`,
+  krishna: `Krishna: Youthful graceful figure, yellow silk robes, peacock feather in crown, blue-tinged skin, divine smile, flute at waist. He is the Lord (Bhagavan), the divine teacher of the Gita — render him as the largest, tallest, most prominent human figure in any scene, with a radiant golden halo.`,
 };
 
 // Map speaker field values to character keys
@@ -289,15 +289,18 @@ function getRelevantCharacters(verseData) {
   const speakerKey = SPEAKER_MAP[verseData.speaker?.toLowerCase()];
   if (speakerKey) characters.add(speakerKey);
 
-  // Infer additional characters from meaning text
+  // Infer additional characters from meaning text. Match common epithets too,
+  // since the Gita rarely uses the plain names (e.g. "Partha" = Arjuna,
+  // "Madhava"/"Hrishikesha" = Krishna).
   const meaning = (verseData.meaning || '').toLowerCase();
-  if (meaning.includes('bhishma') || meaning.includes('grandsire')) characters.add('bhishma');
-  if (meaning.includes('drona') || meaning.includes('teacher')) characters.add('drona');
-  if (meaning.includes('arjuna')) characters.add('arjuna');
-  if (meaning.includes('krishna')) characters.add('krishna');
-  if (meaning.includes('duryodhana')) characters.add('duryodhana');
-  if (meaning.includes('sanjaya')) characters.add('sanjaya');
-  if (meaning.includes('dhritarashtra') || meaning.includes('blind king')) characters.add('dhritarashtra');
+  const has = (...terms) => terms.some(t => meaning.includes(t));
+  if (has('bhishma', 'grandsire')) characters.add('bhishma');
+  if (has('drona', 'teacher')) characters.add('drona');
+  if (has('arjuna', 'partha', 'dhananjaya', 'gudakesha', 'gudakesa', 'savyasachi', 'kaunteya')) characters.add('arjuna');
+  if (has('krishna', 'madhava', 'hrishikesha', 'hrishikesa', 'govinda', 'keshava', 'kesava', 'madhusudana', 'janardana', 'achyuta', 'varshneya')) characters.add('krishna');
+  if (has('duryodhana')) characters.add('duryodhana');
+  if (has('sanjaya')) characters.add('sanjaya');
+  if (has('dhritarashtra', 'blind king')) characters.add('dhritarashtra');
 
   return Array.from(characters).map(k => CHARACTER_REFS[k]).filter(Boolean);
 }
@@ -357,13 +360,26 @@ function buildPrompt(verseData, chapterMeta) {
     ? `\nCHARACTERS (use these exact visual attributes):\n${characters.map(c => `- ${c}`).join('\n')}\n`
     : '';
 
+  // When Krishna and Arjuna share a scene, Krishna (Bhagavan, the divine
+  // teacher) must always read as the larger, more prominent figure — even
+  // when he is the charioteer and Arjuna the seated warrior.
+  const charText = characters.join(' ').toLowerCase();
+  const krishnaProminence = (charText.includes('krishna') && charText.includes('arjuna'))
+    ? `\nCOMPOSITION (CRITICAL — Krishna's prominence):
+- Krishna is the Lord (Bhagavan) giving the teaching; he MUST be the visually dominant figure.
+- Render Krishna at least as tall as — and ideally taller and larger than — Arjuna, never smaller or slighter.
+- This holds even when Krishna stands as the charioteer and Arjuna is seated: scale Krishna up so he is clearly the more prominent, commanding presence.
+- Give Krishna a radiant golden halo and place him so the eye is drawn to him first.
+`
+    : '';
+
   const colorPalette = buildColorPalette(artStyle);
 
   return `Create a ${styleConfig.name} folk art style illustration for a children's book about the Bhagavad Gita.
 
 SCENE:
 ${scene}
-${characterBlock}
+${characterBlock}${krishnaProminence}
 ${styleConfig.prompt}
 
 ${colorPalette}
