@@ -27,6 +27,16 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-28, latest)
+
+**Jingocheck — conservative AI-tell reduction across all 701 verse stories (owner request).** Owner: "run jingocheck across all the stories... reduce hyperbole, emdashes etc." Note: the `jingocheck` skill is built for analytical writing and explicitly does NOT apply to long-form storytelling (rhythm is part of the craft); confirmed with owner that a **targeted, conservative** pass was wanted, not the full analyst-copy homogenization that would flatten the children's-story voice.
+
+Scope decision (flagged to owner): treated "the stories" as the **prose fields only** — `meaning`, `story.body`, `reflection` — leaving Sanskrit, transliteration, dhatu_breakdown, titles, and all structure untouched. **Reduce, not eliminate** em-dashes: keep the ones doing genuine literary pacing, convert the appositive/AI-tell ones to commas/colons/periods (never to hyphens).
+
+Executed via **18 parallel subagents** (one per chapter), each with the same conservative brief. Results: **576 verse files edited**; em-dashes **5,451 → 4,264** (~22% net reduction); ~140 empty intensifiers / rhetorical flips cut ("It isn't X, it's Y" flips, "not just X — Y" ladders, filler "truly/very/deeply"); meaning-bearing words ("greatest archer", cosmic "boundless"/"vast" in Ch11) preserved. Verified: **only prose fields changed** (0 structural-field lines in diff), **0 hyphen-as-dash substitutions**, build clean (744 pages). Each agent returned a list of borderline "left as-is" cases (load-bearing teaching flips, in-character dialogue, climactic beats) — those were deliberately kept per the conservative brief; available in the session transcript if owner wants to review specific verses.
+
+**Committed + deployed** (see git log for hashes); site redeployed to https://www.gitakids.com. No app rebuild needed (Remote WebView auto-serves the updated site; content changes don't trigger the Android workflow).
+
 ## What Was Done This Session (2026-06-28, later)
 
 **Home-page hero + cover text cleanup (owner feedback).**
