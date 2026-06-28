@@ -21,9 +21,12 @@ if (!chapter) return Astro.redirect('/');
 const verses = getChapterVerses(slug!);
 const allChapters = getAllChapters();
 
-// Find the first verse illustration for the hero
-const firstIllustration = fs.existsSync(path.resolve(`public/illustrations/${slug}/001.png`))
-  ? `/illustrations/${slug}/001.png` : undefined;
+// Hero illustration: prefer the chapter's thematic cover, fall back to verse 1.
+const heroIllustration = fs.existsSync(path.resolve(`public/illustrations/${slug}/cover.png`))
+  ? `/illustrations/${slug}/cover.png`
+  : fs.existsSync(path.resolve(`public/illustrations/${slug}/001.png`))
+  ? `/illustrations/${slug}/001.png`
+  : undefined;
 
 // Color accents based on folk_art_style
 const styleColors: Record<string, string> = {
@@ -50,7 +53,7 @@ function formatSpeaker(speaker: string): string {
   chapterName={chapter.name}
   sanskritName={chapter.sanskrit_name}
   summary={chapter.summary}
-  illustration={firstIllustration}
+  illustration={heroIllustration}
 >
   <!-- Summary / quick-reference link -->
   <a

@@ -91,9 +91,19 @@ function resolveChapterSync(chapterArg) {
   }
   const metaRaw = readFileSync(metaPath, 'utf-8');
   const meta = {};
-  for (const field of ['number', 'slug', 'name', 'folk_art_style', 'verse_count']) {
+  for (const field of ['number', 'slug', 'name', 'sanskrit_name', 'transliterated_name', 'folk_art_style', 'verse_count']) {
     const m = metaRaw.match(new RegExp(`^${field}:\\s*(.+)$`, 'm'));
     if (m) meta[field] = m[1].trim();
+  }
+
+  // `summary` is a `>` block scalar — gather the indented continuation lines.
+  const summaryMatch = metaRaw.match(/^summary:\s*>\s*\n((?:[ \t]+.+\n?)+)/m);
+  if (summaryMatch) {
+    meta.summary = summaryMatch[1]
+      .split('\n')
+      .map(l => l.trim())
+      .filter(Boolean)
+      .join(' ');
   }
 
   return {
@@ -396,6 +406,109 @@ SERIES COHESION:
 FORMAT: Landscape orientation 16:9 aspect ratio (1408×768 px), suitable for full-width web display in a children's book.`.trim();
 }
 
+/**
+ * Build a CHAPTER COVER prompt — an emblematic title-page illustration that
+ * captures the whole chapter's theme (from meta.summary), NOT a single verse.
+ * Distinct from every verse panel: centered, iconic, frontispiece composition.
+ */
+function buildCoverPrompt(chapterMeta) {
+  const artStyle = chapterMeta.folk_art_style || 'madhubani';
+  const styleConfig = STYLE_PROMPTS[artStyle] || STYLE_PROMPTS.madhubani;
+  const chapterNum = chapterMeta.number || '?';
+  const chapterName = chapterMeta.name || '';
+  const sanskritName = chapterMeta.sanskrit_name || chapterMeta.transliterated_name || '';
+  const summary = chapterMeta.summary || '';
+
+  // Infer characters from the chapter summary. The Gita is Krishna teaching
+  // Arjuna, so include both as the framing figures unless the summary clearly
+  // centres on the Kurukshetra court (Chapter 1).
+  const inferred = getRelevantCharacters({ speaker: 'krishna', meaning: summary });
+  const charText = inferred.map(c => c.toLowerCase()).join(' ');
+  const courtChapter = /dhritarashtra|duryodhana|sanjaya|blind king|battlefield is set/.test(summary.toLowerCase());
+  if (!courtChapter) {
+    for (const key of ['krishna', 'arjuna']) {
+      if (!charText.includes(key)) inferred.push(CHARACTER_REFS[key]);
+    }
+  }
+
+  const characterBlock = inferred.length > 0
+    ? `\nCHARACTERS (use these exact visual attributes):\n${inferred.map(c => `- ${c}`).join('\n')}\n`
+    : '';
+
+  const allChars = inferred.join(' ').toLowerCase();
+  const krishnaProminence = (allChars.includes('krishna') && allChars.includes('arjuna'))
+    ? `\nCOMPOSITION (CRITICAL — Krishna's prominence):
+- Krishna is the Lord (Bhagavan) giving the teaching; he MUST be the visually dominant figure, with a radiant golden halo, drawing the eye first.
+- Render Krishna at least as tall as — and ideally taller and larger than — Arjuna.
+`
+    : '';
+
+  const colorPalette = buildColorPalette(artStyle);
+
+  return `Create a ${styleConfig.name} folk art style CHAPTER-COVER illustration for the opening page of Chapter ${chapterNum} of a children's book about the Bhagavad Gita.
+
+This is a TITLE-PAGE / FRONTISPIECE artwork — a single emblematic, symmetrical, devotional composition that captures the WHOLE chapter's theme. It is NOT a depiction of one specific verse; it is the iconic image that opens the chapter.
+
+CHAPTER ${chapterNum}: ${chapterName} (${sanskritName})
+CHAPTER THEME (illustrate this overarching idea, emblematically):
+${summary}
+${characterBlock}${krishnaProminence}
+COVER COMPOSITION:
+- Centered, balanced and iconic — a frontispiece, not a busy narrative panel
+- Weave in emblematic symbols that evoke this chapter's theme
+- A richer, more ornamental border than a standard verse panel — this is the chapter's showpiece
+- Distinct from a single-moment scene: aim for timeless and emblematic, like a temple banner for the chapter
+
+${styleConfig.prompt}
+
+${colorPalette}
+
+CRITICAL — NO TEXT IN THE IMAGE:
+- Do NOT include any words, letters, labels, captions, titles, chapter numbers, or color swatches
+- The image must contain ONLY the illustration — pure artwork with no text whatsoever
+
+SERIES COHESION:
+- Use the style of classic ${styleConfig.name} paintings as your reference
+- Border must be dense with traditional motifs matching the series style
+
+FORMAT: Landscape orientation 16:9 aspect ratio (1408×768 px), suitable for full-width web display in a children's book.`.trim();
+}
+
+async function generateCover(chapter, options = {}) {
+  const { regenerate = false, dryRun = false } = options;
+
+  console.log(`\n=== Chapter ${chapter.meta.number} COVER — ${chapter.meta.name} ===`);
+  console.log(`  Art style: ${chapter.meta.folk_art_style}`);
+
+  const outputPath = join(chapter.outputDir, 'cover.png');
+
+  if (existsSync(outputPath) && !regenerate) {
+    console.log(`  Skipping (already exists). Use --regenerate to overwrite.`);
+    return { skipped: true, path: outputPath };
+  }
+
+  const prompt = buildCoverPrompt(chapter.meta);
+
+  console.log('\n--- COVER PROMPT ---');
+  console.log(prompt);
+  console.log('--- END PROMPT ---\n');
+
+  if (dryRun) {
+    console.log('  [dry-run] Skipping API call.');
+    return { dryRun: true, prompt };
+  }
+
+  const apiKey = readApiKey();
+  console.log('  Calling Gemini API...');
+  const startTime = Date.now();
+  const { base64, mimeType, model } = await generateImageWithRetry([{ text: prompt }], apiKey);
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`  Success via ${model} in ${elapsed}s (mimeType: ${mimeType})`);
+
+  saveImage(base64, outputPath, mimeType);
+  return { success: true, path: outputPath, model, elapsed };
+}
+
 // ---------------------------------------------------------------------------
 // Gemini API call
 // ---------------------------------------------------------------------------
@@ -595,6 +708,8 @@ function parseArgs(argv) {
     chapter: null,
     verse: null,
     batch: null,
+    cover: false,
+    allChapters: false,
     regenerate: false,
     dryRun: false,
   };
@@ -603,6 +718,12 @@ function parseArgs(argv) {
     switch (args[i]) {
       case '--chapter':
         opts.chapter = args[++i];
+        break;
+      case '--cover':
+        opts.cover = true;
+        break;
+      case '--all':
+        opts.allChapters = true;
         break;
       case '--verse':
         opts.verse = parseInt(args[++i], 10);
@@ -629,6 +750,8 @@ function printUsage() {
 Usage:
   node scripts/generate-illustration.mjs --chapter <N|slug> --verse <N>
   node scripts/generate-illustration.mjs --chapter <N|slug> --batch <from>-<to>
+  node scripts/generate-illustration.mjs --chapter <N|slug> --cover  (thematic chapter cover)
+  node scripts/generate-illustration.mjs --cover --all              (covers for all active chapters)
   node scripts/generate-illustration.mjs --verse <N>                (defaults to chapter 1)
   node scripts/generate-illustration.mjs --verse <N> --regenerate
   node scripts/generate-illustration.mjs --batch <from>-<to> --dry-run
@@ -649,9 +772,54 @@ Examples:
 async function main() {
   const opts = parseArgs(process.argv);
 
-  if (!opts.verse && !opts.batch) {
+  if (!opts.verse && !opts.batch && !opts.cover) {
     printUsage();
     process.exit(1);
+  }
+
+  // Cover mode: generate one chapter-cover, or all active chapters' covers.
+  if (opts.cover) {
+    const coverOpts = { regenerate: opts.regenerate, dryRun: opts.dryRun };
+
+    if (opts.allChapters || (!opts.chapter)) {
+      // All active chapters
+      const entries = readdirSync(CHAPTERS_DIR, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+        .map(d => d.name)
+        .sort();
+      const active = entries.filter(slug => {
+        const metaPath = join(CHAPTERS_DIR, slug, 'meta.yaml');
+        return existsSync(metaPath) && /^status:\s*active\s*$/m.test(readFileSync(metaPath, 'utf-8'));
+      });
+      console.log(`Cover batch: ${active.length} active chapters`);
+      const results = [];
+      for (let i = 0; i < active.length; i++) {
+        const chapter = resolveChapterSync(active[i]);
+        try {
+          results.push({ slug: active[i], ...(await generateCover(chapter, coverOpts)) });
+        } catch (err) {
+          console.error(`  ERROR for ${active[i]}: ${err.message}`);
+          results.push({ slug: active[i], error: err.message });
+        }
+        if (i < active.length - 1 && !opts.dryRun) {
+          console.log('  Waiting 3s before next request...');
+          await new Promise(r => setTimeout(r, 3000));
+        }
+      }
+      console.log('\n=== Cover Batch Summary ===');
+      for (const r of results) {
+        if (r.error) console.log(`  ${r.slug}: ERROR — ${r.error}`);
+        else if (r.skipped) console.log(`  ${r.slug}: skipped (exists)`);
+        else if (r.dryRun) console.log(`  ${r.slug}: dry-run`);
+        else console.log(`  ${r.slug}: OK — ${r.path}`);
+      }
+      return;
+    }
+
+    const chapter = resolveChapterSync(opts.chapter);
+    console.log(`Chapter: ${chapter.meta.number} — ${chapter.meta.name} (${chapter.slug})`);
+    await generateCover(chapter, coverOpts);
+    return;
   }
 
   // Resolve chapter (default to 1 for backward compatibility)

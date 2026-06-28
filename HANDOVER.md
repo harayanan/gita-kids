@@ -27,6 +27,12 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-28)
+
+**Per-chapter thematic cover images.** Each chapter index page (`/chapters/{slug}/`) previously reused that chapter's verse-1 illustration (`001.png`) as its hero. Owner asked for a distinct image at each chapter beginning. Added a **`--cover` mode** to `scripts/generate-illustration.mjs` that builds the prompt from chapter `meta.yaml` (`name`, `sanskrit_name`, `summary`, `folk_art_style`) rather than a single verse — an emblematic, centered, frontispiece composition in the chapter's folk-art style, distinct from any verse panel. New helpers: `buildCoverPrompt()` + `generateCover()`; CLI `--cover` (one chapter) and `--cover --all` (all active chapters, 3s spacing); `resolveChapterSync` now also parses `summary`/`sanskrit_name`. Krishna-prominence + epithet character inference reused from verse pipeline.
+
+Generated **18 covers** → `public/illustrations/{slug}/cover.png`. `src/pages/chapters/[chapter]/index.astro` now prefers `cover.png`, falling back to `001.png`. Verse pages unchanged. Build clean (744 pages); built chapter HTML confirmed referencing `cover.png`. Covers verified by eye (Ch1, Ch12) — Pichwai dark-ground jewel tones, Krishna haloed/dominant, no text. **Not yet committed/deployed.**
+
 ## What Was Done This Session (2026-06-22)
 
 **Ch1 character-fidelity fixes (owner feedback).** Two corrections to the Pichwai Ch1 set:
@@ -225,4 +231,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-22
+Last reviewed: 2026-06-28
