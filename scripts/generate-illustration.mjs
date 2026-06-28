@@ -463,9 +463,12 @@ ${styleConfig.prompt}
 
 ${colorPalette}
 
-CRITICAL — NO TEXT IN THE IMAGE:
-- Do NOT include any words, letters, labels, captions, titles, chapter numbers, or color swatches
-- The image must contain ONLY the illustration — pure artwork with no text whatsoever
+ABSOLUTELY NO TEXT — THIS IS THE SINGLE MOST IMPORTANT RULE:
+- The image MUST NOT contain ANY text or writing of ANY kind. Zero words. Zero letters.
+- Forbidden: the chapter name or theme written out, captions, titles, labels naming figures or objects, chapter numbers, signatures, color swatches, and ANY script — English/Latin letters, Sanskrit, Devanagari, or Om (ॐ) rendered as a written glyph.
+- Do NOT label the two sides of the scene, do NOT spell out any words from the theme, do NOT inscribe anything on banners, scrolls, books, or borders.
+- If you are ever about to draw a letter or word, draw a decorative folk-art motif (flower, dot pattern, vine) in its place instead.
+- The finished image is PURE ARTWORK ONLY — completely free of text.
 
 SERIES COHESION:
 - Use the style of classic ${styleConfig.name} paintings as your reference

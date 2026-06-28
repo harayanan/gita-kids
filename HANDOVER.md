@@ -27,11 +27,20 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-28, later)
+
+**Home-page hero + cover text cleanup (owner feedback).**
+1. **New home-page hero.** The home page (`src/pages/index.astro`) background was the Ch1 verse-1 image (`001.png`). Replaced with a purpose-made showpiece: **Krishna teaching Arjuna** in Chapter 1's **Pichwai** style — the iconic image of the Gita. New script **`scripts/generate-home-hero.mjs`** (reuses the exported helpers from `generate-illustration.mjs`) → `public/illustrations/home-hero.png`. `index.astro` now points at it. Verified by eye: Krishna haloed/dominant, Arjuna kneeling with bow, dark jewel-tone ground, no text.
+2. **Removed text from covers.** Owner: "no cover image should have text" (flagged the Ch4 Warli cover specifically). Strengthened the **NO TEXT** block in `buildCoverPrompt` (forbids all script — Latin/Sanskrit/Devanagari — and stray labels). Regenerated the offenders: **Ch4** (Warli — had "The Yoga of Knowledge and Action", then "Karma/Jnana" wheel labels; took 2 passes, now clean), **Ch9** (Warli — "patram pushpam phalam toyam" labels removed), **Ch16** (Madhubani — "देवासम्पद्/असुरसम्पद्" labels → scales-of-justice motif). All other covers (1–3, 5–8, 10–13) were already text-free.
+3. **Om (ॐ) kept.** Covers **15, 17, 18** carry a decorative ॐ glyph. Owner chose to **keep** it (sacred symbol, not treated as text). Left as-is.
+
+Build clean (744 pages); home page confirmed referencing `home-hero.png`. **NOT yet committed/deployed** — note the local branch already holds the unpushed `ci: add Android APK build/publish workflow` commit (`e6882ee`) which needs `workflow` token scope to push (owner is granting it via `gh auth refresh -s workflow`). A `git push` of this image work is therefore blocked behind that scope; a `vercel deploy --prod` of the working tree would publish the images independently of git.
+
 ## What Was Done This Session (2026-06-28)
 
 **Per-chapter thematic cover images.** Each chapter index page (`/chapters/{slug}/`) previously reused that chapter's verse-1 illustration (`001.png`) as its hero. Owner asked for a distinct image at each chapter beginning. Added a **`--cover` mode** to `scripts/generate-illustration.mjs` that builds the prompt from chapter `meta.yaml` (`name`, `sanskrit_name`, `summary`, `folk_art_style`) rather than a single verse — an emblematic, centered, frontispiece composition in the chapter's folk-art style, distinct from any verse panel. New helpers: `buildCoverPrompt()` + `generateCover()`; CLI `--cover` (one chapter) and `--cover --all` (all active chapters, 3s spacing); `resolveChapterSync` now also parses `summary`/`sanskrit_name`. Krishna-prominence + epithet character inference reused from verse pipeline.
 
-Generated **18 covers** → `public/illustrations/{slug}/cover.png`. `src/pages/chapters/[chapter]/index.astro` now prefers `cover.png`, falling back to `001.png`. Verse pages unchanged. Build clean (744 pages); built chapter HTML confirmed referencing `cover.png`. Covers verified by eye (Ch1, Ch12) — Pichwai dark-ground jewel tones, Krishna haloed/dominant, no text. **Not yet committed/deployed.**
+Generated **18 covers** → `public/illustrations/{slug}/cover.png`. `src/pages/chapters/[chapter]/index.astro` now prefers `cover.png`, falling back to `001.png`. Verse pages unchanged. Build clean (744 pages); built chapter HTML confirmed referencing `cover.png`. Covers verified by eye (Ch1, Ch12) — Pichwai dark-ground jewel tones, Krishna haloed/dominant, no text. **Committed (`71590ff`) + deployed to production 2026-06-28** (`vercel deploy --prod` → https://www.gitakids.com, 744 pages); live covers verified HTTP 200. (The stray `.github/workflows/android.yml` was deliberately left untracked, not bundled into this image commit.)
 
 ## What Was Done This Session (2026-06-22)
 
