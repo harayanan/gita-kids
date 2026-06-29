@@ -1,0 +1,248 @@
+---
+// Sample home page — PREVIEW ONLY. Not linked anywhere; reachable at /preview/home.
+// Re-rooted visual identity applied to REAL data. Does not touch the live site,
+// its content, images, or flow. Uses existing illustrations as-is.
+import { getAllChapters } from '../../lib/content';
+
+const chapters = getAllChapters();
+
+const styleColors: Record<string, string> = {
+  madhubani:   '#C75B12',
+  gond:        '#2D3A87',
+  pichwai:     '#2D3A87',
+  pattachitra: '#B85C3A',
+  warli:       '#1A6847',
+  kalamkari:   '#C4A24E',
+};
+const styleLabel: Record<string, string> = {
+  madhubani: 'Madhubani', gond: 'Gond', pichwai: 'Pichwai',
+  pattachitra: 'Pattachitra', warli: 'Warli', kalamkari: 'Kalamkari',
+};
+
+// 8-petal lotus rosette — one small inline SVG reused as the ornament system.
+const petals = [0, 45, 90, 135, 180, 225, 270, 315]
+  .map((r) => `<path d="M50 50 C 42 34 42 18 50 7 C 58 18 58 34 50 50 Z" transform="rotate(${r} 50 50)"/>`)
+  .join('');
+const kolam = `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><circle cx="50" cy="50" r="46.5"/>${petals}<circle cx="50" cy="50" r="11"/><circle cx="50" cy="50" r="2.4" fill="currentColor" stroke="none"/></g></svg>`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Gita Kids — sample home (preview)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/illustrations/home-hero.png" fetchpriority="high" />
+    <style>
+      :root {
+        --cream: #FDF6E3;
+        --cream-card: #FFFDF7;
+        --night: #14163a;
+        --ink: #2a2520;
+        --ink-soft-2: #6b6457;
+        --saffron: #C75B12;
+        --indigo: #2D3A87;
+        --gold: #C4A24E;
+        --gold-line: rgba(196, 162, 78, 0.30);
+        --e-out: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      body {
+        background: var(--cream); color: var(--ink);
+        font-family: "Source Serif 4", Georgia, serif;
+        -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+      }
+      a { color: inherit; text-decoration: none; }
+      :focus-visible { outline: 2px solid var(--saffron); outline-offset: 3px; border-radius: 6px; }
+
+      /* ---- Top nav (quiet) ---- */
+      .nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center;
+             justify-content: space-between; padding: 1rem 1.5rem;
+             background: rgba(253, 246, 227, 0.82); backdrop-filter: blur(8px);
+             border-bottom: 1px solid var(--gold-line); }
+      .brand { display: flex; align-items: center; gap: 0.55rem; }
+      .brand .mark { width: 26px; height: 26px; color: var(--saffron); }
+      .brand .wordmark { font-family: "Tiro Devanagari Sanskrit", serif; font-size: 1.35rem; color: var(--saffron); line-height: 1; }
+      .brand .sub { font-family: "Inter", sans-serif; font-size: 0.66rem; font-weight: 600;
+                    letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft-2); }
+      .nav-links { display: flex; gap: 1.5rem; }
+      .nav-link { font-family: "Inter", sans-serif; font-size: 0.82rem; color: var(--ink-soft-2);
+                  background-image: linear-gradient(var(--saffron), var(--saffron));
+                  background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat;
+                  transition: background-size 0.25s var(--e-out), color 0.2s ease; padding-bottom: 2px; }
+      .nav-link:hover { color: var(--saffron); background-size: 100% 1.5px; }
+      @media (max-width: 620px) { .nav-links { display: none; } }
+
+      /* ---- Hero (immersive, dark) ---- */
+      .hero { position: relative; min-height: 86vh; display: grid; place-items: center;
+              text-align: center; overflow: hidden; background: var(--night); }
+      .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+                  opacity: 0.9; }
+      .hero .scrim { position: absolute; inset: 0;
+        background:
+          radial-gradient(120% 90% at 50% 18%, rgba(20,22,58,0.18), rgba(20,22,58,0.62) 55%, rgba(20,22,58,0.92) 100%),
+          linear-gradient(to bottom, rgba(20,22,58,0.30), rgba(20,22,58,0.30)); }
+      .hero .inner { position: relative; padding: 6rem 1.5rem; max-width: 760px;
+                     animation: rise 1s var(--e-out) both; }
+      .hero .mark { width: 60px; height: 60px; color: var(--gold); margin: 0 auto 1.6rem;
+                    opacity: 0.92; animation: bloom 1.2s var(--e-out) 0.2s both; }
+      .hero .deva { font-family: "Tiro Devanagari Sanskrit", serif; color: #f6ead0;
+                    font-size: clamp(2.4rem, 7vw, 4.4rem); line-height: 1.2; margin: 0 0 1rem;
+                    text-shadow: 0 2px 24px rgba(0,0,0,0.35); }
+      .hero h1 { font-family: "Fraunces", serif; font-weight: 500; color: #fff;
+                 font-size: clamp(1.5rem, 3.6vw, 2.3rem); margin: 0 0 1.1rem; letter-spacing: 0.01em; }
+      .hero .lede { font-family: "Source Serif 4", serif; color: rgba(255,255,255,0.82);
+                    font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.65; max-width: 46ch; margin: 0 auto 2rem; }
+      .hero .cta { display: inline-flex; align-items: center; gap: 0.5rem;
+                   font-family: "Inter", sans-serif; font-size: 0.82rem; font-weight: 600;
+                   letter-spacing: 0.12em; text-transform: uppercase; color: var(--night);
+                   background: var(--gold); padding: 0.8rem 1.5rem; border-radius: 999px;
+                   transition: transform 0.2s var(--e-out), box-shadow 0.25s var(--e-out); }
+      .hero .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+      .hero .cta:active { transform: scale(0.98); }
+      .hairline { width: 1px; height: 54px; margin: 2.5rem auto 0;
+                  background: linear-gradient(to bottom, transparent, rgba(246,234,208,0.5)); }
+
+      /* ---- Ornamental divider ---- */
+      .divider { display: flex; align-items: center; gap: 1.2rem; max-width: 360px;
+                 margin: 4rem auto 3rem; color: var(--gold); }
+      .divider .rule { flex: 1; height: 1px; background: var(--gold-line); }
+      .divider .glyph { width: 30px; height: 30px; opacity: 0.85; }
+
+      /* ---- Library / chapter shelf ---- */
+      .library { max-width: 1080px; margin: 0 auto; padding: 3.5rem 1.5rem 2rem; }
+      .sec-head { text-align: center; margin-bottom: 2.5rem; }
+      .eyebrow { font-family: "Inter", sans-serif; font-size: 0.7rem; font-weight: 600;
+                 letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+      .sec-head h2 { font-family: "Fraunces", serif; font-weight: 500; color: var(--ink);
+                     font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0.5rem 0 0.5rem; }
+      .sec-head p { color: var(--ink-soft-2); max-width: 52ch; margin: 0 auto; line-height: 1.6; font-size: 1.02rem; }
+
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+      @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+
+      .card { position: relative; display: flex; flex-direction: column; background: var(--cream-card);
+              border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; overflow: hidden;
+              box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+              transition: transform 0.28s var(--e-out), box-shadow 0.28s var(--e-out), border-color 0.2s ease; }
+      .card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(45,58,135,0.12);
+                    border-color: var(--accent); }
+      .card:active { transform: translateY(-1px) scale(0.995); }
+      .card .accent { height: 3px; background: var(--accent); }
+      .plate { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #efe6cf; }
+      .plate img { width: 100%; height: 100%; object-fit: cover; display: block;
+                   transition: transform 0.5s var(--e-out); }
+      .card:hover .plate img { transform: scale(1.05); }
+      .plate .num { position: absolute; top: 0.5rem; left: 0.7rem; font-family: "Fraunces", serif;
+                    font-weight: 600; font-size: 1.5rem; color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
+      .card .body { padding: 1rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+      .card .deva { font-family: "Tiro Devanagari Sanskrit", serif; font-size: 1.25rem; color: var(--saffron); line-height: 1.3; }
+      .card .name { font-family: "Fraunces", serif; font-weight: 500; font-size: 1.12rem; color: var(--ink); line-height: 1.2; }
+      .card .summary { font-family: "Source Serif 4", serif; font-size: 0.92rem; color: var(--ink-soft-2);
+                       line-height: 1.55; margin-top: 0.15rem;
+                       display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+      .card .meta { margin-top: auto; padding-top: 0.7rem; display: flex; align-items: center;
+                    justify-content: space-between; font-family: "Inter", sans-serif; font-size: 0.66rem;
+                    letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft-2); }
+      .card .style-tag { color: var(--accent); font-weight: 600; }
+
+      /* ---- Footer ---- */
+      .foot { text-align: center; padding: 3rem 1.5rem 4rem; color: var(--ink-soft-2); }
+      .foot .glyph { width: 26px; height: 26px; color: var(--gold); opacity: 0.7; margin-bottom: 0.6rem; }
+      .foot .sa { font-family: "Tiro Devanagari Sanskrit", serif; color: var(--saffron); opacity: 0.7; font-size: 1.1rem; margin: 0 0 0.3rem; }
+      .foot p { font-family: "Inter", sans-serif; font-size: 0.8rem; margin: 0.2rem 0; }
+      .note { max-width: 640px; margin: 1.5rem auto 0; font-size: 0.78rem; color: #a89f8f; }
+
+      @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+      @keyframes bloom { from { opacity: 0; transform: scale(0.7) rotate(-12deg); } to { opacity: 0.92; transform: none; } }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="/preview/home" aria-label="Gita Kids home">
+        <span class="mark"><Fragment set:html={kolam} /></span>
+        <span>
+          <span class="wordmark">गीता</span>
+          <span class="sub" style="margin-left:0.3rem">Kids</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="/preview/type">Type options</a>
+        <a class="nav-link" href="/characters">Characters</a>
+        <a class="nav-link" href="/glossary">Glossary</a>
+        <a class="nav-link" href="/about">About</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <img src="/illustrations/home-hero.png" alt="Krishna teaching Arjuna" width="1376" height="768" fetchpriority="high" />
+      <div class="scrim"></div>
+      <div class="inner">
+        <div class="mark"><Fragment set:html={kolam} /></div>
+        <p class="deva">श्रीमद्भगवद्गीता</p>
+        <h1>The Bhagavad Gita, told for young readers</h1>
+        <p class="lede">All 18 chapters, every verse — ancient Sanskrit, word by word, with a story and a question for each, painted in six folk-art traditions.</p>
+        <a class="cta" href="/chapters/01-arjuna-vishada-yoga/">Begin Chapter One →</a>
+        <div class="hairline"></div>
+      </div>
+    </header>
+
+    <div class="divider"><span class="rule"></span><span class="glyph"><Fragment set:html={kolam} /></span><span class="rule"></span></div>
+
+    <!-- Library -->
+    <main class="library">
+      <div class="sec-head">
+        <div class="eyebrow">The Eighteen Chapters</div>
+        <h2>A shelf of eighteen journeys</h2>
+        <p>Each chapter carries its own folk-art tradition. Open any one and read it verse by verse.</p>
+      </div>
+
+      <div class="grid">
+        {chapters.map((c) => {
+          const accent = styleColors[c.folk_art_style] ?? '#C75B12';
+          const num = String(c.number).padStart(2, '0');
+          return (
+            <a class="card" href={`/chapters/${c.slug}/`} style={`--accent:${accent}`}>
+              <div class="accent"></div>
+              <div class="plate">
+                <img src={`/illustrations/${c.slug}/001.png`} alt={`${c.transliterated_name} illustration`} width="1376" height="768" loading="lazy" decoding="async" />
+                <span class="num">{num}</span>
+              </div>
+              <div class="body">
+                <span class="deva">{c.sanskrit_name}</span>
+                <span class="name">{c.name}</span>
+                <span class="summary">{c.summary}</span>
+                <span class="meta">
+                  <span>{c.verse_count} verses</span>
+                  <span class="style-tag">{styleLabel[c.folk_art_style] ?? c.folk_art_style}</span>
+                </span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </main>
+
+    <div class="divider"><span class="rule"></span><span class="glyph"><Fragment set:html={kolam} /></span><span class="rule"></span></div>
+
+    <footer class="foot">
+      <div class="glyph" style="margin:0 auto 0.6rem"><Fragment set:html={kolam} /></div>
+      <p class="sa">श्रीमद्भगवद्गीता</p>
+      <p>Gita Kids — ancient wisdom, young hearts</p>
+      <p class="note">Design preview. Fonts: Tiro Devanagari Sanskrit + Fraunces + Source Serif 4. Illustrations are the existing ones, shown as-is. Nothing here changes the live site.</p>
+    </footer>
+  </body>
+</html>
