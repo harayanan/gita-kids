@@ -27,6 +27,19 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-29, OTA updates — pinned key + Obtainium)
+
+**Made Android test builds update over-the-air (owner request: "push updated APK to my phone without doing anything").** Reality check given to owner: stock Android requires a tap for any sideloaded APK (only Play Store / MDM / root install silently), so the achievable goal is "phone notices a new build and prompts with one tap." Set that up via the existing GitHub rolling release + Obtainium, rather than adding a Play/Firebase pipeline (overkill — the app is a Remote WebView, so most changes already go live with no rebuild).
+
+Prerequisite that blocked every auto-updater: CI was signing each build with an **ephemeral debug key** (fresh per runner), so Android refused in-place updates (signature mismatch). Fixed:
+- **`android/app/signing-debug.keystore`** — a fixed, checked-in debug key (debug-only creds: store/key pass `android`, alias `androiddebugkey`; SHA-256 `9c4f196df4b3b0e27ad86c32a763f0ec6e638553bf1edd65b0ffcf3c5685a030`). Not a Play release key.
+- **`android/app/build.gradle`** — added a `debug` `signingConfig` pointing at it; `versionCode`/`versionName` now stamped from `APP_BUILD_NUMBER` (falls back to 1 / 1.0 locally) so each build is a strictly higher version (the release tag stays the constant `android-latest`; the version does the signalling, which is what Obtainium and in-place updates need).
+- **`.github/workflows/android.yml`** — passes `APP_BUILD_NUMBER=${{ github.run_number }}` to the gradle build step.
+
+Verified end-to-end: local build signed with the pinned key + version stamping correct; **committed (`61c947f`) + pushed**; CI run #6 succeeded and published `gita-kids-debug.apk` to `android-latest` as **versionCode 6 / versionName 1.0.6**, signature confirmed `9c4f196d…`.
+
+**One-time action for owner:** the app currently on the phone (if any) was signed with an old throwaway key, so it must be **uninstalled once**, then install 1.0.6. From then on every build updates in place / via Obtainium with no uninstall. Obtainium setup: install Obtainium (F-Droid or github.com/ImranR98/Obtainium) → Add App → URL `https://github.com/harayanan/gita-kids` → enable **Include prereleases** → it polls in the background and notifies for one-tap updates.
+
 ## What Was Done This Session (2026-06-29, system-bar framing — Android/iOS)
 
 **Recoloured the mobile app's status bar + navigation bar so the OS chrome no longer blends into the cream content (owner request).** Owner asked to either (a) give the top/bottom bars a distinct colour (suggested indigo) or (b) go full-screen immersive with a way to summon the nav buttons back, picking whichever gives an aligned cross-platform POV.
