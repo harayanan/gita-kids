@@ -281,15 +281,23 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 
 ## Next Steps
 
-### Chapter Order
-1. ~~Chapter 4 — Jnana Karma Sannyasa Yoga (Warli)~~ — text + illustrations done ✓
-2. ~~Chapter 5 — Karma Sannyasa Yoga (Kalamkari)~~ — text + illustrations done ✓
-3. ~~Chapter 6 — Dhyana Yoga (Madhubani)~~ — text + illustrations done ✓
-4. Next text chapter: **Chapter 7 — Jnana Vijnana Yoga** (Pichwai, 30 verses) — `status: coming_soon`, needs an outline (`docs/chapter-07-outline.md`), then verses authored and illustrated. Follow the Ch6 process: write spec → 6 parallel authoring agents → Sanskrit audit agents → generate illustrations.
+### Content
+All 18 chapters (701 verses) + front/back matter are authored and illustrated — book content is **complete** (see Current Status). No remaining authoring work; the only open content items are the print-quality image regenerations under "Still Pending (for print publication)" above.
 
 ### Front & Back Matter
 1. ~~Characters page + Pronunciation guide~~ — done ✓
 2. Print layout CSS (`@page` rules) — basic rules added, needs testing with actual print
+
+### Mobile App (Android live; iOS deferred)
+Current state after 2026-06-29 session:
+- **Android**: Capacitor 8 Remote WebView of gitakids.com. Built by GitHub Actions CI (`.github/workflows/android.yml`) on pushes touching `android/`, `www/`, `capacitor.config.ts`, `package.json`. APK published to the `android-latest` rolling release.
+- **OTA / testing**: signed with a pinned debug keystore (`android/app/signing-debug.keystore`), version stamped from the CI run number — so builds update in place. Owner uses **Obtainium** pointed at the GitHub repo (Include prereleases on) for one-tap update notifications. About page shows the running version. Note: stock Android still needs one tap per sideloaded install (truly silent updates require Play Store).
+- **System bars**: brand-indigo (#2D3A87) status + nav bands, white icons, symmetric top/bottom (Android theme + `html.native-app` CSS in BaseLayout). Mode-independent.
+
+Open next steps:
+1. **iOS build** — deferred; needs macOS/Xcode (dev env is Linux). The web layer (system-bar bands, version stamp) is already iOS-ready; only the native shell + CI runner are missing.
+2. **Phase 2 bundled build** — when images are finalized/optimized, drop `server.url` and point `webDir` at the Astro `dist/` so the app ships content instead of loading the live site.
+3. **Optional: Google Play internal testing** — only path to truly hands-free background updates; needs a Play Console account + release-signed AAB.
 
 ## Key Files
 - CLAUDE.md: project architecture and dev commands
@@ -297,5 +305,8 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Alt text data: `src/data/illustration-alt-text.yaml`
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
+- Android CI: `.github/workflows/android.yml` → publishes APK to `android-latest` release
+- Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
+- Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
 Last reviewed: 2026-06-29
