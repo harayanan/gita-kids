@@ -27,6 +27,22 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-29, UI refresh — research + live previews)
+
+**Deep visual research + two live design previews** for a presentation-only UI refresh (owner: get to a beautiful, distinctive, fast site "worthy of the content"; do NOT change text, images, or flow). Ran 4 parallel research/audit agents (best-in-class reading sites, cultural/kids design, fast-delight techniques, current-system audit). Full direction + prioritized backlog + references: **`docs/plans/2026-06-29-ui-refresh-direction.md`**.
+
+Direction chosen: re-root the look in classical Indian book-making (illuminated manuscript + folk-art gallery) — quiet chrome, art-as-plate, Tiro Devanagari Sanskrit + a literary display face, a kolam SVG ornament, per-chapter color identity, signature-only motion (illustration morph + restrained micro-interactions). The current cream-editorial look is close to the generic AI-design default; this moves off it.
+
+Built two **unlinked, `noindex` preview pages** (no impact on the live site/content/images/flow), deployed live:
+- `src/pages/preview/home.astro` → https://www.gitakids.com/preview/home — sample home: immersive dark hero + cream "shelf" of all 18 chapters (real data + existing illustrations), kolam ornament, signature micro-interactions, reduced-motion respected.
+- `src/pages/preview/type.astro` → https://www.gitakids.com/preview/type — BG 2.47 in 4 type systems to compare and choose.
+
+Both HTTP 200, verified live. **Committed (`62f4f26`) + deployed.**
+
+Owner decisions: images stay as-is (back up hi-res originals FIRST, then compress — memory `preserve-hires-images-before-compression`); type undecided (compare on the preview); motion = signature only.
+
+**Next:** owner reacts to the previews → pick a type system, decide how far to roll the identity into real pages. Then sequence backlog A (speed: AVIF/WebP via `astro:assets`, after backing up originals) → B (identity) → C (signature motion) → D (a11y/polish).
+
 ## What Was Done This Session (2026-06-29, version stamp on About page)
 
 **Added a version stamp to the About page** (`src/pages/about.astro`) so you can confirm which build is on the phone. Context-aware:
