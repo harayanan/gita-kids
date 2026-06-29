@@ -27,6 +27,14 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-29, version stamp on About page)
+
+**Added a version stamp to the About page** (`src/pages/about.astro`) so you can confirm which build is on the phone. Context-aware:
+- **Inside the Capacitor app** — shows the installed APK's `versionName` + `versionCode` via `App.getInfo()` (`@capacitor/app`, already bundled). Works on the *existing* installed app with no APK rebuild, since the app loads the live site and the script runs at runtime. Re-applies on Astro view transitions (`astro:page-load`).
+- **On the website** — falls back to the web build's git short SHA + date, computed at build time (`VERCEL_GIT_COMMIT_SHA` on Vercel, else `git rev-parse`).
+
+Build clean (744 pages); **committed (`4165121`) + deployed**; live About shows `Web build 4165121 · 2026-06-29`. In-app it will read e.g. `App version 1.0.6 (build 6)`.
+
 ## What Was Done This Session (2026-06-29, OTA updates — pinned key + Obtainium)
 
 **Made Android test builds update over-the-air (owner request: "push updated APK to my phone without doing anything").** Reality check given to owner: stock Android requires a tap for any sideloaded APK (only Play Store / MDM / root install silently), so the achievable goal is "phone notices a new build and prompts with one tap." Set that up via the existing GitHub rolling release + Obtainium, rather than adding a Play/Firebase pipeline (overkill — the app is a Remote WebView, so most changes already go live with no rebuild).
