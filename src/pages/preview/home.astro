@@ -1,248 +1,299 @@
 ---
-// Sample home page — PREVIEW ONLY. Not linked anywhere; reachable at /preview/home.
-// Re-rooted visual identity applied to REAL data. Does not touch the live site,
-// its content, images, or flow. Uses existing illustrations as-is.
+// PREVIEW ONLY — current site design with a background-colour switcher.
+// Faithful replica of the live home (same fonts, layout, components) themed via
+// CSS variables so the owner can compare cream vs indigo vs other grounds.
+// Reachable at /preview/home. Does not touch the live site. The re-rooted
+// redesign concept lives at /preview/redesign.
 import { getAllChapters } from '../../lib/content';
 
 const chapters = getAllChapters();
 
-const styleColors: Record<string, string> = {
-  madhubani:   '#C75B12',
-  gond:        '#2D3A87',
-  pichwai:     '#2D3A87',
-  pattachitra: '#B85C3A',
-  warli:       '#1A6847',
-  kalamkari:   '#C4A24E',
-};
-const styleLabel: Record<string, string> = {
-  madhubani: 'Madhubani', gond: 'Gond', pichwai: 'Pichwai',
-  pattachitra: 'Pattachitra', warli: 'Warli', kalamkari: 'Kalamkari',
-};
-
-// 8-petal lotus rosette — one small inline SVG reused as the ornament system.
-const petals = [0, 45, 90, 135, 180, 225, 270, 315]
-  .map((r) => `<path d="M50 50 C 42 34 42 18 50 7 C 58 18 58 34 50 50 Z" transform="rotate(${r} 50 50)"/>`)
-  .join('');
-const kolam = `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><circle cx="50" cy="50" r="46.5"/>${petals}<circle cx="50" cy="50" r="11"/><circle cx="50" cy="50" r="2.4" fill="currentColor" stroke="none"/></g></svg>`;
+const themes = [
+  { id: 'cream',       label: 'Cream (current)', dot: '#FDF6E3', dark: false },
+  { id: 'parchment',   label: 'Warm parchment',  dot: '#EFE3C4', dark: false },
+  { id: 'soft-indigo', label: 'Soft indigo',     dot: '#E9ECF6', dark: false },
+  { id: 'indigo',      label: 'Indigo',          dot: '#2D3A87', dark: true  },
+  { id: 'midnight',    label: 'Midnight',        dot: '#14163a', dark: true  },
+];
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="cream">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Gita Kids — sample home (preview)</title>
+    <title>Gita Kids — background colour preview</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="/illustrations/home-hero.png" fetchpriority="high" />
+    <script is:inline>
+      (function () {
+        try { document.documentElement.dataset.theme = localStorage.getItem('gk-bg') || 'cream'; }
+        catch (e) { document.documentElement.dataset.theme = 'cream'; }
+      })();
+    </script>
     <style>
+      /* ---------- Theme tokens ---------- */
       :root {
-        --cream: #FDF6E3;
-        --cream-card: #FFFDF7;
-        --night: #14163a;
-        --ink: #2a2520;
-        --ink-soft-2: #6b6457;
-        --saffron: #C75B12;
-        --indigo: #2D3A87;
-        --gold: #C4A24E;
-        --gold-line: rgba(196, 162, 78, 0.30);
-        --e-out: cubic-bezier(0.22, 1, 0.36, 1);
+        --devanagari: "Noto Serif Devanagari", serif;
+        --body: "Source Serif 4", Georgia, serif;
+        --ui: "Inter", system-ui, sans-serif;
+        /* default = cream */
+        --bg: #FDF6E3; --text: #1f2433; --soft: #565d6b; --heading: #111827;
+        --accent: #C75B12; --gold: #C4A24E; --border: rgba(196,162,78,0.30);
+        --card: rgba(255,255,255,0.55); --card-hover: rgba(255,255,255,0.85);
+        --om: #C4A24E; --sanskrit-hero: #C75B12;
+        --hero-grad: linear-gradient(to bottom, rgba(253,246,227,0.80), rgba(253,246,227,0.70) 55%, #FDF6E3);
+        --bar-madhubani:#C75B12; --bar-gond:#2D3A87; --bar-pichwai:#2D3A87;
+        --bar-pattachitra:#B85C3A; --bar-warli:#B85C3A; --bar-kalamkari:#1A6847;
       }
+      :root[data-theme="parchment"] {
+        --bg: #EFE3C4; --text: #2a2417; --soft: #6b6450; --heading: #211d12;
+        --accent: #C75B12; --gold: #B0892F; --border: rgba(120,90,40,0.24);
+        --card: rgba(255,252,240,0.6); --card-hover: rgba(255,253,246,0.9);
+        --om: #B0892F; --sanskrit-hero: #C75B12;
+        --hero-grad: linear-gradient(to bottom, rgba(239,227,196,0.80), rgba(239,227,196,0.72) 55%, #EFE3C4);
+      }
+      :root[data-theme="soft-indigo"] {
+        --bg: #E9ECF6; --text: #232838; --soft: #565d75; --heading: #1a1f30;
+        --accent: #C75B12; --gold: #97803a; --border: rgba(45,58,135,0.16);
+        --card: rgba(255,255,255,0.72); --card-hover: rgba(255,255,255,0.95);
+        --om: #97803a; --sanskrit-hero: #C75B12;
+        --hero-grad: linear-gradient(to bottom, rgba(233,236,246,0.78), rgba(233,236,246,0.70) 55%, #E9ECF6);
+      }
+      :root[data-theme="indigo"] {
+        --bg: #2D3A87; --text: #e9ecfb; --soft: #b7c0e4; --heading: #ffffff;
+        --accent: #F0A45F; --gold: #E0C57E; --border: rgba(224,197,126,0.28);
+        --card: rgba(255,255,255,0.08); --card-hover: rgba(255,255,255,0.15);
+        --om: #E0C57E; --sanskrit-hero: #F4DCA9;
+        --hero-grad: linear-gradient(to bottom, rgba(45,58,135,0.50), rgba(45,58,135,0.82) 60%, #2D3A87);
+        --bar-gond:#8C9BE0; --bar-pichwai:#8C9BE0; --bar-madhubani:#E68A4A;
+        --bar-pattachitra:#D98A66; --bar-warli:#D98A66; --bar-kalamkari:#5BB389;
+      }
+      :root[data-theme="midnight"] {
+        --bg: #14163a; --text: #e4e7f4; --soft: #a6adcf; --heading: #ffffff;
+        --accent: #F0A45F; --gold: #DCC079; --border: rgba(220,192,121,0.22);
+        --card: rgba(255,255,255,0.06); --card-hover: rgba(255,255,255,0.13);
+        --om: #DCC079; --sanskrit-hero: #F4DCA9;
+        --hero-grad: linear-gradient(to bottom, rgba(20,22,58,0.45), rgba(20,22,58,0.82) 60%, #14163a);
+        --bar-gond:#8C9BE0; --bar-pichwai:#8C9BE0; --bar-madhubani:#E68A4A;
+        --bar-pattachitra:#D98A66; --bar-warli:#D98A66; --bar-kalamkari:#5BB389;
+      }
+
       * { box-sizing: border-box; }
       html, body { margin: 0; }
       body {
-        background: var(--cream); color: var(--ink);
-        font-family: "Source Serif 4", Georgia, serif;
+        background: var(--bg); color: var(--text); font-family: var(--body);
+        transition: background-color 0.4s ease, color 0.4s ease;
         -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
       }
       a { color: inherit; text-decoration: none; }
-      :focus-visible { outline: 2px solid var(--saffron); outline-offset: 3px; border-radius: 6px; }
+      :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+      .reading { max-width: 720px; margin: 0 auto; }
 
-      /* ---- Top nav (quiet) ---- */
-      .nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center;
-             justify-content: space-between; padding: 1rem 1.5rem;
-             background: rgba(253, 246, 227, 0.82); backdrop-filter: blur(8px);
-             border-bottom: 1px solid var(--gold-line); }
-      .brand { display: flex; align-items: center; gap: 0.55rem; }
-      .brand .mark { width: 26px; height: 26px; color: var(--saffron); }
-      .brand .wordmark { font-family: "Tiro Devanagari Sanskrit", serif; font-size: 1.35rem; color: var(--saffron); line-height: 1; }
-      .brand .sub { font-family: "Inter", sans-serif; font-size: 0.66rem; font-weight: 600;
-                    letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft-2); }
-      .nav-links { display: flex; gap: 1.5rem; }
-      .nav-link { font-family: "Inter", sans-serif; font-size: 0.82rem; color: var(--ink-soft-2);
-                  background-image: linear-gradient(var(--saffron), var(--saffron));
-                  background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat;
-                  transition: background-size 0.25s var(--e-out), color 0.2s ease; padding-bottom: 2px; }
-      .nav-link:hover { color: var(--saffron); background-size: 100% 1.5px; }
-      @media (max-width: 620px) { .nav-links { display: none; } }
+      /* ---------- Nav ---------- */
+      .nav { position: sticky; top: 0; z-index: 40; display: flex; align-items: center;
+             justify-content: space-between; padding: 1.1rem 1.5rem; background: var(--bg);
+             border-bottom: 1px solid var(--border); transition: background-color 0.4s ease; }
+      .brand { display: flex; align-items: baseline; gap: 0.5rem; }
+      .brand .gita { font-family: var(--devanagari); font-size: 1.5rem; color: var(--accent); line-height: 1; }
+      .brand .dot { color: var(--gold); opacity: 0.5; }
+      .brand .kids { font-family: var(--ui); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soft); }
+      .nav-links { display: flex; gap: 1.4rem; font-family: var(--ui); font-size: 0.84rem; }
+      .nav-links a { color: var(--soft); transition: color 0.2s ease; }
+      .nav-links a:hover { color: var(--accent); }
+      @media (max-width: 640px) { .nav-links { display: none; } }
 
-      /* ---- Hero (immersive, dark) ---- */
-      .hero { position: relative; min-height: 86vh; display: grid; place-items: center;
-              text-align: center; overflow: hidden; background: var(--night); }
-      .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
-                  opacity: 0.9; }
-      .hero .scrim { position: absolute; inset: 0;
-        background:
-          radial-gradient(120% 90% at 50% 18%, rgba(20,22,58,0.18), rgba(20,22,58,0.62) 55%, rgba(20,22,58,0.92) 100%),
-          linear-gradient(to bottom, rgba(20,22,58,0.30), rgba(20,22,58,0.30)); }
-      .hero .inner { position: relative; padding: 6rem 1.5rem; max-width: 760px;
-                     animation: rise 1s var(--e-out) both; }
-      .hero .mark { width: 60px; height: 60px; color: var(--gold); margin: 0 auto 1.6rem;
-                    opacity: 0.92; animation: bloom 1.2s var(--e-out) 0.2s both; }
-      .hero .deva { font-family: "Tiro Devanagari Sanskrit", serif; color: #f6ead0;
-                    font-size: clamp(2.4rem, 7vw, 4.4rem); line-height: 1.2; margin: 0 0 1rem;
-                    text-shadow: 0 2px 24px rgba(0,0,0,0.35); }
-      .hero h1 { font-family: "Fraunces", serif; font-weight: 500; color: #fff;
-                 font-size: clamp(1.5rem, 3.6vw, 2.3rem); margin: 0 0 1.1rem; letter-spacing: 0.01em; }
-      .hero .lede { font-family: "Source Serif 4", serif; color: rgba(255,255,255,0.82);
-                    font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.65; max-width: 46ch; margin: 0 auto 2rem; }
-      .hero .cta { display: inline-flex; align-items: center; gap: 0.5rem;
-                   font-family: "Inter", sans-serif; font-size: 0.82rem; font-weight: 600;
-                   letter-spacing: 0.12em; text-transform: uppercase; color: var(--night);
-                   background: var(--gold); padding: 0.8rem 1.5rem; border-radius: 999px;
-                   transition: transform 0.2s var(--e-out), box-shadow 0.25s var(--e-out); }
-      .hero .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
-      .hero .cta:active { transform: scale(0.98); }
-      .hairline { width: 1px; height: 54px; margin: 2.5rem auto 0;
-                  background: linear-gradient(to bottom, transparent, rgba(246,234,208,0.5)); }
+      /* ---------- Hero ---------- */
+      .hero { position: relative; overflow: hidden; }
+      .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      .hero .grad { position: absolute; inset: 0; background: var(--hero-grad); }
+      .hero .inner { position: relative; text-align: center; padding: 6rem 1rem 5rem; }
+      .hero .deva { font-family: var(--devanagari); font-size: clamp(2.5rem, 7vw, 3.75rem); color: var(--sanskrit-hero); margin: 0 0 1.25rem; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.12)); }
+      .hero h1 { font-family: var(--body); font-weight: 700; font-size: clamp(1.5rem, 4vw, 1.9rem); color: var(--heading); margin: 0 0 0.75rem; }
+      .hero .tag { font-family: var(--body); font-size: 1.1rem; color: var(--soft); margin: 0 0 0.5rem; }
+      .hero .lede { font-family: var(--body); font-size: 1rem; color: var(--soft); max-width: 28rem; margin: 1.5rem auto 0; line-height: 1.65; }
+      .om-row { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 2.5rem; }
+      .om-row .rule { width: 4rem; height: 1px; background: color-mix(in srgb, var(--gold) 45%, transparent); }
+      .om { font-family: var(--devanagari); color: var(--om); font-size: 3rem; line-height: 1; animation: om 0.9s ease-out 0.4s both; }
 
-      /* ---- Ornamental divider ---- */
-      .divider { display: flex; align-items: center; gap: 1.2rem; max-width: 360px;
-                 margin: 4rem auto 3rem; color: var(--gold); }
-      .divider .rule { flex: 1; height: 1px; background: var(--gold-line); }
-      .divider .glyph { width: 30px; height: 30px; opacity: 0.85; }
+      /* ---------- Section + cards ---------- */
+      section { padding-left: 1rem; padding-right: 1rem; }
+      .cta-wrap { padding-bottom: 1rem; }
+      .cta { display: block; border: 1px solid var(--border); background: var(--card); border-radius: 12px;
+             padding: 1.5rem; text-align: center; transition: border-color 0.2s, background 0.3s, box-shadow 0.25s; }
+      .cta:hover { border-color: var(--accent); background: var(--card-hover); box-shadow: 0 8px 24px rgba(0,0,0,0.10); }
+      .cta .sa { font-family: var(--devanagari); font-size: 1.4rem; color: color-mix(in srgb, var(--accent) 75%, transparent); }
+      .cta p { font-family: var(--body); font-size: 0.9rem; color: var(--soft); margin: 0.5rem 0 0; }
+      .cta .go { display: inline-block; margin-top: 0.75rem; font-family: var(--ui); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
 
-      /* ---- Library / chapter shelf ---- */
-      .library { max-width: 1080px; margin: 0 auto; padding: 3.5rem 1.5rem 2rem; }
-      .sec-head { text-align: center; margin-bottom: 2.5rem; }
-      .eyebrow { font-family: "Inter", sans-serif; font-size: 0.7rem; font-weight: 600;
-                 letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
-      .sec-head h2 { font-family: "Fraunces", serif; font-weight: 500; color: var(--ink);
-                     font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0.5rem 0 0.5rem; }
-      .sec-head p { color: var(--ink-soft-2); max-width: 52ch; margin: 0 auto; line-height: 1.6; font-size: 1.02rem; }
+      .duo { display: flex; gap: 1rem; }
+      .duo .cta { flex: 1; }
+      .duo .name { font-family: var(--body); font-weight: 600; color: var(--heading); }
+      .duo .cta:hover .name { color: var(--accent); }
 
-      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-      @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-      @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+      .grid-wrap { padding: 3rem 1rem; }
+      .grid { max-width: 56rem; margin: 0 auto; }
+      .grid h2 { font-family: var(--ui); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); text-align: center; margin: 0 0 2.5rem; }
+      .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+      @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+      .card { display: block; border: 1px solid var(--border); border-left: 4px solid var(--bar); background: var(--card);
+              border-radius: 12px; padding: 1.5rem; transition: border-color 0.2s, background 0.3s, box-shadow 0.25s, transform 0.25s; }
+      .card:hover { border-color: var(--accent); border-left-color: var(--bar); background: var(--card-hover); box-shadow: 0 10px 28px rgba(0,0,0,0.12); transform: translateY(-3px); }
+      .card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+      .card .no { font-family: var(--ui); font-size: 0.72rem; font-weight: 700; color: var(--gold); }
+      .card .start { font-family: var(--ui); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 0.12rem 0.5rem; border-radius: 999px; }
+      .card .name { font-family: var(--body); font-size: 1.1rem; font-weight: 600; color: var(--heading); margin: 0 0 0.25rem; }
+      .card .sa { font-family: var(--devanagari); font-size: 0.9rem; color: color-mix(in srgb, var(--accent) 65%, transparent); margin: 0 0 0.75rem; }
+      .card .sum { font-family: var(--body); font-size: 0.875rem; color: var(--soft); line-height: 1.55; margin: 0;
+                   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+      .card .verses { margin-top: 1rem; font-family: var(--ui); font-size: 0.72rem; color: var(--soft); }
+      .card.first { grid-column: span 1; box-shadow: 0 6px 16px rgba(0,0,0,0.10); outline: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
+      @media (min-width: 561px) and (max-width: 900px) { .card.first { grid-column: span 2; } }
 
-      .card { position: relative; display: flex; flex-direction: column; background: var(--cream-card);
-              border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; overflow: hidden;
-              box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-              transition: transform 0.28s var(--e-out), box-shadow 0.28s var(--e-out), border-color 0.2s ease; }
-      .card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(45,58,135,0.12);
-                    border-color: var(--accent); }
-      .card:active { transform: translateY(-1px) scale(0.995); }
-      .card .accent { height: 3px; background: var(--accent); }
-      .plate { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #efe6cf; }
-      .plate img { width: 100%; height: 100%; object-fit: cover; display: block;
-                   transition: transform 0.5s var(--e-out); }
-      .card:hover .plate img { transform: scale(1.05); }
-      .plate .num { position: absolute; top: 0.5rem; left: 0.7rem; font-family: "Fraunces", serif;
-                    font-weight: 600; font-size: 1.5rem; color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
-      .card .body { padding: 1rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
-      .card .deva { font-family: "Tiro Devanagari Sanskrit", serif; font-size: 1.25rem; color: var(--saffron); line-height: 1.3; }
-      .card .name { font-family: "Fraunces", serif; font-weight: 500; font-size: 1.12rem; color: var(--ink); line-height: 1.2; }
-      .card .summary { font-family: "Source Serif 4", serif; font-size: 0.92rem; color: var(--ink-soft-2);
-                       line-height: 1.55; margin-top: 0.15rem;
-                       display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-      .card .meta { margin-top: auto; padding-top: 0.7rem; display: flex; align-items: center;
-                    justify-content: space-between; font-family: "Inter", sans-serif; font-size: 0.66rem;
-                    letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft-2); }
-      .card .style-tag { color: var(--accent); font-weight: 600; }
+      /* ---------- Closing ---------- */
+      .closing { padding: 4rem 1rem; }
+      .divider { display: flex; align-items: center; gap: 0.75rem; }
+      .divider .rule { flex: 1; height: 1px; background: linear-gradient(to right, transparent, color-mix(in srgb, var(--gold) 35%, transparent), transparent); }
+      .divider .g { font-family: var(--devanagari); color: color-mix(in srgb, var(--gold) 60%, transparent); font-size: 0.9rem; }
+      .closing h2 { font-family: var(--body); font-weight: 700; font-size: clamp(1.5rem, 4vw, 1.9rem); color: var(--heading); text-align: center; margin: 2rem 0 1.5rem; }
+      .closing p { font-family: var(--body); font-size: 1.08rem; color: var(--soft); line-height: 1.75; text-align: center; margin: 0 0 1.25rem; }
 
-      /* ---- Footer ---- */
-      .foot { text-align: center; padding: 3rem 1.5rem 4rem; color: var(--ink-soft-2); }
-      .foot .glyph { width: 26px; height: 26px; color: var(--gold); opacity: 0.7; margin-bottom: 0.6rem; }
-      .foot .sa { font-family: "Tiro Devanagari Sanskrit", serif; color: var(--saffron); opacity: 0.7; font-size: 1.1rem; margin: 0 0 0.3rem; }
-      .foot p { font-family: "Inter", sans-serif; font-size: 0.8rem; margin: 0.2rem 0; }
-      .note { max-width: 640px; margin: 1.5rem auto 0; font-size: 0.78rem; color: #a89f8f; }
-
-      @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-      @keyframes bloom { from { opacity: 0; transform: scale(0.7) rotate(-12deg); } to { opacity: 0.92; transform: none; } }
+      @keyframes om { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: none; } }
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      .reveal.vis { opacity: 1; transform: none; }
       @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after { animation: none !important; transition: none !important; }
+        *, *::before, *::after { animation: none !important; transition: background-color 0.4s ease, color 0.4s ease !important; }
+        .reveal { opacity: 1; transform: none; }
+        .om { animation: none; }
       }
+
+      /* ---------- Swatch switcher (preview chrome) ---------- */
+      .switcher { position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 100;
+                  display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.85rem;
+                  background: rgba(20,20,28,0.86); backdrop-filter: blur(10px); border-radius: 999px;
+                  box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+      .switcher .lab { font-family: var(--ui); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); padding-right: 0.2rem; }
+      .switcher button { width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.25);
+                         cursor: pointer; padding: 0; transition: transform 0.15s ease, border-color 0.15s ease; }
+      .switcher button:hover { transform: scale(1.12); }
+      .switcher button[aria-pressed="true"] { border-color: #fff; box-shadow: 0 0 0 2px rgba(255,255,255,0.35); }
+      .switcher .now { font-family: var(--ui); font-size: 0.72rem; color: #fff; min-width: 6.5rem; }
     </style>
   </head>
   <body>
     <nav class="nav">
-      <a class="brand" href="/preview/home" aria-label="Gita Kids home">
-        <span class="mark"><Fragment set:html={kolam} /></span>
-        <span>
-          <span class="wordmark">गीता</span>
-          <span class="sub" style="margin-left:0.3rem">Kids</span>
-        </span>
+      <a class="brand" href="/preview/home">
+        <span class="gita">गीता</span><span class="dot">•</span><span class="kids">Kids</span>
       </a>
       <div class="nav-links">
-        <a class="nav-link" href="/preview/type">Type options</a>
-        <a class="nav-link" href="/characters">Characters</a>
-        <a class="nav-link" href="/glossary">Glossary</a>
-        <a class="nav-link" href="/about">About</a>
+        <a href="/preview/redesign">Redesign concept</a>
+        <a href="/characters">Characters</a>
+        <a href="/glossary">Glossary</a>
+        <a href="/about">About</a>
       </div>
     </nav>
 
     <!-- Hero -->
     <header class="hero">
-      <img src="/illustrations/home-hero.png" alt="Krishna teaching Arjuna" width="1376" height="768" fetchpriority="high" />
-      <div class="scrim"></div>
-      <div class="inner">
-        <div class="mark"><Fragment set:html={kolam} /></div>
+      <img src="/illustrations/home-hero.png" alt="" aria-hidden="true" width="1376" height="768" fetchpriority="high" />
+      <div class="grad"></div>
+      <div class="inner reading">
         <p class="deva">श्रीमद्भगवद्गीता</p>
-        <h1>The Bhagavad Gita, told for young readers</h1>
-        <p class="lede">All 18 chapters, every verse — ancient Sanskrit, word by word, with a story and a question for each, painted in six folk-art traditions.</p>
-        <a class="cta" href="/chapters/01-arjuna-vishada-yoga/">Begin Chapter One →</a>
-        <div class="hairline"></div>
+        <h1>The Bhagavad Gita</h1>
+        <p class="tag">For Young Explorers</p>
+        <p class="lede">An illustrated journey through ancient India's most beloved scripture. Word by word, story by story — for curious minds aged 8 to 12.</p>
+        <div class="om-row"><span class="rule"></span><span class="om">ॐ</span><span class="rule"></span></div>
       </div>
     </header>
 
-    <div class="divider"><span class="rule"></span><span class="glyph"><Fragment set:html={kolam} /></span><span class="rule"></span></div>
+    <!-- Dhyanashloka CTA -->
+    <section class="cta-wrap"><div class="reading">
+      <a class="cta" href="/dhyanashloka">
+        <span class="sa">ध्यानश्लोक</span>
+        <p>Begin with the nine meditation verses — the traditional opening before studying the Gita.</p>
+        <span class="go">Read Dhyanashloka →</span>
+      </a>
+    </div></section>
 
-    <!-- Library -->
-    <main class="library">
-      <div class="sec-head">
-        <div class="eyebrow">The Eighteen Chapters</div>
-        <h2>A shelf of eighteen journeys</h2>
-        <p>Each chapter carries its own folk-art tradition. Open any one and read it verse by verse.</p>
+    <!-- Front matter -->
+    <section class="cta-wrap"><div class="reading duo">
+      <a class="cta" href="/characters"><span class="name">Characters</span><p>Meet the people of the Gita</p></a>
+      <a class="cta" href="/pronunciation"><span class="name">Pronunciation</span><p>How to say Sanskrit words</p></a>
+    </div></section>
+
+    <!-- Chapter grid -->
+    <section class="grid-wrap"><div class="grid">
+      <h2>18 Chapters</h2>
+      <div class="cards">
+        {chapters.map((c, i) => (
+          <a class={`card reveal acc ${i === 0 ? 'first' : ''}`} href={`/chapters/${c.slug}`}
+             style={`--bar: var(--bar-${c.folk_art_style}, var(--gold)); transition-delay:${Math.min(i * 0.05, 0.6)}s`}>
+            <div class="top">
+              <span class="no">{String(c.number).padStart(2, '0')}</span>
+              {i === 0 && <span class="start">Start here</span>}
+            </div>
+            <h3 class="name">{c.name}</h3>
+            <p class="sa">{c.sanskrit_name}</p>
+            <p class="sum">{c.summary}</p>
+            <div class="verses">{c.verse_count} verses</div>
+          </a>
+        ))}
       </div>
+    </div></section>
 
-      <div class="grid">
-        {chapters.map((c) => {
-          const accent = styleColors[c.folk_art_style] ?? '#C75B12';
-          const num = String(c.number).padStart(2, '0');
-          return (
-            <a class="card" href={`/chapters/${c.slug}/`} style={`--accent:${accent}`}>
-              <div class="accent"></div>
-              <div class="plate">
-                <img src={`/illustrations/${c.slug}/001.png`} alt={`${c.transliterated_name} illustration`} width="1376" height="768" loading="lazy" decoding="async" />
-                <span class="num">{num}</span>
-              </div>
-              <div class="body">
-                <span class="deva">{c.sanskrit_name}</span>
-                <span class="name">{c.name}</span>
-                <span class="summary">{c.summary}</span>
-                <span class="meta">
-                  <span>{c.verse_count} verses</span>
-                  <span class="style-tag">{styleLabel[c.folk_art_style] ?? c.folk_art_style}</span>
-                </span>
-              </div>
-            </a>
-          );
-        })}
+    <!-- What is the Gita? -->
+    <section class="closing"><div class="reading">
+      <div class="divider"><span class="rule"></span><span class="g">परिचय</span><span class="rule"></span></div>
+      <div class="reveal">
+        <h2>What is the Gita?</h2>
+        <p>Over 5,000 years ago, on a battlefield called Kurukshetra, a warrior named Arjuna faced the hardest moment of his life. His charioteer, Krishna — who was actually God in human form — spoke 700 verses of wisdom that changed everything.</p>
+        <p>Those verses became the Bhagavad Gita — "The Song of God." It teaches us about courage, duty, love, and finding out who we really are.</p>
       </div>
-    </main>
+      <div class="divider" style="margin-top:2rem"><span class="rule"></span><span class="g">॥</span><span class="rule"></span></div>
+    </div></section>
 
-    <div class="divider"><span class="rule"></span><span class="glyph"><Fragment set:html={kolam} /></span><span class="rule"></span></div>
+    <!-- Background switcher (preview chrome only) -->
+    <div class="switcher" role="group" aria-label="Background colour">
+      <span class="lab">Background</span>
+      {themes.map((t) => (
+        <button type="button" data-theme-btn={t.id} title={t.label} aria-label={t.label}
+                style={`background:${t.dot}`}></button>
+      ))}
+      <span class="now" id="now-label">Cream (current)</span>
+    </div>
 
-    <footer class="foot">
-      <div class="glyph" style="margin:0 auto 0.6rem"><Fragment set:html={kolam} /></div>
-      <p class="sa">श्रीमद्भगवद्गीता</p>
-      <p>Gita Kids — ancient wisdom, young hearts</p>
-      <p class="note">Design preview. Fonts: Tiro Devanagari Sanskrit + Fraunces + Source Serif 4. Illustrations are the existing ones, shown as-is. Nothing here changes the live site.</p>
-    </footer>
+    <script is:inline define:vars={{ themes }}>
+      (function () {
+        var root = document.documentElement;
+        var nowEl = document.getElementById('now-label');
+        var btns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-btn]'));
+        function labelFor(id) { var t = themes.find(function (x) { return x.id === id; }); return t ? t.label : id; }
+        function apply(id) {
+          root.dataset.theme = id;
+          try { localStorage.setItem('gk-bg', id); } catch (e) {}
+          if (nowEl) nowEl.textContent = labelFor(id);
+          btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.themeBtn === id)); });
+        }
+        btns.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.themeBtn); }); });
+        apply(root.dataset.theme || 'cream');
+
+        // scroll reveal (matches current site behaviour)
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+          }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+          document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+        } else {
+          document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('vis'); });
+        }
+      })();
+    </script>
   </body>
 </html>
