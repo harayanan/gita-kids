@@ -27,6 +27,14 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-29, app icon / favicon)
+
+**Reworked the peacock-feather app icon + favicon (owner request).** The old icon had a small upright feather using the space poorly (barely visible at favicon sizes) and weak contrast. Owner asked to rotate it 45° clockwise, enlarge it nearly corner-to-corner, and raise contrast (either white ground + colourful feather, or indigo ground + brighter feather).
+
+White-ground route ruled out: the feather art has no solid fill — it's fine barb lines with **indigo gaps that are the same colour as the background**, so cutting it out onto white disintegrates it into stripes. Took the indigo route instead (keeps the feather owner already chose). Built **`scripts/retouch-icon.mjs`** (idempotent; reads pristine `assets/_src-feather.png`, seeded once from the old `icon-only.png`): rotate 45° with a matching-indigo fill (seamless corners), upscale ~2.0× + centre-crop to fill the frame, then a uniform contrast curve (`saturation 1.5`, `linear(1.18,-16)`) that deepens the indigo and brightens the feather without any seam. Android adaptive foreground down-sized to 660px to stay inside the launcher's circular safe zone.
+
+Refreshed **everywhere**: web favicons (`public/` 16/32/48 + `.ico` via ImageMagick, `apple-touch-icon`, `icon-512`), Capacitor source set (`assets/`), and Android `res/` launcher icons + splashes (`npx @capacitor/assets generate --android`, 74 files). No web manifest / PWA icons exist; `www/` shell is index-only. **Committed (`2e8e610`) + deployed to production 2026-06-29** (`vercel deploy --prod` → https://www.gitakids.com, 744 pages). Live `favicon-32x32.png` verified byte-identical to the new asset; `icon-512.png` HTTP 200. Android launcher icon will refresh on the next APK build (the committed `res/` assets feed the existing Android CI workflow); the live site favicon is already updated. Re-run the script with a different size via `node scripts/retouch-icon.mjs 1.8`.
+
 ## What Was Done This Session (2026-06-28, latest)
 
 **Jingocheck — conservative AI-tell reduction across all 701 verse stories (owner request).** Owner: "run jingocheck across all the stories... reduce hyperbole, emdashes etc." Note: the `jingocheck` skill is built for analytical writing and explicitly does NOT apply to long-form storytelling (rhythm is part of the craft); confirmed with owner that a **targeted, conservative** pass was wanted, not the full analyst-copy homogenization that would flatten the children's-story voice.
