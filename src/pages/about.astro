@@ -1,6 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FolkArtBorder from '../components/FolkArtBorder.astro';
+import { execSync } from 'node:child_process';
+
+// Web build stamp (shown on the website / as a fallback). Inside the native app the
+// script below overrides this with the installed APK's versionName + versionCode.
+let webBuild = 'dev';
+try {
+  webBuild = (
+    process.env.VERCEL_GIT_COMMIT_SHA ||
+    execSync('git rev-parse --short HEAD').toString().trim()
+  ).slice(0, 7);
+} catch (e) {}
+const buildDate = new Date().toISOString().slice(0, 10);
 ---
 
 <BaseLayout title="About — Gita Kids">
@@ -54,5 +66,32 @@ import FolkArtBorder from '../components/FolkArtBorder.astro';
         happens, but what it feels like.
       </p>
     </div>
+
+    <p id="version-stamp" class="text-center font-ui text-xs text-gray-400 mt-12">
+      Web build {webBuild} &middot; {buildDate}
+    </p>
   </div>
+
+  <script is:inline>
+    // In the native app, replace the web-build stamp with the installed app's
+    // versionName + versionCode (App.getInfo from @capacitor/app). Runs on first
+    // load and after each Astro view transition.
+    (function () {
+      function applyVersion() {
+        var el = document.getElementById('version-stamp');
+        if (!el) return;
+        var C = window.Capacitor;
+        if (!C || !(C.isNativePlatform && C.isNativePlatform())) return;
+        var App = (C.Plugins || {}).App;
+        if (!App || !App.getInfo) return;
+        App.getInfo()
+          .then(function (info) {
+            el.textContent = 'App version ' + info.version + ' (build ' + info.build + ')';
+          })
+          .catch(function () {});
+      }
+      document.addEventListener('astro:page-load', applyVersion);
+      applyVersion();
+    })();
+  </script>
 </BaseLayout>
