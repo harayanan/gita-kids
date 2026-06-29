@@ -41,7 +41,11 @@ Both HTTP 200, verified live. **Committed (`62f4f26`) + deployed.**
 
 Owner decisions: images stay as-is (back up hi-res originals FIRST, then compress — memory `preserve-hires-images-before-compression`); type undecided (compare on the preview); motion = signature only.
 
-**Next:** owner reacts to the previews → pick a type system, decide how far to roll the identity into real pages. Then sequence backlog A (speed: AVIF/WebP via `astro:assets`, after backing up originals) → B (identity) → C (signature motion) → D (a11y/polish).
+**Background-colour exploration (added later, 2026-06-29):** owner asked whether to use an indigo background in the *current* design. Rebuilt `/preview/home` to mirror the live design with a bottom swatch switcher (cream / warm parchment / soft indigo / indigo / midnight; dark themes adapt text/cards/borders/accents/per-chapter bars; choice persists). Moved the re-rooted concept to `/preview/redesign`. My recommendation given: indigo is strong for the hero/landing "behold" moments, but I'd avoid a global dark ground for the long-form reading pages (700 verses, 8–12 readers, illustrations made for a warm ground); use indigo as an environment for hero/landing and keep a warm light ground for reading — or shift to warm-parchment/soft-indigo if one global ground is wanted. Offered to mock a **verse + story page** in the shortlisted colour(s) since the reading page is the deciding view — awaiting owner's colour pick.
+
+**Next:** owner (after sleep) reviews `/preview/home` swatches + `/preview/redesign`; picks a background direction and a type system; then I mock a verse/story page in the chosen colour, and sequence backlog A (speed: AVIF/WebP via `astro:assets`, after backing up originals) → B (identity) → C (signature motion) → D (a11y/polish).
+
+Type decision deferred by owner ("revisit type later").
 
 ## What Was Done This Session (2026-06-29, version stamp on About page)
 
