@@ -10,21 +10,23 @@
     </style>
 
     <!--
-      Locked to a LIGHT theme (the web content is always cream), edge-to-edge with
-      transparent system bars and DARK bar icons forced on regardless of the phone's
-      dark mode — so the status/nav icons stay visible on the light content. Contrast
-      scrims disabled; content draws under both bars and the web layer pads for the
-      safe-area insets.
+      Locked to a LIGHT theme (the web content is always cream). The system bars get
+      a solid brand-indigo (#2D3A87) band with LIGHT (white) icons forced on, so the
+      OS chrome reads as a distinct frame around the cream content instead of blending
+      into it. The app stays edge-to-edge: the indigo here is the cold-start colour, and
+      once the WebView loads, the web layer repaints the same indigo into the safe-area
+      zones (see BaseLayout.astro) so there is no flash. Contrast scrims disabled; the
+      web layer pads for the safe-area insets.
     -->
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:background">@null</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">#2D3A87</item>
+        <item name="android:navigationBarColor">#2D3A87</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
         <item name="android:enforceStatusBarContrast">false</item>
         <item name="android:enforceNavigationBarContrast">false</item>
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>

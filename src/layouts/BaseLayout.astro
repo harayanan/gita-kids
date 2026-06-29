@@ -57,7 +57,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         try {
           if (P.StatusBar) {
             P.StatusBar.setOverlaysWebView({ overlay: true }); // edge-to-edge: content under the status bar
-            P.StatusBar.setStyle({ style: 'DARK' });           // dark icons on the cream background
+            // 'DARK' = a dark bar background, so the OS draws LIGHT (white) icons —
+            // which sit on the indigo safe-area band painted by the CSS below.
+            P.StatusBar.setStyle({ style: 'DARK' });
           }
         } catch (e) {}
         function onReady(fn) {
@@ -85,12 +87,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       /* Keep content clear of the overlaid status bar and the gesture/nav bar */
       html.native-app #site-nav { padding-top: calc(1.25rem + env(safe-area-inset-top)) !important; }
       html.native-app body { padding-bottom: env(safe-area-inset-bottom); }
-      /* Define the system-bar zones with a subtle warm band so they don't fully
-         blend into the cream content (dark icons stay high-contrast on it). */
+      /* Paint the system-bar zones with solid brand indigo so the OS chrome reads as a
+         distinct frame around the cream content. White status/nav icons sit on indigo
+         at high contrast — matches the native theme colour for a flash-free cold start. */
       html.native-app::before { content: ""; position: fixed; top: 0; left: 0; right: 0;
-        height: env(safe-area-inset-top); background: #F0E2C0; z-index: 9998; pointer-events: none; }
+        height: env(safe-area-inset-top); background: #2D3A87; z-index: 9998; pointer-events: none; }
       html.native-app::after { content: ""; position: fixed; bottom: 0; left: 0; right: 0;
-        height: env(safe-area-inset-bottom); background: #F0E2C0; z-index: 9998; pointer-events: none; }
+        height: env(safe-area-inset-bottom); background: #2D3A87; z-index: 9998; pointer-events: none; }
     </style>
   </head>
   <body class="min-h-screen flex flex-col bg-cream">

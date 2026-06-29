@@ -27,6 +27,23 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-06-29, system-bar framing — Android/iOS)
+
+**Recoloured the mobile app's status bar + navigation bar so the OS chrome no longer blends into the cream content (owner request).** Owner asked to either (a) give the top/bottom bars a distinct colour (suggested indigo) or (b) go full-screen immersive with a way to summon the nav buttons back, picking whichever gives an aligned cross-platform POV.
+
+**Chose (a) — coloured bar bands, symmetric top + bottom, identical on Android and iOS.** Rejected immersive: it hides Android's back/home buttons (the swipe-to-reveal affordance is undiscoverable for the 8–12 audience and adds friction to a reading app), and iOS has no bottom system bar and apps don't go immersive outside games/video — so immersive Android + normal iOS would be the *opposite* of aligned. A coloured chrome band is the platform-standard, cross-platform-consistent pattern.
+
+**Colour: brand indigo `#2D3A87` with white (light) system icons.** It's the app's primary brand colour (the peacock-feather icon is indigo), gives maximum contrast against the cream reading content, and frames the cream "page" like an indigo book binding.
+
+Root cause of the old "blending": the bars were edge-to-edge transparent over a near-cream `#F0E2C0` band, while the StatusBar plugin was set to `Style.Dark` (= **white** icons) — white icons on cream = invisible. Fixed by painting the bands indigo and forcing white icons consistently.
+
+Changes (kept the existing edge-to-edge architecture; lowest-risk):
+- `src/layouts/BaseLayout.astro` — the `html.native-app::before/::after` safe-area bands repainted `#F0E2C0` → `#2D3A87`; StatusBar `Style.Dark` kept (now correct: white icons on indigo); comments updated.
+- `android/.../res/values/styles.xml` — `statusBarColor`/`navigationBarColor` `transparent` → `#2D3A87`; `windowLightStatusBar`/`windowLightNavigationBar` `true` → `false` (white icons). Native colour matches the web band, so cold start → loaded WebView is flash-free.
+- iOS: no files to change (no `ios/` dir yet); the web-layer CSS + StatusBar plugin handle it identically when iOS is added later.
+
+Verified: Astro build clean (744 pages), indigo band present in bundled CSS (`dist/_astro/index.*.css`: `safe-area-inset-top);background:#2d3a87`), `styles.xml` valid XML. **Not yet committed/deployed.** The web band change is live-site CSS (ships on next site deploy, scoped to `html.native-app` so the website is unaffected); the Android theme change refreshes on the next APK build via the existing Android CI workflow.
+
 ## What Was Done This Session (2026-06-29, app icon / favicon)
 
 **Reworked the peacock-feather app icon + favicon (owner request).** The old icon had a small upright feather using the space poorly (barely visible at favicon sizes) and weak contrast. Owner asked to rotate it 45° clockwise, enlarge it nearly corner-to-corner, and raise contrast (either white ground + colourful feather, or indigo ground + brighter feather).
@@ -260,4 +277,4 @@ All content follows **Advaita Vedanta** (Shankaracharya's non-dualism). Atman is
 - Chapter outlines: `docs/chapter-{02,03,06,12,15}-outline.md`
 - Gitamahatmyam content: `content/gitamahatmyam.yaml`
 
-Last reviewed: 2026-06-28
+Last reviewed: 2026-06-29
