@@ -27,6 +27,33 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
+## What Was Done This Session (2026-09-21, the 20 blocked images regenerated via Codex) — NOT COMMITTED
+
+The Gemini project is still over its monthly spend cap (429 on every call, text included; key `GEMINI_API_KEY` ending `dmaQ` in `hdfc/apps/mutual-fund-dost/.env.local`, shared with mutual-fund-dost). Owner chose to try Codex instead.
+
+1. **Codex image provider added:** `scripts/lib/codex-image.mjs`, enabled with `IMAGE_PROVIDER=codex` (hook at the top of `generateImageWithRetry` in `scripts/generate-illustration.mjs`, so verse, cover and Ch1 `generate-chapter.mjs` paths all use it with unchanged prompts, briefs and reference sheets). It runs `codex exec` under the ChatGPT login (no OpenAI API key), reads the PNG from `~/.codex/generated_images/<session id>/`, keeps the 1698×926 original in `CODEX_HIRES_DIR`, and writes the site image at 1408×768 JPEG q92. About 2 to 2.5 minutes per image; 3 in parallel worked.
+2. **All 20 regenerated** (18 unresolved + 10/001 + 16/017). Independent 4-agent zoom inspection of the first pass: 6 pass, 8 minor, 6 fail (1/38 three hands + five horses; 3/21, 11/28, 16/17 letter-like filigree on small bands; 7/21 broken top border; 11/52 cropped feet + five horses). Five Codex-specific hard rules were added to the provider prompt (plain motifs only on small bands, limb count, four horses, continuous border, flat colour) and the 6 were rerun. Second pass, inspected by me at zoom (not independently re-verified): no hard defects; 1/38, 3/21, 11/28 pass; 7/21 (pale Krishna, shaded banyan), 11/52 (lotus pennant instead of Hanuman), 16/17 (pale Krishna) minor. **Current tally for the 20: 9 pass, 11 minor, 0 fail.**
+3. **Bug found and fixed:** on the 1/38 rerun the Codex agent saved an unrelated image (a re-encode of site 6/22) as its output file. The provider now ignores agent-saved files and reads only Codex's own session folder. All 26 outputs from both runs were md5-checked against Codex's generated files; only that one mismatched, and 1/38 was repaired from the genuine file.
+4. **Codex traits seen:** strong shloka specificity and Krishna canon (saturated blue, two arms); weakness is tiny pseudo-script on ornamental bands (visible at 200%+), fixed by the band rule; renders denser and more saturated than neighbouring Gemini images, most visible in Ch2 Gond (2/25, 2/65). Remaining minors worth a retouch: 2/25 hem marks, 18/31 crown band, 18/71 heart symbols, 18/77 floating sword.
+
+**State:** build clean (747 pages). Nothing committed or deployed. Pre-run versions of the 20, first Codex attempts and before/after sheets and Codex hi-res originals are at `../gita-kids-illustrations-original/2026-09-21-codex-hires/` (review material in its `_review/` subfolder).
+
+**Next:** owner reviews before/after sheets → commit + deploy the full 2026-09-14 + 2026-09-21 image set → optional polish pass on the MINOR images (198 audit + 50 regen + 11 here) → art-style diversification mapping (extended style library in `STYLE_PROMPTS` is still unassigned; every live image uses the original six styles).
+
+## What Was Done (2026-09-14, illustration quality audit + regeneration) — IN PROGRESS, NOT COMMITTED
+
+Owner request: images did not relate to their shloka and had fidelity defects (three-armed Krishna, Buddha figures). Ran multi-agent workflows.
+
+1. **Standards written:** `docs/illustration-quality-rubric.md` (what a good image is, verse-type depiction strategy, 1-5 scoring, PASS/MINOR/FAIL rules, illustration_brief template) and `docs/illustration-style-fidelity-spec.md` (per-style signatures, character canon, legitimate exceptions e.g. Ch11 cosmic form, hard defects, inspection procedure).
+2. **Audit of all 720 images** (701 verses, 18 covers, home hero), each FAIL re-checked by an independent agent: 121 pass, 198 minor, 396 confirmed fail (text/fake script, extra arms, Buddha/minaret/swastika, duplicate Krishna, off-canon characters, generic tableaux).
+3. **Generator hardened:** shared `FIDELITY_BLOCK` + stronger `NO_TEXT_BLOCK` in `scripts/generate-illustration.mjs` (verse + cover prompts) and `scripts/lib/build-scene-prompt.mjs` (Ch1); Krishna ref now says exactly two arms and one Krishna; Pichwai no longer forces cows/gopis into every scene; covers accept `cover_brief:` in meta.yaml. Ch1 Pichwai-narrative Bhishma sheet replaced with a bearded one (old sheet in backup).
+4. **Regeneration of the 396 fails:** agents wrote an `illustration_brief` per verse (Ch1: scene-briefs.yaml), regenerated, zoom-inspected, retried up to 4x, independent verify, one repair round. Result: **326 pass, 50 minor, 18 unresolved, 2 fail**.
+5. **Blocked:** the Gemini project hit its **monthly spending cap** (429 at https://ai.studio/spend) from ~20:35 UTC; 16 of the 18 unresolved are images whose repair generation was blocked (live image = original from backup). Remaining: unresolved 01/038, 02/025, 02/065, 03/005, 03/021, 03/029, 06/021, 06/022, 07/021, 11/028, 11/052, 13/021, 14/022, 18/017, 18/027, 18/031 (live attempt still has scratch marks), 18/071, 18/077; fail 10/001 (pseudo-script on seat arch), 16/017 (extra arm in crowd).
+
+**State:** 384 images + 380 content YAML files (brief fields only) changed, uncommitted, not deployed. YAML all valid; build clean (747 pages). **Originals of all 734 images backed up** at `../gita-kids-illustrations-original/2026-09-14/`. Every attempt image saved in the session scratchpad.
+
+**Next:** owner raises Gemini spend cap → rerun the 20 remaining → owner reviews before/after → commit + deploy → optional polish pass on the 198+50 MINOR images.
+
 ## What Was Done This Session (2026-07-15, three owner fixes: iPad back button, person consistency, illustration rework)
 
 Three owner requests, all fixed + deployed:
@@ -341,4 +368,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-07-15
+Last reviewed: 2026-09-21

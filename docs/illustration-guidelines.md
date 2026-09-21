@@ -84,6 +84,40 @@ Each chapter has a `folk_art_style` in its `meta.yaml`. The illustration script 
 - "Tree of Life motif where compositionally appropriate"
 - "Narrative mythological scenes with rich textile-like patterning"
 
+### Diversification styles — candidate menu (added 2026-06-29, not yet assigned to chapters)
+
+The original six styles cycle 3–4 times each across the 18 chapters. These additional Indian forms exist to break up that repetition. Full prompt blocks are in `STYLE_PROMPTS` (and per-style palettes in `STYLE_PALETTES`) in `scripts/generate-illustration.mjs`. One sample of each (same scene — Krishna teaching Arjuna) is at `public/illustrations/_samples/` with a contact sheet `index.html`. Chapter assignments to be chosen.
+
+**Strong candidates (locked 2026-06-29) — the 8 folk forms that genuinely widen the book:**
+
+| Key | Style | Note |
+|-----|-------|------|
+| `phad` | Phad Scroll (Rajasthan) | Red-ground epic scroll; best storytelling idiom |
+| `sanjhi` | Sanjhi Paper-cut (Braj) | Cream filigree cutwork on indigo; devotional |
+| `kerala-mural` | Kerala Mural | Panchavarna, stately, temple-grade |
+| `kalighat` | Kalighat (Bengal) | Open ground + watercolour wash; the one non-dense style |
+| `tanjore` | Tanjore (Thanjavur) | Gold arch, opulent; the regal/divine register |
+| `pahari` | Pahari (Kangra) | Soft flowering landscape; tender/meditative chapters |
+| `mewar` | Mewar (Rajput) | Bold saturated bands; battlefield-ready (Ch1 fit) |
+| `tholu-bommalata` | Tholu Bommalata | Dark luminous leather/shadow-puppet; cosmic/intense chapters |
+
+Plus one fine-art (non-folk) option, also locked as a candidate:
+
+| Key | Style | Note |
+|-----|-------|------|
+| `tomassetti` | Giampaolo Tomassetti (classical realism) | Italian ISKCON/BBT-style Mahabharata oil painting — naturalistic, cinematic, devotional. Deliberately breaks the flat-folk constraints (`fineArt: true` → no folk border, naturalistic palette + sky allowed). |
+
+**Held back (generated, but redundant or weaker — revisit only if needed):**
+
+- `cheriyal` — near-identical to Phad (red-ground processional). Keep Phad instead.
+- `saura` — warm-maroon cousin of Warli, which is already in the book; risks reading as redundant.
+- `mysore` — rendered as a generic soft miniature; least distinct.
+- `basohli` — bold but a close cousin of Mewar; keep only if a second hot-saturated form is wanted.
+
+**Open issues:**
+- `tanjore` sample crops the bottom frame band on 16:9 (model zooms into the arch). Fix when assigning it to a chapter: generate taller and letterbox, or add the outer frame in post.
+- Folk banners sometimes carry a swastika motif (traditional/auspicious, but can be misread on a global kids' site). Suppress in the prompt when committing any style.
+
 ---
 
 ## 3. Color Palette

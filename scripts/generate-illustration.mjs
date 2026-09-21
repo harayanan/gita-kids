@@ -106,6 +106,12 @@ function resolveChapterSync(chapterArg) {
       .join(' ');
   }
 
+  // Optional `cover_brief` — concrete art direction for the chapter cover.
+  const coverBriefMatch = metaRaw.match(/^cover_brief:\s*[>|][-+]?\s*\n((?:[ \t]+.+\n?)+)/m);
+  if (coverBriefMatch) {
+    meta.cover_brief = coverBriefMatch[1].split('\n').map(l => l.trim()).filter(Boolean).join(' ');
+  }
+
   return {
     slug,
     versesDir: join(CHAPTERS_DIR, slug, 'verses'),
@@ -137,9 +143,9 @@ export const STYLE_PROMPTS = {
     prompt: `STYLE REQUIREMENTS (CRITICAL — follow every rule exactly):
 - In the style of traditional Nathdwara Pichwai temple paintings from Rajasthan
 - DARK BACKGROUND (MANDATORY): deep blue (#0A1A3A), black (#1A1A2E), or deep green (#0A2A1A) — NEVER cream, NEVER white, NEVER light backgrounds
-- Rich, detailed, devotional composition centered on Krishna (as Shrinathji where appropriate)
+- Rich, detailed, devotional composition; Krishna as Shrinathji ONLY if the scene asks for it
 - Flat perspective — NO shading, NO atmospheric depth, NO 3D rendering
-- Signature Pichwai motifs: lotus ponds, cows, peacocks, gopis, flowering trees
+- Pichwai motifs (lotus ponds, cows, peacocks, gopis, flowering trees) ONLY where the scene calls for them — the SCENE's own subject must fill the panel; never pad a battlefield, hermitage or village scene with cows and gopis
 - Rich jewel-tone palette: emerald, sapphire, ruby, gold on dark ground — NOT warm saffron/terracotta
 - Dense floral patterns filling all empty spaces (horror vacui)
 - Figures in strict profile OR frontal view, NEVER three-quarter view
@@ -447,8 +453,26 @@ export const CHARACTER_REFS = {
   drona: `Drona: Elderly sage (60+), simple saffron robes, no crown, long white beard, teaching staff or bow, calm authority.`,
   bhishma: `Bhishma: Ancient warrior (80+), towering stature, silver armor, flowing white hair (no crown), a FULL flowing white beard and a thick white moustache (always shown bearded and moustached, as in popular depictions — NEVER clean-shaven), massive bow, weathered face with kind eyes.`,
   arjuna: `Arjuna: Young warrior (25), lean and athletic, with a neat black moustache and ordinary human (warm brown) skin, terracotta and saffron armor, a plain warrior's diadem/headband — NO peacock feather (the peacock feather belongs ONLY to Krishna), holds the divine bow Gandiva. Clearly DISTINCT from Krishna: not blue-skinned, no flute, no peacock feather, no crown.`,
-  krishna: `Krishna: Youthful graceful figure, yellow silk robes, peacock feather in crown, blue-tinged skin, divine smile, flute at waist. He is the Lord (Bhagavan), the divine teacher of the Gita — render him as the largest, tallest, most prominent human figure in any scene, with a radiant golden halo.`,
+  krishna: `Krishna: Youthful graceful figure, yellow silk robes, peacock feather in crown, blue-tinged skin, divine smile, flute at waist, EXACTLY TWO ARMS (his ordinary human form — no discus, conch or extra arms unless the scene explicitly asks for his four-armed Vishnu form). Draw him ONCE only — no second blue-skinned, crowned or yellow-clad look-alike anywhere in the image. He is the Lord (Bhagavan), the divine teacher of the Gita — render him as the largest, tallest, most prominent human figure in any scene, with a radiant golden halo.`,
 };
+
+// Hard fidelity rules shared by verse, cover and Ch1 scene prompts. Derived from
+// the 2026-09-14 audit (docs/illustration-style-fidelity-spec.md §4).
+export const FIDELITY_BLOCK = `FIDELITY RULES (CRITICAL — violations make the image unusable):
+- Anatomy: every human figure has exactly ONE head, TWO arms, TWO hands and TWO legs. No extra, floating or merged hands or limbs. Multi-armed or multi-headed forms ONLY where the SCENE explicitly names such a divine form (e.g. the cosmic Vishvarupa, four-armed Vishnu, four-headed Brahma).
+- Animals are whole natural animals with the correct number of legs; no animal heads on human bodies. Horses and chariot wheels drawn correctly.
+- One of each named character: never duplicate Krishna or Arjuna, and no look-alike figures.
+- Hindu tradition only: NO Buddha or Buddha-like figures (no cranial bump, no snail-shell curls, no robe over one shoulder, no shaven-headed monks), no Jain tirthankaras, no Christian, Islamic, Chinese, Japanese or Western imagery, no mosque domes or minarets. Meditating sages are Hindu rishis with a matted hair bun, beard, rudraksha beads and sacred thread.
+- NO swastika motifs anywhere, including borders and decorations.
+- Ancient India only: no globes, maps, clocks, icons, pictograms, charts, scales-of-justice symbols, music-note symbols, framed pictures, modern clothes or modern buildings.
+- Child-safe for ages 8-12: no blood, wounds, gore or frightening monsters.
+- Complete border on all four sides; no figure's head or crown cut off by the frame.`;
+
+export const NO_TEXT_BLOCK = `CRITICAL — NO TEXT IN THE IMAGE:
+- Do NOT include any words, letters, numerals, labels, captions, titles, speech bubbles, signatures or colour swatches
+- No pseudo-script or letter-like marks: books, scrolls, palm leaves, banners and tablets must be blank or decorated with plain pattern only
+- Do NOT render any text overlays, legends, or annotations
+- The image must contain ONLY the illustration — pure artwork with no text whatsoever`;
 
 // Map speaker field values to character keys
 const SPEAKER_MAP = {
@@ -679,10 +703,9 @@ ${styleConfig.prompt}
 
 ${colorPalette}
 
-CRITICAL — NO TEXT IN THE IMAGE:
-- Do NOT include any words, letters, labels, captions, titles, chapter numbers, or color swatches
-- Do NOT render any text overlays, legends, or annotations
-- The image must contain ONLY the illustration — pure artwork with no text whatsoever
+${NO_TEXT_BLOCK}
+
+${FIDELITY_BLOCK}
 
 SERIES COHESION:
 - Use the style of classic ${styleConfig.name} paintings as your reference
@@ -738,7 +761,7 @@ This is a TITLE-PAGE / FRONTISPIECE artwork — a single emblematic, symmetrical
 CHAPTER ${chapterNum}: ${chapterName} (${sanskritName})
 CHAPTER THEME (illustrate this overarching idea, emblematically):
 ${summary}
-${characterBlock}${krishnaProminence}
+${chapterMeta.cover_brief ? `\nCOVER ART DIRECTION (draw this literally): ${chapterMeta.cover_brief}\n` : ''}${characterBlock}${krishnaProminence}
 COVER COMPOSITION:
 - Centered, balanced and iconic — a frontispiece, not a busy narrative panel
 - Weave in emblematic symbols that evoke this chapter's theme
@@ -755,6 +778,8 @@ ABSOLUTELY NO TEXT — THIS IS THE SINGLE MOST IMPORTANT RULE:
 - Do NOT label the two sides of the scene, do NOT spell out any words from the theme, do NOT inscribe anything on banners, scrolls, books, or borders.
 - If you are ever about to draw a letter or word, draw a decorative folk-art motif (flower, dot pattern, vine) in its place instead.
 - The finished image is PURE ARTWORK ONLY — completely free of text.
+
+${FIDELITY_BLOCK}
 
 SERIES COHESION:
 - Use the style of classic ${styleConfig.name} paintings as your reference
@@ -803,6 +828,13 @@ async function generateCover(chapter, options = {}) {
 // ---------------------------------------------------------------------------
 
 export async function generateImageWithRetry(parts, apiKey, maxRetries = 3) {
+  // IMAGE_PROVIDER=codex routes generation through `codex exec` (ChatGPT login) instead of Gemini.
+  if (process.env.IMAGE_PROVIDER === 'codex') {
+    const { generateImageViaCodex } = await import('./lib/codex-image.mjs');
+    console.log('  Provider: codex');
+    return generateImageViaCodex(parts, { label: process.env.CODEX_LABEL || 'image' });
+  }
+
   const models = IMAGE_MODELS;
 
   for (const model of models) {

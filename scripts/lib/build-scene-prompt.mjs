@@ -8,12 +8,7 @@
 // forbids any other people. For `evocative` / `devotional` it omits the
 // strict-cast line and adds a one-line mood cue instead.
 
-import { STYLE_PROMPTS, buildColorPalette } from '../generate-illustration.mjs';
-
-const NO_TEXT_BLOCK = `CRITICAL — NO TEXT IN THE IMAGE:
-- Do NOT include any words, letters, labels, captions, titles, chapter numbers, or color swatches
-- Do NOT render any text overlays, legends, or annotations
-- The image must contain ONLY the illustration — pure artwork with no text whatsoever`;
+import { STYLE_PROMPTS, buildColorPalette, NO_TEXT_BLOCK, FIDELITY_BLOCK } from '../generate-illustration.mjs';
 
 const FORMAT_BLOCK = `FORMAT: Landscape orientation 16:9 aspect ratio (1408×768 px), suitable for full-width web display in a children's book.`;
 
@@ -63,6 +58,8 @@ ${styleConfig.prompt}
 ${buildColorPalette(style)}
 
 ${NO_TEXT_BLOCK}
+
+${FIDELITY_BLOCK}
 
 ${FORMAT_BLOCK}`.trim();
 }

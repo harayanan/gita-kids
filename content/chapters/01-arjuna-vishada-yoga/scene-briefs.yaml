@@ -11,11 +11,11 @@
   notes: "Distant war drums and conches sounding from the north"
 - verse: 2
   relevance_mode: specific
-  cast: [duryodhana, drona]
-  action: "Duryodhana steps down from his chariot and approaches his teacher Drona after seeing the Pandava army arrayed in formation"
-  setting: "Kaurava side of the Kurukshetra battlefield at dawn, Pandava army massed across the plain"
-  props: ["chariot", "Drona's bow resting across his knees", "gold armor"]
-  notes: ""
+  cast: [duryodhana, drona, warrior-pandava]
+  action: "Prince Duryodhana (young, muscular, thick moustache, red-gold armour over yellow, ornate crown with red gem, no halo) has just stepped down from his chariot and walks quickly up to his teacher Drona (elderly brahmin, long white beard, white topknot, saffron robes, sacred thread, holding his tall bow upright, no crown), speaking urgently with one arm pointing back across the field at the Pandava army"
+  setting: "Kaurava side of the Kurukshetra battlefield; across the plain in the upper half, the Pandava army stands in an orderly battle formation drawn as clear figures: rows of soldiers with spears and shields, elephants, chariots with white horses and bright saffron and crimson banners"
+  props: ["Duryodhana's empty golden chariot behind him", "Drona's tall bow and quiver", "Pandava banners"]
+  notes: "Drona holds only his bow, no conch. The ground is flat dark navy scattered with small flowering shrubs; do NOT draw the ground or the distant army as horizontal ruled lines, rows of dashes or dotted strips. No palace or city buildings. Exclude Krishna, Arjuna, cows, gopis, lotus ponds. No text, letters, numerals, script or writing-like marks anywhere."
 - verse: 3
   relevance_mode: specific
   cast: [duryodhana, drona]
@@ -74,11 +74,11 @@
   notes: "Bhima maps to warrior-pandava"
 - verse: 11
   relevance_mode: specific
-  cast: [duryodhana, warrior-kaurava]
-  action: "Duryodhana points along the Kaurava ranks and commands his warriors to hold their assigned positions and guard Bhishma from every side"
-  setting: "Kaurava battle formation at Kurukshetra"
-  props: ["war banner", "mace"]
-  notes: "Bhishma named as the one to protect"
+  cast: [bhishma, duryodhana, warrior-kaurava]
+  action: "Duryodhana (young, thick moustache, red-gold armour over yellow, ornate crown with red gem, no halo) stands in the left foreground pointing his commanders to their places in a close protective ring of Kaurava warriors that surrounds Bhishma's chariot on every side, the warriors facing outward with round shields and spears raised to guard him"
+  setting: "Kaurava battle formation on the Kurukshetra plain; Bhishma (very old, tall, full white beard and moustache, long white hair, silver armour, no crown, large bow) stands in his golden chariot at the centre of the picture as the largest and most prominent figure, with elephants and Kaurava banners behind"
+  props: ["Bhishma's golden chariot with white horses", "ring of round shields", "spears", "Kaurava banners with plain emblems"]
+  notes: "Bhishma is at the centre, not at the edge. Exclude Krishna, Arjuna, cows, gopis, lotus ponds; no halos on anyone; no floating glyph-like curls or tendrils in the foliage. No text, letters, numerals or script anywhere."
 - verse: 12
   relevance_mode: specific
   cast: [bhishma, duryodhana]
@@ -103,10 +103,10 @@
 - verse: 15
   relevance_mode: specific
   cast: [krishna, arjuna, warrior-pandava]
-  action: "Krishna blows Panchajanya, Arjuna blows Devadatta, and wolf-bellied Bhima raises his enormous conch Paundra and blows a mighty blast"
-  setting: "Pandava front at Kurukshetra"
-  props: ["Panchajanya", "Devadatta", "Paundra", "mace"]
-  notes: "Bhima (warrior-pandava) is the mighty wolf-bellied one"
+  action: "Three warriors stand side by side, each blowing a great white spiral conch shell held in both hands at the lips: in the centre Krishna (largest and tallest figure, exactly two arms, blue skin, yellow silk, peacock-feather crown, golden halo) blows Panchajanya; on the left Arjuna (brown skin, black moustache, terracotta armour, plain headband, Gandiva bow and quiver slung on his back, no halo) blows Devadatta; on the right Bhima (very large and muscular, thick moustache, heavy gold mace resting at his side, no halo) blows Paundra, the biggest conch of the three"
+  setting: "Pandava front line on the Kurukshetra battlefield; Krishna's golden chariot with four white horses behind him, and gold sound-wave patterns spreading over rows of Pandava soldiers, elephants and saffron banners"
+  props: ["Panchajanya conch", "Devadatta conch", "Paundra conch, the largest", "Bhima's mace", "Gandiva bow on Arjuna's back"]
+  notes: "Bhima is the warrior-pandava figure, drawn much bigger than the other soldiers. Krishna's head is higher than Arjuna's and Bhima's. Battlefield only: exclude gardens, lotus ponds, ducks, cows, gopis, peacocks, seated figures, Sanjaya, palm leaves, scrolls or books, arrows held in hand. No halo on anyone except Krishna. No text, letters or script."
 - verse: 16
   relevance_mode: specific
   cast: [warrior-pandava]
@@ -124,10 +124,10 @@
 - verse: 18
   relevance_mode: specific
   cast: [warrior-pandava]
-  action: "King Drupada, the sons of Draupadi, and the mighty-armed young Abhimanyu each blow their conches one after another, every voice distinct"
-  setting: "Pandava ranks at Kurukshetra"
-  props: ["conch", "war banner"]
-  notes: "Each blows separately; Abhimanyu the youngest"
+  action: "A line of Pandava warriors blows white spiral conch shells one after another from left to right, each conch held in both hands at the lips: first King Drupada (older, grey hair, grey moustache, gold crown, green and gold armour); next the five young sons of Draupadi, five similar young warriors in matching armour, each with his own conch; last Abhimanyu (sixteen, beardless, brown skin, bright armour, bow and quiver on his back) raising his conch proudly"
+  setting: "Pandava ranks on the Kurukshetra battlefield, flat dark navy ground with small flowering shrubs; chariots with white horses stand behind the warriors under banners showing a lion, a lotus and a sun emblem"
+  props: ["seven white conch shells, each held by a warrior", "chariots with white horses", "banners with lion, lotus and sun emblems"]
+  notes: "Seven warriors in total, all human with two arms. Exclude crescent moons, stars and crescent-and-star flags; conches, weapons or armour pieces floating in the air; Krishna, cows, gopis, lotus ponds. No text, letters or script."
 - verse: 19
   relevance_mode: specific
   cast: [warrior-pandava, warrior-kaurava]
@@ -151,11 +151,11 @@
   notes: ""
 - verse: 22
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "From the chariot between the armies, Arjuna gazes across at the assembled warriors who stand ready and eager to fight"
-  setting: "Between the two armies on the Kurukshetra plain"
-  props: ["chariot", "white horses", "Gandiva bow"]
-  notes: "Arjuna scans the opposing ranks"
+  cast: [krishna, arjuna, bhishma, drona, warrior-kaurava]
+  action: "The golden chariot stands still between the two armies with four white horses at rest; Krishna (tallest and largest figure, exactly two arms, blue skin, yellow silk, peacock-feather crown, golden halo) stands upright at the front holding the reins, his head higher than Arjuna's; behind him Arjuna (brown skin, black moustache, terracotta armour, plain headband, no halo) holds Gandiva lowered in one hand and shades his eyes with the other hand, gazing across at the Kaurava warriors"
+  setting: "Kurukshetra battlefield, flat dark navy ground with small grass tufts; on the right the Kaurava army stands ready and eager for battle: rows of soldiers with bows, maces and banners, with Bhishma (full white beard, silver armour) and Drona (white beard, saffron robe) among them"
+  props: ["Hanuman banner on the chariot flagpole", "Gandiva bow lowered", "reins", "Kaurava banners"]
+  notes: "No one shoots: no arrows in flight, no drawn bows, no fighting. The ground is clear: no loose arrows, weapons, conches or small symbols scattered on it. Exclude swastikas and any cross-shaped or hooked symbols; cows, gopis. No text, letters, numerals or script."
 - verse: 23
   relevance_mode: specific
   cast: [arjuna, krishna, warrior-kaurava]
@@ -179,11 +179,11 @@
   notes: "Bhishma and Drona at the head of the assembled rulers"
 - verse: 26
   relevance_mode: specific
-  cast: [arjuna, krishna, warrior-pandava, warrior-kaurava]
-  action: "Standing in his chariot, Arjuna sees fathers, grandfathers, teachers, uncles, brothers, sons, grandsons, and friends arrayed across both armies"
-  setting: "Between the two armies, surveying kinsmen on both sides"
-  props: ["chariot", "white horses", "Gandiva bow"]
-  notes: "Kinsmen on both sides"
+  cast: [arjuna, krishna, bhishma, drona, warrior-pandava, warrior-kaurava]
+  action: "Arjuna (brown skin, black moustache, terracotta armour, plain headband, holding Gandiva) stands in the golden chariot and looks out at both armies with a troubled face; Krishna (tallest and largest figure, head higher than Arjuna's, exactly two arms, blue skin, yellow silk, peacock-feather crown, halo) stands at the front holding the reins of four white horses; only these two people are in the chariot"
+  setting: "Kurukshetra, flat dark navy ground; on both sides of the chariot stand clearly different family members in the ranks: Bhishma (very old, long white hair, full white beard, silver armour, no crown), Drona (white beard, saffron robe, sacred thread), crowned uncles with grey moustaches, brothers, young beardless sons, two small boy grandsons standing in front, and friends; banners and elephants behind"
+  props: ["four white horses", "Gandiva bow", "banners", "elephants", "small flowering shrubs and grass tufts on the ground"]
+  notes: "Exactly two people in the chariot, Arjuna and Krishna; no third seated or standing figure in it. Every weapon is held in a warrior's hand; the ground is clear of loose bows, arrows, swords, conches or armour pieces and carries only small shrubs and grass tufts. Banners are plain colour with a simple lotus or sun emblem only, no sprigs or line patterns on them. Every figure is fully drawn: no faint, half-drawn or ghost figures in the foliage. Exclude green rolling hills, landscape horizons, forts, cows, gopis; brown horses. No text, letters or script."
 - verse: 27
   relevance_mode: specific
   cast: [arjuna, krishna, warrior-pandava, warrior-kaurava]
@@ -192,12 +192,12 @@
   props: ["chariot", "white horses", "Gandiva bow"]
   notes: "Arjuna's face shows overwhelming compassion; sorrow begins"
 - verse: 28
-  relevance_mode: evocative
-  cast: [arjuna, krishna]
-  action: "His courage failing at the sight of his kinsmen, Arjuna's limbs grow weak and his mouth runs dry as he turns to Krishna in distress"
-  setting: "In the chariot between the armies, Arjuna's body beginning to fail"
-  props: ["chariot", "white horses", "Gandiva bow"]
-  notes: "Inner collapse — Arjuna slumping, addressing Krishna"
+  relevance_mode: specific
+  cast: [arjuna, krishna, warrior-kaurava]
+  action: "Arjuna (brown skin, black moustache, terracotta armour, plain headband) sags weakly against the chariot rail with his knees buckling, one hand pressed to his dry throat and the other hand barely holding Gandiva; Krishna (tallest and largest figure, exactly two arms, blue skin, yellow silk, peacock-feather crown, halo) stands upright holding the reins of four white horses and looks at him with concern"
+  setting: "Kurukshetra battlefield, flat dark navy ground with small shrubs; in front of the chariot, rows of Kaurava kinsmen, crowned uncles, cousins and bearded elders, raise swords, spears and banners, eager for battle; elephants behind"
+  props: ["golden chariot", "four white horses", "Gandiva bow", "Kaurava banners"]
+  notes: "Battlefield only. Exclude gardens, cows, gopis, peacocks, lotus ponds, banana trees; any second Arjuna or Krishna. No text, letters or script."
 - verse: 29
   relevance_mode: evocative
   cast: [arjuna, krishna]
@@ -214,11 +214,11 @@
   notes: "Arjuna's mind spinning; adverse omens"
 - verse: 31
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "Arjuna turns to Krishna in the chariot and shakes his head, refusing victory, kingdom, and pleasure"
-  setting: "Arjuna's chariot between the two armies"
-  props: ["Gandiva bow lowered", "chariot reins"]
-  notes: ""
+  cast: [arjuna, krishna, warrior-pandava, warrior-kaurava]
+  action: "Seated in the chariot, Arjuna (brown skin, black moustache, terracotta armour, plain headband, no halo, Gandiva lying across his knees) turns his face away and holds up one open palm to push away the things he refuses, shown inside a round medallion with a gold lotus-petal rim in the upper corner: an empty Indian lion-footed royal throne (simhasana) under a small parasol, a tall Indian gold mukut crown, heaps of gold necklaces and jewels, and a royal feast of sweets on golden plates; Krishna (larger than Arjuna, head higher, exactly two arms, blue skin, yellow silk, peacock-feather crown, halo) stands holding the reins of four white horses and looks at him"
+  setting: "Arjuna's golden chariot between the two armies on Kurukshetra, dark navy ground filled with small flowering shrubs and grass tufts in Pichwai pattern; rows of soldiers, elephants and banners stand on both sides"
+  props: ["lotus-rimmed medallion with lion-footed throne, mukut crown, jewels and sweets", "Gandiva bow across Arjuna's knees", "four white horses", "reins"]
+  notes: "The medallion is a round framed painting-within-the-painting, not a thought bubble: no trailing dots or small circles leading to it. It contains objects only, no people. Halo on Krishna only. Arjuna's gesture is refusal (palm raised outward, face turned away), not namaste. Horses are white. Exclude European-style crowns with arches or crosses, Western armchairs, coins; any second Arjuna or Krishna; gardens, cows, gopis. No text, letters, numerals or script."
 - verse: 32
   relevance_mode: specific
   cast: [arjuna]
@@ -227,33 +227,33 @@
   props: ["Gandiva bow", "chariot"]
   notes: "Keep focus on Arjuna's stricken gaze"
 - verse: 33
-  relevance_mode: evocative
-  cast: []
-  action: "Teachers, fathers, sons, grandfathers, uncles, and grandsons stand ranked across the field as one tangled family of kin"
-  setting: "The battlefield ranks seen as a lineage of relatives, elders to children"
-  props: []
-  notes: "Symbolic image of the whole web of kinship"
+  relevance_mode: specific
+  cast: [bhishma, drona, arjuna, krishna, warrior-pandava, warrior-kaurava]
+  action: "The whole family facing each other at Kurukshetra, shown in three clear rows of human warriors: top row, seated grandfathers with long white beards, including Bhishma (silver armour, no crown) and Drona the teacher (white beard, saffron robe, sacred thread, holding a bow); middle row, fathers, maternal uncles and fathers-in-law in armour with crowns and moustaches; bottom row, young beardless sons, grandsons and brothers-in-law with small round shields. At the left side, Arjuna (brown skin, black moustache, terracotta armour, plain headband, Gandiva) looks at them sorrowfully from his chariot, with Krishna (larger than Arjuna, blue skin, yellow silk, peacock-feather crown, halo) at the reins"
+  setting: "Kurukshetra battlefield on flat dark navy ground, Pandava and Kaurava banners mixed along each row, dense flowering shrubs filling the gaps"
+  props: ["bows", "round shields", "banners", "Arjuna's chariot with white horses"]
+  notes: "Every relative is an ordinary human with exactly two arms and holds only a bow, sword or shield. Exclude four-armed figures; halos on relatives (only Krishna has a halo); conches, discus or lotus in relatives' hands; books, scrolls or palm leaves. No text, letters or script."
 - verse: 34
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "Arjuna lowers his bow and tells Krishna he will not strike these kinsmen even to win all three worlds"
-  setting: "Arjuna's chariot between the armies"
-  props: ["Gandiva bow held down", "chariot"]
-  notes: ""
+  cast: [arjuna, krishna, warrior-kaurava]
+  action: "Arjuna stands in his chariot with Gandiva lowered, its tip resting on the chariot floor, and holds his other palm up flat in refusal, turning his face away from three golden crowns that float above him on a gold cloud band, offered to him if he fights. Krishna, a tall grown man and the largest figure, stands at the front of the chariot holding the reins of four white horses, his head higher than Arjuna's, and looks at Arjuna. Opposite, the Kaurava kinsmen stand in rows with raised spears and swords under their banners"
+  setting: "Kurukshetra battlefield on a flat navy ground with small elephants and banners; across the top a gold cloud band holds the three crowns: the first above a heavenly golden pavilion on clouds, the second above green hills and a river, the third above a dark cave; gold textile lotus border on all four sides"
+  props: ["Gandiva bow lowered to the floor", "three golden crowns on the gold cloud band", "golden chariot with round spoked wheels", "four white horses", "Hanuman banner on the chariot"]
+  notes: "Krishna: adult, standing, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms, holding only the reins. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo. One Krishna and one Arjuna only. Exclude: Krishna seated or child-sized, griffins, winged lions or dragons carved on the chariot, domed or Mughal palaces, minarets, cows, gopis, lotus ponds, small glyphs or pictograms in the corners; no text, letters or script."
 - verse: 35
-  relevance_mode: evocative
-  cast: []
-  action: "A victor stands alone amid the slain bodies of his own kinsmen, sin clinging to him like a shadow at dawn"
-  setting: "The battlefield after the killing, strewn with fallen relatives at first light"
-  props: ["fallen weapons"]
-  notes: "Symbolic image of the joyless, sin-stained aftermath Arjuna foresees"
+  relevance_mode: specific
+  cast: [arjuna, krishna, duryodhana, warrior-kaurava]
+  action: "Before the battle begins, Krishna and Arjuna stand side by side on the same ground line in front of their chariot, both drawn at full length from head to feet. Krishna is the tallest and largest figure, a full head taller than Arjuna; he holds the reins of four white horses in one hand and rests his other hand gently on Arjuna's shoulder. Arjuna, smaller than Krishna, bows his head in sorrow with one hand pressed over his eyes and Gandiva hanging lowered in his other hand; a golden marigold victory garland lies dropped and unwanted at his feet, because there is no joy in killing his cousins. On the right, the sons of Dhritarashtra stand alive and armed in long rows under their banners, led by Duryodhana"
+  setting: "Kurukshetra battlefield before the fighting, flat navy ground filled with small elephants, banners and flowering shrubs, Pandava chariot on the left, Kaurava ranks on the right, gold textile lotus border on all four sides"
+  props: ["Gandiva bow lowered", "golden marigold victory garland dropped at Arjuna's feet", "golden chariot with round spoked wheels", "four white standing horses", "Kaurava banners"]
+  notes: "Everyone is alive, standing and unhurt. Krishna: adult, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo. Duryodhana: thick moustache, red-gold armour, crown with a red gem. One Krishna and one Arjuna only; no shadow figure behind Arjuna. Exclude: dead or fallen bodies, anyone lying on the ground, weapons lying on the ground, fallen or brown horses, blood, sunrise rays, horizon line, perspective landscape, domes; no text, letters or script."
 - verse: 36
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "Arjuna pleads with Krishna, asking how they could ever be happy after killing their own kinsmen"
-  setting: "Arjuna's chariot between the armies"
-  props: ["Gandiva bow", "chariot"]
-  notes: ""
+  cast: [arjuna, krishna, warrior-kaurava]
+  action: "Arjuna stands in the back of his chariot with Gandiva lowered and one open hand stretched toward his Kaurava cousins, who stand in rows opposite him, his face sad as he asks how anyone could be happy after killing their own family. Above the cousins floats a round gold cloud medallion showing the happy past: the young Pandava and Kaurava princes as small boys playing ball together under a mango tree. Krishna, a tall grown man and the largest figure, sits on the raised charioteer's seat at the front of the chariot box, behind the horses, holding the reins of four white horses, and turns to listen"
+  setting: "Kurukshetra battlefield on a flat navy ground with banners and small elephants, Arjuna's chariot on the left, Kaurava ranks on the right, gold cloud medallion in the upper right, gold textile lotus border on all four sides"
+  props: ["Gandiva bow lowered", "golden chariot with round spoked wheels", "four white horses", "gold cloud medallion with boys playing ball under a mango tree", "Kaurava banners"]
+  notes: "The small boys inside the medallion are allowed. Krishna: adult, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms, seated in the chariot, never on a horse. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo. One Krishna and one Arjuna only. Exclude: anyone sitting or riding on a horse's back, brown or tan horses, namaste pose, small glyphs or pictograms in the corners or background, cows, gopis, lotus ponds; no text, letters or script."
 - verse: 37
   relevance_mode: evocative
   cast: [warrior-kaurava]
@@ -263,11 +263,11 @@
   notes: "Symbolic image of greed-blinded kinsmen"
 - verse: 38
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "Arjuna turns to Krishna and argues that those who clearly see the evil of family-ruin should turn away from the sin"
-  setting: "Arjuna's chariot between the armies"
-  props: ["Gandiva bow", "chariot"]
-  notes: ""
+  cast: [arjuna, krishna, warrior-kaurava]
+  action: "Krishna and Arjuna both stand inside one golden chariot in the centre of the picture. Krishna, the largest figure and a full head taller than Arjuna head-to-foot, stands at the front of the chariot box on the left, turned back toward Arjuna, reins of four white horses in his left hand, right palm open as he listens. Arjuna stands behind him in the rear of the same chariot box, shoulders bowed, his head only level with Krishna's shoulder, Gandiva lowered in his left hand, his right palm raised back over his shoulder toward the Kaurava spearmen on the right in a gesture of refusal. Above the chariot a round gold cloud medallion shows what Arjuna wants to protect: grandparents, parents and children in ancient Indian dress lighting a clay lamp together in front of thatched mud huts"
+  setting: "Kurukshetra battlefield on a flat navy ground densely filled with flowering shrubs and banana leaves; four white horses at the far left facing left, the chariot with both men in the centre, Kaurava ranks with raised spears and small banners on the right, gold cloud medallion at top centre, gold textile lotus border on all four sides"
+  props: ["one golden chariot with round spoked wheels holding both Krishna and Arjuna", "Gandiva bow lowered", "four white horses", "banner with a monkey figure of Hanuman on the chariot pole", "gold cloud medallion: flat Pichwai village scene of thatched mud huts with plain dark doorways, a tulsi pot and a family around one clay lamp"]
+  notes: "Size rule: Krishna is the largest figure; Krishna's crown is clearly higher than Arjuna's head and his body is taller than Arjuna's head-to-foot; Arjuna stands in the chariot, never on the ground. Krishna: adult, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo, no feather. One Krishna and one Arjuna only; the small family figures inside the medallion are allowed. The medallion is painted flat like the rest of the Pichwai panel: flat colour, no shading, no sky strip, no perspective, no window grilles, no gates, no brick or plaster houses. Exclude: anyone on or behind the horses' backs, seated deities on banners, large empty patches of plain navy, domes, minarets, palace skylines, sky gradients, silhouettes, horizon line, cows, gopis, lotus ponds, small glyphs or pictograms; no text, letters or script."
 - verse: 39
   relevance_mode: evocative
   cast: []
@@ -285,10 +285,10 @@
 - verse: 41
   relevance_mode: evocative
   cast: []
-  action: "Beside a deserted ancestral shrine, an offering of rice balls and a vessel of water lie untouched, the sacred fire gone cold and grey with ash"
-  setting: "An abandoned family shrine in the lengthening shadows of evening"
-  props: ["cold sacred fire", "untouched rice ball offerings", "overturned water vessel"]
-  notes: "Lost ancestral offerings (pinda and water)"
+  action: "On the stone steps of a riverside ancestral altar, a banana-leaf plate of white rice balls lies untouched and a brass water pot lies tipped over and empty, with no one left to make the offering. Above it, on a gold cloud band, three family ancestors (solid, fully coloured elders with white hair, white beards and white dhotis, sad faces) slip down from a golden heavenly pavilion and reach their hands toward the empty altar"
+  setting: "A flat Pichwai panel on a flat navy ground, the river drawn as flat wavy blue bands with lotus buds, the empty space filled with banana leaves, flowering shrubs and birds, a gold cloud band and golden pavilion across the top, gold textile lotus border on all four sides"
+  props: ["banana-leaf plate of white rice balls", "tipped-over empty brass water pot", "stone altar steps", "gold cloud band", "golden heavenly pavilion"]
+  notes: "Pichwai flat colour only: no moonlit landscape, no perspective, no shading, no depth. The ancestors are solid painted Hindu elders, not ghosts. Exclude: translucent, faded or ghostly figures, Western ghosts, moon and night sky scene, trees drawn with shading, cracked ruins, domes or domed gateways, fire, torment or frightening faces; no text, letters or script."
 - verse: 42
   relevance_mode: evocative
   cast: []
@@ -297,12 +297,12 @@
   props: ["cracked carved pillars", "empty lamp niches", "creeping vines"]
   notes: "Eternal family and community dharma uprooted"
 - verse: 43
-  relevance_mode: evocative
-  cast: [arjuna]
-  action: "Arjuna stands with bowed head and a haunted expression, repeating what the elders taught him, while behind him faint ancestral forms recede into shadow"
-  setting: "Arjuna's chariot at the field's edge, dusk gathering"
-  props: ["Gandiva bow held loosely", "fading ancestral figures in shadow"]
-  notes: "anususruma — 'we have heard'; inherited warning"
+  relevance_mode: specific
+  cast: [arjuna, krishna]
+  action: "In the chariot on Kurukshetra, Arjuna turns to Krishna with a troubled face, Gandiva held loosely, and points up to a large round gold cloud medallion. Inside the medallion, painted in the same flat Pichwai manner, a family in ancient Indian dress (dhotis, saris) that has abandoned its traditions sits lost and unhappy on bare dusty ground beside a cold clay chulha stove heaped with grey ash and a small stone altar with an unlit clay lamp and no flowers, while many small gold crescent moons repeat in a long arc across the dark sky above them to show endless time passing. Krishna, a tall grown man and the largest figure, stands at the front of the chariot holding the reins of four white horses and listens"
+  setting: "Kurukshetra on a flat navy ground with banners and flowering shrubs, bright jewel-tone colours (emerald, ruby, sapphire, gold) everywhere outside the medallion, the gold medallion in the upper right, gold textile lotus border on all four sides"
+  props: ["Gandiva bow", "gold cloud medallion", "cold clay chulha stove with grey ash", "stone altar with unlit clay lamp", "arc of gold crescent moons", "golden chariot with round spoked wheels", "four white horses"]
+  notes: "The small family figures inside the medallion are allowed and are solid painted people. Arjuna: warm brown human skin, black moustache, terracotta armour, plain headband, NO halo, never blue. Krishna: adult, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms. One Krishna and one Arjuna only. Exclude: fireplaces, mantelpieces, modern clothes, shaded or photographic rendering inside the medallion, moon-phase charts, blue or grey skin on Arjuna, halo on Arjuna, translucent or ghostly figures, muted dark monochrome palette, fire, flames, demons or torment; no text, letters or script."
 - verse: 44
   relevance_mode: evocative
   cast: [arjuna]
@@ -320,14 +320,14 @@
 - verse: 46
   relevance_mode: specific
   cast: [arjuna, krishna]
-  action: "Arjuna's Gandiva slips from his fingers and strikes the chariot floor, arrows spilling from the quiver, as he sinks down grief-stricken while Krishna holds the reins in silence"
-  setting: "Arjuna's chariot in the middle of the battlefield, the white horses still"
-  props: ["fallen Gandiva bow", "scattered arrows", "chariot seat", "reins held by Krishna"]
-  notes: "Arjuna casts aside bow and arrows"
+  action: "Arjuna sits slumped alone on the seat of his chariot, head bowed, both hands limp in his lap, having thrown down his bow: Gandiva and a spill of arrows with their quiver lie on the ground below the chariot wheel. Krishna, a tall grown man and the largest figure, stands on the ground beside the chariot holding the reins of four still white horses and looks at Arjuna with compassion"
+  setting: "The middle of the Kurukshetra battlefield on a flat navy ground, small banners, chariots and elephants in the distance, flowering shrubs filling the space, gold textile lotus border on all four sides"
+  props: ["Gandiva bow thrown on the ground", "scattered arrows and quiver on the ground", "chariot seat", "golden chariot with round spoked wheels", "four white horses", "reins in Krishna's hand"]
+  notes: "Arjuna appears exactly once, seated; nobody else is in the chariot. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo. Krishna: adult, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms. One Krishna only. The background contains only flowering vines, small trees, birds and the distant armies. Exclude: square emblems, triangles, zigzag marks, gate or idol icons and any other small glyphs or pictograms in the corners or background (the reference sheet's corner icons must NOT be copied), a second Arjuna or any second warrior in or near the chariot, kneeling, namaste or folded hands, idols or statues; no text, letters or script."
 - verse: 47
   relevance_mode: specific
-  cast: [arjuna, krishna]
-  action: "Sinking into despair, Arjuna sits down on the seat of his chariot in the middle of the battlefield, no longer wishing to fight, while Krishna stands beside him at the reins"
-  setting: "Arjuna's chariot in the middle of the battlefield between the two great armies"
-  props: ["cast-aside Gandiva bow", "scattered arrows", "chariot seat", "reins in Krishna's hands"]
-  notes: "Chapter climax — Arjuna sits down, mind overwhelmed with grief"
+  cast: [arjuna, krishna, sanjaya, dhritarashtra]
+  action: "Two zones. Right, large: in the middle of Kurukshetra, Arjuna sits slumped alone on his chariot seat with head bowed and Gandiva set down beside him, no longer wishing to fight; Krishna, a tall grown man and the largest figure, stands beside the chariot at the reins of four white horses and looks at him. Left, a smaller palace inset framed by a golden arch: Sanjaya sits on a low stool and narrates with one raised hand to blind King Dhritarashtra on his throne"
+  setting: "Right zone: Kurukshetra on a flat navy ground with banners and small distant chariots and elephants. Left zone: a Hastinapura palace hall inside a golden arch with pillars and a hanging lamp. Gold textile lotus border on all four sides"
+  props: ["Gandiva set down", "golden chariot with round spoked wheels", "four white horses", "golden palace arch", "throne", "Dhritarashtra's silk blindfold"]
+  notes: "Sanjaya: short dark beard, dark hair in a topknot, indigo shawl, no halo, seated only inside the palace inset. Dhritarashtra: white beard, gold crown, silk blindfold. Krishna: adult, largest figure, blue skin, yellow silk, peacock-feather crown, golden halo, exactly two arms. Arjuna: warm brown skin, black moustache, terracotta armour, plain headband, no halo. One Krishna and one Arjuna only. Exclude: any other crowned or moustached warrior near the chariot, small blue figures, halo on Sanjaya, cows, gopis, peacocks, lotus ponds; no text, letters or script."
