@@ -14,7 +14,7 @@ export interface ChapterMeta {
   sanskrit_name: string;
   transliterated_name: string;
   verse_count: number;
-  folk_art_style: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari';
+  folk_art_style: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari' | 'gond' | 'kerala-mural';
   summary: string;
   status: 'active' | 'coming_soon';
 }

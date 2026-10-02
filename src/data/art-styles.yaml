@@ -115,6 +115,27 @@
     in buffalo milk and myrobalan solution! The entire process can take
     weeks, and the natural dyes mean no two pieces ever look exactly the same.
 
+- id: kerala-mural
+  name: Kerala Mural
+  region: Kerala
+  also_known_as: Temple wall painting
+  description: >
+    Kerala murals are paintings made on the walls of temples and palaces in
+    Kerala, some of them more than a thousand years old. Artists draw gods,
+    heroes and scenes from the epics with bold black outlines, then fill them
+    with five colours made from stones, leaves and lamp soot. The figures have
+    round faces, long lotus-petal eyes, tall crowns and heavy jewellery, and
+    every empty space is filled with curling creepers and flowers.
+  signature_elements:
+    - "Five traditional colours: yellow ochre, red, green, white and black"
+    - Round faces with long lotus-petal eyes
+    - Tall crowns and heavy ornaments
+    - Backgrounds filled with curling creepers and lotus flowers
+  fun_fact: >
+    The colours come from nature. Yellow and red are ground from stones, green
+    is made from the leaves of a plant called Eravikkara, white is lime, and
+    black is soot collected from oil lamps.
+
 - id: warli
   name: Warli
   region: Maharashtra

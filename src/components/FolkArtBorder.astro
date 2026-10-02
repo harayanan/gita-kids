@@ -1,6 +1,6 @@
 ---
 interface Props {
-  style?: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari' | 'gond';
+  style?: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari' | 'gond' | 'kerala-mural';
   class?: string;
 }
 
@@ -13,6 +13,7 @@ const colors: Record<string, { primary: string; secondary: string }> = {
   warli:       { primary: '#B85C3A', secondary: '#C75B12' },
   kalamkari:   { primary: '#1A6847', secondary: '#C4A24E' },
   gond:        { primary: '#2D3A87', secondary: '#1A6847' },
+  'kerala-mural': { primary: '#9E2B25', secondary: '#C98A1B' },
 };
 
 const c = colors[style];
@@ -79,6 +80,24 @@ const uid = `fab-${Math.random().toString(36).slice(2, 8)}`;
       </defs>
       <path d="M0,6 Q4,0 8,6 Q12,0 16,6 Q20,0 24,6 Q28,0 32,6 Q36,0 40,6 Q44,0 48,6 Q52,0 56,6 Q60,0 64,6 Q68,0 72,6 Q76,0 80,6 Q84,0 88,6 Q92,0 96,6 Q100,0 104,6 Q108,0 112,6 Q116,0 120,6 Q124,0 128,6 Q132,0 136,6 Q140,0 144,6 Q148,0 152,6 Q156,0 160,6 Q164,0 168,6 Q172,0 176,6 Q180,0 184,6 Q188,0 192,6 Q196,0 200,6" fill="none" stroke={c.primary} stroke-width="1" />
       <rect x="0" y="6" width="100%" height="18" fill={`url(#${uid}-hatch)`} />
+    </svg>
+  )}
+
+  {/* ===== KERALA MURAL TOP ===== */}
+  {style === 'kerala-mural' && (
+    <svg class="folk-art-top w-full block" height="28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id={`${uid}-kerala`} patternUnits="userSpaceOnUse" width="48" height="26">
+          <path d="M0,13 C8,2 16,2 24,13 C32,24 40,24 48,13" fill="none" stroke={c.secondary} stroke-width="1.2" />
+          <path d="M24,13 C21,8 21,5 24,2 C27,5 27,8 24,13 Z" fill={c.primary} opacity="0.85" />
+          <path d="M24,13 C19,11 17,8 18,5 C21,6 23,9 24,13 Z" fill={c.primary} opacity="0.6" />
+          <path d="M24,13 C29,11 31,8 30,5 C27,6 25,9 24,13 Z" fill={c.primary} opacity="0.6" />
+          <circle cx="0" cy="13" r="2" fill={c.secondary} />
+          <circle cx="48" cy="13" r="2" fill={c.secondary} />
+        </pattern>
+      </defs>
+      <line x1="0" y1="1" x2="100%" y2="1" stroke={c.primary} stroke-width="0.5" opacity="0.4" />
+      <rect x="0" y="2" width="100%" height="26" fill={`url(#${uid}-kerala)`} />
     </svg>
   )}
 
@@ -207,6 +226,24 @@ const uid = `fab-${Math.random().toString(36).slice(2, 8)}`;
       </defs>
       <path d="M0,6 Q4,0 8,6 Q12,0 16,6 Q20,0 24,6 Q28,0 32,6 Q36,0 40,6 Q44,0 48,6 Q52,0 56,6 Q60,0 64,6 Q68,0 72,6 Q76,0 80,6 Q84,0 88,6 Q92,0 96,6 Q100,0 104,6 Q108,0 112,6 Q116,0 120,6 Q124,0 128,6 Q132,0 136,6 Q140,0 144,6 Q148,0 152,6 Q156,0 160,6 Q164,0 168,6 Q172,0 176,6 Q180,0 184,6 Q188,0 192,6 Q196,0 200,6" fill="none" stroke={c.primary} stroke-width="1" />
       <rect x="0" y="6" width="100%" height="18" fill={`url(#${uid}-hatch-b)`} />
+    </svg>
+  )}
+
+  {/* ===== KERALA MURAL BOTTOM ===== */}
+  {style === 'kerala-mural' && (
+    <svg class="folk-art-bottom w-full block" height="28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id={`${uid}-kerala-b`} patternUnits="userSpaceOnUse" width="48" height="26">
+          <path d="M0,13 C8,2 16,2 24,13 C32,24 40,24 48,13" fill="none" stroke={c.secondary} stroke-width="1.2" />
+          <path d="M24,13 C21,8 21,5 24,2 C27,5 27,8 24,13 Z" fill={c.primary} opacity="0.85" />
+          <path d="M24,13 C19,11 17,8 18,5 C21,6 23,9 24,13 Z" fill={c.primary} opacity="0.6" />
+          <path d="M24,13 C29,11 31,8 30,5 C27,6 25,9 24,13 Z" fill={c.primary} opacity="0.6" />
+          <circle cx="0" cy="13" r="2" fill={c.secondary} />
+          <circle cx="48" cy="13" r="2" fill={c.secondary} />
+        </pattern>
+      </defs>
+      <line x1="0" y1="1" x2="100%" y2="1" stroke={c.primary} stroke-width="0.5" opacity="0.4" />
+      <rect x="0" y="2" width="100%" height="26" fill={`url(#${uid}-kerala-b)`} />
     </svg>
   )}
 

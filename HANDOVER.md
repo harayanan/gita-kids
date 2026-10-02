@@ -9,17 +9,17 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 | 1 | Arjuna Vishada Yoga | 47 | Pichwai |
 | 2 | Sankhya Yoga | 72 | Gond |
 | 3 | Karma Yoga | 43 | Pattachitra |
-| 4 | Jnana Karma Sannyasa Yoga | 42 | Warli |
+| 4 | Jnana Karma Sannyasa Yoga | 42 | Kerala mural (was Warli) |
 | 5 | Karma Sannyasa Yoga | 29 | Kalamkari |
 | 6 | Dhyana Yoga | 47 | Madhubani |
 | 7 | Jnana Vijnana Yoga | 30 | Pichwai |
 | 8 | Akshara Brahma Yoga | 28 | Pattachitra |
-| 9 | Raja Vidya Raja Guhya Yoga | 34 | Warli |
+| 9 | Raja Vidya Raja Guhya Yoga | 34 | Kerala mural (was Warli) |
 | 10 | Vibhuti Yoga | 42 | Kalamkari |
 | 11 | Vishvarupa Darshana Yoga | 55 | Madhubani |
 | 12 | Bhakti Yoga | 20 | Pichwai |
 | 13 | Kshetra-Kshetrajna Vibhaga Yoga | 35 | Pattachitra |
-| 14 | Gunatraya Vibhaga Yoga | 27 | Warli |
+| 14 | Gunatraya Vibhaga Yoga | 27 | Kerala mural (was Warli) |
 | 15 | Purushottama Yoga | 20 | Kalamkari |
 | 16 | Daivasura Sampad Vibhaga Yoga | 24 | Madhubani |
 | 17 | Shraddhatraya Vibhaga Yoga | 28 | Pichwai |
@@ -27,7 +27,25 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
 
-## What Was Done This Session (2026-09-21, the 20 blocked images regenerated via Codex) — NOT COMMITTED
+## Session 2026-09-23: Gemini restored; Warli replacement finished for Ch 9 and Ch 14 (NOT COMMITTED)
+
+**Gemini key.** New key (prefix `AQ.Ab8`, owner raised the limits) in `gita-kids/.env.local` (gitignored, chmod 600); `readApiKey()` checks it before the shared mutual-fund-dost file. Verified 8 concurrent requests at HTTP 200, no 429. Gemini is the default provider; Codex runs only with `IMAGE_PROVIDER=codex`.
+
+**Style references.** Pilot on three Ch 4 briefs: plain Gemini paints Kerala mural flatter, on an open cream/yellow ground, and does not match the Codex Ch 4 pages. With two Ch 4 pages attached as references it matches the dense Indian-red finish. Added `STYLE_REFERENCE_IMAGES` + `styleReferenceParts()` in `scripts/generate-illustration.mjs` (kerala-mural -> Ch 4 `001.png`, `020.png`), prepended for verse and cover generation; also `imageConfig.aspectRatio: '16:9'`. Model used: `gemini-3.1-flash-image-preview`, about 20 s per image, 6-8 in parallel. `gemini-3-pro-image-preview` was tested and was no better for this style.
+
+**Ch 9 and Ch 14 moved from Warli to Kerala mural.**
+- `meta.yaml`: `folk_art_style: kerala-mural`, new `cover_brief` (both chapters). All verse `illustration_brief` fields rewritten (Ch 9: 22 replaced, 12 new; Ch 14: 15 replaced, 12 new); no other field changed.
+- Warli originals (images + meta) backed up at `../_archive/gita-kids-illustrations-original/2026-09-23-warli/`.
+- 63 images generated (34+27 verses, 2 covers). First inspection (4 independent zoom agents): Ch 9 17 pass / 6 minor / 12 fail; Ch 14 3 pass / 11 minor / 14 fail. All fails had briefs rewritten and were rerun; re-inspection found 4 new Ch 9 fails (hybrid animals 9/8, eight-legged ox 9/9, extra hands 9/15 and 9/20), fixed by best-of-3 candidates (a third round for 9/12 whirlwind strokes and 9/15 three-armed dancers); 14/13 lintel pseudo-script retouched to plain gold with PIL. Final independent check: every image now PASS or MINOR (my own zoom on 9/12 and 9/15 final picks). Contact sheets for owner review: `../_archive/gita-kids-illustrations-original/2026-09-23-gemini-review/sheets/`.
+- Gemini defect pattern (now in fidelity spec 1.6a): pseudo-script in ornamental bands (altars, pedestals, hems, mats, ploughed furrows, lintels); four-armed Krishna when a brief says "hands raised in blessing"; ropes ending in Krishna's hand; extra hands in crowds; music notes for "singing"; "Z" marks for sleep; text on sacks when a brief names the contents ("spice sack" -> "Spices"). Fix pattern: give each hand a position, say "plain" for every band, name few, well-spaced figures.
+- Remaining MINORs (kept): 9/009 faint '2'-like sprout between dancers and cow (optional retouch); 14/015 Krishna larger than asked; 14/016 grey-painted Manda half-reclining; 14/019 Bhishma wears a crown; 9/005 small malformed creature in the lotus world; 9/029 extra halos; 9/031 Arjuna crowned, Gajendra without lotus; 9/033 faint ghost hand in crowd; some 14/0xx realistic shading on faces.
+- Story text in 14/006, 008, 010, 011 still mentions "Warli village"/"Warli drawings" (the Jeeva/Aaji stories are set in a Warli village); left as is, the setting is still true even though the art is no longer Warli.
+- Review material: first attempts and pre-retouch copies in `../_archive/gita-kids-illustrations-original/2026-09-23-gemini-review/`.
+- Build clean (747 pages). `docs/illustration-style-fidelity-spec.md` updated (1.4 Warli retired, 1.6a covers Ch 4/9/14, red ground, Gemini drift list).
+
+**Next:** owner reviews Ch 4 (Codex) and Ch 9 / Ch 14 (Gemini) -> commit + push (push deploys). Warli is then used by no chapter (Gitamahatmyam still has its own Warli images; About page lists Warli among inspirations).
+
+## What Was Done This Session (2026-09-21, 20 blocked images via Codex, deploy, Warli replacement started)
 
 The Gemini project is still over its monthly spend cap (429 on every call, text included; key `GEMINI_API_KEY` ending `dmaQ` in `hdfc/apps/mutual-fund-dost/.env.local`, shared with mutual-fund-dost). Owner chose to try Codex instead.
 
@@ -36,11 +54,20 @@ The Gemini project is still over its monthly spend cap (429 on every call, text 
 3. **Bug found and fixed:** on the 1/38 rerun the Codex agent saved an unrelated image (a re-encode of site 6/22) as its output file. The provider now ignores agent-saved files and reads only Codex's own session folder. All 26 outputs from both runs were md5-checked against Codex's generated files; only that one mismatched, and 1/38 was repaired from the genuine file.
 4. **Codex traits seen:** strong shloka specificity and Krishna canon (saturated blue, two arms); weakness is tiny pseudo-script on ornamental bands (visible at 200%+), fixed by the band rule; renders denser and more saturated than neighbouring Gemini images, most visible in Ch2 Gond (2/25, 2/65). Remaining minors worth a retouch: 2/25 hem marks, 18/31 crown band, 18/71 heart symbols, 18/77 floating sword.
 
-**State:** build clean (747 pages). Nothing committed or deployed. Pre-run versions of the 20, first Codex attempts and before/after sheets and Codex hi-res originals are at `../gita-kids-illustrations-original/2026-09-21-codex-hires/` (review material in its `_review/` subfolder).
+**Deployed 2026-09-21:** owner reviewed 9 before/after sheets and approved. Committed `b16f6ae` (784 files) and pushed; **the push to `main` auto-deploys through Vercel's git integration** (the `vercel deploy --prod` CLI call was blocked by the permission classifier and was not needed). Verified live: 25 of 25 sampled images on www.gitakids.com match the commit byte for byte; home, chapter and verse pages return 200. Pre-run versions of the 20, first Codex attempts, before/after sheets and Codex hi-res originals are at `../_archive/gita-kids-illustrations-original/2026-09-21-codex-hires/` (review material in `_review/`).
 
-**Next:** owner reviews before/after sheets → commit + deploy the full 2026-09-14 + 2026-09-21 image set → optional polish pass on the MINOR images (198 audit + 50 regen + 11 here) → art-style diversification mapping (extended style library in `STYLE_PROMPTS` is still unassigned; every live image uses the original six styles).
+### Warli replacement: Ch 4 moved to Kerala mural (IN PROGRESS, NOT COMMITTED)
 
-## What Was Done (2026-09-14, illustration quality audit + regeneration) — IN PROGRESS, NOT COMMITTED
+Owner decision 2026-09-21: Warli does not work; replace it with one other style, **one chapter now (Ch 4), Ch 9 and Ch 14 later**. Style chosen: **`kerala-mural`** (from the approved 29 June shortlist; carries full character canon, palette distinct from the other five).
+
+- `content/chapters/04-*/meta.yaml`: `folk_art_style: kerala-mural` + new `cover_brief`. All 42 verse `illustration_brief` fields rewritten for Kerala mural (25 had Warli wording, 17 had no brief); only that field changed.
+- Site wiring: `FolkArtBorder.astro` (new lotus-creeper variant + colours; an unknown style would crash the build there), `ShlokaCard.astro` and `src/lib/content.ts` type unions, accent colour maps in `index.astro`, `chapters/[chapter]/index.astro`, `summary.astro`, new `kerala-mural` entry in `src/data/art-styles.yaml`. Generator: Kerala palette and style prompt now state Krishna's skin is saturated blue. Fidelity spec: new section 1.6a. Build clean (747 pages).
+- Generation via Codex: 36 of 42 verses ran before the limit; the rest ran after the reset (see inspection note below). Codex then hit the **ChatGPT Plus usage limit** (429 `usage_limit_reached`, resets 11:44 UTC 2026-09-21; about 69 images were generated in the session before the limit). The cover was regenerated from the new `cover_brief` (first test cover had five horses and extra small Krishnas). Plan on roughly one chapter per Codex limit window for Ch 9 and Ch 14.
+- Warli originals of Ch 4 backed up at `../_archive/gita-kids-illustrations-original/2026-09-21-ch04-warli/`. Independent 3-agent zoom inspection of 001-036 (first pass): **15 pass, 12 minor, 9 fail**. Krishna canon (saturated blue, two arms, one Krishna) and shloka relevance held in all 36. Fails: five-horse teams (003, 005, 035), extra hands on small figures (004 Vivasvan roundel, 008 two cowherds), pseudo-script (009 gateway plaques, 016 lintel, 019 "622" on sash, 026 hem band). 016, 019, 020 (borderline plaque) and 026 were **retouched locally** with PIL (pre-retouch copies in the session scratchpad). 003, 004, 005, 008, 009, 035 had their briefs tightened (horses removed from 003/005/035, explicit arm rules, plain gateway) and were rerun after the limit reset (12:04-12:12 UTC) along with 037-042 and the cover: **all 43 Ch 4 images now exist in Kerala mural**. My zoom check of the reruns: 003/005/035 have no horses, 004 Vivasvan has two arms, 008 every cowherd has two arms, 009 gateway is plain lotus and beads; 041 and 042 have exactly four horses. An independent zoom pass on these 13 was running at time of writing. Review material (pre-retouch copies, failed first attempts, contact sheets) is in `../_archive/gita-kids-illustrations-original/2026-09-21-codex-hires/_review-ch04/`. Common MINOR drift in this style: naturalistic landscape insets with a horizon (007, 012, 015, 018, 022, 025, 029), soft lamp glow, mid-size Krishna where the brief asked for small; a "no landscape views or insets" rule was added to the `kerala-mural` style prompt afterwards, so it applies to 037-042, the reruns, and later to Ch 9 and Ch 14.
+
+**Next:** fold in the final 13-image inspection → owner reviews Ch 4 sheets → commit + push (push deploys) → repeat for Ch 9 and Ch 14 (their `cover_brief` text and most verse briefs are Warli-worded and need the same rewrite) → optional polish pass on MINOR images.
+
+## What Was Done (2026-09-14, illustration quality audit + regeneration) — committed and deployed 2026-09-21 in `b16f6ae`
 
 Owner request: images did not relate to their shloka and had fidelity defects (three-armed Krishna, Buddha figures). Ran multi-agent workflows.
 
@@ -50,7 +77,7 @@ Owner request: images did not relate to their shloka and had fidelity defects (t
 4. **Regeneration of the 396 fails:** agents wrote an `illustration_brief` per verse (Ch1: scene-briefs.yaml), regenerated, zoom-inspected, retried up to 4x, independent verify, one repair round. Result: **326 pass, 50 minor, 18 unresolved, 2 fail**.
 5. **Blocked:** the Gemini project hit its **monthly spending cap** (429 at https://ai.studio/spend) from ~20:35 UTC; 16 of the 18 unresolved are images whose repair generation was blocked (live image = original from backup). Remaining: unresolved 01/038, 02/025, 02/065, 03/005, 03/021, 03/029, 06/021, 06/022, 07/021, 11/028, 11/052, 13/021, 14/022, 18/017, 18/027, 18/031 (live attempt still has scratch marks), 18/071, 18/077; fail 10/001 (pseudo-script on seat arch), 16/017 (extra arm in crowd).
 
-**State:** 384 images + 380 content YAML files (brief fields only) changed, uncommitted, not deployed. YAML all valid; build clean (747 pages). **Originals of all 734 images backed up** at `../gita-kids-illustrations-original/2026-09-14/`. Every attempt image saved in the session scratchpad.
+**State:** 384 images + 380 content YAML files (brief fields only) changed, uncommitted, not deployed. YAML all valid; build clean (747 pages). **Originals of all 734 images backed up** at `../_archive/gita-kids-illustrations-original/2026-09-14/`. Every attempt image saved in the session scratchpad.
 
 **Next:** owner raises Gemini spend cap → rerun the 20 remaining → owner reviews before/after → commit + deploy → optional polish pass on the 198+50 MINOR images.
 
@@ -368,4 +395,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-09-21
+Last reviewed: 2026-09-23

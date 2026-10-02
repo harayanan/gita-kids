@@ -61,7 +61,7 @@ Drift observed: Gond patterning appears only on trees and ground while human fig
 
 Drift observed: grey monochrome ink backgrounds (3.019, 18.034 cloud faces), washed-out low-contrast panels (8.009), comic-strip layout with speech text (3.025), naturalistic landscape depth (13.011). Pattachitra is the chapter family with the most text and off-tradition failures (see Section 4).
 
-### 1.4 Warli (Ch 4, 9, 14)
+### 1.4 Warli (no longer used for any chapter: Ch 4 moved to Kerala mural on 2026-09-21, Ch 9 and 14 on 2026-09-23; see 1.6a)
 | Element | Required |
 |---|---|
 | Ground | Flat terracotta/earth red across the whole field. |
@@ -96,6 +96,20 @@ Kalamkari chapters are the most stable. Drift observed: naturalistic battlefield
 | Palette | Saffron, indigo, terracotta, forest green, gold on cream. |
 
 Drift observed: rolling naturalistic hills with smooth fields and horizon lines (6.001, 16.001, 16.008); flowing abstract swirls instead of traditional motifs (6.034, 6.047, MINOR); modern icon medallions (16.001); a tiny modern man in a T-shirt and trousers (16.008); scrolls of pseudo-script (16.017, 16.024); a faceless figure (16.014).
+
+### 1.6a Kerala mural (Ch 4 from 2026-09-21; Ch 9 and 14 from 2026-09-23)
+The owner judged Warli unsuitable (stick figures cannot carry the character canon or shloka-specific scenes). Ch 4 moved to Kerala mural first (Codex); Ch 9 and 14 followed (Gemini 3.1 Flash Image with two Ch 4 pages attached as style references, see `STYLE_REFERENCE_IMAGES` in the generator).
+
+| Element | Required |
+|---|---|
+| Ground | Deep Indian-red ground (as in the approved Ch 4 pages; warm ochre panels are acceptable), fully filled with curling creepers, lotus and scrollwork (horror vacui). No blue sky. |
+| Line | Bold black outline of even weight. |
+| Fill | Flat panchavarna colour: ochre-yellow, Indian red, deep green, white, black, with gold accents. |
+| Border | Foliate scroll border on all four sides. |
+| Figures | Every figure fully painted: rounded face, large lotus-petal eyes, tall ornate crown or headdress, heavy ornaments; profile or frontal. |
+| Palette | The five colours above. Krishna's skin is the one exception: clear saturated blue (not the green or pale blue-grey of traditional murals). |
+
+Expected drift: pale or green Krishna; pseudo-script in ornamental bands on altars, pedestals, hems, mats and ploughed fields (write "plain" or exclude the band); four-armed Krishna when the brief says "hands raised in blessing" (give each hand a position); ropes or threads ending in Krishna's hand; tonal modelling on faces and limbs; naturalistic landscape with horizon; Kathakali-style face paint on ordinary characters (MINOR unless on Krishna or Arjuna).
 
 ### 1.7 Drift that applies to every style (style FAIL)
 - Soft 3D or airbrushed "AI" rendering: glossy skin, rim light, volumetric clouds, bokeh.

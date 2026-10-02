@@ -14,7 +14,7 @@
  *   node scripts/generate-illustration.mjs --verse 4 --regenerate
  *   node scripts/generate-illustration.mjs --batch 11-20 --dry-run
  *
- * API key is read from $GEMINI_API_KEY, else hdfc/apps/mutual-fund-dost/.env.local
+ * API key is read from $GEMINI_API_KEY, else ./.env.local, else hdfc/apps/mutual-fund-dost/.env.local
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
@@ -30,6 +30,7 @@ const PROJECT_ROOT = join(__dirname, '..');
 
 // The mutual-fund-dost project moved under hdfc/apps/; try known locations in order.
 const API_KEY_FILES = [
+  join(PROJECT_ROOT, '.env.local'),
   '/root/claudecode/hdfc/apps/mutual-fund-dost/.env.local',
   '/home/claude/claudecode/hdfc/apps/mutual-fund-dost/.env.local',
   '/root/claudecode/mutual-fund-dost/.env.local',
@@ -45,6 +46,32 @@ const IMAGE_MODELS = [
   'gemini-2.5-flash-image',
   'gemini-3-flash-preview',
 ];
+
+// Finished pages attached as style references (paths under public/illustrations/).
+// Without them Gemini paints kerala-mural flatter, on an open cream ground; with
+// two Ch 4 pages it matches the dense Indian-red finish of that chapter.
+const STYLE_REFERENCE_IMAGES = {
+  'kerala-mural': [
+    '04-jnana-karma-sannyasa-yoga/001.png',
+    '04-jnana-karma-sannyasa-yoga/020.png',
+  ],
+};
+
+export function styleReferenceParts(artStyle) {
+  const files = (STYLE_REFERENCE_IMAGES[artStyle] || [])
+    .map((f) => join(PROJECT_ROOT, 'public', 'illustrations', f))
+    .filter((f) => existsSync(f));
+  if (!files.length) return [];
+  const images = files.map((f) => {
+    const data = readFileSync(f);
+    const mimeType = data[0] === 0xFF && data[1] === 0xD8 ? 'image/jpeg' : 'image/png';
+    return { inlineData: { mimeType, data: data.toString('base64') } };
+  });
+  return [
+    { text: `STYLE REFERENCE: the ${images.length} attached images are finished pages from this same book. Match their painting style exactly: the dense finish, the deep Indian-red ground fully covered with green creeper and lotus scrollwork, the ornament density, the line quality, the figure proportions, the facial style and the foliate border. Do NOT copy their composition, poses or subject; paint only the new scene described below.` },
+    ...images,
+  ];
+}
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -233,6 +260,8 @@ export const STYLE_PROMPTS = {
 - Stylised curling foliage, lotus, and creeper motifs filling the background (horror vacui)
 - Figures in profile OR frontal view — ornate, stately, sacred
 - Foliate scrollwork border on all four sides
+- Krishna's skin is the one exception to the five-colour palette: clear saturated blue
+- No landscape views or insets: no horizon line, no receding hills, lakes or distant buildings; rivers and ground are flat bands, and every open area is filled with scrollwork
 - Always illustrate the verse/mythological scene, NOT any modern story analogy`,
   },
   tanjore: {
@@ -556,6 +585,7 @@ export const STYLE_PALETTES = {
 - White: #F5E6D3
 - Black outlines
 - Gold accents: #C4A24E
+- Krishna blue: #2D4FA3 — used ONLY for Krishna's skin (clear saturated blue, never grey, pale or green)
 - Earthy mural tones — NO blue sky, NO neon colors`,
   tanjore: `COLOR PALETTE (Tanjore — gold-rich jewel tones):
 - Gold leaf (dominant): #C4A24E
@@ -815,7 +845,8 @@ async function generateCover(chapter, options = {}) {
   const apiKey = readApiKey();
   console.log('  Calling Gemini API...');
   const startTime = Date.now();
-  const { base64, mimeType, model } = await generateImageWithRetry([{ text: prompt }], apiKey);
+  const { base64, mimeType, model } = await generateImageWithRetry(
+    [...styleReferenceParts(chapter.meta.folk_art_style), { text: prompt }], apiKey);
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Success via ${model} in ${elapsed}s (mimeType: ${mimeType})`);
 
@@ -846,6 +877,7 @@ export async function generateImageWithRetry(parts, apiKey, maxRetries = 3) {
           contents: [{ parts }],
           generationConfig: {
             responseModalities: ['TEXT', 'IMAGE'],
+            imageConfig: { aspectRatio: '16:9' },
           },
         };
 
@@ -961,7 +993,8 @@ async function generateIllustration(verseNum, chapter, options = {}) {
   console.log('  Calling Gemini API...');
   const startTime = Date.now();
 
-  const { base64, mimeType, model } = await generateImageWithRetry([{ text: prompt }], apiKey);
+  const { base64, mimeType, model } = await generateImageWithRetry(
+    [...styleReferenceParts(chapter.meta.folk_art_style), { text: prompt }], apiKey);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  Success via ${model} in ${elapsed}s (mimeType: ${mimeType})`);
