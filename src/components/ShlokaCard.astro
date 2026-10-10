@@ -1,4 +1,5 @@
 ---
+import Illustration from './Illustration.astro';
 import FolkArtBorder from './FolkArtBorder.astro';
 import SanskritText from './SanskritText.astro';
 import DhatuBreakdown from './DhatuBreakdown.astro';
@@ -67,7 +68,7 @@ const {
   <!-- 2. Illustration -->
   {illustration && (
     <div class="-mx-4 sm:-mx-8 md:-mx-16 mb-10 scroll-reveal">
-      <img
+      <Illustration
         src={illustration}
         alt={illustrationAlt || `Illustration for Chapter ${chapter}, Verse ${verse}`}
         class="w-full"

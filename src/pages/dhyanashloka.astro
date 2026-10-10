@@ -1,4 +1,5 @@
 ---
+import Illustration from '../components/Illustration.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FolkArtBorder from '../components/FolkArtBorder.astro';
 import { readFileSync } from 'node:fs';
@@ -42,7 +43,7 @@ const hasIllustration = true;
     <!-- Illustration (if exists) -->
     {hasIllustration && (
       <div class="mb-16 rounded-xl overflow-hidden shadow-lg">
-        <img
+        <Illustration
           src="/illustrations/dhyanashloka/001.png"
           alt="Dhyanashloka — meditation before studying the Gita"
           class="w-full"

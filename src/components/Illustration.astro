@@ -1,0 +1,30 @@
+---
+// Serves an illustration through <picture>: AVIF, then WebP, then the source PNG.
+// The smaller variants are built by scripts/optimize-images.mjs and are used only
+// when the file exists, so a newly generated PNG still renders before it is optimized.
+import fs from 'node:fs';
+import path from 'node:path';
+
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  [key: string]: unknown;
+}
+
+const { src, alt, class: className, loading = 'lazy', ...rest } = Astro.props;
+
+const variant = (ext: string) => {
+  const candidate = src.replace(/\.png$/, `.${ext}`);
+  return fs.existsSync(path.resolve(`public${candidate}`)) ? candidate : undefined;
+};
+const avif = variant('avif');
+const webp = variant('webp');
+---
+
+<picture class="contents">
+  {avif && <source srcset={avif} type="image/avif" />}
+  {webp && <source srcset={webp} type="image/webp" />}
+  <img src={src} alt={alt} class={className} loading={loading} decoding="async" {...rest} />
+</picture>
