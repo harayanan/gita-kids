@@ -2,32 +2,49 @@
 
 ## Current Status: ALL 18 CHAPTERS COMPLETE (701 verses), fully illustrated
 
-The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 701 verses, ~699 folk-art illustrations across six regional styles (Madhubani, Gond, Pattachitra, Warli, Kalamkari, Pichwai), plus back matter. Every verse has Sanskrit (Devanagari + IAST), a complete word-by-word breakdown, a child-friendly meaning, a 300–500 word story, and a reflection question.
+The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 701 verses, ~699 folk-art illustrations across six regional styles (Madhubani, Gond, Pattachitra, Kerala mural, Kalamkari, Pichwai), plus back matter. Every verse has Sanskrit (Devanagari + IAST), a complete word-by-word breakdown, a child-friendly meaning, a 300–500 word story, and a reflection question.
 
 | Ch | Name | Verses | Style |
 |----|------|--------|-------|
 | 1 | Arjuna Vishada Yoga | 47 | Pichwai |
 | 2 | Sankhya Yoga | 72 | Gond |
 | 3 | Karma Yoga | 43 | Pattachitra |
-| 4 | Jnana Karma Sannyasa Yoga | 42 | Kerala mural (was Warli) |
+| 4 | Jnana Karma Sannyasa Yoga | 42 | Kerala mural |
 | 5 | Karma Sannyasa Yoga | 29 | Kalamkari |
 | 6 | Dhyana Yoga | 47 | Madhubani |
 | 7 | Jnana Vijnana Yoga | 30 | Pichwai |
 | 8 | Akshara Brahma Yoga | 28 | Pattachitra |
-| 9 | Raja Vidya Raja Guhya Yoga | 34 | Kerala mural (was Warli) |
+| 9 | Raja Vidya Raja Guhya Yoga | 34 | Kerala mural |
 | 10 | Vibhuti Yoga | 42 | Kalamkari |
 | 11 | Vishvarupa Darshana Yoga | 55 | Madhubani |
 | 12 | Bhakti Yoga | 20 | Pichwai |
 | 13 | Kshetra-Kshetrajna Vibhaga Yoga | 35 | Pattachitra |
-| 14 | Gunatraya Vibhaga Yoga | 27 | Kerala mural (was Warli) |
+| 14 | Gunatraya Vibhaga Yoga | 27 | Kerala mural |
 | 15 | Purushottama Yoga | 20 | Kalamkari |
 | 16 | Daivasura Sampad Vibhaga Yoga | 24 | Madhubani |
 | 17 | Shraddhatraya Vibhaga Yoga | 28 | Pichwai |
 | 18 | Moksha Sannyasa Yoga | 78 | Pattachitra |
 
-Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 726 pages.
+Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
-## Session 2026-09-23: Gemini restored; Warli replacement finished for Ch 9 and Ch 14 (NOT COMMITTED)
+## Session 2026-10-10: Kerala mural deployed, minor image fixes, Ch 2 read-aloud pass, AVIF/WebP
+
+Owner instruction: go ahead with all pending items and deploy. `art/kerala-mural-ch4-9-14` was fast-forwarded into `main` and pushed (`3120ec4`); the push deployed through Vercel. Verified live on www.gitakids.com: About shows `Web build 3120ec4`, six sampled image files match the commit byte for byte, six sampled pages return 200. Build: 747 pages.
+
+1. **Kerala mural for Ch 4, 9, 14 is live** (`c281936`). Warli is now used only by the Gitamahatmyam borders.
+2. **Minor image defects (`813ff2c`), 12 targeted, 11 changed.** Retouched with PIL: 9/005, 9/009, 9/031 (Arjuna's crown), 14/019 (Bhishma's crown), 2/025, 18/031, 18/071, 18/077. Partly fixed: 9/029 (priest and king halos removed; grandmother and boy still haloed), 9/033 (left-crowd scribble removed; a dim third hand in the right crowd remains). Regenerated: 14/016 (brief tightened; Manda brown-skinned and upright). Unchanged: 14/015 (three Gemini candidates rejected; Krishna still larger than the brief). Originals and the rejected candidates: `../_archive/gita-kids-illustrations-original/2026-10-10-minor-fixes/`. Gemini generations used: 4, no 429.
+3. **Read-aloud rhythm pass, Ch 2 (`ec27943`).** 30 small edits in 26 of 72 stories, story body only. Flagged by the pass and NOT changed (content, owner call): 2/053 title says "Ten Days of Silence" but the story is a three-day course; 2/066 "nattuvangam beats of the mridangam player" mixes two instruments; 2/048 calls "samatvam yoga ucyate" three syllables (it is three words); 2/040 Maiti tree-planting is described at a girl's birth (tradition is usually cited at a wedding, needs a fact check); 2/024 says "five hundred years" then "three hundred years"; 2/009 horses "confused by the silence of the man who always commanded them" describes Arjuna although Krishna is the charioteer. Chapters 1 and 3-18 have not had this pass.
+4. **Image compression (`3120ec4`).** `scripts/optimize-images.mjs` (`npm run optimize-images`) writes `.avif` (q55) and `.webp` (q80) beside every PNG in `public/illustrations/`; idempotent by mtime. `src/components/Illustration.astro` emits `<picture>` (AVIF, WebP, PNG fallback) and is used by ShlokaCard, ChapterLayout, summary, dhyanashloka and the home hero. Totals for 721 images: PNG 901 MB, AVIF 209 MB, WebP 243 MB. Source PNGs are untouched; full snapshot at `../_archive/gita-kids-illustrations-original/2026-10-10-pre-compression/`. **After generating or retouching any image, run `npm run optimize-images` before committing**, otherwise the page serves a stale AVIF/WebP. Preview pages (`/preview/*`) still use plain `<img>`.
+5. **About page** now lists Gond and Kerala mural among the styles.
+
+**Not done:**
+- `gitakids.org` redirect and apex-primary switch: the Vercel API call was blocked by the permission classifier. Owner to do in the dashboard. Caution on the apex switch: the Android app loads `https://www.gitakids.com`; an earlier off-host redirect bounced users to Chrome, so test the app after flipping (allowNavigation already lists both hosts).
+- UI refresh colour and type choice: still the owner's pick (`/preview/home`, `/preview/type`, `/preview/redesign`).
+- Polish pass on the roughly 250 MINOR images from the September audit: no per-image list survives from that session, so it needs a fresh audit first.
+- Ch 1 verse 1 alt text still says "Madhubani-style" although Ch 1 is Pichwai; `src/data/illustration-alt-text.yaml` may be stale for regenerated chapters.
+- Print, iOS, Play Store items below are unchanged.
+
+## Session 2026-09-23: Gemini restored; Warli replacement finished for Ch 9 and Ch 14 (committed `c281936`, deployed 2026-10-10)
 
 **Gemini key.** New key (prefix `AQ.Ab8`, owner raised the limits) in `gita-kids/.env.local` (gitignored, chmod 600); `readApiKey()` checks it before the shared mutual-fund-dost file. Verified 8 concurrent requests at HTTP 200, no 429. Gemini is the default provider; Codex runs only with `IMAGE_PROVIDER=codex`.
 
@@ -395,4 +412,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-09-23
+Last reviewed: 2026-10-10
