@@ -27,13 +27,14 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
-## Session 2026-10-17: IAST accents in the glossary
+## Session 2026-10-17: IAST accents in the glossary (committed `6e6f54d`, deployed 2026-10-17)
 
 - Owner reported missing accents on the English spellings of Sanskrit words. All 701 verse transliterations already had full IAST and render correctly; the gap was the glossary.
 - `src/data/glossary.yaml`: new `iast` field on all 90 entries, transliterated from the Devanagari field (anusvara as ṁ, e.g. sāṁkhya, saṁnyāsa). `term` stays the plain story spelling because `Tooltip.tsx` uses it to match words in story and meaning text.
 - `glossary.astro` shows the IAST form as the headword, with the plain spelling in small grey type when it differs (Kṛṣṇa · Krishna · कृष्ण). Grouping and sort still use `term`.
 - `Tooltip.tsx` heading shows the IAST form, capitalised to match the word in the text.
 - Not changed: chapter titles in `meta.yaml` (`transliterated_name`, partly accented, only used on preview pages), speaker tags, story and meaning prose. Term `nishkarmya` is a misspelling of naiṣkarmya; left as-is because it is the matching key.
+- Deployed: pushed to `main` (Vercel git integration). Verified live on www.gitakids.com: About shows `Web build 6e6f54d`, glossary shows Kṛṣṇa and Dhṛtarāṣṭra, verse pages return 200.
 
 ## Session 2026-10-10: Kerala mural deployed, minor image fixes, Ch 2 read-aloud pass, AVIF/WebP
 
