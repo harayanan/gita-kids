@@ -27,6 +27,14 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
+## Session 2026-10-17: IAST accents in the glossary
+
+- Owner reported missing accents on the English spellings of Sanskrit words. All 701 verse transliterations already had full IAST and render correctly; the gap was the glossary.
+- `src/data/glossary.yaml`: new `iast` field on all 90 entries, transliterated from the Devanagari field (anusvara as ṁ, e.g. sāṁkhya, saṁnyāsa). `term` stays the plain story spelling because `Tooltip.tsx` uses it to match words in story and meaning text.
+- `glossary.astro` shows the IAST form as the headword, with the plain spelling in small grey type when it differs (Kṛṣṇa · Krishna · कृष्ण). Grouping and sort still use `term`.
+- `Tooltip.tsx` heading shows the IAST form, capitalised to match the word in the text.
+- Not changed: chapter titles in `meta.yaml` (`transliterated_name`, partly accented, only used on preview pages), speaker tags, story and meaning prose. Term `nishkarmya` is a misspelling of naiṣkarmya; left as-is because it is the matching key.
+
 ## Session 2026-10-10: Kerala mural deployed, minor image fixes, Ch 2 read-aloud pass, AVIF/WebP
 
 Owner instruction: go ahead with all pending items and deploy. `art/kerala-mural-ch4-9-14` was fast-forwarded into `main` and pushed (`3120ec4`); the push deployed through Vercel. Verified live on www.gitakids.com: About shows `Web build 3120ec4`, six sampled image files match the commit byte for byte, six sampled pages return 200. Build: 747 pages.
@@ -412,4 +420,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-10-10
+Last reviewed: 2026-10-17

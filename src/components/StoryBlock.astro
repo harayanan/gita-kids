@@ -5,7 +5,7 @@ interface Props {
   title: string;
   source: string;
   body: string;
-  glossary: { term: string; definition: string }[];
+  glossary: { term: string; iast?: string; definition: string }[];
 }
 
 const { title, source, body, glossary } = Astro.props;

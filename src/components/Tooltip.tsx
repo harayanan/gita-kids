@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, type ReactNode } from 'react';
 
 interface GlossaryEntry {
   term: string;
+  iast?: string;
   definition: string;
 }
 
@@ -10,10 +11,12 @@ interface TooltipProps {
   text: string;
 }
 
-function TooltipWord({ term, definition }: { term: string; definition: string }) {
+function TooltipWord({ term, iast, definition }: { term: string; iast?: string; definition: string }) {
   const [show, setShow] = useState(false);
   const [position, setPosition] = useState<'above' | 'below'>('above');
   const ref = useRef<HTMLSpanElement>(null);
+  // Show the IAST spelling, keeping the capitalisation used in the text
+  const heading = iast && term[0] !== term[0].toLowerCase() ? iast[0].toUpperCase() + iast.slice(1) : iast ?? term;
 
   useEffect(() => {
     if (show && ref.current) {
@@ -68,7 +71,7 @@ function TooltipWord({ term, definition }: { term: string; definition: string })
           }`}
           role="tooltip"
         >
-          <span className="block font-semibold text-gold mb-0.5">{term}</span>
+          <span className="block font-semibold text-gold mb-0.5">{heading}</span>
           <span className="block text-gray-200">{definition}</span>
           <span
             aria-hidden="true"
@@ -122,7 +125,7 @@ export default function Tooltip({ glossary, text }: TooltipProps) {
       if (entry) {
         seen.add(termLower);
         parts.push(
-          <TooltipWord key={`${termLower}-${match.index}`} term={matchedTerm} definition={entry.definition} />
+          <TooltipWord key={`${termLower}-${match.index}`} term={matchedTerm} iast={entry.iast} definition={entry.definition} />
         );
       } else {
         parts.push(matchedTerm);

@@ -48,7 +48,10 @@ const letters = Object.keys(grouped).sort();
             {grouped[letter].map((entry) => (
               <div class="py-2">
                 <dt class="font-body text-lg font-semibold text-gray-900 capitalize">
-                  {entry.term}
+                  {entry.iast ?? entry.term}
+                  {entry.iast && entry.iast.toLowerCase() !== entry.term.toLowerCase() && (
+                    <span class="font-ui text-sm font-normal normal-case text-gray-500 ml-2">{entry.term}</span>
+                  )}
                   {entry.sanskrit && (
                     <span lang="sa" class="font-devanagari text-base font-normal text-saffron/70 ml-2">{entry.sanskrit}</span>
                   )}

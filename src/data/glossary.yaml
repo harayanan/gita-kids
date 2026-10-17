@@ -1,363 +1,453 @@
 - term: dharma
   sanskrit: धर्म
+  iast: dharma
   definition: The right way to live — your duty, righteousness, and the natural order of things.
 
 - term: karma
   sanskrit: कर्म
+  iast: karma
   definition: Action, and the results that come from your actions. Every deed has a consequence.
 
 - term: yoga
   sanskrit: योग
+  iast: yoga
   definition: A way of connecting with something greater. It can mean discipline, union, or a spiritual path.
 
 - term: atman
   sanskrit: आत्मन्
+  iast: ātman
   definition: The soul — the real you that lives inside every being. It cannot be cut, burned, or destroyed. Unchanging and eternal. In its deepest nature, the atman is not different from Brahman.
 
 - term: Brahman
   sanskrit: ब्रह्मन्
+  iast: Brahman
   definition: The ultimate reality — the one infinite awareness that IS everything in the universe. Not a being among other beings, but the ground of all existence.
 
 - term: shloka
   sanskrit: श्लोक
+  iast: śloka
   definition: A verse or couplet in Sanskrit poetry. The Gita is written in shlokas.
 
 - term: kshetra
   sanskrit: क्षेत्र
+  iast: kṣetra
   definition: A field — can mean a battlefield or the body where life's experiences happen.
 
 - term: kuru
   sanskrit: कुरु
+  iast: kuru
   definition: The ancient royal family. Both the Pandavas and Kauravas belong to the Kuru dynasty.
 
 - term: Pandava
   sanskrit: पाण्डव
+  iast: Pāṇḍava
   definition: The five sons of King Pandu — Yudhishthira, Bhima, Arjuna, Nakula, and Sahadeva. The heroes of the Mahabharata.
 
 - term: Kaurava
   sanskrit: कौरव
+  iast: Kaurava
   definition: The hundred sons of King Dhritarashtra, led by Duryodhana. Rivals of the Pandavas.
 
 - term: Kurukshetra
   sanskrit: कुरुक्षेत्र
+  iast: Kurukṣetra
   definition: The sacred battlefield where the great war of the Mahabharata was fought.
 
 - term: Mahabharata
   sanskrit: महाभारत
+  iast: Mahābhārata
   definition: One of the two great Indian epics. The Bhagavad Gita is a part of this enormous story.
 
 - term: moksha
   sanskrit: मोक्ष
+  iast: mokṣa
   definition: Liberation — the realization that you were never truly bound. Freedom from the cycle of birth and death through knowledge of your true Self.
 
 - term: samsara
   sanskrit: संसार
+  iast: saṁsāra
   definition: The cycle of birth, death, and rebirth that every soul goes through until it reaches moksha.
 
 - term: bhakti
   sanskrit: भक्ति
+  iast: bhakti
   definition: Devotion and loving surrender to God. One of the main paths to spiritual freedom.
 
 - term: jnana
   sanskrit: ज्ञान
+  iast: jñāna
   definition: Knowledge or wisdom — especially the deep understanding of the true nature of reality.
 
 - term: sankhya
   sanskrit: सांख्य
+  iast: sāṁkhya
   definition: A way of knowing through wisdom and reasoning — one of the two paths Krishna teaches. It tells apart the real (the soul) from the unreal (the material world).
 
 - term: buddhi
   sanskrit: बुद्धि
+  iast: buddhi
   definition: The intellect — the part of your mind that decides, discerns right from wrong, and understands clearly.
 
 - term: manas
   sanskrit: मनस्
+  iast: manas
   definition: The mind — the part of you that thinks, feels, worries, and imagines.
 
 - term: ahankara
   sanskrit: अहंकार
+  iast: ahaṁkāra
   definition: The ego — the feeling of "I" and "mine" that makes you think you are separate from everything else.
 
 - term: guna
   sanskrit: गुण
+  iast: guṇa
   definition: One of three qualities of nature — sattva (goodness), rajas (passion), tamas (inertia) — that shape everything in the world.
 
 - term: sattva
   sanskrit: सत्त्व
+  iast: sattva
   definition: Goodness, purity, and harmony. The guna that brings clarity, peace, and wisdom.
 
 - term: rajas
   sanskrit: रजस्
+  iast: rajas
   definition: Passion, activity, and restlessness. The guna that drives desire and action.
 
 - term: tamas
   sanskrit: तमस्
+  iast: tamas
   definition: Darkness, laziness, and confusion. The guna that causes ignorance and inaction.
 
 - term: prakriti
   sanskrit: प्रकृति
+  iast: prakṛti
   definition: Nature — the material world that everything physical is made of, including your body and mind.
 
 - term: purusha
   sanskrit: पुरुष
+  iast: puruṣa
   definition: The spirit or consciousness — the witness that observes but is not changed by nature.
 
 - term: avatar
   sanskrit: अवतार
+  iast: avatāra
   definition: A form that God takes when coming to Earth. Krishna is an avatar of Vishnu.
 
 - term: mantra
   sanskrit: मन्त्र
+  iast: mantra
   definition: Sacred words or sounds that carry spiritual power when chanted or meditated upon.
 
 - term: tapas
   sanskrit: तपस्
+  iast: tapas
   definition: Self-discipline — training yourself through effort, patience, and sometimes giving things up.
 
 - term: sattvik
   sanskrit: सात्त्विक
+  iast: sāttvika
   definition: Pure and harmonious — food, actions, or thoughts that bring clarity and goodness.
 
 - term: rajasic
   sanskrit: राजसिक
+  iast: rājasika
   definition: Passionate and restless — food, actions, or thoughts that stir up desire and agitation.
 
 - term: tamasic
   sanskrit: तामसिक
+  iast: tāmasika
   definition: Dull and confused — food, actions, or thoughts that lead to laziness and ignorance.
 
 - term: yajna
   sanskrit: यज्ञ
+  iast: yajña
   definition: An offering or sacrifice — sharing what you have with the world as an act of devotion.
 
 - term: acharya
   sanskrit: आचार्य
+  iast: ācārya
   definition: A teacher or master — someone who teaches by both words and the example of their life.
 
 - term: guru
   sanskrit: गुरु
+  iast: guru
   definition: A spiritual teacher who guides you from darkness toward light and understanding.
 
 - term: deva
   sanskrit: देव
+  iast: deva
   definition: A shining one — a god or divine being in the world of light.
 
 - term: asura
   sanskrit: असुर
+  iast: asura
   definition: A being driven by ego and desire — the opposite nature of the devas.
 
 - term: rishi
   sanskrit: ऋषि
+  iast: ṛṣi
   definition: A sage or seer — someone who has realized deep spiritual truths through meditation.
 
 - term: vishada
   sanskrit: विषाद
+  iast: viṣāda
   definition: Deep sorrow, despair, or grief. Chapter 1 is called "Arjuna Vishada Yoga."
 
 - term: samadhi
   sanskrit: समाधि
+  iast: samādhi
   definition: Deep absorption — the state where the mind is perfectly still and focused, like a lamp in a windless place, united with the divine.
 
 - term: varna
   sanskrit: वर्ण
+  iast: varṇa
   definition: A social group based on one's nature and work — not birth. The Gita describes four varnas.
 
 - term: Sanjaya
   sanskrit: सञ्जय
+  iast: Sañjaya
   definition: Dhritarashtra's charioteer and advisor, blessed with divine sight to see the entire battlefield from far away.
 
 - term: Dhritarashtra
   sanskrit: धृतराष्ट्र
+  iast: Dhṛtarāṣṭra
   definition: The blind king of Hastinapura. Father of the hundred Kauravas. He asks Sanjaya to describe the battle.
 
 - term: Duryodhana
   sanskrit: दुर्योधन
+  iast: Duryodhana
   definition: The eldest Kaurava prince. Proud and jealous, he refused to share the kingdom with his Pandava cousins.
 
 - term: Arjuna
   sanskrit: अर्जुन
+  iast: Arjuna
   definition: The third Pandava brother — the greatest archer in the world. Krishna is his charioteer and guide.
 
 - term: Krishna
   sanskrit: कृष्ण
+  iast: Kṛṣṇa
   definition: An avatar of Lord Vishnu who serves as Arjuna's charioteer. He speaks the teachings of the Gita.
 
 - term: Bhishma
   sanskrit: भीष्म
+  iast: Bhīṣma
   definition: The great-grandfather of both Pandavas and Kauravas. Bound by a terrible vow, he fights on the Kaurava side.
 
 - term: Drona
   sanskrit: द्रोण
+  iast: Droṇa
   definition: Dronacharya — the royal teacher of archery who trained both the Pandavas and Kauravas. Fights for the Kauravas.
 
 - term: Karna
   sanskrit: कर्ण
+  iast: Karṇa
   definition: A great warrior raised as a charioteer's son, but secretly the eldest son of Kunti. Loyal to Duryodhana.
 
 - term: Abhimanyu
   sanskrit: अभिमन्यु
+  iast: Abhimanyu
   definition: Arjuna's brave young son who learned to enter the Chakravyuha battle formation but not how to escape it.
 
 - term: Chakravyuha
   sanskrit: चक्रव्यूह
+  iast: Cakravyūha
   definition: A deadly spiral battle formation. Abhimanyu famously broke into one but could not find his way out.
 
 # --- Chapter 3 (Karma Yoga) terms ---
 
 - term: nishkarmya
   sanskrit: नैष्कर्म्य
+  iast: naiṣkarmya
   definition: Freedom from the bondage of action — not by avoiding work, but by doing it without selfish desire.
 
 - term: akarma
   sanskrit: अकर्म
+  iast: akarma
   definition: Inaction — refusing to act. The Gita teaches that mere avoidance of work does not lead to freedom.
 
 - term: kama
   sanskrit: काम
+  iast: kāma
   definition: Desire or craving — the wanting that makes you reach for more and more, like a fire that is never satisfied.
 
 - term: krodha
   sanskrit: क्रोध
+  iast: krodha
   definition: Anger — the fierce heat that rises when desire is blocked. Krishna calls it the great enemy of wisdom.
 
 - term: raga
   sanskrit: राग
+  iast: rāga
   definition: Attachment — the pull you feel toward things you like. One of the two guards that block clear seeing.
 
 - term: dvesha
   sanskrit: द्वेष
+  iast: dveṣa
   definition: Aversion — the push away from things you dislike. The opposite of raga, and equally blinding.
 
 - term: indriya
   sanskrit: इन्द्रिय
+  iast: indriya
   definition: A sense organ — eyes, ears, nose, tongue, skin. The five doorways through which the world enters your mind.
 
 - term: lokasangraha
   sanskrit: लोकसंग्रह
+  iast: lokasaṁgraha
   definition: Holding the world together — acting for the welfare of all beings, not just yourself. The true purpose of karma yoga.
 
 - term: sannyasa
   sanskrit: संन्यास
+  iast: saṁnyāsa
   definition: Renunciation — giving up attachment to actions and their results. A path of letting go.
 
 - term: siddhi
   sanskrit: सिद्धि
+  iast: siddhi
   definition: Perfection or accomplishment — the success that comes from dedicated, selfless practice.
 
 - term: swadharma
   sanskrit: स्वधर्म
+  iast: svadharma
   definition: Your own duty — the particular role and responsibility that is yours to fulfill, based on your nature.
 
 - term: dehin
   sanskrit: देहिन्
+  iast: dehin
   definition: The embodied one — the soul that lives inside a body, like a person wearing clothes.
 
 # --- Chapter 15 (Purushottama Yoga) terms ---
 
 - term: ashvattha
   sanskrit: अश्वत्थ
+  iast: aśvattha
   definition: The sacred fig tree (peepal). In Chapter 15, Krishna describes a cosmic upside-down ashvattha whose roots grow upward into heaven.
 
 - term: purushottama
   sanskrit: पुरुषोत्तम
+  iast: puruṣottama
   definition: The Supreme Person — higher than both the perishable world and the imperishable soul. Krishna's ultimate title.
 
 - term: kshara
   sanskrit: क्षर
+  iast: kṣara
   definition: The perishable — everything in the world that changes, decays, and passes away.
 
 - term: akshara
   sanskrit: अक्षर
+  iast: akṣara
   definition: The imperishable — that which never changes or dies. The eternal witness within every being.
 
 - term: paramatma
   sanskrit: परमात्मा
+  iast: paramātmā
   definition: The Supreme Self — the great soul that holds all other souls, the way the sky holds all the stars.
 
 - term: vaishvanara
   sanskrit: वैश्वानर
+  iast: vaiśvānara
   definition: The universal fire — the divine flame in every belly that digests food. Krishna says "I am the fire in all beings."
 
 - term: dvandva
   sanskrit: द्वन्द्व
+  iast: dvandva
   definition: Pairs of opposites — pleasure and pain, heat and cold, gain and loss. The wise person stays steady through them all.
 
 - term: soma
   sanskrit: सोम
+  iast: soma
   definition: The moon — source of nourishing nectar. Krishna says he becomes the moon to feed the sap of all plants.
 
 - term: vedanta
   sanskrit: वेदान्त
+  iast: vedānta
   definition: The end (conclusion) of the Vedas — the Upanishads, which contain the deepest teachings about the self and reality.
 
 - term: chandas
   sanskrit: छन्दस्
+  iast: chandas
   definition: Vedic hymns — the sacred verses and metres in which ancient wisdom is preserved and chanted.
 
 - term: deha
   sanskrit: देह
+  iast: deha
   definition: The physical body — the "clothing" the soul wears. Bodies change, but the soul inside them does not.
 
 - term: sthitaprajna
   sanskrit: स्थितप्रज्ञ
+  iast: sthitaprajña
   definition: One whose wisdom is steady and unshaken — a person who stays calm no matter what happens.
 
 - term: samatva
   sanskrit: समत्व
+  iast: samatva
   definition: Equanimity — being balanced in success and failure, pleasure and pain. Krishna says this IS yoga.
 
 - term: kshatriya
   sanskrit: क्षत्रिय
+  iast: kṣatriya
   definition: A warrior — one whose dharma is to protect people and fight for justice.
 
 - term: rasa
   sanskrit: रस
+  iast: rasa
   definition: Taste or essence — the lingering pull of past pleasures that remains even when the object is gone.
 
 - term: nirvana
   sanskrit: निर्वाण
+  iast: nirvāṇa
   definition: Liberation — freedom from the cycle of birth and death. The final peace.
 
 - term: prajna
   sanskrit: प्रज्ञा
+  iast: prajñā
   definition: Wisdom — deep understanding that comes from seeing things as they truly are, not just knowing facts.
 
 - term: kashmala
   sanskrit: कश्मल
+  iast: kaśmala
   definition: Weakness or dejection — the faint-heartedness that overcomes Arjuna at the start of Krishna's teaching.
 
 - term: Vishnu
   sanskrit: विष्णु
+  iast: Viṣṇu
   definition: The Supreme Preserver — one of the three great gods. Krishna is his avatar, descended to earth in human form.
 
 - term: maya
   sanskrit: माया
+  iast: māyā
   definition: The power of appearance — the reason the one Brahman appears as many separate things. Not an illusion that doesn't exist, but a veil that hides the deeper unity beneath.
 
 - term: Kunti
   sanskrit: कुन्ती
+  iast: Kuntī
   definition: Mother of the Pandavas — a queen of great strength and devotion who raised her sons through hardship.
 
 - term: Yudhishthira
   sanskrit: युधिष्ठिर
+  iast: Yudhiṣṭhira
   definition: The eldest Pandava — known for his unwavering truthfulness and commitment to dharma. Also called Dharmaraja.
 
 - term: Bhima
   sanskrit: भीम
+  iast: Bhīma
   definition: The second Pandava — immensely strong and fiercely loyal to his brothers. Wielder of the great mace.
 
 - term: Nakula
   sanskrit: नकुल
+  iast: Nakula
   definition: The fourth Pandava — twin brother of Sahadeva, known for his skill with horses and his striking beauty.
 
 - term: Sahadeva
   sanskrit: सहदेव
+  iast: Sahadeva
   definition: The youngest Pandava — twin brother of Nakula, known for his wisdom and knowledge of the stars.
 
 - term: prana
   sanskrit: प्राण
+  iast: prāṇa
   definition: Life-breath — the vital energy that flows through every living being. Without prana, the body cannot live.
 
 - term: Hastinapura
   sanskrit: हस्तिनापुर
+  iast: Hastināpura
   definition: The great capital city of the Kuru dynasty — where the palace, the court, and the fateful dice game all took place.
