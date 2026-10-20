@@ -29,7 +29,7 @@ Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
 ## Session 2026-10-20: Ch 3.7 story character fix (committed, not yet deployed)
 
-- 3.7 "The Warrior Who Was a Lake" called its unknown foot-soldier "Satyajit", but Satyajit is a named Panchala prince in the Mahabharata (Drupada's family, guarded Yudhishthira, killed by Drona). Renamed the soldier **Kalu** (name not used elsewhere in the book) and dropped the "not a prince" lines.
+- 3.7 "The Warrior Who Was a Lake" called its unknown foot-soldier "Satyajit", but Satyajit is a named Panchala prince in the Mahabharata (Drupada's family, guarded Yudhishthira, killed by Drona). Renamed the soldier **Nirmal** ("clear, unclouded", which fits the still-lake image; not a Mahabharata name and not used elsewhere in the book) and dropped the "not a prince" lines.
 - Moved his home from "near Mathura / Braj" to **a village in Matsya, King Virata's country**. Krishna's Narayani army from that region fought for the Kauravas, so a Matsya soldier fits a Pandava-side infantryman better.
 - Plot, dialogue and the illustration (which shows no name) are unchanged. Build: 747 pages, OK.
 
