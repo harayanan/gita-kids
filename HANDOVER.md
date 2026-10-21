@@ -27,11 +27,12 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
-## Session 2026-10-20: Ch 3.7 story character fix (committed, not yet deployed)
+## Session 2026-10-20: Ch 3.7 story character fix (committed `b410239`, deployed 2026-10-21)
 
 - 3.7 "The Warrior Who Was a Lake" called its unknown foot-soldier "Satyajit", but Satyajit is a named Panchala prince in the Mahabharata (Drupada's family, guarded Yudhishthira, killed by Drona). Renamed the soldier **Nirmal** ("clear, unclouded", which fits the still-lake image; not a Mahabharata name and not used elsewhere in the book) and dropped the "not a prince" lines.
 - Moved his home from "near Mathura / Braj" to **a village in Matsya, King Virata's country**. Krishna's Narayani army from that region fought for the Kauravas, so a Matsya soldier fits a Pandava-side infantryman better.
 - Plot, dialogue and the illustration (which shows no name) are unchanged. Build: 747 pages, OK.
+- Deployed: pushed to `main` (Vercel git integration). Verified live on www.gitakids.com: About shows `Web build b410239`, 3.7 page returns 200 and names Nirmal (no Satyajit/Kalu left).
 
 ## Session 2026-10-17: IAST accents in the glossary (committed `6e6f54d`, deployed 2026-10-17)
 
@@ -427,4 +428,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-10-20
+Last reviewed: 2026-10-21
