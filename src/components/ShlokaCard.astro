@@ -31,6 +31,8 @@ interface Props {
   reflection: string;
   illustration?: string;
   illustrationAlt?: string;
+  illustrationWidth?: number;
+  illustrationHeight?: number;
   glossary: { term: string; iast?: string; definition: string }[];
   folkArtStyle?: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari' | 'gond' | 'kerala-mural';
 }
@@ -47,17 +49,19 @@ const {
   reflection,
   illustration,
   illustrationAlt,
+  illustrationWidth = 1376,
+  illustrationHeight = 768,
   glossary,
   folkArtStyle = 'madhubani',
 } = Astro.props;
 ---
 
 <article class="max-w-reading mx-auto px-4 py-12" data-speaker={speaker}>
-  <!-- 1. Chapter & Verse Number -->
+  <!-- 1. Chapter & Verse Number (the page's only h1) -->
   <div class="text-center mb-8">
-    <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold" transition:name={`verse-${chapter}-${verse}`}>
+    <h1 class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink" transition:name={`verse-${chapter}-${verse}`}>
       Chapter {chapter} &middot; Verse {verse}
-    </span>
+    </h1>
   </div>
 
   <!-- Speaker -->
@@ -67,12 +71,18 @@ const {
 
   <!-- 2. Illustration -->
   {illustration && (
-    <div class="-mx-4 sm:-mx-8 md:-mx-16 mb-10 scroll-reveal">
+    <!-- Full-bleed on phones (cancels the article's px-4). From lg up it widens past the
+         text column by up to 4rem a side, capped by the gutter actually available
+         (50vw - 50%), so large user font sizes never push it off-screen. -->
+    <div class="-mx-4 lg:-mx-[min(4rem,calc(50vw-50%))] mb-10 scroll-reveal">
       <Illustration
         src={illustration}
         alt={illustrationAlt || `Illustration for Chapter ${chapter}, Verse ${verse}`}
-        class="w-full"
-        loading="lazy"
+        class="w-full h-auto"
+        loading="eager"
+        fetchpriority="high"
+        width={illustrationWidth}
+        height={illustrationHeight}
         transition:name={`illustration-${chapter}-${verse}`}
       />
     </div>
@@ -97,9 +107,9 @@ const {
 
   <!-- 6. Simple Meaning -->
   <div class="py-6 scroll-reveal" style="transition-delay: 0.3s">
-    <FolkArtBorder style={folkArtStyle}>
-      <div class="border-l-[3px] border-gold/40 pl-6">
-        <p class="font-body text-xl md:text-2xl leading-relaxed text-gray-800">
+    <FolkArtBorder style={folkArtStyle} compact>
+      <div class="border-l-[3px] border-gold/40 pl-3 sm:pl-6">
+        <p class="font-body text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-800">
           <Tooltip client:load glossary={glossary} text={meaning} />
         </p>
       </div>
@@ -118,7 +128,8 @@ const {
 
   <!-- 8. Reflection -->
   <div class="text-center py-10 my-6 scroll-reveal" style="transition-delay: 0.6s">
-    <span lang="sa" class="font-devanagari text-forest/30 text-sm block mb-4">चिन्तनम्</span>
+    <span lang="sa" class="font-devanagari text-forest text-lg block">चिन्तनम्</span>
+    <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink block mt-1 mb-4">Think about it</span>
     <p class="font-body text-xl md:text-2xl italic text-gray-700 leading-relaxed max-w-lg mx-auto">
       {reflection}
     </p>

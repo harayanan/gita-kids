@@ -18,7 +18,7 @@ const letters = Object.keys(grouped).sort();
 <BaseLayout title="Glossary — Gita Kids">
   <div class="max-w-reading mx-auto px-4 py-12">
     <header class="text-center mb-12">
-      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">Reference</span>
+      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink">Reference</span>
       <h1 class="font-body text-3xl font-bold text-gray-900 mt-3">Glossary</h1>
       <p class="font-body text-base text-gray-600 mt-3">
         Sanskrit and Hindi terms you'll meet in the Gita, explained simply.
@@ -26,11 +26,11 @@ const letters = Object.keys(grouped).sort();
     </header>
 
     <!-- Letter nav -->
-    <nav class="flex flex-wrap justify-center gap-2 mb-10">
+    <nav aria-label="Jump to letter" class="flex flex-wrap justify-center gap-1.5 mb-10">
       {letters.map((letter) => (
         <a
           href={`#${letter}`}
-          class="w-8 h-8 flex items-center justify-center rounded-full font-ui text-sm font-medium text-saffron hover:bg-saffron hover:text-white transition-colors border border-saffron/20"
+          class="w-11 h-11 flex items-center justify-center rounded-full font-ui text-base font-medium text-saffron-ink hover:bg-saffron-ink hover:text-white transition-colors border border-saffron/25"
         >
           {letter}
         </a>
@@ -41,7 +41,7 @@ const letters = Object.keys(grouped).sort();
     <div class="space-y-10">
       {letters.map((letter) => (
         <section id={letter}>
-          <h2 class="font-ui text-lg font-bold text-saffron border-b border-gold/20 pb-2 mb-4">
+          <h2 class="font-ui text-lg font-bold text-saffron-ink border-b border-gold/20 pb-2 mb-4">
             {letter}
           </h2>
           <dl class="space-y-4">
@@ -50,10 +50,10 @@ const letters = Object.keys(grouped).sort();
                 <dt class="font-body text-lg font-semibold text-gray-900 capitalize">
                   {entry.iast ?? entry.term}
                   {entry.iast && entry.iast.toLowerCase() !== entry.term.toLowerCase() && (
-                    <span class="font-ui text-sm font-normal normal-case text-gray-500 ml-2">{entry.term}</span>
+                    <span class="font-ui text-sm font-normal normal-case text-gray-600 ml-2">{entry.term}</span>
                   )}
                   {entry.sanskrit && (
-                    <span lang="sa" class="font-devanagari text-base font-normal text-saffron/70 ml-2">{entry.sanskrit}</span>
+                    <span lang="sa" class="font-devanagari text-base font-normal text-saffron-ink ml-2">{entry.sanskrit}</span>
                   )}
                 </dt>
                 <dd class="font-body text-base text-gray-600 leading-relaxed mt-1">

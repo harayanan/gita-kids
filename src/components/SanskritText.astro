@@ -5,17 +5,25 @@ interface Props {
 }
 
 const { sanskrit, transliteration } = Astro.props;
+
+// Keep the danda (।) and double danda (॥) on the same line as the word before them, so the
+// closing ॥ never wraps onto a line of its own. Spaced dandas get a no-break space; attached
+// ones get a word joiner (U+2060). Applied at render time; the YAML text is unchanged.
+const glueDandas = (text: string) =>
+  text.replace(/\s+([।॥])/g, '\u00A0$1').replace(/([^\s\u00A0\u2060])([।॥])/g, '$1\u2060$2');
+// Same for the IAST line, where the dandas are written as | and ||.
+const glueBars = (text: string) => text.replace(/\s+(\|\|?)/g, '\u00A0$1');
 ---
 
 <div class="text-center space-y-4 py-8">
   <p
     lang="sa"
-    class="font-devanagari text-3xl md:text-4xl lg:text-5xl leading-relaxed text-gray-900 tracking-wider"
+    class="font-devanagari text-3xl md:text-4xl lg:text-5xl leading-relaxed text-gray-900 tracking-wider text-balance"
     style="text-shadow: 0 1px 2px rgba(196, 162, 78, 0.15);"
   >
-    {sanskrit}
+    {glueDandas(sanskrit)}
   </p>
-  <p lang="sa" class="font-body text-base md:text-lg italic text-gray-600 tracking-wide">
-    {transliteration}
+  <p lang="sa-Latn" class="font-body text-base md:text-lg italic text-gray-600 tracking-wide text-balance">
+    {glueBars(transliteration)}
   </p>
 </div>

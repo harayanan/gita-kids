@@ -18,7 +18,7 @@ const buildDate = new Date().toISOString().slice(0, 10);
 <BaseLayout title="About — Gita Kids">
   <div class="max-w-reading mx-auto px-4 py-12">
     <header class="text-center mb-12">
-      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">About</span>
+      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink">About</span>
       <h1 class="font-body text-3xl font-bold text-gray-900 mt-3">About This Project</h1>
     </header>
 
@@ -37,11 +37,11 @@ const buildDate = new Date().toISOString().slice(0, 10);
       <FolkArtBorder style="pichwai" class="my-8">
         <h2 class="font-body text-xl font-bold text-gray-900 mb-3">What makes this different</h2>
         <ul class="space-y-3 text-base">
-          <li><strong class="text-saffron">Every single verse</strong> — not a summary, but the complete Gita, chapter by chapter.</li>
-          <li><strong class="text-saffron">Word by word</strong> — each Sanskrit word is broken down to its root (dhatu), so you learn the language as you read.</li>
-          <li><strong class="text-saffron">A story for every verse</strong> — parables from Indian tradition and original stories that make the teaching come alive.</li>
-          <li><strong class="text-saffron">Beautiful illustrations</strong> — Indian folk art fusion inspired by Madhubani, Pichwai, Pattachitra, Gond, Kalamkari, Kerala mural, and Warli traditions.</li>
-          <li><strong class="text-saffron">Built for curious minds</strong> — written for children aged 8 to 12, but honestly, it's for anyone encountering the Gita for the first time.</li>
+          <li><strong class="text-saffron-ink">Every single verse</strong> — not a summary, but the complete Gita, chapter by chapter.</li>
+          <li><strong class="text-saffron-ink">Word by word</strong> — each Sanskrit word is broken down to its root (dhatu), so you learn the language as you read.</li>
+          <li><strong class="text-saffron-ink">A story for every verse</strong> — parables from Indian tradition and original stories that make the teaching come alive.</li>
+          <li><strong class="text-saffron-ink">Beautiful illustrations</strong> — Indian folk art fusion inspired by Madhubani, Pichwai, Pattachitra, Gond, Kalamkari, Kerala mural, and Warli traditions.</li>
+          <li><strong class="text-saffron-ink">Built for curious minds</strong> — written for children aged 8 to 12, but honestly, it's for anyone encountering the Gita for the first time.</li>
         </ul>
       </FolkArtBorder>
 
@@ -49,7 +49,7 @@ const buildDate = new Date().toISOString().slice(0, 10);
       <p>
         Start with Chapter 1 and read one verse at a time. Don't rush — each verse
         has a story and a question to think about. Hover over highlighted words to
-        see their meanings, or visit the <a href="/glossary" class="text-saffron hover:underline">Glossary</a>
+        see their meanings, or visit the <a href="/glossary" class="inline-block py-3 -my-3 text-saffron-ink underline decoration-saffron/40 underline-offset-2 hover:decoration-saffron-ink">Glossary</a>
         for the full list.
       </p>
       <p>
@@ -67,7 +67,7 @@ const buildDate = new Date().toISOString().slice(0, 10);
       </p>
     </div>
 
-    <p id="version-stamp" class="text-center font-ui text-xs text-gray-400 mt-12">
+    <p id="version-stamp" class="text-center font-ui text-sm text-gray-600 mt-12">
       Web build {webBuild} &middot; {buildDate}
     </p>
   </div>

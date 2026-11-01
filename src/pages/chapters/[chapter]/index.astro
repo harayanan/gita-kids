@@ -65,9 +65,9 @@ function formatSpeaker(speaker: string): string {
     <span class="font-devanagari text-lg" style={`color: ${accentColor}`}>&#x2630;</span>
     <span class="flex-1">
       <span class="block font-body text-sm font-semibold text-gray-800">Verse summary</span>
-      <span class="block font-ui text-xs text-gray-500">All {verses.length} verses — Sanskrit and English, side by side</span>
+      <span class="block font-ui text-sm text-gray-600">All {verses.length} verses — Sanskrit and English, side by side</span>
     </span>
-    <span class="font-ui text-sm text-saffron shrink-0">View &rarr;</span>
+    <span class="font-ui text-sm font-medium text-saffron-ink shrink-0">View &rarr;</span>
   </a>
 
   <!-- Art style callout -->
@@ -78,8 +78,8 @@ function formatSpeaker(speaker: string): string {
         <span class="font-body text-sm font-semibold text-gray-700">
           Art Style: {artStyle.name} from {artStyle.region}
         </span>
-        <span class="ml-auto font-ui text-xs text-gray-500 group-open:hidden">Learn more</span>
-        <span class="ml-auto font-ui text-xs text-gray-500 hidden group-open:inline">Close</span>
+        <span class="ml-auto shrink-0 font-ui text-sm text-gray-600 group-open:hidden">Learn more</span>
+        <span class="ml-auto shrink-0 font-ui text-sm text-gray-600 hidden group-open:inline">Close</span>
       </summary>
       <div class="px-6 pb-5 pt-1 space-y-3">
         <p class="font-body text-sm text-gray-600 leading-relaxed">{artStyle.description}</p>
@@ -95,7 +95,7 @@ function formatSpeaker(speaker: string): string {
           </ul>
         </div>
         <div class="rounded-lg bg-saffron/5 border border-saffron/10 px-4 py-3">
-          <p class="font-ui text-xs font-semibold text-saffron mb-1">Did you know?</p>
+          <p class="font-ui text-sm font-semibold text-saffron-ink mb-1">Did you know?</p>
           <p class="font-body text-sm text-gray-600 leading-relaxed">{artStyle.fun_fact}</p>
         </div>
       </div>
@@ -104,30 +104,33 @@ function formatSpeaker(speaker: string): string {
 
   <!-- Verse list -->
   {verses.length > 0 ? (
+    <section aria-labelledby="verse-list-heading">
+    <h2 id="verse-list-heading" class="sr-only">Verses</h2>
     <div class="space-y-3">
       {verses.map((v, index) => (
         <a
           href={`/chapters/${slug}/${String(v.verse).padStart(3, '0')}`}
           class="block rounded-lg border border-gold/15 hover:border-saffron/40 p-5 transition-all hover:shadow-sm bg-white/40 scroll-reveal"
-          style={`border-left: 3px solid ${accentColor}; transition-delay: ${Math.min(index * 0.05, 1)}s`}
+          style={`border-left: 3px solid ${accentColor}; transition-delay: ${(index % 4) * 0.05}s`}
         >
           <div class="flex items-start gap-4">
-            <span class="font-ui text-xs font-bold text-gold shrink-0 mt-1">
+            <span class="font-ui text-sm font-bold text-gold-ink shrink-0 mt-1 min-w-[2.25rem]">
               {chapter.number}.{v.verse}
             </span>
             <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 mb-1">
-                <p lang="sa" class="font-devanagari text-base text-gray-800 truncate">{v.sanskrit}</p>
-                <span class="font-ui text-[10px] uppercase tracking-wider text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded shrink-0">
+              <div class="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2 mb-1">
+                <p lang="sa" class="font-devanagari text-base text-gray-800 truncate max-w-full sm:min-w-0">{v.sanskrit}</p>
+                <span class="font-ui text-xs uppercase tracking-wider text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded shrink-0">
                   {formatSpeaker(v.speaker)}
                 </span>
               </div>
-              <p class="font-body text-sm text-gray-600 mt-1 truncate">{v.meaning}</p>
+              <p class="font-body text-sm text-gray-600 mt-1 line-clamp-2">{v.meaning}</p>
             </div>
           </div>
         </a>
       ))}
     </div>
+    </section>
   ) : (
     <div class="text-center py-16">
       <p lang="sa" class="font-devanagari text-2xl text-saffron/40 mb-4" aria-hidden="true">॥</p>

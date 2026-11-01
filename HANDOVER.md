@@ -27,6 +27,18 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
+## Session 2026-11-02: UI pass: relative sizing, mobile usability, contrast (committed, not yet deployed)
+
+An audit agent measured the live site in Playwright (360/390/768/1280 px, root font 125%/150%). I did the shared groundwork, three agents fixed the verse page, listing pages and reference pages in parallel, then a combined check ran.
+
+- **Fixed bugs:** glossary tooltips never opened on tap (focus opened, click closed; `Tooltip.tsx` rewritten for tap/mouse/keyboard); verse pages scrolled sideways at 640–845px (image bleed); app bottom verse bar now pads for the Android safe area (`VerseNav`, needs a device check); verse pages now have an h1 (eyebrow) and h2s.
+- **Relative sizing:** no `text-[10px]/[11px]` left; real content ≥ `text-sm`; `max-w-reading` = 45rem; Tailwind breakpoints in em (same as px at a 16px default, so larger browser fonts get the narrower layout); `main { overflow-wrap: break-word }` for long Sanskrit compounds. Measured: no horizontal overflow on 10 page types × 9 widths (320–1440) × 100/125/150% root font.
+- **Contrast:** new `saffron-ink` #A84A0C (5.3:1) and `gold-ink` #86691C (4.8:1) for text; gold/saffron kept for fills, borders and display type. gray-400 small text moved to gray-600.
+- **Mobile usability:** 44px targets (nav icons, mobile menu links, glossary letters, breadcrumbs, summary links, ChapterNav); nav no longer shrinks on scroll (content jumped 16px); full desktop link row only from lg, menu below; mobile menu order matches desktop + `aria-current`; `scroll-padding-top` so anchors clear the nav; verse-list fade-in stagger capped; search panel fits above keyboard and hides the bottom verse bar while open.
+- **Layout:** meaning text 23 → 30+ chars/line at 360px (FolkArtBorder padding); story measure ~64 chars on desktop; chapter rows show 2 lines of meaning; home hero copy readable over the art; ॥ no longer orphaned (`text-balance` + no-break space at render); "Think about it" cue under चिन्तनम्; hero illustration eager + sized (no CLS).
+- **Search:** English fields now match at word starts ("arrow" no longer finds "sparrow"); Sanskrit fields still match inside compounds.
+- **Not done (needs owner call):** cover thumbnails on home chapter cards; Dhyanashloka/Gitamahatmyam use "Paarthaaya"-style romanisation while verses teach IAST.
+
 ## Session 2026-11-01: Site-wide verse search (committed `e574e9e`, deployed 2026-11-01)
 
 - **Search bar in the nav** on every page. At lg+ (≥1024px) it is an input between the logo and the links (nav container widened to `lg:max-w-5xl` to fit). Below lg a search icon sits next to the hamburger and opens a search row under the nav. `/` or Ctrl/Cmd+K focuses search; arrow keys + Enter pick a result; Esc closes.
@@ -438,4 +450,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-11-01
+Last reviewed: 2026-11-02

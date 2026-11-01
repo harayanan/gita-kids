@@ -2,6 +2,16 @@
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    // Breakpoints in em (same as Tailwind's px defaults at a 16px browser
+    // font), so a reader who enlarges the default font gets the narrower
+    // layout instead of an overflowing one.
+    screens: {
+      sm: '40em',
+      md: '48em',
+      lg: '64em',
+      xl: '80em',
+      '2xl': '96em',
+    },
     extend: {
       colors: {
         saffron: '#C75B12',

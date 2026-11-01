@@ -21,13 +21,18 @@ const content = yaml.load(
 };
 
 const hasIllustration = true;
+
+// Keep danda marks (। ॥) on the same line as the word they close, so a verse
+// never wraps with a lone ॥ on its last line.
+const joinDanda = (s: string) =>
+  s.replace(/\s+([।॥])/g, '\u00A0$1').replace(/^([।॥])\s+/, '$1\u00A0');
 ---
 
 <BaseLayout title="Dhyanashloka — Gita Kids" description="Meditation verses by Madhusudhan Saraswati, recited before studying the Bhagavad Gita.">
   <div class="max-w-reading mx-auto px-4 py-12">
     <!-- Header -->
     <header class="text-center mb-16">
-      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">Before You Begin</span>
+      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink">Before You Begin</span>
       <p lang="sa" class="font-devanagari text-4xl md:text-5xl text-saffron mt-4 mb-3">
         {content.sanskrit_title}
       </p>
@@ -53,11 +58,11 @@ const hasIllustration = true;
     )}
 
     <!-- Introduction -->
-    <FolkArtBorder style="madhubani" class="mb-16 p-6 md:p-8">
+    <FolkArtBorder style="madhubani" class="mb-16 sm:p-6 md:p-8">
       <div class="font-body text-gray-700 leading-relaxed space-y-4">
         <p>
           Before every reading of the Gita, it is traditional to recite these nine
-          <strong class="text-saffron">dhyanashlokas</strong> — verses of meditation.
+          <strong class="text-saffron-ink">dhyanashlokas</strong> — verses of meditation.
           They were composed by the great scholar <strong>Madhusudhan Saraswati</strong>,
           who lived about 500 years ago.
         </p>
@@ -75,26 +80,26 @@ const hasIllustration = true;
         <article class="scroll-reveal" style={`transition-delay: ${index * 0.05}s`}>
           <!-- Verse number -->
           <div class="flex items-center gap-3 mb-6">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-saffron/10 font-ui text-sm font-bold text-saffron">
-              {verse.number}
-            </span>
+            <h2 class="flex shrink-0 items-center justify-center w-8 h-8 rounded-full bg-saffron/10 font-ui text-sm font-bold text-saffron-ink">
+              <span class="sr-only">Verse </span>{verse.number}
+            </h2>
             <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
           </div>
 
           <!-- Sanskrit -->
           <div class="text-center space-y-4 py-4">
             <p
-              lang="sa" class="font-devanagari text-2xl md:text-3xl leading-loose text-gray-900 tracking-wider whitespace-pre-line"
+              lang="sa" class="font-devanagari text-2xl md:text-3xl leading-loose text-gray-900 tracking-wider whitespace-pre-line text-balance break-words"
               style="text-shadow: 0 1px 2px rgba(196, 162, 78, 0.15);"
-              set:html={verse.sanskrit.trim()}
+              set:html={joinDanda(verse.sanskrit.trim())}
             />
-            <p class="font-body text-sm md:text-base italic text-gray-600 tracking-wide leading-relaxed whitespace-pre-line">
+            <p class="font-body text-sm md:text-base italic text-gray-600 tracking-wide leading-relaxed whitespace-pre-line break-words">
               {verse.transliteration.trim()}
             </p>
           </div>
 
           <!-- Meaning -->
-          <div class="mt-6 bg-white/60 rounded-lg border border-gold/15 px-6 py-5">
+          <div class="mt-6 bg-white/60 rounded-lg border border-gold/15 px-4 py-5 sm:px-6">
             <p class="font-body text-base text-gray-700 leading-relaxed">
               {verse.meaning.trim()}
             </p>
@@ -107,7 +112,7 @@ const hasIllustration = true;
     <div class="mt-20 text-center">
       <div class="flex items-center gap-3 mb-8">
         <div class="flex-1 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-        <span lang="sa" class="font-devanagari text-gold/50 text-lg">॥ इति ध्यानश्लोकाः ॥</span>
+        <span lang="sa" class="font-devanagari text-gold-ink text-lg text-balance">{joinDanda('॥ इति ध्यानश्लोकाः ॥')}</span>
         <div class="flex-1 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
       </div>
       <p class="font-body text-gray-600 mb-6">
@@ -115,7 +120,7 @@ const hasIllustration = true;
       </p>
       <a
         href="/chapters/01-arjuna-vishada-yoga"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-saffron text-white font-ui text-sm font-semibold rounded-lg hover:bg-saffron/90 transition-colors"
+        class="inline-flex items-center gap-2 min-h-11 px-6 py-3 bg-saffron text-white font-ui text-sm font-semibold rounded-lg hover:bg-saffron/90 transition-colors"
       >
         Begin Chapter 1 &rarr;
       </a>

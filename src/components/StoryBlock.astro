@@ -18,18 +18,18 @@ const paragraphs = body.split('\n\n').filter(p => p.trim());
   <!-- Decorative top border -->
   <div class="flex items-center gap-3 mb-6">
     <div class="flex-1 h-px bg-gradient-to-r from-transparent via-terracotta/30 to-transparent"></div>
-    <span lang="sa" class="font-devanagari text-terracotta/40 text-sm">कथा</span>
+    <span lang="sa" class="font-devanagari text-terracotta text-xl font-semibold" aria-hidden="true">कथा</span>
     <div class="flex-1 h-px bg-gradient-to-r from-transparent via-terracotta/30 to-transparent"></div>
   </div>
 
   <!-- Story header -->
-  <div class="mb-5">
-    <h3 class="font-body text-2xl font-bold text-terracotta">{title}</h3>
-    <span class="font-ui text-xs text-terracotta/50 italic">{sourceLabel}</span>
+  <div class="mb-5 md:max-w-[36rem] md:mx-auto">
+    <h2 class="font-body text-2xl font-bold text-terracotta text-balance">{title}</h2>
+    <p class="font-ui text-sm text-gray-600 italic">{sourceLabel}</p>
   </div>
 
-  <!-- Story body with drop cap on first paragraph -->
-  <div class="font-body text-lg leading-[1.9] text-gray-800 space-y-5">
+  <!-- Story body with drop cap on first paragraph. On md+ the measure is capped near 60-65 characters. -->
+  <div class="font-body text-lg leading-[1.9] text-gray-800 space-y-5 md:max-w-[36rem] md:mx-auto">
     {paragraphs.map((paragraph, i) => (
       <p class={i === 0 ? 'drop-cap' : ''}>
         <Tooltip client:load glossary={glossary} text={paragraph} />
@@ -40,7 +40,7 @@ const paragraphs = body.split('\n\n').filter(p => p.trim());
   <!-- Decorative bottom border -->
   <div class="flex items-center gap-3 mt-8">
     <div class="flex-1 h-px bg-gradient-to-r from-transparent via-terracotta/30 to-transparent"></div>
-    <span lang="sa" class="font-devanagari text-terracotta/40 text-sm" aria-hidden="true">॥</span>
+    <span lang="sa" class="font-devanagari text-terracotta/60 text-sm" aria-hidden="true">॥</span>
     <div class="flex-1 h-px bg-gradient-to-r from-transparent via-terracotta/30 to-transparent"></div>
   </div>
 </div>

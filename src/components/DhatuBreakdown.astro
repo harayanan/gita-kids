@@ -24,32 +24,32 @@ function splitPart(part: string): { root: string; gloss: string } {
 
 <section class="py-6" aria-label="Word by word Sanskrit breakdown">
   <div class="flex items-center gap-3 mb-4">
-    <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">Word by Word</span>
+    <h2 class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink">Word by Word</h2>
     <span class="h-px flex-1 bg-gold/20"></span>
-    <span class="font-ui text-[10px] text-gray-400">{breakdown.length} words</span>
+    <span class="font-ui text-xs font-medium uppercase tracking-wider text-gray-600">{breakdown.length} words</span>
   </div>
 
   <div class="grid gap-2.5 sm:grid-cols-2">
     {breakdown.map((entry) => (
       <div class="rounded-xl border border-gold/15 bg-cream/50 px-4 py-3 transition-colors hover:border-gold/40 hover:bg-cream/80">
         <div class="flex items-baseline gap-2">
-          <span lang="sa" class="font-devanagari text-xl leading-none text-saffron">{entry.word}</span>
+          <span lang="sa" class="font-devanagari text-xl leading-snug text-saffron-ink">{entry.word}</span>
         </div>
 
         <div class="mt-2 flex flex-wrap gap-1.5">
           {entry.parts.map((part) => {
             const { root, gloss } = splitPart(part);
             return (
-              <span class="inline-flex items-baseline gap-1 rounded-md bg-indigo/[0.06] px-2 py-0.5">
-                <span class="font-ui text-xs font-semibold text-indigo">{root}</span>
-                {gloss && <span class="font-body text-xs text-gray-500">{gloss}</span>}
+              <span class="inline-flex flex-wrap items-baseline gap-x-1 rounded-md bg-indigo/[0.06] px-2 py-0.5">
+                <span lang="sa-Latn" class="font-ui text-sm font-semibold text-indigo">{root}</span>
+                {gloss && <span class="font-body text-sm text-gray-600">{gloss}</span>}
               </span>
             );
           })}
         </div>
 
-        <p class="mt-2.5 font-body text-sm text-gray-700">
-          <span class="text-gold" aria-hidden="true">&rarr;</span>{" "}
+        <p class="mt-2.5 font-body text-base text-gray-700">
+          <span class="text-gold-ink" aria-hidden="true">&rarr;</span>{" "}
           {entry.meaning}
         </p>
       </div>

@@ -272,7 +272,7 @@ export function initSearch() {
   let activeIndex = -1;
   let timer: number | undefined;
 
-  const isDesktop = () => window.matchMedia('(min-width: 1024px)').matches;
+  const isDesktop = () => window.matchMedia('(min-width: 64em)').matches;
 
   function setExpanded(open: boolean) {
     for (const i of inputs) i.setAttribute('aria-expanded', String(open));

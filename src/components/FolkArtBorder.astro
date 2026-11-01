@@ -2,9 +2,11 @@
 interface Props {
   style?: 'madhubani' | 'pichwai' | 'pattachitra' | 'warli' | 'kalamkari' | 'gond' | 'kerala-mural';
   class?: string;
+  /** Narrower side padding on phones, for long-form text that needs the line length (verse meaning). */
+  compact?: boolean;
 }
 
-const { style = 'madhubani', class: className = '' } = Astro.props;
+const { style = 'madhubani', class: className = '', compact = false } = Astro.props;
 
 const colors: Record<string, { primary: string; secondary: string }> = {
   madhubani:   { primary: '#C75B12', secondary: '#C4A24E' },
@@ -165,7 +167,7 @@ const uid = `fab-${Math.random().toString(36).slice(2, 8)}`;
   )}
 
   {/* === Content Slot === */}
-  <div class="px-6 py-6">
+  <div class:list={['py-6 sm:px-6', compact ? 'px-2' : 'px-4']}>
     <slot />
   </div>
 

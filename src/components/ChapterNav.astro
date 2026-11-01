@@ -22,30 +22,30 @@ const prev = currentIndex > 0 ? sortedActive[currentIndex - 1] : undefined;
 const next = currentIndex < sortedActive.length - 1 ? sortedActive[currentIndex + 1] : undefined;
 ---
 
-<nav class="max-w-reading mx-auto px-4 py-8 flex items-center justify-between font-ui text-sm border-t border-gold/20 mt-12">
+<nav aria-label="Chapter navigation" class="max-w-reading mx-auto px-4 py-8 flex flex-wrap sm:flex-nowrap items-center justify-between gap-x-4 gap-y-3 font-ui text-sm border-t border-gold/20 mt-12">
   {prev ? (
     <a
       href={`/chapters/${prev.slug}`}
-      class="flex flex-col items-start text-saffron hover:text-saffron/80 transition-colors"
+      class="flex flex-col items-start flex-1 basis-0 min-w-0 py-1 text-left text-saffron-ink hover:underline underline-offset-2 transition-colors"
     >
-      <span class="text-xs text-gray-500">&larr; Previous</span>
+      <span class="text-xs uppercase tracking-wider text-gray-600">&larr; Previous</span>
       <span class="font-medium">Ch {prev.number}: {prev.name}</span>
     </a>
   ) : (
-    <span></span>
+    <span class="flex-1 basis-0" aria-hidden="true"></span>
   )}
 
-  <a href="/" class="text-gray-600 hover:text-saffron transition-colors">Home</a>
+  <a href="/" class="order-last basis-full sm:order-none sm:basis-auto inline-flex items-center justify-center min-h-11 min-w-11 px-2 shrink-0 text-gray-700 hover:text-saffron-ink transition-colors">Home</a>
 
   {next ? (
     <a
       href={`/chapters/${next.slug}`}
-      class="flex flex-col items-end text-saffron hover:text-saffron/80 transition-colors"
+      class="flex flex-col items-end flex-1 basis-0 min-w-0 py-1 text-right text-saffron-ink hover:underline underline-offset-2 transition-colors"
     >
-      <span class="text-xs text-gray-500">Next &rarr;</span>
+      <span class="text-xs uppercase tracking-wider text-gray-600">Next &rarr;</span>
       <span class="font-medium">Ch {next.number}: {next.name}</span>
     </a>
   ) : (
-    <span></span>
+    <span class="flex-1 basis-0" aria-hidden="true"></span>
   )}
 </nav>

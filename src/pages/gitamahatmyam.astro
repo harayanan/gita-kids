@@ -44,13 +44,17 @@ const chapterStyles: Record<number, string> = {
   17: 'pichwai',
   18: 'madhubani',
 };
+
+// Keep danda marks (। ॥) on the same line as the word they close.
+const joinDanda = (s: string) =>
+  s.replace(/\s+([।॥])/g, '\u00A0$1').replace(/^([।॥])\s+/, '$1\u00A0');
 ---
 
 <BaseLayout title="Gitamahatmyam — Gita Kids" description="The Glory of the Gita — eighteen tales from the Padma Purana, one for each chapter, showing how a single teaching can transform a life.">
   <div class="max-w-reading mx-auto px-4 py-12">
     <!-- Header -->
     <header class="text-center mb-16">
-      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold">After You Finish</span>
+      <span class="font-ui text-xs font-semibold uppercase tracking-widest text-gold-ink">After You Finish</span>
       <p lang="sa" class="font-devanagari text-4xl md:text-5xl text-saffron mt-4 mb-3">
         {content.sanskrit_title}
       </p>
@@ -64,7 +68,7 @@ const chapterStyles: Record<number, string> = {
     </header>
 
     <!-- Introduction -->
-    <FolkArtBorder style="madhubani" class="mb-16 p-6 md:p-8">
+    <FolkArtBorder style="madhubani" class="mb-16 sm:p-6 md:p-8">
       <div class="font-body text-gray-700 leading-relaxed space-y-4">
         {content.introduction.trim().split('\n\n').map((para) => (
           <p set:html={para.trim()} />
@@ -78,21 +82,21 @@ const chapterStyles: Record<number, string> = {
         <article class="scroll-reveal" style={`transition-delay: ${index * 0.03}s`}>
           <!-- Chapter number and title -->
           <div class="flex items-center gap-3 mb-6">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-saffron/10 font-ui text-sm font-bold text-saffron">
+            <span class="flex shrink-0 items-center justify-center w-8 h-8 rounded-full bg-saffron/10 font-ui text-sm font-bold text-saffron-ink">
               {ch.number}
             </span>
             <div class="flex-1">
               <h2 class="font-body text-lg font-bold text-gray-900 leading-snug">
                 {ch.title}
               </h2>
-              <p lang="sa" class="font-devanagari text-sm text-gold/70 mt-0.5">
+              <p lang="sa" class="font-devanagari text-base text-gold-ink mt-0.5">
                 {ch.sanskrit_chapter} — {ch.chapter_name}
               </p>
             </div>
           </div>
 
           <!-- Story -->
-          <FolkArtBorder style={chapterStyles[ch.number] || 'madhubani'} class="p-5 md:p-7">
+          <FolkArtBorder style={chapterStyles[ch.number] || 'madhubani'} class="sm:p-5 md:p-7">
             <div class="font-body text-base text-gray-700 leading-relaxed space-y-4">
               {ch.story.trim().split('\n\n').map((para) => (
                 <p>{para.trim()}</p>
@@ -107,10 +111,10 @@ const chapterStyles: Record<number, string> = {
     <div class="mt-20 text-center">
       <div class="flex items-center gap-3 mb-8">
         <div class="flex-1 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-        <span lang="sa" class="font-devanagari text-gold/50 text-lg">{content.closing_sanskrit}</span>
+        <span lang="sa" class="font-devanagari text-gold-ink text-lg text-balance">{joinDanda(content.closing_sanskrit)}</span>
         <div class="flex-1 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
       </div>
-      <p class="font-body text-sm text-gray-500 italic mb-8">
+      <p class="font-body text-sm text-gray-600 italic mb-8">
         {content.closing_meaning}
       </p>
       <p class="font-body text-gray-600 mb-6">
@@ -119,7 +123,7 @@ const chapterStyles: Record<number, string> = {
       </p>
       <a
         href="/"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-saffron text-white font-ui text-sm font-semibold rounded-lg hover:bg-saffron/90 transition-colors"
+        class="inline-flex items-center gap-2 min-h-11 px-6 py-3 bg-saffron text-white font-ui text-sm font-semibold rounded-lg hover:bg-saffron/90 transition-colors"
       >
         &larr; Back to Home
       </a>

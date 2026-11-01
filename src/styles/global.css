@@ -12,6 +12,13 @@
     @apply bg-cream text-gray-900 font-body;
   }
 
+  /* Long Sanskrit compounds (e.g. Karmaṇyevādhikāraste) break only when a
+     single word cannot fit the line, so large font settings never cause
+     sideways scrolling. */
+  main {
+    overflow-wrap: break-word;
+  }
+
   /* Sanskrit text styling */
   .sanskrit {
     @apply font-devanagari text-2xl leading-relaxed text-center;

@@ -5,6 +5,7 @@ import VerseNav from '../../../components/VerseNav.astro';
 import { getAllChapters, getChapter, getChapterVerses, getVerse, getGlossary, getIllustrationAltText } from '../../../lib/content';
 import fs from 'node:fs';
 import path from 'node:path';
+import sharp from 'sharp';
 
 export function getStaticPaths() {
   const chapters = getAllChapters().filter((c) => c.status === 'active');
@@ -37,6 +38,22 @@ const illustrationFile = path.resolve(`public/illustrations/${slug}/${verseNum}.
 const illustrationPath = fs.existsSync(illustrationFile) ? `/illustrations/${slug}/${verseNum}.png` : undefined;
 const illustrationAlt = illustrationPath ? getIllustrationAltText(slug!, verseNum!) : undefined;
 
+// Intrinsic size of the hero image, so the browser reserves its box before it loads (no layout shift).
+// Most illustrations are 1376x768; some are 1408x768. Read the real header, fall back to the common size.
+let illustrationWidth = 1376;
+let illustrationHeight = 768;
+if (illustrationPath) {
+  try {
+    const meta = await sharp(illustrationFile).metadata();
+    if (meta.width && meta.height) {
+      illustrationWidth = meta.width;
+      illustrationHeight = meta.height;
+    }
+  } catch {
+    // keep the default size
+  }
+}
+
 // Compute next active chapter for end-of-chapter CTA
 const allChapters = getAllChapters();
 const activeChapters = allChapters
@@ -49,13 +66,13 @@ const nextChapter = currentIdx >= 0 && currentIdx < activeChapters.length - 1
 ---
 
 <BaseLayout title={`${chapter.name} ${chapter.number}.${verse.verse} — Gita Kids`}>
-  <nav slot="breadcrumb" class="max-w-reading mx-auto px-6 pt-5 pb-2">
-    <ol class="flex items-center gap-2 font-ui text-xs text-gray-500">
-      <li><a href="/" class="hover:text-saffron transition-colors">Home</a></li>
-      <li class="text-gold/40">&rsaquo;</li>
-      <li><a href={`/chapters/${slug}`} class="hover:text-saffron transition-colors">Chapter {chapter.number}</a></li>
-      <li class="text-gold/40">&rsaquo;</li>
-      <li class="text-gray-600">Verse {verse.verse}</li>
+  <nav slot="breadcrumb" aria-label="Breadcrumb" class="max-w-reading mx-auto px-6 pt-5 pb-2">
+    <ol class="flex flex-wrap items-center gap-x-2 font-ui text-sm text-gray-600">
+      <li><a href="/" class="inline-block py-3 -my-3 hover:text-saffron-ink transition-colors">Home</a></li>
+      <li class="text-gold" aria-hidden="true">&rsaquo;</li>
+      <li><a href={`/chapters/${slug}`} class="inline-block py-3 -my-3 hover:text-saffron-ink transition-colors">Chapter {chapter.number}</a></li>
+      <li class="text-gold" aria-hidden="true">&rsaquo;</li>
+      <li class="text-gray-700" aria-current="page">Verse {verse.verse}</li>
     </ol>
   </nav>
 
@@ -81,6 +98,8 @@ const nextChapter = currentIdx >= 0 && currentIdx < activeChapters.length - 1
     folkArtStyle={chapter.folk_art_style}
     illustration={illustrationPath}
     illustrationAlt={illustrationAlt}
+    illustrationWidth={illustrationWidth}
+    illustrationHeight={illustrationHeight}
   />
 
   <VerseNav
