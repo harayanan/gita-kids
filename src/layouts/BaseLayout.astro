@@ -102,18 +102,52 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-saffron z-[100] transition-[width] duration-100 ease-out" style="width: 0%"></div>
     <!-- Navigation -->
     <nav id="site-nav" class="bg-cream sticky top-0 z-50 transition-all duration-300" style="padding-top: 1.25rem; padding-bottom: 1.25rem;">
-      <div class="max-w-reading mx-auto px-6 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2 group">
+      <div class="max-w-reading lg:max-w-5xl mx-auto px-6 flex items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-2 group shrink-0">
           <span lang="sa" class="font-devanagari text-[1.7rem] text-saffron group-hover:text-saffron/80 transition-colors leading-none">गीता</span>
           <span class="font-devanagari text-gold/40 text-lg leading-none">&#x2022;</span>
           <span class="font-ui text-sm font-semibold text-gray-600 tracking-wide uppercase">Kids</span>
         </a>
-        <div class="flex items-center gap-6 font-ui text-sm">
+        <!-- Desktop search bar -->
+        <form role="search" class="hidden lg:block flex-1 max-w-sm" onsubmit="return false">
+          <label class="relative block">
+            <span class="sr-only">Search all verses</span>
+            <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" /><path stroke-linecap="round" d="M20 20l-3.5-3.5" />
+            </svg>
+            <input
+              id="search-input-desktop"
+              type="search"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="Search all verses"
+              role="combobox"
+              aria-controls="search-results"
+              aria-expanded="false"
+              aria-autocomplete="list"
+              class="w-full rounded-full border border-gold/30 bg-white/70 py-2 pl-9 pr-9 font-ui text-sm text-gray-800 placeholder:text-gray-400 focus:border-saffron/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-saffron/20"
+            />
+            <kbd class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded border border-gold/30 px-1.5 font-ui text-[10px] text-gray-400">/</kbd>
+          </label>
+        </form>
+        <div class="flex items-center gap-2 sm:gap-6 font-ui text-sm">
           <a href="/characters" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Characters</a>
           <a href="/" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Chapters</a>
           <a href="/glossary" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Glossary</a>
           <a href="/pronunciation" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Pronunciation</a>
           <a href="/about" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">About</a>
+          <!-- Search button (below lg, where the bar is hidden) -->
+          <button
+            id="search-toggle"
+            class="lg:hidden p-2 sm:-mr-2 text-gray-600 hover:text-saffron transition-colors"
+            aria-label="Search all verses"
+            aria-controls="mobile-search"
+            aria-expanded="false"
+          >
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" /><path stroke-linecap="round" d="M20 20l-3.5-3.5" />
+            </svg>
+          </button>
           <!-- Mobile menu button -->
           <button
             id="mobile-menu-btn"
@@ -125,6 +159,37 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+        </div>
+      </div>
+      <!-- Search row (below lg) -->
+      <div id="mobile-search" class="hidden lg:hidden">
+        <form role="search" class="max-w-reading mx-auto px-6 pt-3" onsubmit="return false">
+          <label class="relative block">
+            <span class="sr-only">Search all verses</span>
+            <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" /><path stroke-linecap="round" d="M20 20l-3.5-3.5" />
+            </svg>
+            <input
+              id="search-input-mobile"
+              type="search"
+              autocomplete="off"
+              spellcheck="false"
+              enterkeyhint="search"
+              placeholder="Search all verses"
+              role="combobox"
+              aria-controls="search-results"
+              aria-expanded="false"
+              aria-autocomplete="list"
+              class="w-full rounded-full border border-gold/30 bg-white/70 py-2.5 pl-9 pr-4 font-ui text-base text-gray-800 placeholder:text-gray-400 focus:border-saffron/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-saffron/20"
+            />
+          </label>
+        </form>
+      </div>
+      <!-- Search results (shared by both inputs) -->
+      <div id="search-panel" class="hidden absolute left-0 right-0 top-full px-3 sm:px-6 pt-2">
+        <div class="max-w-2xl mx-auto overflow-hidden rounded-2xl border border-gold/25 bg-cream shadow-xl shadow-black/10">
+          <p id="search-status" class="px-4 py-2 font-ui text-xs text-gray-500 border-b border-gold/15" role="status" aria-live="polite"></p>
+          <div id="search-results" role="listbox" aria-label="Search results" class="max-h-[70vh] overflow-y-auto overscroll-contain"></div>
         </div>
       </div>
       <!-- Mobile dropdown menu -->
@@ -226,6 +291,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       initProgress();
       initNavScroll();
       initMobileMenu();
+    </script>
+    <script>
+      import { initSearch, highlightFromQuery } from '../scripts/search';
+      initSearch();
+      highlightFromQuery();
     </script>
   </body>
 </html>

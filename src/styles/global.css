@@ -140,3 +140,19 @@ article[data-speaker] {
     transition: none;
   }
 }
+
+/* Site search: matched words in the results list and on the verse page */
+#search-results mark {
+  background: rgba(196, 162, 78, 0.35);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+::highlight(gk-search) {
+  background-color: rgba(196, 162, 78, 0.4);
+  color: inherit;
+}
+#search-input-desktop::-webkit-search-cancel-button,
+#search-input-mobile::-webkit-search-cancel-button {
+  cursor: pointer;
+}

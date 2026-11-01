@@ -27,6 +27,15 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
+## Session 2026-11-01: Site-wide verse search (committed, not yet deployed)
+
+- **Search bar in the nav** on every page. At lg+ (≥1024px) it is an input between the logo and the links (nav container widened to `lg:max-w-5xl` to fit). Below lg a search icon sits next to the hamburger and opens a search row under the nav. `/` or Ctrl/Cmd+K focuses search; arrow keys + Enter pick a result; Esc closes.
+- **Index:** two static JSON files built from the verse YAML. `/search/verses.json` (title, meaning, Sanskrit, transliteration, reflection; ~220 KB gzipped) loads first; `/search/stories.json` (story bodies + word-by-word; ~680 KB gzipped) loads right after. Neither loads until the reader focuses/hovers the bar or taps the icon.
+- **Matching:** every word typed must appear in the verse; case and diacritics ignored (`krsna` finds kṛṣṇa), Devanagari works, `2.47` / `2:47` jumps to that verse. Ranking weights title > meaning > Sanskrit/transliteration > word-by-word > reflection > story, with a bonus for whole-word matches. Top 50 shown.
+- **Landing:** result links carry `?q=`; the verse page highlights the words (CSS Custom Highlight API, so the React glossary islands are never mutated) and scrolls to the first one.
+- Files: `src/scripts/search.ts`, `src/pages/search/{verses,stories}.json.ts`, nav markup in `src/layouts/BaseLayout.astro`, highlight styles at the end of `src/styles/global.css`.
+- Verified in headless Chromium at 1280 / 820 / 390 px: results, Devanagari query, verse-ref jump, keyboard nav, highlight + scroll on landing; no console errors. Build: 747 pages + 2 JSON files.
+
 ## Session 2026-10-20: Ch 3.7 story character fix (committed `b410239`, deployed 2026-10-21)
 
 - 3.7 "The Warrior Who Was a Lake" called its unknown foot-soldier "Satyajit", but Satyajit is a named Panchala prince in the Mahabharata (Drupada's family, guarded Yudhishthira, killed by Drona). Renamed the soldier **Nirmal** ("clear, unclouded", which fits the still-lake image; not a Mahabharata name and not used elsewhere in the book) and dropped the "not a prince" lines.
@@ -428,4 +437,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-10-21
+Last reviewed: 2026-11-01
