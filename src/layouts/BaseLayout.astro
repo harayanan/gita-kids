@@ -14,6 +14,19 @@ const {
 // Canonical URL — always the apex gitakids.com (configured as `site`), regardless of
 // which domain (www, .org) actually served the request.
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+
+// Primary navigation, same order on desktop and in the mobile menu.
+// `desktop: false` items live only in the mobile menu.
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const navLinks = [
+  { href: '/', label: 'Chapters', desktop: true, match: (p: string) => p === '/' || p.startsWith('/chapters') },
+  { href: '/characters', label: 'Characters', desktop: true },
+  { href: '/glossary', label: 'Glossary', desktop: true },
+  { href: '/pronunciation', label: 'Pronunciation', desktop: true },
+  { href: '/dhyanashloka', label: 'Dhyanashloka', desktop: false },
+  { href: '/gitamahatmyam', label: 'Gitamahatmyam', desktop: false },
+  { href: '/about', label: 'About', desktop: true },
+].map((l) => ({ ...l, current: l.match ? l.match(path) : path === l.href }));
 ---
 
 <!doctype html>
@@ -24,6 +37,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    <meta name="theme-color" content="#FDF6E3" />
 
     <!-- Favicon (peacock-feather logo) -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -83,7 +97,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
       }
       /* Keep content clear of the overlaid status bar and the gesture/nav bar */
-      html.native-app #site-nav { padding-top: calc(1.25rem + env(safe-area-inset-top)) !important; }
+      html.native-app #site-nav { padding-top: calc(1rem + env(safe-area-inset-top)); }
       html.native-app body { padding-bottom: env(safe-area-inset-bottom); }
       /* Paint the system-bar zones with solid brand indigo so the OS chrome reads as a
          distinct frame around the cream content. White status/nav icons sit on indigo
@@ -101,7 +115,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     </a>
     <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-saffron z-[100] transition-[width] duration-100 ease-out" style="width: 0%"></div>
     <!-- Navigation -->
-    <nav id="site-nav" class="bg-cream sticky top-0 z-50 transition-all duration-300" style="padding-top: 1.25rem; padding-bottom: 1.25rem;">
+    <nav id="site-nav" class="bg-cream sticky top-0 z-50 pt-4 pb-4 transition-shadow duration-300">
       <div class="max-w-reading lg:max-w-5xl mx-auto px-6 flex items-center justify-between gap-6">
         <a href="/" class="flex items-center gap-2 group shrink-0">
           <span lang="sa" class="font-devanagari text-[1.7rem] text-saffron group-hover:text-saffron/80 transition-colors leading-none">गीता</span>
@@ -127,35 +141,40 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
               aria-autocomplete="list"
               class="w-full rounded-full border border-gold/30 bg-white/70 py-2 pl-9 pr-9 font-ui text-sm text-gray-800 placeholder:text-gray-400 focus:border-saffron/60 focus:bg-white focus:outline-none focus:ring-2 focus:ring-saffron/20"
             />
-            <kbd class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded border border-gold/30 px-1.5 font-ui text-[10px] text-gray-400">/</kbd>
+            <kbd class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded border border-gold/30 px-1.5 font-ui text-xs text-gray-500">/</kbd>
           </label>
         </form>
         <div class="flex items-center gap-2 sm:gap-6 font-ui text-sm">
-          <a href="/characters" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Characters</a>
-          <a href="/" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Chapters</a>
-          <a href="/glossary" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Glossary</a>
-          <a href="/pronunciation" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">Pronunciation</a>
-          <a href="/about" class="text-gray-600 hover:text-saffron transition-colors hidden sm:inline">About</a>
+          {navLinks.filter((l) => l.desktop).map((l) => (
+            <a
+              href={l.href}
+              aria-current={l.current ? 'page' : undefined}
+              class:list={[
+                'hidden sm:inline-block py-2 transition-colors hover:text-saffron-ink',
+                l.current ? 'text-saffron-ink font-semibold' : 'text-gray-600',
+              ]}
+            >{l.label}</a>
+          ))}
           <!-- Search button (below lg, where the bar is hidden) -->
           <button
             id="search-toggle"
-            class="lg:hidden p-2 sm:-mr-2 text-gray-600 hover:text-saffron transition-colors"
+            class="lg:hidden inline-flex items-center justify-center min-w-11 min-h-11 sm:-mr-3 text-gray-600 hover:text-saffron-ink transition-colors"
             aria-label="Search all verses"
             aria-controls="mobile-search"
             aria-expanded="false"
           >
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <circle cx="11" cy="11" r="7" /><path stroke-linecap="round" d="M20 20l-3.5-3.5" />
             </svg>
           </button>
           <!-- Mobile menu button -->
           <button
             id="mobile-menu-btn"
-            class="sm:hidden p-2 -mr-2 text-gray-600 hover:text-saffron transition-colors"
+            class="sm:hidden inline-flex items-center justify-center min-w-11 min-h-11 -mr-3 text-gray-600 hover:text-saffron-ink transition-colors"
             aria-label="Open menu"
             aria-expanded="false"
           >
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -189,19 +208,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       <div id="search-panel" class="hidden absolute left-0 right-0 top-full px-3 sm:px-6 pt-2">
         <div class="max-w-2xl mx-auto overflow-hidden rounded-2xl border border-gold/25 bg-cream shadow-xl shadow-black/10">
           <p id="search-status" class="px-4 py-2 font-ui text-xs text-gray-500 border-b border-gold/15" role="status" aria-live="polite"></p>
-          <div id="search-results" role="listbox" aria-label="Search results" class="max-h-[70vh] overflow-y-auto overscroll-contain"></div>
+          <div id="search-results" role="listbox" aria-label="Search results" class="max-h-[calc(100dvh-11rem)] overflow-y-auto overscroll-contain"></div>
         </div>
       </div>
       <!-- Mobile dropdown menu -->
       <div id="mobile-menu" class="hidden sm:hidden border-t border-gold/20 bg-cream">
-        <div class="max-w-reading mx-auto px-6 py-3 flex flex-col gap-3 font-ui text-sm">
-          <a href="/characters" class="text-gray-600 hover:text-saffron transition-colors py-1">Characters</a>
-          <a href="/pronunciation" class="text-gray-600 hover:text-saffron transition-colors py-1">Pronunciation</a>
-          <a href="/" class="text-gray-600 hover:text-saffron transition-colors py-1">Chapters</a>
-          <a href="/glossary" class="text-gray-600 hover:text-saffron transition-colors py-1">Glossary</a>
-          <a href="/dhyanashloka" class="text-gray-600 hover:text-saffron transition-colors py-1">Dhyanashloka</a>
-          <a href="/gitamahatmyam" class="text-gray-600 hover:text-saffron transition-colors py-1">Gitamahatmyam</a>
-          <a href="/about" class="text-gray-600 hover:text-saffron transition-colors py-1">About</a>
+        <div class="max-w-reading mx-auto px-6 py-1 flex flex-col font-ui">
+          {navLinks.map((l) => (
+            <a
+              href={l.href}
+              aria-current={l.current ? 'page' : undefined}
+              class:list={[
+                'block py-3 border-b border-gold/10 last:border-b-0 text-base transition-colors hover:text-saffron-ink',
+                l.current ? 'text-saffron-ink font-semibold' : 'text-gray-700',
+              ]}
+            >{l.label}</a>
+          ))}
         </div>
       </div>
       <!-- Gold gradient bottom border -->
@@ -219,7 +241,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <!-- Footer -->
     <footer class="border-t border-gold/20 py-8 mt-16">
       <div class="max-w-reading mx-auto px-6 text-center font-ui text-sm text-gray-600">
-        <p lang="sa" class="font-devanagari text-lg text-saffron/60 mb-2">श्रीमद्भगवद्गीता</p>
+        <p lang="sa" class="font-devanagari text-lg text-saffron-ink mb-2">श्रीमद्भगवद्गीता</p>
         <p>Gita Kids &mdash; Ancient wisdom, young hearts</p>
       </div>
     </footer>
@@ -256,15 +278,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         if (!nav) return;
         let ticking = false;
         function update() {
-          if (window.scrollY > 50) {
-            nav.style.paddingTop = '0.75rem';
-            nav.style.paddingBottom = '0.75rem';
-            nav.style.boxShadow = '0 1px 8px rgba(0,0,0,0.06)';
-          } else {
-            nav.style.paddingTop = '1.25rem';
-            nav.style.paddingBottom = '1.25rem';
-            nav.style.boxShadow = 'none';
-          }
+          // Height stays fixed (a sticky, in-flow nav that shrinks shifts the page);
+          // only the shadow changes once the page scrolls.
+          nav.style.boxShadow = window.scrollY > 8 ? '0 1px 8px rgba(0,0,0,0.06)' : 'none';
           ticking = false;
         }
         window.addEventListener('scroll', () => {

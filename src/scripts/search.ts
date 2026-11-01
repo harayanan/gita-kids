@@ -72,6 +72,23 @@ export function parseTerms(query: string): string[] {
   return normalize(query).split(/\s+/).filter(Boolean);
 }
 
+// Sanskrit compounds join words, so in Sanskrit fields a match may start
+// mid-word ("indriya" in "yastvindriyāṇi"). In English it must start a word,
+// so "arrow" does not find "sparrow".
+const MID_WORD_FIELDS = new Set<FieldKey>(['sa', 'tr', 'd']);
+const SANSKRIT_CHARS = /[\u0900-\u097F\u0100-\u017F\u1E00-\u1EFF]/;
+
+function startsWord(text: string, at: number): boolean {
+  return at === 0 || !LETTER.test(text[at - 1]);
+}
+
+// First allowed match position of term in normalized text, or -1.
+function findTerm(text: string, term: string, midWord: boolean, from = 0): number {
+  let at = text.indexOf(term, from);
+  while (at !== -1 && !midWord && !startsWord(text, at)) at = text.indexOf(term, at + 1);
+  return at;
+}
+
 function isWholeWord(text: string, at: number, len: number): boolean {
   const before = at > 0 ? text[at - 1] : ' ';
   const after = at + len < text.length ? text[at + len] : ' ';
@@ -132,18 +149,23 @@ function search(query: string): Hit[] {
   for (const entry of entries) {
     if (!terms.every((t) => entry.all.includes(t))) continue;
     let score = 0;
+    let ok = true;
     for (const term of terms) {
       let best = 0;
       for (const f of FIELDS) {
         const text = entry.norm[f.key];
-        const at = text.indexOf(term);
+        const at = findTerm(text, term, MID_WORD_FIELDS.has(f.key));
         if (at === -1) continue;
         const s = f.weight * (isWholeWord(text, at, term.length) ? 2 : 1);
         if (s > best) best = s;
       }
+      if (!best) {
+        ok = false;
+        break;
+      }
       score += best;
     }
-    hits.push({ entry, score });
+    if (ok) hits.push({ entry, score });
   }
   hits.sort((a, b) => b.score - a.score || a.entry.rec.c - b.entry.rec.c || a.entry.rec.v - b.entry.rec.v);
   return hits;
@@ -164,14 +186,14 @@ function esc(s: string): string {
   return s.replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]!);
 }
 
-function matchRanges(text: string, terms: string[]): [number, number][] {
+function matchRanges(text: string, terms: string[], midWord = false): [number, number][] {
   const { text: n, map } = normalizeWithMap(text);
   const ranges: [number, number][] = [];
   for (const t of terms) {
-    let at = n.indexOf(t);
+    let at = findTerm(n, t, midWord);
     while (at !== -1) {
       ranges.push([map[at], map[at + t.length]]);
-      at = n.indexOf(t, at + t.length);
+      at = findTerm(n, t, midWord, at + t.length);
     }
   }
   return ranges.sort((a, b) => a[0] - b[0]);
@@ -190,8 +212,8 @@ function marked(text: string, ranges: [number, number][], start = 0, end = text.
 }
 
 // A ~150-char window around the first match, trimmed at word boundaries.
-function snippet(text: string, terms: string[], width = 150): string {
-  const ranges = matchRanges(text, terms);
+function snippet(text: string, terms: string[], midWord = false, width = 150): string {
+  const ranges = matchRanges(text, terms, midWord);
   const first = ranges.length ? ranges[0][0] : 0;
   let start = Math.max(0, first - 50);
   if (start > 0) {
@@ -210,7 +232,7 @@ function renderHit(entry: Entry, terms: string[], query: string, id: string, isR
   const { rec } = entry;
   let field: FieldKey = 'm';
   for (const k of SNIPPET_ORDER) {
-    if (terms.some((t) => entry.norm[k].includes(t))) {
+    if (terms.some((t) => findTerm(entry.norm[k], t, MID_WORD_FIELDS.has(k)) !== -1)) {
       field = k;
       break;
     }
@@ -221,13 +243,13 @@ function renderHit(entry: Entry, terms: string[], query: string, id: string, isR
   const href = isRef ? rec.u : `${rec.u}?q=${encodeURIComponent(query.trim())}`;
   return `<a id="${id}" role="option" aria-selected="false" href="${href}" class="search-hit block px-4 py-3 border-b border-gold/10 last:border-b-0 hover:bg-cream-dark/60 focus:outline-none">
     <div class="flex items-baseline gap-2 font-ui text-xs">
-      <span class="font-semibold text-saffron tabular-nums">${rec.c}.${rec.v}</span>
-      <span class="text-gray-500">${esc(SPEAKERS[rec.sp] ?? rec.sp)}</span>
+      <span class="font-semibold text-saffron-ink tabular-nums">${rec.c}.${rec.v}</span>
+      <span class="text-gray-600">${esc(SPEAKERS[rec.sp] ?? rec.sp)}</span>
       <span class="text-gold" aria-hidden="true">·</span>
       <span class="truncate text-gray-700 font-medium">${marked(rec.t, matchRanges(rec.t, terms))}</span>
-      <span class="ml-auto shrink-0 text-[10px] uppercase tracking-wider text-gray-400">${label}</span>
+      <span class="ml-auto shrink-0 text-xs uppercase tracking-wider text-gray-500">${label}</span>
     </div>
-    <p class="${font} mt-1 text-sm leading-relaxed text-gray-700 line-clamp-2">${snippet(text, isRef ? [] : terms)}</p>
+    <p class="${font} mt-1 text-sm leading-relaxed text-gray-700 line-clamp-2">${snippet(text, isRef ? [] : terms, MID_WORD_FIELDS.has(field))}</p>
   </a>`;
 }
 
@@ -258,12 +280,14 @@ export function initSearch() {
 
   function closePanel() {
     panel!.classList.add('hidden');
+    document.body.classList.remove('search-open');
     setExpanded(false);
     activeIndex = -1;
   }
 
   function openPanel() {
     panel!.classList.remove('hidden');
+    document.body.classList.add('search-open'); // hides the fixed bottom verse bar
     setExpanded(true);
   }
 
@@ -423,14 +447,15 @@ export function highlightFromQuery() {
       const raw = node.nodeValue ?? '';
       if (!raw.trim()) continue;
       const { text, map } = normalizeWithMap(raw);
+      const midWord = SANSKRIT_CHARS.test(raw);
       for (const t of terms) {
-        let at = text.indexOf(t);
+        let at = findTerm(text, t, midWord);
         while (at !== -1) {
           const r = document.createRange();
           r.setStart(node, map[at]);
           r.setEnd(node, map[at + t.length]);
           ranges.push(r);
-          at = text.indexOf(t, at + t.length);
+          at = findTerm(text, t, midWord, at + t.length);
         }
       }
     }

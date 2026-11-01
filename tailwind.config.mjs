@@ -11,6 +11,10 @@ export default {
         terracotta: '#B85C3A',
         gold: '#C4A24E',
         'cream-dark': '#F5ECD3',
+        // Darker shades for TEXT on cream (WCAG AA 4.5:1+). Keep saffron/gold
+        // for fills, borders and large display type.
+        'saffron-ink': '#A84A0C',
+        'gold-ink': '#86691C',
       },
       fontFamily: {
         devanagari: ['"Noto Serif Devanagari"', 'serif'],
@@ -18,7 +22,7 @@ export default {
         ui: ['Inter', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
-        reading: '720px',
+        reading: '45rem',
       },
     },
   },

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  /* Anchor jumps (glossary letters, summary verses) clear the sticky nav */
+  html {
+    scroll-padding-top: 5.5rem;
+  }
+
   body {
     @apply bg-cream text-gray-900 font-body;
   }
@@ -155,4 +160,9 @@ article[data-speaker] {
 #search-input-desktop::-webkit-search-cancel-button,
 #search-input-mobile::-webkit-search-cancel-button {
   cursor: pointer;
+}
+
+/* While search results are open, hide the fixed bottom verse bar on mobile */
+body.search-open nav.fixed.bottom-0 {
+  display: none;
 }
