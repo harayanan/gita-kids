@@ -27,7 +27,7 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
-## Session 2026-11-01: Site-wide verse search (committed, not yet deployed)
+## Session 2026-11-01: Site-wide verse search (committed `e574e9e`, deployed 2026-11-01)
 
 - **Search bar in the nav** on every page. At lg+ (≥1024px) it is an input between the logo and the links (nav container widened to `lg:max-w-5xl` to fit). Below lg a search icon sits next to the hamburger and opens a search row under the nav. `/` or Ctrl/Cmd+K focuses search; arrow keys + Enter pick a result; Esc closes.
 - **Index:** two static JSON files built from the verse YAML. `/search/verses.json` (title, meaning, Sanskrit, transliteration, reflection; ~220 KB gzipped) loads first; `/search/stories.json` (story bodies + word-by-word; ~680 KB gzipped) loads right after. Neither loads until the reader focuses/hovers the bar or taps the icon.
@@ -35,6 +35,7 @@ Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 - **Landing:** result links carry `?q=`; the verse page highlights the words (CSS Custom Highlight API, so the React glossary islands are never mutated) and scrolls to the first one.
 - Files: `src/scripts/search.ts`, `src/pages/search/{verses,stories}.json.ts`, nav markup in `src/layouts/BaseLayout.astro`, highlight styles at the end of `src/styles/global.css`.
 - Verified in headless Chromium at 1280 / 820 / 390 px: results, Devanagari query, verse-ref jump, keyboard nav, highlight + scroll on landing; no console errors. Build: 747 pages + 2 JSON files.
+- Deployed: pushed to `main` (Vercel git integration). Verified live on www.gitakids.com: About shows `Web build e574e9e`, both index files return 200, and the same browser test passes against the live site (desktop + mobile, no console errors).
 
 ## Session 2026-10-20: Ch 3.7 story character fix (committed `b410239`, deployed 2026-10-21)
 
