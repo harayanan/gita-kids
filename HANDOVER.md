@@ -27,7 +27,13 @@ The complete Bhagavad Gita is live at https://gitakids.com — all 18 chapters, 
 
 Plus **Gitamahatmyam** (18 stories) and front/back matter. Build: 747 pages.
 
-## Session 2026-11-01 (later): UI pass: relative sizing, mobile usability, contrast (committed, not yet deployed)
+## Session 2026-11-02: Chapter-card thumbnails, Dhyanashloka IAST, four verse text fixes
+
+- **Home chapter cards** show the chapter cover as a 640px thumbnail (`cover-thumb.avif/.webp`, ~75 KB each, lazy-loaded). `scripts/optimize-images.mjs` now builds them from each `cover.png`; run it after replacing a cover.
+- **Dhyanashloka** transliterations regenerated from the Devanagari in the lowercase IAST used by the verses (ṁ for anusvara, `|` / `||` for dandas), replacing the "Paarthaaya"-style spelling. Gitamahatmyam had no transliteration, so it was unchanged.
+- **Verse text fixes**, found by checking a Devanagari→IAST converter against all 701 verses (689 match exactly; the other 12 differ only in anusvara vs nasal spelling, e.g. saṁgrāme/saṅgrāme): 2.33 transliteration idaṁ → imaṁ; 3.36 anicchanapi → anicchannapi; 12.12 Devanagari अभ्यासाद्ज्ञानात् → अभ्यासाज्ज्ञानात्; 12.15 transliteration now keeps the sandhi (yasmānnodvijate, lokānnodvijate).
+
+## Session 2026-11-01 (later): UI pass: relative sizing, mobile usability, contrast (deployed 2026-11-02, `bd11f65`)
 
 An audit agent measured the live site in Playwright (360/390/768/1280 px, root font 125%/150%). I did the shared groundwork, three agents fixed the verse page, listing pages and reference pages in parallel, then a combined check ran.
 
@@ -37,7 +43,7 @@ An audit agent measured the live site in Playwright (360/390/768/1280 px, root f
 - **Mobile usability:** 44px targets (nav icons, mobile menu links, glossary letters, breadcrumbs, summary links, ChapterNav); nav no longer shrinks on scroll (content jumped 16px); full desktop link row only from lg, menu below; mobile menu order matches desktop + `aria-current`; `scroll-padding-top` so anchors clear the nav; verse-list fade-in stagger capped; search panel fits above keyboard and hides the bottom verse bar while open.
 - **Layout:** meaning text 23 → 30+ chars/line at 360px (FolkArtBorder padding); story measure ~64 chars on desktop; chapter rows show 2 lines of meaning; home hero copy readable over the art; ॥ no longer orphaned (`text-balance` + no-break space at render); "Think about it" cue under चिन्तनम्; hero illustration eager + sized (no CLS).
 - **Search:** English fields now match at word starts ("arrow" no longer finds "sparrow"); Sanskrit fields still match inside compounds.
-- **Not done (needs owner call):** cover thumbnails on home chapter cards; Dhyanashloka/Gitamahatmyam use "Paarthaaya"-style romanisation while verses teach IAST.
+- **Follow-ups:** cover thumbnails and Dhyanashloka IAST done 2026-11-02 (above). Still needs a phone check: Android safe-area bottom bar, tooltip taps.
 
 ## Session 2026-11-01: Site-wide verse search (committed `e574e9e`, deployed 2026-11-01)
 
@@ -450,4 +456,4 @@ Open next steps:
 - Android signing/version: `android/app/build.gradle` (debug `signingConfig`, version from `APP_BUILD_NUMBER`) + `android/app/signing-debug.keystore`
 - Native app shell (system bars, status bar, back button): `<script>`/`<style>` blocks in `src/layouts/BaseLayout.astro`
 
-Last reviewed: 2026-11-01
+Last reviewed: 2026-11-02

@@ -2,8 +2,14 @@
 import Illustration from '../components/Illustration.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllChapters } from '../lib/content';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const chapters = getAllChapters();
+
+// Chapter cards show a thumbnail of the chapter cover, built by scripts/optimize-images.mjs.
+const hasThumb = (slug: string) =>
+  fs.existsSync(path.resolve(`public/illustrations/${slug}/cover-thumb.webp`));
 
 // Color accents based on folk_art_style
 const styleColors: Record<string, string> = {
@@ -105,7 +111,7 @@ const styleColors: Record<string, string> = {
             <a
               href={isActive ? `/chapters/${chapter.slug}` : undefined}
               class:list={[
-                'chapter-card block rounded-xl border p-6 transition-all scroll-reveal',
+                'chapter-card block overflow-hidden rounded-xl border p-6 transition-all scroll-reveal',
                 isActive
                   ? 'border-gold/30 hover:border-saffron hover:shadow-lg cursor-pointer bg-white/50'
                   : 'border-gray-200 cursor-default bg-gray-50/50 grayscale opacity-40',
@@ -113,6 +119,23 @@ const styleColors: Record<string, string> = {
               ]}
               style={`border-left: 4px solid ${isActive ? borderColor : '#d1d5db'}; transition-delay: ${(index % 3) * 0.06}s`}
             >
+              {hasThumb(chapter.slug) && (
+                <picture class="block">
+                  <source srcset={`/illustrations/${chapter.slug}/cover-thumb.avif`} type="image/avif" />
+                  <img
+                    src={`/illustrations/${chapter.slug}/cover-thumb.webp`}
+                    alt=""
+                    width="640"
+                    height="357"
+                    loading="lazy"
+                    decoding="async"
+                    class:list={[
+                      '-mx-6 -mt-6 mb-5 block w-[calc(100%+3rem)] max-w-none aspect-video object-cover',
+                      isFirst && 'sm:aspect-[21/9] lg:aspect-video',
+                    ]}
+                  />
+                </picture>
+              )}
               <div class="flex items-start justify-between mb-3">
                 <span class="font-ui text-sm font-bold text-gold-ink">
                   {String(chapter.number).padStart(2, '0')}

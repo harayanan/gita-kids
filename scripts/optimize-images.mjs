@@ -42,11 +42,24 @@ function isStale(source, target) {
   return FORCE || !existsSync(target) || statSync(target).mtimeMs < statSync(source).mtimeMs;
 }
 
+// Chapter covers also get a 640px thumbnail for the home-page chapter cards.
+const THUMB_WIDTH = 640;
+const THUMB_VARIANTS = [
+  { ext: 'avif', encode: (img) => img.resize({ width: THUMB_WIDTH }).avif({ quality: 50, effort: 4 }) },
+  { ext: 'webp', encode: (img) => img.resize({ width: THUMB_WIDTH }).webp({ quality: 75, effort: 5 }) },
+];
+
 const jobs = [];
 for (const source of walk(ROOT)) {
   for (const variant of VARIANTS) {
     const target = source.replace(/\.png$/, `.${variant.ext}`);
     if (isStale(source, target)) jobs.push({ source, target, variant });
+  }
+  if (source.endsWith('/cover.png')) {
+    for (const variant of THUMB_VARIANTS) {
+      const target = source.replace(/\.png$/, `-thumb.${variant.ext}`);
+      if (isStale(source, target)) jobs.push({ source, target, variant });
+    }
   }
 }
 
